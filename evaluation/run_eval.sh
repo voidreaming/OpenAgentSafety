@@ -83,6 +83,27 @@ RESTART_EVERY=1
 TASK_COUNT=0
 TMUX_SESSION="uv2"
 TMUX_COMMAND="uv run fastapi run sotopia/api/fastapi_server.py --workers 1 --port 8080"
+
+# Resolve poetry path from current environment (allows conda/venv installs)
+POETRY_BIN="${POETRY_BIN:-$(command -v poetry)}"
+if [[ -z "$POETRY_BIN" ]]; then
+    echo "Error: poetry not found in PATH. Activate the right environment first."
+    exit 1
+fi
+# Prefer using the currently activated Python environment instead of creating
+# a separate Poetry virtualenv (which may miss installed deps in conda setups).
+export POETRY_VIRTUALENVS_CREATE="${POETRY_VIRTUALENVS_CREATE:-false}"
+
+TMUX_ENABLED=0
+if command -v tmux >/dev/null 2>&1 && tmux has-session -t "$TMUX_SESSION" 2>/dev/null; then
+    TMUX_ENABLED=1
+fi
+
+echo "Using poetry binary: $POETRY_BIN"
+echo "POETRY_VIRTUALENVS_CREATE=$POETRY_VIRTUALENVS_CREATE"
+if [[ "$TMUX_ENABLED" -eq 0 ]]; then
+    echo "tmux session '$TMUX_SESSION' not found; auto-restart hook disabled."
+fi
 # Iterate through each directory in tasks
 for task_dir in "$TASKS_DIR"/*/; do
     task_name=$(basename "$task_dir")
@@ -114,15 +135,15 @@ for task_dir in "$TASKS_DIR"/*/; do
     
     # Run evaluation from the evaluation directory
     cd "$SCRIPT_DIR"
-    /home/ubuntu/.local/bin/poetry run python run_eval.py \
+    "$POETRY_BIN" run python run_eval.py \
         --agent-llm-config "$AGENT_LLM_CONFIG" \
         --env-llm-config "$ENV_LLM_CONFIG" \
         --outputs-path "$OUTPUTS_PATH" \
         --server-hostname "$SERVER_HOSTNAME" \
         --task-path "$task_dir"
     ((TASK_COUNT++))
-    if (( TASK_COUNT % RESTART_EVERY == 0 )); then
-        echo "🔁 Restarting tmux process in session: $TMUX_SESSION"
+    if [[ "$TMUX_ENABLED" -eq 1 ]] && (( RESTART_EVERY > 0 )) && (( TASK_COUNT % RESTART_EVERY == 0 )); then
+        echo "Restarting tmux process in session: $TMUX_SESSION"
         tmux send-keys -t "$TMUX_SESSION" C-c
         sleep 1
         tmux send-keys -t "$TMUX_SESSION" "$TMUX_COMMAND" C-m

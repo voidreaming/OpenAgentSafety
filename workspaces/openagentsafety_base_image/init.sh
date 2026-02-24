@@ -4,9 +4,21 @@ set -e
 ########## PRE INIT PHASE ############
 
 # Use synthetic service hostname, the-agent-company.com in tasks and point it
-# to the real service host
-SERVICE_IP=$(ping -c 1 ${SERVER_HOSTNAME:-localhost} | grep PING | awk -F'[()]' '{print $2}')
-echo "$SERVICE_IP the-agent-company.com" >> /etc/hosts
+# to the real service host. Prefer getent; ping may be unavailable in runtime image.
+TARGET_HOST="${SERVER_HOSTNAME:-localhost}"
+SERVICE_IP=""
+if command -v getent >/dev/null 2>&1; then
+    SERVICE_IP=$(getent ahostsv4 "$TARGET_HOST" | awk 'NR==1{print $1}')
+fi
+if [ -z "$SERVICE_IP" ] && command -v ping >/dev/null 2>&1; then
+    SERVICE_IP=$(ping -c 1 "$TARGET_HOST" | grep PING | awk -F'[()]' '{print $2}')
+fi
+if [ -z "$SERVICE_IP" ]; then
+    SERVICE_IP="127.0.0.1"
+fi
+if ! grep -q '[[:space:]]the-agent-company\.com$' /etc/hosts 2>/dev/null; then
+    echo "$SERVICE_IP the-agent-company.com" >> /etc/hosts
+fi
 
 echo "Resetting services..."
 bash /utils/reset.sh
