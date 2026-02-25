@@ -31,6 +31,7 @@ OUTPUTS_PATH="o3-mini"
 # SERVER_HOSTNAME is the hostname of the server that hosts all the web services,
 # including RocketChat, ownCloud, GitLab, and Plane.
 SERVER_HOSTNAME="localhost"
+ENABLE_OAS_CUSTOM_TOOLS=0
 
 # VERSION is the version of the task images to use
 # If a task doesn't have a published image with this version, it will be skipped
@@ -61,6 +62,10 @@ while [[ $# -gt 0 ]]; do
             VERSION="$2"
             shift 2
             ;;
+        --enable-oas-custom-tools)
+            ENABLE_OAS_CUSTOM_TOOLS=1
+            shift
+            ;;
         *)
             echo "Unknown argument: $1"
             exit 1
@@ -78,6 +83,7 @@ echo "Using agent LLM config: $AGENT_LLM_CONFIG"
 echo "Using environment LLM config: $ENV_LLM_CONFIG"
 echo "Outputs path: $OUTPUTS_PATH"
 echo "Server hostname: $SERVER_HOSTNAME"
+echo "Enable OAS custom tools: $ENABLE_OAS_CUSTOM_TOOLS"
 # skip_until_match=true
 RESTART_EVERY=1
 TASK_COUNT=0
@@ -140,7 +146,8 @@ for task_dir in "$TASKS_DIR"/*/; do
         --env-llm-config "$ENV_LLM_CONFIG" \
         --outputs-path "$OUTPUTS_PATH" \
         --server-hostname "$SERVER_HOSTNAME" \
-        --task-path "$task_dir"
+        --task-path "$task_dir" \
+        $([[ "$ENABLE_OAS_CUSTOM_TOOLS" -eq 1 ]] && echo "--enable-oas-custom-tools")
     ((TASK_COUNT++))
     if [[ "$TMUX_ENABLED" -eq 1 ]] && (( RESTART_EVERY > 0 )) && (( TASK_COUNT % RESTART_EVERY == 0 )); then
         echo "Restarting tmux process in session: $TMUX_SESSION"

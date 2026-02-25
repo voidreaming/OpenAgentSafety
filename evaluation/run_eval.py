@@ -35,6 +35,13 @@ runtime: Runtime | None = None
 DEFAULT_BASE_CONTAINER_IMAGE = os.getenv(
     "OH_BASE_CONTAINER_IMAGE", "nikolaik/python-nodejs:python3.12-nodejs22-bookworm"
 )
+OAS_CUSTOM_TOOL_RUNTIME_HOST_PATH = os.path.join(
+    os.path.dirname(__file__), "oas_tool_runtime.py"
+)
+OAS_CUSTOM_TOOL_RUNTIME_SANDBOX_PATH = "/utils/oas_tool_runtime.py"
+OAS_CUSTOM_TOOL_STATE_FILENAME = "tools_state.json"
+OAS_CUSTOM_TOOL_STATE_SANDBOX_PATH = "/instruction/tools_state.json"
+OAS_CUSTOM_TOOLS_STATE_RUNTIME_PATH = "/workspace/.oas_tool_state.json"
 
 
 def _get_secret_value(secret: Any) -> str:
@@ -83,6 +90,42 @@ def _build_litellm_env(llm_config: LLMConfig) -> str:
             f"LITELLM_CUSTOM_LLM_PROVIDER={shlex.quote(llm_config.custom_llm_provider or '')}",
         ]
     )
+
+
+def maybe_enable_oas_custom_tools(task_path: str, force_enable: bool) -> bool:
+    """
+    Enable OAS-style custom tool registration.
+
+    Activation rules:
+    - Explicit CLI flag --enable-oas-custom-tools
+    - OR task contains tools_state.json seed file
+    """
+    task_path = os.path.abspath(task_path)
+    seed_state_path = os.path.join(task_path, OAS_CUSTOM_TOOL_STATE_FILENAME)
+    enabled = force_enable or os.path.exists(seed_state_path)
+    if not enabled:
+        return False
+
+    script_dir = os.path.dirname(__file__)
+    if script_dir not in sys.path:
+        sys.path.insert(0, script_dir)
+
+    from oas_custom_tools import enable_oas_custom_tools
+
+    enable_oas_custom_tools(
+        runtime_script_path_in_sandbox=OAS_CUSTOM_TOOL_RUNTIME_SANDBOX_PATH,
+        state_path_in_sandbox=OAS_CUSTOM_TOOLS_STATE_RUNTIME_PATH,
+        seed_state_path_in_sandbox=OAS_CUSTOM_TOOL_STATE_SANDBOX_PATH,
+    )
+    logger.info(
+        "OAS custom tools enabled.",
+        extra={
+            "task_path": task_path,
+            "seed_state_path": seed_state_path,
+            "forced": force_enable,
+        },
+    )
+    return True
 
 class FakeUser:
     def __init__(self, runtime: Runtime, llm_config: LLMConfig):
@@ -248,7 +291,13 @@ def load_dependencies(runtime: Runtime) -> List[str]:
         dependencies = []
     return dependencies
 
-def init_task_env(runtime: Runtime, hostname: str, env_llm_config: LLMConfig, task_path: str):
+def init_task_env(
+    runtime: Runtime,
+    hostname: str,
+    env_llm_config: LLMConfig,
+    task_path: str,
+    enable_oas_custom_tools: bool = False,
+):
     task_path = os.path.abspath(task_path)
     workspaces_root = os.path.dirname(os.path.dirname(task_path.rstrip('/')))
     base_image_root = os.path.join(workspaces_root, 'openagentsafety_base_image')
@@ -306,6 +355,26 @@ def init_task_env(runtime: Runtime, hostname: str, env_llm_config: LLMConfig, ta
     else:
         logger.warning(f"scenarios.json not found at {scenarios_path}, skipping copy.")
 
+    if enable_oas_custom_tools:
+        if not os.path.exists(OAS_CUSTOM_TOOL_RUNTIME_HOST_PATH):
+            raise FileNotFoundError(
+                f"OAS custom tool runtime script not found: {OAS_CUSTOM_TOOL_RUNTIME_HOST_PATH}"
+            )
+        runtime.copy_to(
+            host_src=OAS_CUSTOM_TOOL_RUNTIME_HOST_PATH,
+            sandbox_dest="/utils/",
+            recursive=False,
+        )
+        runtime.run_action(CmdRunAction("chmod +x /utils/oas_tool_runtime.py || true"))
+
+        seed_state_path = os.path.join(task_path, OAS_CUSTOM_TOOL_STATE_FILENAME)
+        if os.path.exists(seed_state_path):
+            runtime.copy_to(
+                host_src=seed_state_path,
+                sandbox_dest="/instruction/",
+                recursive=False,
+            )
+        logger.info("OAS custom tool runtime prepared in sandbox.")
 
     # copy task.md to /instruction/
     task_md_path = os.path.join(task_path, 'task.md')
@@ -420,6 +489,11 @@ if __name__ == '__main__':
         default=None,
         help='LLM config for evaluation environment (NPC & llm-based evaluator)',
     )
+    parser.add_argument(
+        '--enable-oas-custom-tools',
+        action='store_true',
+        help='Enable OAS-style custom business tools (email/calendar/docs/files/contacts/social).',
+    )
     args, _ = parser.parse_known_args()
 
     if not args.task_path or not args.task_path.strip():
@@ -430,6 +504,9 @@ if __name__ == '__main__':
     # print(args.task_path, task_short_name)
     # exit()
     logger.info(f"Task path is {args.task_path}, short name is {task_short_name}")
+    oas_custom_tools_enabled = maybe_enable_oas_custom_tools(
+        args.task_path, args.enable_oas_custom_tools
+    )
 
     # mount a temporary directory to pass trajectory from host to container, and to
     # pass the evaluation result from container to host
@@ -492,7 +569,13 @@ if __name__ == '__main__':
     config: AppConfig = get_config(args.task_path, task_short_name, temp_dir, agent_llm_config)
     runtime: Runtime = create_runtime(config)
     call_async_from_sync(runtime.connect)
-    init_task_env(runtime, args.server_hostname, env_llm_config, args.task_path)
+    init_task_env(
+        runtime,
+        args.server_hostname,
+        env_llm_config,
+        args.task_path,
+        enable_oas_custom_tools=oas_custom_tools_enabled,
+    )
 
     dependencies = load_dependencies(runtime)
     logger.info(f"Service dependencies: {dependencies}")
@@ -504,7 +587,13 @@ if __name__ == '__main__':
 
         # before giving up, let's try to init and login again
 
-        init_task_env(runtime, args.server_hostname, env_llm_config, args.task_path)
+        init_task_env(
+            runtime,
+            args.server_hostname,
+            env_llm_config,
+            args.task_path,
+            enable_oas_custom_tools=oas_custom_tools_enabled,
+        )
         pre_login(runtime, dependencies, save_screenshots=True, screenshots_dir=os.path.join(os.path.abspath(args.outputs_path), "screenshots"))
 
     state = run_solver(runtime, task_short_name, config, dependencies,
