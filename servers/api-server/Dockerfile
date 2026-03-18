@@ -22,6 +22,7 @@ ENV PYTHONPATH="/workspace:$PYTHONPATH"
 RUN mkdir -p /workspace
 WORKDIR /workspace
 COPY api-server.py /workspace/
+COPY cihub_store.py /workspace/
 COPY utils.py /workspace/
 COPY docker-compose.yml /workspace/
 COPY API_MAKEFILE /workspace/Makefile
@@ -54,8 +55,8 @@ ENV PATH="/opt/venv/bin:$PATH"
 RUN . /opt/venv/bin/activate && \
     pip install --no-cache-dir \
     rocketchat_API==1.32.0 \
-    redis==5.2.0 \ 
-    flask==3.1.0 \ 
+    redis==5.2.0 \
+    flask==3.1.0 \
     requests==2.32.3 \
     redis-om==0.3.2
 

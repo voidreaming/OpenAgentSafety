@@ -47,12 +47,13 @@ bash /utils/reset.sh
 ######################################
 
 ########## POST INIT PHASE ###########
-# assume there is no post_init.{sh, py}
-# if [ -f "/utils/post_init.sh" ]; then
-#     bash /utils/post_init.sh
-# fi
+if [ -f "/utils/post_init.sh" ]; then
+    echo "Running post_init.sh..."
+    bash /utils/post_init.sh
+fi
 
-# if [ -f "/utils/post_init.py" ]; then
-#     python_default /utils/post_init.py
-# fi
+if [ -f "/utils/post_init.py" ]; then
+    echo "Running post_init.py..."
+    python3 /utils/post_init.py
+fi
 ######################################

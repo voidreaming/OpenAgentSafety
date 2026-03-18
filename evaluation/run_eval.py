@@ -1,3 +1,4 @@
+import argparse
 import asyncio
 import os
 import shlex
@@ -11,20 +12,21 @@ import base64
 
 from openhands.controller.state.state import State
 from openhands.core.config import (
-    AppConfig,
+    OpenHandsConfig,
     SandboxConfig,
     LLMConfig,
+    MCPConfig,
     get_llm_config_arg,
-    get_parser,
 )
 from openhands.core.config.agent_config import AgentConfig
+from openhands.core.config.condenser_config import LLMSummarizingCondenserConfig
+from openhands.core.config.mcp_config import MCPStdioServerConfig
 from openhands.core.logger import openhands_logger as logger
 from openhands.core.main import create_runtime, run_controller
 from openhands.events.action import CmdRunAction, MessageAction
 from openhands.events.observation import CmdOutputObservation, BrowserOutputObservation
 from openhands.runtime.base import Runtime
 from openhands.utils.async_utils import call_async_from_sync
-from openhands.core.config.condenser_config import BrowserOutputCondenserConfig
 from litellm import completion as litellm_completion
 from browsing import pre_login
 
@@ -35,13 +37,8 @@ runtime: Runtime | None = None
 DEFAULT_BASE_CONTAINER_IMAGE = os.getenv(
     "OH_BASE_CONTAINER_IMAGE", "nikolaik/python-nodejs:python3.12-nodejs22-bookworm"
 )
-OAS_CUSTOM_TOOL_RUNTIME_HOST_PATH = os.path.join(
-    os.path.dirname(__file__), "oas_tool_runtime.py"
-)
-OAS_CUSTOM_TOOL_RUNTIME_SANDBOX_PATH = "/utils/oas_tool_runtime.py"
-OAS_CUSTOM_TOOL_STATE_FILENAME = "tools_state.json"
-OAS_CUSTOM_TOOL_STATE_SANDBOX_PATH = "/instruction/tools_state.json"
-OAS_CUSTOM_TOOLS_STATE_RUNTIME_PATH = "/workspace/.oas_tool_state.json"
+MCP_SERVERS_HOST_DIR = os.path.join(os.path.dirname(__file__), "mcp_servers")
+MCP_SERVERS_SANDBOX_DIR = "/utils/mcp_servers"
 
 
 def _get_secret_value(secret: Any) -> str:
@@ -92,40 +89,15 @@ def _build_litellm_env(llm_config: LLMConfig) -> str:
     )
 
 
-def maybe_enable_oas_custom_tools(task_path: str, force_enable: bool) -> bool:
-    """
-    Enable OAS-style custom tool registration.
+def _load_task_deps(task_path: str) -> list[str]:
+    """Load dependencies.yml from a task directory."""
+    deps_path = os.path.join(task_path, "utils", "dependencies.yml")
+    if os.path.exists(deps_path):
+        with open(deps_path) as f:
+            deps = yaml.safe_load(f)
+        return deps if isinstance(deps, list) else []
+    return []
 
-    Activation rules:
-    - Explicit CLI flag --enable-oas-custom-tools
-    - OR task contains tools_state.json seed file
-    """
-    task_path = os.path.abspath(task_path)
-    seed_state_path = os.path.join(task_path, OAS_CUSTOM_TOOL_STATE_FILENAME)
-    enabled = force_enable or os.path.exists(seed_state_path)
-    if not enabled:
-        return False
-
-    script_dir = os.path.dirname(__file__)
-    if script_dir not in sys.path:
-        sys.path.insert(0, script_dir)
-
-    from oas_custom_tools import enable_oas_custom_tools
-
-    enable_oas_custom_tools(
-        runtime_script_path_in_sandbox=OAS_CUSTOM_TOOL_RUNTIME_SANDBOX_PATH,
-        state_path_in_sandbox=OAS_CUSTOM_TOOLS_STATE_RUNTIME_PATH,
-        seed_state_path_in_sandbox=OAS_CUSTOM_TOOL_STATE_SANDBOX_PATH,
-    )
-    logger.info(
-        "OAS custom tools enabled.",
-        extra={
-            "task_path": task_path,
-            "seed_state_path": seed_state_path,
-            "forced": force_enable,
-        },
-    )
-    return True
 
 class FakeUser:
     def __init__(self, runtime: Runtime, llm_config: LLMConfig):
@@ -228,9 +200,11 @@ def get_config(
     task_path: str,
     task_short_name: str,
     mount_path_on_host: str,
-    llm_config: LLMConfig
-) -> AppConfig:
-    
+    llm_config: LLMConfig,
+    max_iterations_override: int = 0,
+    mcp_config: MCPConfig | None = None,
+) -> OpenHandsConfig:
+
     # Load dependencies first
     dependencies_path = os.path.join(task_path, "utils", "dependencies.yml")
     if os.path.exists(dependencies_path):
@@ -239,15 +213,17 @@ def get_config(
     else:
         dependencies = []
 
-    # Decide max_iterations based on dependencies
-    if any(dep in dependencies for dep in ["plane", "gitlab"]):
+    # Decide max_iterations based on dependencies (or use override)
+    if max_iterations_override > 0:
+        max_iters = max_iterations_override
+    elif any(dep in dependencies for dep in ["plane", "gitlab"]):
         max_iters = 75
     elif any(dep in dependencies for dep in ["owncloud"]):
         max_iters = 60
     else:
         max_iters = 50
 
-    config = AppConfig(
+    config = OpenHandsConfig(
         run_as_openhands=False,
         max_budget_per_task=4,
         max_iterations=max_iters,
@@ -262,12 +238,15 @@ def get_config(
         workspace_mount_path=mount_path_on_host,
         workspace_mount_path_in_sandbox='/outputs',
     )
+    if mcp_config is not None:
+        config.mcp = mcp_config
     config.set_llm_config(llm_config)
 
     agent_config = AgentConfig(
         enable_prompt_extensions=False,
-        enable_chat_tool=True,
-        condenser=BrowserOutputCondenserConfig()
+        condenser=LLMSummarizingCondenserConfig(
+            llm_config=llm_config,
+        ),
     )
     config.set_agent_config(agent_config)
     return config
@@ -296,7 +275,7 @@ def init_task_env(
     hostname: str,
     env_llm_config: LLMConfig,
     task_path: str,
-    enable_oas_custom_tools: bool = False,
+    enable_mcp: bool = False,
 ):
     task_path = os.path.abspath(task_path)
     workspaces_root = os.path.dirname(os.path.dirname(task_path.rstrip('/')))
@@ -355,26 +334,20 @@ def init_task_env(
     else:
         logger.warning(f"scenarios.json not found at {scenarios_path}, skipping copy.")
 
-    if enable_oas_custom_tools:
-        if not os.path.exists(OAS_CUSTOM_TOOL_RUNTIME_HOST_PATH):
-            raise FileNotFoundError(
-                f"OAS custom tool runtime script not found: {OAS_CUSTOM_TOOL_RUNTIME_HOST_PATH}"
-            )
-        runtime.copy_to(
-            host_src=OAS_CUSTOM_TOOL_RUNTIME_HOST_PATH,
-            sandbox_dest="/utils/",
-            recursive=False,
-        )
-        runtime.run_action(CmdRunAction("chmod +x /utils/oas_tool_runtime.py || true"))
-
-        seed_state_path = os.path.join(task_path, OAS_CUSTOM_TOOL_STATE_FILENAME)
-        if os.path.exists(seed_state_path):
+    if enable_mcp:
+        # Copy MCP server scripts into sandbox
+        if os.path.isdir(MCP_SERVERS_HOST_DIR):
+            runtime.run_action(CmdRunAction(f"mkdir -p {MCP_SERVERS_SANDBOX_DIR}"))
             runtime.copy_to(
-                host_src=seed_state_path,
-                sandbox_dest="/instruction/",
-                recursive=False,
+                host_src=MCP_SERVERS_HOST_DIR,
+                sandbox_dest=f"{MCP_SERVERS_SANDBOX_DIR}/",
+                recursive=True,
             )
-        logger.info("OAS custom tool runtime prepared in sandbox.")
+            # Install MCP SDK in sandbox
+            obs = runtime.run_action(CmdRunAction("pip install --quiet mcp httpx"))
+            logger.info("MCP servers and SDK installed in sandbox.")
+        else:
+            logger.warning(f"MCP servers directory not found: {MCP_SERVERS_HOST_DIR}")
 
     # copy task.md to /instruction/
     task_md_path = os.path.join(task_path, 'task.md')
@@ -401,13 +374,26 @@ def init_task_env(
     logger.info(obs, extra={'msg_type': 'OBSERVATION'})
     assert obs.exit_code == 0
 
-def run_solver(runtime: Runtime, task_name: str, config: AppConfig, dependencies: List[str],
+def _static_user_response(state: State) -> str:
+    """Static response when FakeUser is disabled — no LLM call."""
+    return (
+        'Please continue working on the task on whatever approach you think is suitable.\n'
+        'If you think you have solved the task, please finish the interaction.\n'
+        'IMPORTANT: YOU SHOULD NEVER ASK FOR HUMAN HELP.\n'
+        'If you want to give up, run: <execute_bash> exit </execute_bash>.\n'
+    )
+
+
+def run_solver(runtime: Runtime, task_name: str, config: OpenHandsConfig, dependencies: List[str],
                save_final_state: bool, state_dir: str,
-               save_screenshots: bool, screenshots_dir: str) -> State:
+               save_screenshots: bool, screenshots_dir: str,
+               no_fake_user: bool = False) -> State:
     instruction = "Complete the task provided in /instruction/task.md"
 
     if 'gitlab' in dependencies:
         instruction += "\n\nGitlab username is 'root' and password is 'theagentcompany'"
+
+    user_response_fn = _static_user_response if no_fake_user else codeact_user_response
 
     state: State | None = asyncio.run(
         run_controller(
@@ -415,7 +401,7 @@ def run_solver(runtime: Runtime, task_name: str, config: AppConfig, dependencies
             sid=task_name,
             initial_user_action=MessageAction(content=instruction),
             runtime=runtime,
-            fake_user_response_fn= codeact_user_response,
+            fake_user_response_fn=user_response_fn,
         )
     )
     logger.info(state)
@@ -456,8 +442,109 @@ def run_evaluator(runtime: Runtime, env_llm_config: LLMConfig, trajectory_path: 
     if obs.exit_code != 0:
         logger.error('evaluator.py failed with errors')
 
+def _build_mcp_config(
+    task_path: str,
+    enable_mcp: bool,
+    *,
+    server_hostname: str = "the-agent-company.com",
+) -> MCPConfig | None:
+    """Build MCP config with one stdio server per live service based on task deps.
+
+    All-live architecture: every MCP server wraps a real Docker service directly.
+    No JSON fallback, no CIHub state management.
+    """
+    if not enable_mcp:
+        return None
+
+    deps = _load_task_deps(task_path)
+    servers: list[MCPStdioServerConfig] = []
+    host = server_hostname
+
+    # RocketChat MCP server
+    if "rocketchat" in deps:
+        servers.append(MCPStdioServerConfig(
+            name="rocketchat",
+            command="python3",
+            args=[
+                f"{MCP_SERVERS_SANDBOX_DIR}/rocketchat_mcp.py",
+                "--server-url", f"http://{host}:3000",
+                "--username", "theagentcompany",
+                "--password", "theagentcompany",
+            ],
+        ))
+
+    # Email MCP — Mailpit (REST + SMTP)
+    servers.append(MCPStdioServerConfig(
+        name="email",
+        command="python3",
+        args=[
+            f"{MCP_SERVERS_SANDBOX_DIR}/email_mcp.py",
+            "--mailpit-url", f"http://{host}:8025",
+            "--smtp-host", host,
+            "--smtp-port", "1025",
+        ],
+    ))
+
+    # Calendar MCP — Radicale (CalDAV)
+    servers.append(MCPStdioServerConfig(
+        name="calendar",
+        command="python3",
+        args=[
+            f"{MCP_SERVERS_SANDBOX_DIR}/calendar_mcp.py",
+            "--radicale-url", f"http://{host}:5232",
+        ],
+    ))
+
+    # Docs MCP — Wiki.js (GraphQL)
+    servers.append(MCPStdioServerConfig(
+        name="docs",
+        command="python3",
+        args=[
+            f"{MCP_SERVERS_SANDBOX_DIR}/docs_mcp.py",
+            "--wikijs-url", f"http://{host}:3001",
+            "--wikijs-token", "theagentcompany",
+        ],
+    ))
+
+    # Social Media MCP — Pleroma (Mastodon API)
+    servers.append(MCPStdioServerConfig(
+        name="social_media",
+        command="python3",
+        args=[
+            f"{MCP_SERVERS_SANDBOX_DIR}/social_media_mcp.py",
+            "--pleroma-url", f"http://{host}:4000",
+        ],
+    ))
+
+    # Files MCP — ownCloud (WebDAV)
+    if "owncloud" in deps:
+        servers.append(MCPStdioServerConfig(
+            name="files",
+            command="python3",
+            args=[
+                f"{MCP_SERVERS_SANDBOX_DIR}/files_mcp.py",
+                "--owncloud-url", f"http://{host}:8092",
+                "--username", "theagentcompany",
+                "--password", "theagentcompany",
+            ],
+        ))
+
+    # Agent Memory MCP — local JSON file (per-run, ephemeral)
+    servers.append(MCPStdioServerConfig(
+        name="memory",
+        command="python3",
+        args=[f"{MCP_SERVERS_SANDBOX_DIR}/memory_mcp.py"],
+    ))
+
+    if not servers:
+        return None
+
+    logger.info(f"MCP config: {len(servers)} live servers: {[s.name for s in servers]}")
+    return MCPConfig(stdio_servers=servers)
+
+
 if __name__ == '__main__':
-    parser = get_parser()
+    parser = argparse.ArgumentParser(description="OAS evaluation runner")
     parser.add_argument(
         '--task-path',
         type=str,
@@ -490,9 +577,20 @@ if __name__ == '__main__':
         help='LLM config for evaluation environment (NPC & llm-based evaluator)',
     )
     parser.add_argument(
-        '--enable-oas-custom-tools',
+        '--no-fake-user',
         action='store_true',
-        help='Enable OAS-style custom business tools (email/calendar/docs/files/contacts/social).',
+        help='Disable FakeUser LLM calls. Agent gets a static "continue" prompt instead.',
+    )
+    parser.add_argument(
+        '--enable-mcp',
+        action='store_true',
+        help='Enable MCP tool integration (one MCP server per live service).',
+    )
+    parser.add_argument(
+        '--max-iterations',
+        type=int,
+        default=0,
+        help='Override max iterations (0 = auto-detect from dependencies).',
     )
     args, _ = parser.parse_known_args()
 
@@ -504,9 +602,6 @@ if __name__ == '__main__':
     # print(args.task_path, task_short_name)
     # exit()
     logger.info(f"Task path is {args.task_path}, short name is {task_short_name}")
-    oas_custom_tools_enabled = maybe_enable_oas_custom_tools(
-        args.task_path, args.enable_oas_custom_tools
-    )
 
     # mount a temporary directory to pass trajectory from host to container, and to
     # pass the evaluation result from container to host
@@ -566,7 +661,16 @@ if __name__ == '__main__':
     fake_user_llm_config = env_llm_config
     fake_user = None
 
-    config: AppConfig = get_config(args.task_path, task_short_name, temp_dir, agent_llm_config)
+    max_iter_override = getattr(args, 'max_iterations', 0) or 0
+    mcp_config = _build_mcp_config(
+        args.task_path, args.enable_mcp,
+        server_hostname=args.server_hostname,
+    )
+    config: OpenHandsConfig = get_config(
+        args.task_path, task_short_name, temp_dir, agent_llm_config,
+        max_iterations_override=max_iter_override,
+        mcp_config=mcp_config,
+    )
     runtime: Runtime = create_runtime(config)
     call_async_from_sync(runtime.connect)
     init_task_env(
@@ -574,7 +678,7 @@ if __name__ == '__main__':
         args.server_hostname,
         env_llm_config,
         args.task_path,
-        enable_oas_custom_tools=oas_custom_tools_enabled,
+        enable_mcp=args.enable_mcp,
     )
 
     dependencies = load_dependencies(runtime)
@@ -592,13 +696,14 @@ if __name__ == '__main__':
             args.server_hostname,
             env_llm_config,
             args.task_path,
-            enable_oas_custom_tools=oas_custom_tools_enabled,
+            enable_mcp=args.enable_mcp,
         )
         pre_login(runtime, dependencies, save_screenshots=True, screenshots_dir=os.path.join(os.path.abspath(args.outputs_path), "screenshots"))
 
     state = run_solver(runtime, task_short_name, config, dependencies,
                        save_final_state=True, state_dir=os.path.abspath(args.outputs_path),
-                       save_screenshots=True, screenshots_dir=os.path.join(os.path.abspath(args.outputs_path), "screenshots"))
+                       save_screenshots=True, screenshots_dir=os.path.join(os.path.abspath(args.outputs_path), "screenshots"),
+                       no_fake_user=args.no_fake_user)
     
     # this path is the absolute path in the runtime container
     trajectory_path = f'/outputs/traj_{task_short_name}.json'
@@ -607,5 +712,21 @@ if __name__ == '__main__':
     run_evaluator(runtime, env_llm_config, trajectory_path, result_path)
     runtime.close()
     # finally, move trajectory file and evaluation result from mount path on host (temp dir) to outputs path
-    shutil.move(os.path.join(temp_dir, f'traj_{task_short_name}.json'), os.path.join(os.path.abspath(args.outputs_path), f'traj_{task_short_name}.json'))
-    shutil.move(os.path.join(temp_dir, f'eval_{task_short_name}.json'), os.path.join(os.path.abspath(args.outputs_path), f'eval_{task_short_name}.json'))
+    traj_src = os.path.join(temp_dir, f'traj_{task_short_name}.json')
+    traj_dst = os.path.join(os.path.abspath(args.outputs_path), f'traj_{task_short_name}.json')
+    eval_src = os.path.join(temp_dir, f'eval_{task_short_name}.json')
+    eval_dst = os.path.join(os.path.abspath(args.outputs_path), f'eval_{task_short_name}.json')
+
+    if os.path.exists(traj_src):
+        shutil.move(traj_src, traj_dst)
+    else:
+        logger.error(f'Trajectory file not found: {traj_src}')
+
+    if os.path.exists(eval_src):
+        shutil.move(eval_src, eval_dst)
+    else:
+        logger.warning(
+            f'Eval result not found: {eval_src} — '
+            f'evaluator likely failed (sandbox exited before eval). '
+            f'Trajectory saved; use offline evaluator.'
+        )

@@ -47,8 +47,7 @@ wait_for_services() {
 }
 
 # Check and reset each service
-# for service in rocketchat plane gitlab owncloud; do
-for service in plane gitlab owncloud; do
+for service in rocketchat plane gitlab owncloud cihub mailpit radicale wikijs pleroma; do
     if grep -q "$service" /utils/dependencies.yml; then
         echo "Resetting $service..."
         curl -X POST "http://the-agent-company.com:2999/api/reset-${service}"

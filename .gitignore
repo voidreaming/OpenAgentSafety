@@ -6,6 +6,8 @@ evaluation/config.toml
 *owncloud_data*
 *owncloud_apps*
 
+workspaces/tasks/*
+
 # Server-related
 servers/api-server/data/
 

@@ -126,8 +126,82 @@ services:
     networks:
       - rocketchat-redis-net
 
+  # ---- Real-service backends for OAS business tools ----
+
+  mailpit:
+    image: axllent/mailpit:v1.21
+    container_name: mailpit
+    restart: always
+    ports:
+      - "8025:8025"   # Web UI + REST API
+      - "1025:1025"   # SMTP
+    environment:
+      MP_SMTP_AUTH_ACCEPT_ANY: 1
+      MP_SMTP_AUTH_ALLOW_INSECURE: 1
+    extra_hosts:
+      - "the-agent-company.com:host-gateway"
+
+  radicale:
+    image: tomsquest/docker-radicale:3.4.1.0
+    container_name: radicale
+    restart: always
+    ports:
+      - "5232:5232"
+    volumes:
+      - radicale_data:/data
+    environment:
+      # Permissive auth for evaluation — accepts any user/password
+      RADICALE_AUTH__TYPE: none
+    extra_hosts:
+      - "the-agent-company.com:host-gateway"
+
+  wikijs:
+    image: ghcr.io/requarks/wiki:2
+    container_name: wikijs
+    restart: always
+    ports:
+      - "3001:3000"
+    environment:
+      DB_TYPE: sqlite
+      DB_FILEPATH: /wiki/db.sqlite
+      WIKI_ADMIN_EMAIL: agent@company.com
+      WIKI_ADMIN_PASSWORD: theagentcompany
+    volumes:
+      - wikijs_data:/wiki
+    extra_hosts:
+      - "the-agent-company.com:host-gateway"
+
+  pleroma:
+    image: akkoma/akkoma:stable
+    container_name: pleroma
+    restart: always
+    ports:
+      - "4000:4000"
+    volumes:
+      - pleroma_data:/var/lib/akkoma
+      - ./pleroma/config.exs:/etc/akkoma/config.exs:ro
+    depends_on:
+      - pleroma-db
+    extra_hosts:
+      - "the-agent-company.com:host-gateway"
+
+  pleroma-db:
+    image: postgres:16-alpine
+    container_name: pleroma-db
+    restart: always
+    environment:
+      POSTGRES_USER: akkoma
+      POSTGRES_PASSWORD: theagentcompany
+      POSTGRES_DB: akkoma
+    volumes:
+      - pleroma_db_data:/var/lib/postgresql/data
+
 volumes:
   mongodb_data: { driver: local }
+  radicale_data: { driver: local }
+  wikijs_data: { driver: local }
+  pleroma_data: { driver: local }
+  pleroma_db_data: { driver: local }
 
 networks:
   rocketchat-redis-net:
