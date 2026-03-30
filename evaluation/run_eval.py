@@ -154,8 +154,21 @@ async def _host_call_tool_mcp(self, action: MCPAction) -> Observation:
 
 
 def _install_host_mcp_bypass():
-    """Monkey-patch OH to use host-side stdio instead of container SSE proxy."""
+    """Monkey-patch OH to use host-side stdio instead of container SSE proxy.
+
+    Must patch all import locations — Python's ``from X import Y`` creates a
+    local binding, so patching the source module alone doesn't update callers
+    that already imported the name.
+    """
+    # 1. Patch the source module
     _oh_mcp_utils.add_mcp_tools_to_agent = _host_add_mcp_tools_to_agent
+    # 2. Patch the package-level re-export (openhands.mcp.__init__)
+    import openhands.mcp as _mcp_pkg
+    _mcp_pkg.add_mcp_tools_to_agent = _host_add_mcp_tools_to_agent
+    # 3. Patch the already-imported binding in openhands.core.main (the actual caller)
+    import openhands.core.main as _main_mod
+    _main_mod.add_mcp_tools_to_agent = _host_add_mcp_tools_to_agent
+    # 4. Patch call_tool_mcp on the action execution client class
     from openhands.runtime.impl.action_execution import action_execution_client as _aec
     _aec.ActionExecutionClient.call_tool_mcp = _host_call_tool_mcp
     logger.info("[host-mcp] Installed host-side MCP bypass (OH SSE proxy workaround)")
