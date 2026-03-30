@@ -12,6 +12,22 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
+from mcp.types import CallToolResult, TextContent
+
+
+def make_tool_result(result: dict[str, Any]) -> CallToolResult:
+    """Wrap a result dict in a CallToolResult, setting isError when appropriate.
+
+    Error is detected when the result dict contains an ``"error"`` key with a
+    truthy value, or when ``"ok"`` is explicitly ``False``.
+    """
+    text = json.dumps(result, ensure_ascii=False)
+    is_error = bool(result.get("error")) or result.get("ok") is False
+    return CallToolResult(
+        content=[TextContent(type="text", text=text)],
+        isError=is_error,
+    )
+
 
 def utc_now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()

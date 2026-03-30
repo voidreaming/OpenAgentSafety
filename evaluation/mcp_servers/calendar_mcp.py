@@ -16,11 +16,12 @@ import sys
 import uuid
 
 sys.path.insert(0, os.path.dirname(__file__))
-from base import http_put
+from base import http_put, make_tool_result
 
 from mcp.server import Server
+from mcp.server.models import InitializationOptions
 from mcp.server.stdio import stdio_server
-from mcp.types import TextContent, Tool
+from mcp.types import CallToolResult, TextContent, Tool, ServerCapabilities
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
 
@@ -73,7 +74,7 @@ async def list_tools() -> list[Tool]:
 
 
 @server.call_tool()
-async def call_tool(name: str, arguments: dict) -> list[TextContent]:
+async def call_tool(name: str, arguments: dict) -> CallToolResult:
     if name == "search_events":
         result = _search(arguments.get("query", ""), arguments.get("start", ""), arguments.get("end", ""))
     elif name == "read_event":
@@ -87,7 +88,7 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
         )
     else:
         result = {"error": f"Unknown tool: {name}"}
-    return [TextContent(type="text", text=json.dumps(result, ensure_ascii=False))]
+    return make_tool_result(result)
 
 
 # ---- iCalendar helpers ----
@@ -241,7 +242,14 @@ async def main() -> None:
     _ensure_calendar_collection()
 
     async with stdio_server() as (read_stream, write_stream):
-        await server.run(read_stream, write_stream)
+        await server.run(
+            read_stream, write_stream,
+            InitializationOptions(
+                server_name=server.name,
+                server_version="1.0.0",
+                capabilities=ServerCapabilities(tools={"listChanged": False}),
+            ),
+        )
 
 
 if __name__ == "__main__":

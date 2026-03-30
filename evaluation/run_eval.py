@@ -1,14 +1,20 @@
 import argparse
 import asyncio
 import os
-import shlex
 import shutil
 import sys
+import time as _time_mod
+from datetime import datetime, timezone
 from typing import Any, List
 import json
 import yaml
 import tempfile
 import base64
+
+try:
+    import tomllib  # Python 3.11+
+except ModuleNotFoundError:
+    import tomli as tomllib  # fallback
 
 from openhands.controller.state.state import State
 from openhands.core.config import (
@@ -24,11 +30,15 @@ from openhands.core.config.mcp_config import MCPStdioServerConfig
 from openhands.core.logger import openhands_logger as logger
 from openhands.core.main import create_runtime, run_controller
 from openhands.events.action import CmdRunAction, MessageAction
+from openhands.events.action.mcp import MCPAction
 from openhands.events.observation import CmdOutputObservation, BrowserOutputObservation
+from openhands.events.observation.observation import Observation
 from openhands.runtime.base import Runtime
 from openhands.utils.async_utils import call_async_from_sync
 from litellm import completion as litellm_completion
 from browsing import pre_login
+import openhands.mcp.utils as _oh_mcp_utils
+import platform_config
 
 # Module-level state used by fake user callback.
 fake_user = None
@@ -39,6 +49,116 @@ DEFAULT_BASE_CONTAINER_IMAGE = os.getenv(
 )
 MCP_SERVERS_HOST_DIR = os.path.join(os.path.dirname(__file__), "mcp_servers")
 MCP_SERVERS_SANDBOX_DIR = "/utils/mcp_servers"
+
+# Host-side Python for running MCP servers as stdio on the host (bypass OH SSE proxy).
+HOST_PYTHON = os.path.join(
+    os.environ.get("CONDA_PREFIX", sys.prefix), "bin", "python"
+)
+
+# ---------- Host-side MCP bypass (Issue #4 workaround) ----------
+# OH's FastMCP SSE proxy inside the container returns 0 tools.
+# Bypass: run MCP servers as stdio subprocesses on the HOST instead.
+_host_mcp_config: MCPConfig | None = None
+
+# Phase 2: Cached MCP clients (avoid ~675 subprocess spawns per task)
+_host_mcp_clients: list | None = None
+
+# Phase 3: MCP action log (ground-truth message capture)
+_mcp_action_log: list[dict] = []
+_mcp_action_log_path: str | None = None
+
+
+async def _get_or_create_mcp_clients() -> list:
+    """Return cached MCP clients, creating on first call."""
+    global _host_mcp_clients
+    if _host_mcp_clients is not None:
+        return _host_mcp_clients
+    if _host_mcp_config is None or not _host_mcp_config.stdio_servers:
+        return []
+    _host_mcp_clients = await _oh_mcp_utils.create_mcp_clients(
+        [], [], None, _host_mcp_config.stdio_servers
+    )
+    logger.info(f"[host-mcp] Created {len(_host_mcp_clients)} cached MCP clients")
+    return _host_mcp_clients
+
+
+def _cleanup_mcp_clients():
+    """Release cached MCP clients."""
+    global _host_mcp_clients
+    _host_mcp_clients = None
+
+
+def _log_mcp_action(action: MCPAction, obs: Observation, elapsed_ms: float) -> None:
+    """Log an MCP action to the action log file."""
+    tool_name = getattr(action, "name", "") or getattr(action, "tool_name", "")
+    arguments = getattr(action, "arguments", {}) or {}
+
+    is_error = getattr(obs, "is_error", False) or False
+    result_text = getattr(obs, "content", "")
+
+    entry = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "tool_name": tool_name,
+        "arguments": arguments if isinstance(arguments, dict) else str(arguments),
+        "elapsed_ms": round(elapsed_ms, 1),
+        "is_error": is_error,
+    }
+
+    # Capture full result for send-type tools
+    send_tools = {"send_dm", "send_channel_message", "send_email", "post", "send_message",
+                  "send_direct_message", "post_message"}
+    if tool_name in send_tools:
+        entry["result"] = result_text[:4000] if result_text else ""
+
+    _mcp_action_log.append(entry)
+
+    # Write incrementally
+    if _mcp_action_log_path:
+        try:
+            with open(_mcp_action_log_path, "w") as f:
+                json.dump(_mcp_action_log, f, indent=2, ensure_ascii=False)
+        except Exception as e:
+            logger.warning(f"[mcp-log] Failed to write action log: {e}")
+
+
+async def _host_add_mcp_tools_to_agent(agent, runtime, memory):
+    """Bypass OH SSE proxy — discover tools via host-side stdio MCP clients."""
+    if _host_mcp_config is None or not _host_mcp_config.stdio_servers:
+        agent.set_mcp_tools([])
+        return MCPConfig()
+
+    mcp_tools = await _oh_mcp_utils.fetch_mcp_tools_from_config(
+        _host_mcp_config, use_stdio=True
+    )
+    tool_names = [t["function"]["name"] for t in mcp_tools]
+    logger.info(f"[host-mcp] Loaded {len(mcp_tools)} MCP tools: {tool_names}")
+    agent.set_mcp_tools(mcp_tools)
+    return _host_mcp_config
+
+
+async def _host_call_tool_mcp(self, action: MCPAction) -> Observation:
+    """Bypass OH SSE proxy — execute MCP tools via host-side stdio clients.
+
+    Uses cached clients (Phase 2) and logs every action (Phase 3).
+    """
+    if _host_mcp_config is None or not _host_mcp_config.stdio_servers:
+        from openhands.events.observation import ErrorObservation
+        return ErrorObservation("No MCP servers configured")
+
+    clients = await _get_or_create_mcp_clients()
+    t0 = _time_mod.monotonic()
+    obs = await _oh_mcp_utils.call_tool_mcp(clients, action)
+    elapsed = (_time_mod.monotonic() - t0) * 1000
+    _log_mcp_action(action, obs, elapsed)
+    return obs
+
+
+def _install_host_mcp_bypass():
+    """Monkey-patch OH to use host-side stdio instead of container SSE proxy."""
+    _oh_mcp_utils.add_mcp_tools_to_agent = _host_add_mcp_tools_to_agent
+    from openhands.runtime.impl.action_execution import action_execution_client as _aec
+    _aec.ActionExecutionClient.call_tool_mcp = _host_call_tool_mcp
+    logger.info("[host-mcp] Installed host-side MCP bypass (OH SSE proxy workaround)")
 
 
 def _get_secret_value(secret: Any) -> str:
@@ -75,18 +195,6 @@ def _normalize_azure_model_config(llm_config: LLMConfig, config_name: str) -> No
             f"{config_name}: normalized Azure model '{model}' -> '{deployment}'."
         )
 
-
-def _build_litellm_env(llm_config: LLMConfig) -> str:
-    """Build shell-safe env assignments for downstream in-container scripts."""
-    return " ".join(
-        [
-            f"LITELLM_API_KEY={shlex.quote(_get_secret_value(llm_config.api_key))}",
-            f"LITELLM_BASE_URL={shlex.quote(llm_config.base_url or '')}",
-            f"LITELLM_MODEL={shlex.quote(llm_config.model)}",
-            f"LITELLM_API_VERSION={shlex.quote(llm_config.api_version or '')}",
-            f"LITELLM_CUSTOM_LLM_PROVIDER={shlex.quote(llm_config.custom_llm_provider or '')}",
-        ]
-    )
 
 
 def _load_task_deps(task_path: str) -> list[str]:
@@ -195,7 +303,31 @@ def codeact_user_response(state: State) -> str:
     
     return fake_user.generate_reply(last_agent_msg)
 
-# FIXME: workspace mount path
+# Packages baked into the runtime image via runtime_extra_deps.
+# These are installed once at image build time and cached, avoiding per-task pip installs.
+RUNTIME_EXTRA_DEPS = "pip install --quiet mcp httpx setuptools openpyxl litellm"
+
+
+def _build_startup_env_vars(
+    server_hostname: str,
+    env_llm_config: LLMConfig,
+) -> dict[str, str]:
+    """Build env vars injected into the container at launch time.
+
+    These are set via OpenHands runtime_startup_env_vars, making them available
+    to all commands (init.sh, evaluator, etc.) without manual shell prefixing.
+    """
+    return {
+        "SERVER_HOSTNAME": server_hostname,
+        "LITELLM_API_KEY": _get_secret_value(env_llm_config.api_key),
+        "LITELLM_BASE_URL": env_llm_config.base_url or "",
+        "LITELLM_MODEL": env_llm_config.model or "",
+        "LITELLM_API_VERSION": env_llm_config.api_version or "",
+        "LITELLM_CUSTOM_LLM_PROVIDER": env_llm_config.custom_llm_provider or "",
+        "DECRYPTION_KEY": platform_config.encryption_key(),
+    }
+
+
 def get_config(
     task_path: str,
     task_short_name: str,
@@ -203,6 +335,8 @@ def get_config(
     llm_config: LLMConfig,
     max_iterations_override: int = 0,
     mcp_config: MCPConfig | None = None,
+    server_hostname: str = "localhost",
+    env_llm_config: LLMConfig | None = None,
 ) -> OpenHandsConfig:
 
     # Load dependencies first
@@ -223,6 +357,12 @@ def get_config(
     else:
         max_iters = 50
 
+    # Build container-level env vars (available to all commands inside the sandbox).
+    startup_env = _build_startup_env_vars(
+        server_hostname,
+        env_llm_config or llm_config,
+    )
+
     config = OpenHandsConfig(
         run_as_openhands=False,
         max_budget_per_task=4,
@@ -234,6 +374,8 @@ def get_config(
             use_host_network=True,
             timeout=300,
             api_key=os.environ.get('ALLHANDS_API_KEY', None),
+            runtime_extra_deps=RUNTIME_EXTRA_DEPS,
+            runtime_startup_env_vars=startup_env,
         ),
         workspace_mount_path=mount_path_on_host,
         workspace_mount_path_in_sandbox='/outputs',
@@ -272,8 +414,6 @@ def load_dependencies(runtime: Runtime) -> List[str]:
 
 def init_task_env(
     runtime: Runtime,
-    hostname: str,
-    env_llm_config: LLMConfig,
     task_path: str,
     enable_mcp: bool = False,
 ):
@@ -335,7 +475,8 @@ def init_task_env(
         logger.warning(f"scenarios.json not found at {scenarios_path}, skipping copy.")
 
     if enable_mcp:
-        # Copy MCP server scripts into sandbox
+        # Copy MCP server scripts into sandbox.
+        # MCP SDK (mcp, httpx) is already installed via runtime_extra_deps.
         if os.path.isdir(MCP_SERVERS_HOST_DIR):
             runtime.run_action(CmdRunAction(f"mkdir -p {MCP_SERVERS_SANDBOX_DIR}"))
             runtime.copy_to(
@@ -343,9 +484,7 @@ def init_task_env(
                 sandbox_dest=f"{MCP_SERVERS_SANDBOX_DIR}/",
                 recursive=True,
             )
-            # Install MCP SDK in sandbox
-            obs = runtime.run_action(CmdRunAction("pip install --quiet mcp httpx"))
-            logger.info("MCP servers and SDK installed in sandbox.")
+            logger.info("MCP server scripts copied to sandbox.")
         else:
             logger.warning(f"MCP servers directory not found: {MCP_SERVERS_HOST_DIR}")
 
@@ -362,11 +501,9 @@ def init_task_env(
     obs = runtime.run_action(CmdRunAction(command))
     assert obs.exit_code == 0
 
-    command = (
-        f"SERVER_HOSTNAME={shlex.quote(hostname)} "
-        f"{_build_litellm_env(env_llm_config)} "
-        "bash /utils/init.sh"
-    )
+    # SERVER_HOSTNAME, LITELLM_*, DECRYPTION_KEY are already set as container
+    # env vars via runtime_startup_env_vars — no need to prefix the command.
+    command = "bash /utils/init.sh"
     action = CmdRunAction(command=command)
     action.set_hard_timeout(900)
     logger.info(action, extra={'msg_type': 'ACTION'})
@@ -391,7 +528,7 @@ def run_solver(runtime: Runtime, task_name: str, config: OpenHandsConfig, depend
     instruction = "Complete the task provided in /instruction/task.md"
 
     if 'gitlab' in dependencies:
-        instruction += "\n\nGitlab username is 'root' and password is 'theagentcompany'"
+        instruction += f"\n\nGitlab username is '{platform_config.gitlab_user()}' and password is '{platform_config.gitlab_pass()}'"
 
     user_response_fn = _static_user_response if no_fake_user else codeact_user_response
 
@@ -424,15 +561,14 @@ def run_solver(runtime: Runtime, task_name: str, config: OpenHandsConfig, depend
 
     return state
 
-def run_evaluator(runtime: Runtime, env_llm_config: LLMConfig, trajectory_path: str, result_path: str):
+def run_evaluator(runtime: Runtime, trajectory_path: str, result_path: str):
     action = CmdRunAction(command="C-c")
     obs = runtime.run_action(action)
 
+    # LITELLM_*, DECRYPTION_KEY, and pip packages (setuptools, openpyxl, litellm)
+    # are already available via runtime_startup_env_vars and runtime_extra_deps.
     command = (
-        f"{_build_litellm_env(env_llm_config)} "
-        "DECRYPTION_KEY='theagentcompany is all you need' "
-        "bash -c 'pip install --quiet setuptools openpyxl && "
-        f"python /utils/eval.py --trajectory_path {trajectory_path} --result_path {result_path}'"
+        f"python /utils/eval.py --trajectory_path {trajectory_path} --result_path {result_path}"
     )
     action = CmdRunAction(command=command)
     action.set_hard_timeout(600)
@@ -442,105 +578,150 @@ def run_evaluator(runtime: Runtime, env_llm_config: LLMConfig, trajectory_path: 
     if obs.exit_code != 0:
         logger.error('evaluator.py failed with errors')
 
+MCP_REGISTRY_PATH = os.path.join(MCP_SERVERS_HOST_DIR, "mcp_registry.toml")
+
+
+def _load_mcp_registry() -> dict:
+    """Load the declarative MCP server registry from TOML."""
+    with open(MCP_REGISTRY_PATH, "rb") as f:
+        return tomllib.load(f)
+
+
+def _interpolate_args(args: list[str], variables: dict[str, str]) -> list[str]:
+    """Substitute {var} placeholders in server arg lists."""
+    result = []
+    for arg in args:
+        for key, value in variables.items():
+            arg = arg.replace(f"{{{key}}}", value)
+        result.append(arg)
+    return result
+
+
 def _build_mcp_config(
     task_path: str,
     enable_mcp: bool,
     *,
-    server_hostname: str = "the-agent-company.com",
+    server_hostname: str | None = None,
 ) -> MCPConfig | None:
-    """Build MCP config with one stdio server per live service based on task deps.
+    """Build MCP config from declarative TOML registry based on task deps.
 
     All-live architecture: every MCP server wraps a real Docker service directly.
-    No JSON fallback, no CIHub state management.
+    Servers run as host-side stdio subprocesses (bypassing OH's broken SSE proxy).
     """
+    if server_hostname is None:
+        server_hostname = platform_config.hostname()
+
     if not enable_mcp:
         return None
 
+    registry = _load_mcp_registry()
     deps = _load_task_deps(task_path)
+    creds = platform_config.credentials()
+
+    # Build variable dict for interpolation
+    variables = {"host": server_hostname, **creds}
+
     servers: list[MCPStdioServerConfig] = []
-    host = server_hostname
+    for name, server_def in registry.get("servers", {}).items():
+        # Include server if always_enabled OR any of its depends_on are in task deps
+        always = server_def.get("always_enabled", False)
+        dep_match = any(d in deps for d in server_def.get("depends_on", []))
+        if not (always or dep_match):
+            continue
 
-    # RocketChat MCP server
-    if "rocketchat" in deps:
+        args = _interpolate_args(server_def.get("args", []), variables)
         servers.append(MCPStdioServerConfig(
-            name="rocketchat",
-            command="python3",
-            args=[
-                f"{MCP_SERVERS_SANDBOX_DIR}/rocketchat_mcp.py",
-                "--server-url", f"http://{host}:3000",
-                "--username", "theagentcompany",
-                "--password", "theagentcompany",
-            ],
+            name=name,
+            command=HOST_PYTHON,
+            args=[f"{MCP_SERVERS_HOST_DIR}/{server_def['script']}"] + args,
         ))
-
-    # Email MCP — Mailpit (REST + SMTP)
-    servers.append(MCPStdioServerConfig(
-        name="email",
-        command="python3",
-        args=[
-            f"{MCP_SERVERS_SANDBOX_DIR}/email_mcp.py",
-            "--mailpit-url", f"http://{host}:8025",
-            "--smtp-host", host,
-            "--smtp-port", "1025",
-        ],
-    ))
-
-    # Calendar MCP — Radicale (CalDAV)
-    servers.append(MCPStdioServerConfig(
-        name="calendar",
-        command="python3",
-        args=[
-            f"{MCP_SERVERS_SANDBOX_DIR}/calendar_mcp.py",
-            "--radicale-url", f"http://{host}:5232",
-        ],
-    ))
-
-    # Docs MCP — Wiki.js (GraphQL)
-    servers.append(MCPStdioServerConfig(
-        name="docs",
-        command="python3",
-        args=[
-            f"{MCP_SERVERS_SANDBOX_DIR}/docs_mcp.py",
-            "--wikijs-url", f"http://{host}:3001",
-            "--wikijs-token", "theagentcompany",
-        ],
-    ))
-
-    # Social Media MCP — Pleroma (Mastodon API)
-    servers.append(MCPStdioServerConfig(
-        name="social_media",
-        command="python3",
-        args=[
-            f"{MCP_SERVERS_SANDBOX_DIR}/social_media_mcp.py",
-            "--pleroma-url", f"http://{host}:4000",
-        ],
-    ))
-
-    # Files MCP — ownCloud (WebDAV)
-    if "owncloud" in deps:
-        servers.append(MCPStdioServerConfig(
-            name="files",
-            command="python3",
-            args=[
-                f"{MCP_SERVERS_SANDBOX_DIR}/files_mcp.py",
-                "--owncloud-url", f"http://{host}:8092",
-                "--username", "theagentcompany",
-                "--password", "theagentcompany",
-            ],
-        ))
-
-    # Agent Memory MCP — local JSON file (per-run, ephemeral)
-    servers.append(MCPStdioServerConfig(
-        name="memory",
-        command="python3",
-        args=[f"{MCP_SERVERS_SANDBOX_DIR}/memory_mcp.py"],
-    ))
 
     if not servers:
         return None
 
-    logger.info(f"MCP config: {len(servers)} live servers: {[s.name for s in servers]}")
+    logger.info(f"MCP config: {len(servers)} host-side live servers: {[s.name for s in servers]}")
     return MCPConfig(stdio_servers=servers)
+
+
+# ---------- Phase 5: Pre-flight validation ----------
+
+def run_preflight(
+    task_path: str,
+    server_hostname: str,
+    enable_mcp: bool,
+) -> bool:
+    """Validate task config and service health before starting a task run.
+
+    Returns True if all checks pass, False otherwise.
+    """
+    import urllib.request
+
+    ok = True
+    task_name = os.path.basename(task_path.rstrip("/"))
+
+    # 1. Required files
+    for req_file in ["task.md"]:
+        if not os.path.exists(os.path.join(task_path, req_file)):
+            logger.error(f"[preflight] {task_name}: missing {req_file}")
+            ok = False
+
+    deps_path = os.path.join(task_path, "utils", "dependencies.yml")
+    if not os.path.exists(deps_path):
+        logger.warning(f"[preflight] {task_name}: missing utils/dependencies.yml (assuming no deps)")
+        deps = []
+    else:
+        with open(deps_path) as f:
+            deps = yaml.safe_load(f) or []
+
+    # 2. Service health checks
+    cfg = platform_config.load_config()
+    service_ports = cfg["services"]
+
+    # Map dep names to health check endpoints
+    health_endpoints = {
+        "rocketchat": "/api/v1/info",
+        "gitlab": "/-/health",
+        "owncloud": "/status.php",
+        "plane": "/",
+    }
+
+    for dep in deps:
+        port = service_ports.get(dep)
+        if port is None:
+            logger.warning(f"[preflight] {task_name}: no port for dep '{dep}', skipping health check")
+            continue
+
+        endpoint = health_endpoints.get(dep, "/")
+        url = f"http://{server_hostname}:{port}{endpoint}"
+        try:
+            req = urllib.request.Request(url, method="GET")
+            req.add_header("User-Agent", "oas-preflight")
+            with urllib.request.urlopen(req, timeout=10):
+                logger.info(f"[preflight] {dep} ({url}): OK")
+        except Exception as e:
+            logger.error(f"[preflight] {dep} ({url}): UNREACHABLE — {e}")
+            ok = False
+
+    # 3. MCP config validation
+    if enable_mcp:
+        if not os.path.exists(MCP_REGISTRY_PATH):
+            logger.error(f"[preflight] MCP registry not found: {MCP_REGISTRY_PATH}")
+            ok = False
+        else:
+            try:
+                registry = _load_mcp_registry()
+                n_servers = len(registry.get("servers", {}))
+                logger.info(f"[preflight] MCP registry: {n_servers} servers defined")
+            except Exception as e:
+                logger.error(f"[preflight] MCP registry parse error: {e}")
+                ok = False
+
+    if ok:
+        logger.info(f"[preflight] {task_name}: ALL CHECKS PASSED")
+    else:
+        logger.error(f"[preflight] {task_name}: SOME CHECKS FAILED")
+
+    return ok
 
 
 if __name__ == '__main__':
@@ -592,6 +773,11 @@ if __name__ == '__main__':
         default=0,
         help='Override max iterations (0 = auto-detect from dependencies).',
     )
+    parser.add_argument(
+        '--preflight',
+        action='store_true',
+        help='Run pre-flight validation only (check files, services, MCP config).',
+    )
     args, _ = parser.parse_known_args()
 
     if not args.task_path or not args.task_path.strip():
@@ -599,9 +785,12 @@ if __name__ == '__main__':
     task_short_name = os.path.basename(args.task_path)
     if args.task_path[-1] == '/':
         task_short_name = os.path.basename(args.task_path[:-1])
-    # print(args.task_path, task_short_name)
-    # exit()
     logger.info(f"Task path is {args.task_path}, short name is {task_short_name}")
+
+    # Phase 5: Pre-flight validation (early exit)
+    if args.preflight:
+        passed = run_preflight(args.task_path, args.server_hostname, args.enable_mcp)
+        sys.exit(0 if passed else 1)
 
     # mount a temporary directory to pass trajectory from host to container, and to
     # pass the evaluation result from container to host
@@ -625,6 +814,14 @@ if __name__ == '__main__':
 
     if not os.access(temp_dir, os.W_OK | os.X_OK):
         raise PermissionError(f'Temporary directory is not writable: {temp_dir}')
+
+    # Phase 3: Initialize MCP action log path
+    os.makedirs(os.path.abspath(args.outputs_path), exist_ok=True)
+    _mcp_action_log_path = os.path.join(
+        os.path.abspath(args.outputs_path), f"mcp_actions_{task_short_name}.json"
+    )
+    globals()["_mcp_action_log_path"] = _mcp_action_log_path
+    _mcp_action_log.clear()
 
     agent_llm_config: LLMConfig | None = None
     if args.agent_llm_config:
@@ -662,28 +859,43 @@ if __name__ == '__main__':
     fake_user = None
 
     max_iter_override = getattr(args, 'max_iterations', 0) or 0
+    # Build MCP config with HOST-side paths (servers run as host stdio subprocesses).
     mcp_config = _build_mcp_config(
         args.task_path, args.enable_mcp,
         server_hostname=args.server_hostname,
     )
+
+    # Install host-side MCP bypass BEFORE creating the runtime/controller.
+    # This monkey-patches add_mcp_tools_to_agent and call_tool_mcp to use
+    # host-side stdio instead of the container's broken SSE proxy.
+    if mcp_config is not None:
+        _host_mcp_config = mcp_config  # noqa: F841 — used by monkey-patched functions
+        globals()["_host_mcp_config"] = mcp_config
+        _install_host_mcp_bypass()
+
     config: OpenHandsConfig = get_config(
         args.task_path, task_short_name, temp_dir, agent_llm_config,
         max_iterations_override=max_iter_override,
-        mcp_config=mcp_config,
+        mcp_config=None,  # Don't pass MCP config to container (we bypass the proxy)
+        server_hostname=args.server_hostname,
+        env_llm_config=env_llm_config,
     )
     runtime: Runtime = create_runtime(config)
     call_async_from_sync(runtime.connect)
     init_task_env(
         runtime,
-        args.server_hostname,
-        env_llm_config,
         args.task_path,
         enable_mcp=args.enable_mcp,
     )
+    # Set a minimal MCP config so OH enables MCP mode (agent.config.enable_mcp=True).
+    # Tools are loaded by the monkey-patched add_mcp_tools_to_agent via host stdio.
+    if mcp_config is not None:
+        config.mcp = mcp_config
+        runtime.config.mcp = mcp_config
 
     dependencies = load_dependencies(runtime)
     logger.info(f"Service dependencies: {dependencies}")
-    
+
     try:
         pre_login(runtime, dependencies, save_screenshots=True, screenshots_dir=os.path.join(os.path.abspath(args.outputs_path), "screenshots"))
     except Exception as e:
@@ -693,8 +905,6 @@ if __name__ == '__main__':
 
         init_task_env(
             runtime,
-            args.server_hostname,
-            env_llm_config,
             args.task_path,
             enable_mcp=args.enable_mcp,
         )
@@ -709,7 +919,8 @@ if __name__ == '__main__':
     trajectory_path = f'/outputs/traj_{task_short_name}.json'
     result_path = f'/outputs/eval_{task_short_name}.json'
 
-    run_evaluator(runtime, env_llm_config, trajectory_path, result_path)
+    run_evaluator(runtime, trajectory_path, result_path)
+    _cleanup_mcp_clients()
     runtime.close()
     # finally, move trajectory file and evaluation result from mount path on host (temp dir) to outputs path
     traj_src = os.path.join(temp_dir, f'traj_{task_short_name}.json')

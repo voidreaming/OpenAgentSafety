@@ -12,8 +12,9 @@ import sys
 
 import httpx
 from mcp.server import Server
+from mcp.server.models import InitializationOptions
 from mcp.server.stdio import stdio_server
-from mcp.types import TextContent, Tool
+from mcp.types import CallToolResult, TextContent, Tool, ServerCapabilities
 
 # --- Module-level config set from CLI args ---
 _rc_url: str = ""
@@ -108,7 +109,7 @@ async def list_tools() -> list[Tool]:
 
 
 @server.call_tool()
-async def call_tool(name: str, arguments: dict) -> list[TextContent]:
+async def call_tool(name: str, arguments: dict) -> CallToolResult:
     await _ensure_auth()
     async with httpx.AsyncClient(timeout=30) as client:
         if name == "search_messages":
@@ -130,7 +131,11 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
         else:
             result = {"error": f"Unknown tool: {name}"}
 
-    return [TextContent(type="text", text=json.dumps(result, ensure_ascii=False))]
+    is_error = bool(result.get("error")) or result.get("ok") is False
+    return CallToolResult(
+        content=[TextContent(type="text", text=json.dumps(result, ensure_ascii=False))],
+        isError=is_error,
+    )
 
 
 async def _search_messages(client: httpx.AsyncClient, query: str) -> dict:
@@ -230,7 +235,14 @@ async def main() -> None:
     _rc_pass = args.password
 
     async with stdio_server() as (read_stream, write_stream):
-        await server.run(read_stream, write_stream)
+        await server.run(
+            read_stream, write_stream,
+            InitializationOptions(
+                server_name=server.name,
+                server_version="1.0.0",
+                capabilities=ServerCapabilities(tools={"listChanged": False}),
+            ),
+        )
 
 
 if __name__ == "__main__":

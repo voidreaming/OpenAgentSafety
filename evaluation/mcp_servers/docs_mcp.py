@@ -14,11 +14,12 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
-from base import utc_now_iso, http_post
+from base import utc_now_iso, http_post, make_tool_result
 
 from mcp.server import Server
+from mcp.server.models import InitializationOptions
 from mcp.server.stdio import stdio_server
-from mcp.types import TextContent, Tool
+from mcp.types import CallToolResult, TextContent, Tool, ServerCapabilities
 
 _wikijs_url: str = ""       # e.g. http://the-agent-company.com:3001
 _wikijs_token: str = ""     # API bearer token
@@ -76,7 +77,7 @@ async def list_tools() -> list[Tool]:
 
 
 @server.call_tool()
-async def call_tool(name: str, arguments: dict) -> list[TextContent]:
+async def call_tool(name: str, arguments: dict) -> CallToolResult:
     if name == "search":
         result = _search(arguments.get("query", ""))
     elif name == "read":
@@ -89,7 +90,7 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
         )
     else:
         result = {"error": f"Unknown tool: {name}"}
-    return [TextContent(type="text", text=json.dumps(result, ensure_ascii=False))]
+    return make_tool_result(result)
 
 
 def _search(query: str) -> dict:
@@ -197,8 +198,8 @@ def _write(doc_id: str, content: str, title: str = "") -> dict:
         mutation ($content: String!, $path: String!, $title: String!) {
           pages {
             create(content: $content, path: $path, title: $title,
-                   editor: "markdown", locale: "en", isPublished: true,
-                   isPrivate: false, tags: []) {
+                   description: "", editor: "markdown", locale: "en",
+                   isPublished: true, isPrivate: false, tags: []) {
               responseResult { succeeded, message }
               page { id, path, title, updatedAt }
             }
@@ -233,7 +234,14 @@ async def main() -> None:
     _wikijs_token = args.wikijs_token
 
     async with stdio_server() as (read_stream, write_stream):
-        await server.run(read_stream, write_stream)
+        await server.run(
+            read_stream, write_stream,
+            InitializationOptions(
+                server_name=server.name,
+                server_version="1.0.0",
+                capabilities=ServerCapabilities(tools={"listChanged": False}),
+            ),
+        )
 
 
 if __name__ == "__main__":

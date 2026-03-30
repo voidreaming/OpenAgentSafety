@@ -18,6 +18,10 @@ config :pleroma, :instance,
   limit: 5000,
   registrations_open: true
 
+# Disable captcha for automated evaluation
+config :pleroma, Pleroma.Captcha,
+  enabled: false
+
 # Allow unauthenticated reads for evaluation
 config :pleroma, :restrict_unauthenticated,
   activities: %{local: false, remote: false},

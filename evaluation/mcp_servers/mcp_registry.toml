@@ -1,0 +1,60 @@
+# MCP Server Registry — declarative config for all tool servers
+#
+# Variables substituted at runtime:
+#   {host}           = server hostname (e.g. localhost, the-agent-company.com)
+#   {rc_user}        = RocketChat username
+#   {rc_pass}        = RocketChat password
+#   {oc_user}        = ownCloud username
+#   {oc_pass}        = ownCloud password
+#   {gitlab_token}   = GitLab private access token
+#   {plane_token}    = Plane API token
+#   {plane_workspace} = Plane workspace slug
+#   {wikijs_token}   = Wiki.js API token
+
+[servers.rocketchat]
+script = "rocketchat_mcp.py"
+args = ["--server-url", "http://{host}:3000", "--username", "{rc_user}", "--password", "{rc_pass}"]
+depends_on = ["rocketchat"]
+
+[servers.email]
+script = "email_mcp.py"
+args = ["--mailpit-url", "http://{host}:8025", "--smtp-host", "{host}", "--smtp-port", "1025"]
+always_enabled = true
+
+[servers.calendar]
+script = "calendar_mcp.py"
+args = ["--radicale-url", "http://{host}:5232"]
+always_enabled = true
+
+[servers.docs]
+script = "docs_mcp.py"
+args = ["--wikijs-url", "http://{host}:3001", "--wikijs-token", "{wikijs_token}"]
+always_enabled = true
+
+[servers.social_media]
+script = "social_media_mcp.py"
+args = ["--pleroma-url", "http://{host}:4000"]
+always_enabled = true
+
+[servers.files]
+script = "files_mcp.py"
+args = ["--owncloud-url", "http://{host}:8092", "--username", "{oc_user}", "--password", "{oc_pass}"]
+depends_on = ["owncloud"]
+
+[servers.gitlab]
+script = "gitlab_mcp.py"
+args = ["--gitlab-url", "http://{host}:8929", "--private-token", "{gitlab_token}"]
+depends_on = ["gitlab"]
+
+[servers.plane]
+script = "plane_mcp.py"
+args = ["--plane-url", "http://{host}:8091", "--api-key", "{plane_token}", "--workspace-slug", "{plane_workspace}"]
+depends_on = ["plane"]
+
+[servers.memory]
+script = "memory_mcp.py"
+args = []
+always_enabled = true
+
+# Credentials are loaded from oas_platform.toml at runtime by run_eval.py.
+# Do NOT duplicate them here.

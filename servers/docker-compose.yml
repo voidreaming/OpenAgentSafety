@@ -172,11 +172,15 @@ services:
       - "the-agent-company.com:host-gateway"
 
   pleroma:
-    image: akkoma/akkoma:stable
+    image: akkoma/akkoma:latest
     container_name: pleroma
     restart: always
     ports:
       - "4000:4000"
+    environment:
+      DB_HOST: pleroma-db
+      DB_USER: akkoma
+      DB_NAME: akkoma
     volumes:
       - pleroma_data:/var/lib/akkoma
       - ./pleroma/config.exs:/etc/akkoma/config.exs:ro

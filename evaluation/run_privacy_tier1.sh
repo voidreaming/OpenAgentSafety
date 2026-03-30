@@ -97,7 +97,7 @@ for task_dir in "${TASK_DIRS[@]}"; do
     echo "=========================================="
 
     cd "$SCRIPT_DIR"
-    "$POETRY_BIN" run python run_eval.py \
+    conda run -n openagentsafety python run_eval.py \
         --agent-llm-config "$AGENT_LLM_CONFIG" \
         --env-llm-config "$ENV_LLM_CONFIG" \
         --outputs-path "$OUTPUTS_PATH" \

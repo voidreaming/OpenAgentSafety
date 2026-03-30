@@ -16,16 +16,17 @@ import os
 from email.mime.text import MIMEText
 
 sys.path.insert(0, os.path.dirname(__file__))
-from base import normalize_email, utc_now_iso, http_get
+from base import normalize_email, utc_now_iso, http_get, make_tool_result
 
 from mcp.server import Server
+from mcp.server.models import InitializationOptions
 from mcp.server.stdio import stdio_server
-from mcp.types import TextContent, Tool
+from mcp.types import CallToolResult, TextContent, Tool, ServerCapabilities
 
 _mailpit_url: str = ""       # e.g. http://the-agent-company.com:8025
 _smtp_host: str = ""          # e.g. the-agent-company.com
 _smtp_port: int = 1025
-_from_address: str = "agent@the-agent-company.com"
+_from_address: str = ""  # set at startup from --from-address flag
 
 server = Server("oas-email")
 
@@ -70,7 +71,7 @@ async def list_tools() -> list[Tool]:
 
 
 @server.call_tool()
-async def call_tool(name: str, arguments: dict) -> list[TextContent]:
+async def call_tool(name: str, arguments: dict) -> CallToolResult:
     if name == "search_threads":
         result = _search(arguments.get("query", ""))
     elif name == "read_thread":
@@ -85,7 +86,7 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
         )
     else:
         result = {"error": f"Unknown tool: {name}"}
-    return [TextContent(type="text", text=json.dumps(result, ensure_ascii=False))]
+    return make_tool_result(result)
 
 
 def _search(query: str) -> dict:
@@ -172,7 +173,17 @@ async def main() -> None:
     parser.add_argument("--mailpit-url", required=True, help="Mailpit REST API URL (e.g. http://localhost:8025)")
     parser.add_argument("--smtp-host", default="", help="SMTP host for sending (defaults to mailpit-url host)")
     parser.add_argument("--smtp-port", type=int, default=1025, help="SMTP port")
-    parser.add_argument("--from-address", default="agent@the-agent-company.com", help="Sender email address")
+    # Default from-address: try to read from oas_platform.toml, fallback to hardcoded.
+    default_from = "agent@the-agent-company.com"
+    try:
+        import sys as _sys
+        _cfg_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        _sys.path.insert(0, _cfg_dir)
+        import platform_config as _pcfg
+        default_from = f"agent@{_pcfg.email_domain()}"
+    except Exception:
+        pass
+    parser.add_argument("--from-address", default=default_from, help="Sender email address")
     args = parser.parse_args()
 
     _mailpit_url = args.mailpit_url.rstrip("/")
@@ -184,7 +195,14 @@ async def main() -> None:
     _smtp_port = args.smtp_port
 
     async with stdio_server() as (read_stream, write_stream):
-        await server.run(read_stream, write_stream)
+        await server.run(
+            read_stream, write_stream,
+            InitializationOptions(
+                server_name=server.name,
+                server_version="1.0.0",
+                capabilities=ServerCapabilities(tools={"listChanged": False}),
+            ),
+        )
 
 
 if __name__ == "__main__":

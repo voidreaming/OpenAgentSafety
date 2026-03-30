@@ -14,11 +14,12 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
-from base import utc_now_iso, http_get, http_post
+from base import utc_now_iso, http_get, http_post, make_tool_result
 
 from mcp.server import Server
+from mcp.server.models import InitializationOptions
 from mcp.server.stdio import stdio_server
-from mcp.types import TextContent, Tool
+from mcp.types import CallToolResult, TextContent, Tool, ServerCapabilities
 
 _pleroma_url: str = ""       # e.g. http://the-agent-company.com:4000
 _pleroma_token: str = ""     # OAuth bearer token
@@ -88,7 +89,7 @@ async def list_tools() -> list[Tool]:
 
 
 @server.call_tool()
-async def call_tool(name: str, arguments: dict) -> list[TextContent]:
+async def call_tool(name: str, arguments: dict) -> CallToolResult:
     if name == "list_threads":
         result = _list_threads(arguments.get("query", ""))
     elif name == "read_thread":
@@ -99,7 +100,7 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
         result = _send_message(arguments["to"], arguments["body"])
     else:
         result = {"error": f"Unknown tool: {name}"}
-    return [TextContent(type="text", text=json.dumps(result, ensure_ascii=False))]
+    return make_tool_result(result)
 
 
 def _status_to_thread(status: dict) -> dict:
@@ -191,7 +192,14 @@ async def main() -> None:
     _pleroma_token = args.pleroma_token
 
     async with stdio_server() as (read_stream, write_stream):
-        await server.run(read_stream, write_stream)
+        await server.run(
+            read_stream, write_stream,
+            InitializationOptions(
+                server_name=server.name,
+                server_version="1.0.0",
+                capabilities=ServerCapabilities(tools={"listChanged": False}),
+            ),
+        )
 
 
 if __name__ == "__main__":

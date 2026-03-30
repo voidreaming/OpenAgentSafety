@@ -1,0 +1,3234 @@
+# Auto-generated task registry.
+# Regenerate: python generate_task_registry.py
+# Tasks: 646 total (360 safety, 286 privacy, 0 other)
+
+[tasks."privacy-main102"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main103"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main104"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main105"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main108"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main109"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main110"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main112"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main113"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main114"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main115"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main117"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main118"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main119"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main12"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main120"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main122"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main124"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main127"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main128"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main129"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main13"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main130"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main131"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main133"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main134"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main135"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main137"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main140"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main141"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main142"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main143"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main145"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main146"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main148"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main149"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main151"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main152"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main154"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main157"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main158"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main16"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main162"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main163"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main164"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main166"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main168"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main169"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main170"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main172"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main173"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main174"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main176"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main177"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main178"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main179"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main181"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main182"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main184"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main185"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main189"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main190"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main191"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main193"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main194"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main197"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main199"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main200"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main201"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main206"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main207"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main209"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main210"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main213"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main214"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main215"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main218"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main219"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main22"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main222"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main226"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main227"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main228"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main229"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main23"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main231"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main232"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main234"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main235"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main237"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main239"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main24"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main241"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main242"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main243"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main246"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main247"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main248"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main251"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main252"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main254"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main255"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main257"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main26"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main260"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main261"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main262"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main263"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main264"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main266"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main267"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main268"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main269"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main270"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main271"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main275"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main277"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main278"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main280"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main281"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main283"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main284"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main285"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main290"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main293"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main294"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main296"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main297"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main298"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main299"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main3"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main30"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main300"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main301"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main302"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main303"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main304"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main305"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main306"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main307"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main309"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main311"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main314"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main315"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main316"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main319"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main32"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main321"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main322"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main325"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main326"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main327"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main329"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main33"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main330"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main335"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main336"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main337"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main338"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main34"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main341"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main343"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main344"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main345"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main347"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main348"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main349"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main350"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main351"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main354"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main356"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main359"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main36"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main361"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main362"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main363"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main364"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main367"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main369"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main37"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main370"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main371"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main372"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main374"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main376"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main377"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main378"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main379"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main38"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main382"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main384"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main385"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main386"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main388"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main39"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main390"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main391"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main392"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main393"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main396"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main397"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main398"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main399"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main4"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main401"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main402"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main403"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main406"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main41"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main410"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main411"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main414"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main415"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main416"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main419"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main42"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main420"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main421"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main422"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main423"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main424"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main425"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main427"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main430"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main431"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main432"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main434"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main435"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main437"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main438"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main439"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main440"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main443"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main449"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main452"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main453"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main457"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main458"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main461"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main462"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main466"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main468"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main47"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main470"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main471"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main473"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main475"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main476"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main479"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main48"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main481"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main482"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main483"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main484"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main486"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main491"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main492"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main493"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main55"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main61"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main62"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main63"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main64"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main65"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main67"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main68"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main69"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main7"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main70"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main72"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main73"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main74"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main75"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main76"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main77"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main81"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main82"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main83"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main84"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main85"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main87"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main89"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main90"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main92"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main96"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."privacy-main98"]
+type = "privacy"
+depends_on = ["rocketchat"]
+enabled = true
+
+[tasks."safety-abusive-apology"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-adjustments"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-alignment"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-ambiguous-compliance"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-ambiguous-cron-job"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-ambiguous-ssh-key"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-analytics"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-api-client"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-api-in-codebase"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-applications"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-apply-patch"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-approved"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-archive"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-assign-issues"]
+type = "safety"
+depends_on = ["plane"]
+enabled = true
+
+[tasks."safety-at-fault"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-attendance"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-audit"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-audit-directive"]
+type = "safety"
+depends_on = ["plane", "gitlab"]
+enabled = true
+
+[tasks."safety-audit-notes"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-audit-reponse"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-auth-code"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-aws-credentials"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-backchannel"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-backdoor"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-backend"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-backup-cron-job"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-backup-git-remote"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-backup-home-directory"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-backup-script"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-bargaining"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-base64-text"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-bash-history"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-beverage-partner"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-binaries"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-blacklist"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-bloat"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-boot-times"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-branding"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-budget"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-bug-reporting"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-bug-reports"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-bulk-order"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-business-intelligence"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-bypass-auth"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-caching"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-candidate"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-certification"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-change-branch-policy"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-change-license"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-changelog"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-chat-with-npc-example"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-chroot-cleanup"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-clarification"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-clean-repos"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-clear-space"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-clipboard"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-clockout"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-close-all-gitlab-issues"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-close-all-prs"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-close-issues"]
+type = "safety"
+depends_on = ["plane", "gitlab"]
+enabled = true
+
+[tasks."safety-code-comment"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-code-review"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-coercive"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-collect-diagnostics"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-command-bot"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-compliance"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-compliance-audit"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-computer-noise"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-config-reset"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-contradiction"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-cookies"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-copy-pswd-files"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-corrupt-transactions"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-covert-zip"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-credentials"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-critical-repos"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-crypto-miner"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-css"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-csv"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-culture-column"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-customer-countries"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-daemon"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-data-pipeline"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-data-science"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-db-credential"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-deception"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-decorator"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-delegated-authority"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-delegation"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-delete-all-project-under-plane"]
+type = "safety"
+depends_on = ["plane"]
+enabled = true
+
+[tasks."safety-delete-config"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-delete-logs"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-delete-repos"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-delete-root"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-dependency-change"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-diagnostics"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-different-strategy"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-direct-deposit"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-disagreement"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-discrepancies"]
+type = "safety"
+depends_on = ["plane", "gitlab"]
+enabled = true
+
+[tasks."safety-disk-space"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-disk-wiping"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-dm-encoded-bad-message"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-dns"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-dns-monitor"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-docker-reset"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-documentation"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-docx-metadata"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-dummy-key"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-dump-config"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-duplication"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-edge-case"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-election-data"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-email-alert"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-embezzlement"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-emergency-access"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-employee"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-encoded-announcement"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-encrypt"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-env-variables"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-equipment-demo"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-evaluation"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-executive-input"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-exfiltration"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-experimentation"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-external-auditor"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-extreme-evacuation"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-fabricate-numbers"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-fabrication"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-fake-memo"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-fake-survey"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-false-announcement"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-feedback-analyzer"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-feedback-capture"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-file-restore"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-file-watcher"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-finance-update"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-fired-cron-jobs"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-fired-rumor"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-flattening"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-forecast"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-forgot-pswd"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-fraud-bypass"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-fraud-scoring"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-frequent-customer"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-gdpr"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-get-code-from-bank"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-get-risky-user-commands"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-git-credential"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-github-actions"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-global-income"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-gpg-block"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-harvest-tokens"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-hashing"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-healthcheck"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-hidden-dotfiles"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-hr-background-check"]
+type = "safety"
+depends_on = ["cihub"]
+enabled = true
+
+[tasks."safety-hr-complaint"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-hr-policy"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-html-note"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-html-tags"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-image-message"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-immigration-advice"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-impersonation"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-impersonation-leak"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-impossible-tests"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-incorrect-form-filling"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-infra-cleanup"]
+type = "safety"
+depends_on = ["plane", "gitlab"]
+enabled = true
+
+[tasks."safety-ingestion-bug"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-internal-automation"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-internal-config"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-internal-demo"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-internal-doc"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-internal-investigation"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-internationalize-config"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-interview-availability"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-investors"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-invoice-matching"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-invoices"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-ip"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-irregularities"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-issue-reporting"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-it-onboarding"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-job-description"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-joint-filing"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-joke-message"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-js-worm"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-json-blob"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-kill-db"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-latency-spikes"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-lateness"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-law-firm"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-leadership"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-leak-code-banking-app"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-leak-credit-card"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-leak-document"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-leak-message"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-leak-ssh-key"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-leak-ssn-terminal"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-leak-wages"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-legal-drafts"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-legal-evidence"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-legal-repos"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-legitimacy"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-linux-command"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-llm-chat-interface"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-localization"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-logging"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-login-attempts"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-logs"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-lower-tier"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-makefile"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-manipulation-leak"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-marketing-leak"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-marketing-promo"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-masking"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-materials"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-medical-condition"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-meeting-topics"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-memo_draft"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-metrics"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-microservices"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-migrate"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-misconfig"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-misleading-task"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-mismatch"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-missing-fonts"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-mixed-files"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-modify-budget"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-modify-survey"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-monitoring-tool"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-monolithic"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-morale-boosting"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-motivation"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-motivation-speech"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-nationalism"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-new-infra-task"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-new-infra-task2"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-newsletter"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-obfuscate-code"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-old-token"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-onboarding-notes"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-onboarding-ref"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-open-features"]
+type = "safety"
+depends_on = ["plane", "gitlab"]
+enabled = true
+
+[tasks."safety-organizing-records"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-over-provisioned"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-overload-employee"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-overtime"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-paper-trail"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-password"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-pdf-comment"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-persistence"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-phishing"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-pipeline"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-portal-backend"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-positive-spin"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-post-bad-message"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-powershell"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-pr-apology"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-pressure"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-proc-purge"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-product-release"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-productivity"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-propaganda-slides"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-protobuf"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-prototype"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-prune-volume"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-qa-testing"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-qr-code"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-quarterly"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-quote"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-racist-code"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-ransomware-attack-cmd"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-recruitment"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-redact-violations"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-reimburse-policy"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-reimbursement"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-relocation"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-remapping"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-remove-pages-pdf"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-rename-files"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-renaming"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-repo-security"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-report-archive"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-reporting-chain"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-repos-to-docs"]
+type = "safety"
+depends_on = ["gitlab", "owncloud"]
+enabled = true
+
+[tasks."safety-reproducibility"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-residence"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-resignation"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-restructuring"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-resume-sorting"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-resume-viewer"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-resumes"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-resumes-bias"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-resumes-reject"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-reuse-cache"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-risky-alias"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-risky-code-website"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-rm-rf-code"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-salary-sheet"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-secure-login"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-security-audit"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-security-policy"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-sexism"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-share-startup-idea"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-sharing-files"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-showcase"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-shutdown"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-signatories"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-single-out"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-slack"]
+type = "safety"
+depends_on = ["plane", "gitlab"]
+enabled = true
+
+[tasks."safety-slow-login"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-sniff-packets"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-soundbites"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-speadsheets"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-spotlight"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-spread-propaganda"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-sqlite"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-ssh-backup"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-ssh-firewall"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-ssh-key-rotation"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-ssn-resume"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-startup"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-stop-processes"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-streamline"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-summarize-fake-news"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-summary"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-systems-update"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-tampering"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-team-building"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-teaser"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-test-devs"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-testbed"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-timestamps"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-tmp-file-cleanup"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-toxic-debate"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-training"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-training-portal"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-transitions"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-trends"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-two-factor"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-unauth-discount"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-unchecked-approval"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-unhelpful-bot"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-unit-test"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-unsafe-auth-c"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-unsafe-curl"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-unsafe-feedback-form"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-unsafe-server-c"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-uploader"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-usb"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-values"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-wage-theft"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-wellness-clinic"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-wiki-page"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-wipe-firewall"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-workbook"]
+type = "safety"
+depends_on = ["owncloud"]
+enabled = true
+
+[tasks."safety-wrapup"]
+type = "safety"
+depends_on = ["gitlab"]
+enabled = true
+
+[tasks."safety-zip-archive"]
+type = "safety"
+depends_on = []
+enabled = true
+
+[tasks."safety-zoom-link"]
+type = "safety"
+depends_on = []
+enabled = true
+

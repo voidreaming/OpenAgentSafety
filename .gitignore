@@ -2,6 +2,7 @@
 evaluation/screenshots*/
 evaluation/outputs*/
 evaluation/config.toml
+evaluation/oas_platform.toml
 *download*
 *owncloud_data*
 *owncloud_apps*

@@ -9,6 +9,7 @@ from openhands.core.logger import openhands_logger as logger
 from openhands.events.action import BrowseInteractiveAction
 from openhands.events.observation import BrowserOutputObservation
 from openhands.runtime.base import Runtime
+import platform_config
 
 
 class ActionType(Enum):
@@ -158,50 +159,43 @@ def pre_login(runtime: Runtime, services: List[str], save_screenshots=True, scre
     Once logged in, the sessions would be cached in the browser, so OpenHands
     agent doesn't need to log in to these websites again.
     """
+    _hostname = platform_config.hostname()
+    _admin_user = platform_config.admin_user()
+    _admin_pass = platform_config.admin_pass()
+    _gitlab_user = platform_config.gitlab_user()
+    _gitlab_pass = platform_config.gitlab_pass()
+    _oc_port = platform_config.service_port("owncloud")
+    _gl_port = platform_config.service_port("gitlab")
+    _pl_port = platform_config.service_port("plane")
+
     owncloud_login_actions = [
-        GotoAction("http://the-agent-company.com:8092"),
+        GotoAction(f"http://{_hostname}:{_oc_port}"),
         NoopAction(1000),
         InputAction(
             "textbox '', clickable, focused, required",
-            "theagentcompany"
+            _admin_user,
         ),
         NoopAction(1000),
         InputAction(
             "textbox '', clickable, required",
-            "theagentcompany"
+            _admin_pass,
         ),
         NoopAction(1000),
         ClickAction("button '', clickable"),
         NoopAction(1000)
     ]
 
-    # rocketchat_login_actions = [
-    #     GotoAction("http://the-agent-company.com:3000"),
-    #     NoopAction(1000),
-    #     InputAction(
-    #         "textbox '', clickable, focused",
-    #         "theagentcompany"
-    #     ),
-    #     NoopAction(1000),
-    #     InputAction(
-    #         "textbox '', clickable",
-    #         "theagentcompany"
-    #     ),
-    #     NoopAction(1000),
-    #     ClickAction("button 'Login', clickable")
-    # ]
-
     gitlab_login_actions = [
-        GotoAction("http://the-agent-company.com:8929/users/sign_in"),
+        GotoAction(f"http://{_hostname}:{_gl_port}/users/sign_in"),
         NoopAction(1000),
         InputAction(
             "textbox 'Username or primary email'",
-            "root"
+            _gitlab_user,
         ),
         NoopAction(1000),
         InputAction(
             "textbox 'Password'",
-            "theagentcompany"
+            _gitlab_pass,
         ),
         NoopAction(1000),
         ClickAction("button 'Sign in', clickable")
@@ -210,7 +204,7 @@ def pre_login(runtime: Runtime, services: List[str], save_screenshots=True, scre
     # devnote: plane reset is not stable, and sometimes it fails to launch
     # in which case the login action will fail, and then we would skip the task
     plane_login_actions = [
-        GotoAction("http://the-agent-company.com:8091"),
+        GotoAction(f"http://{_hostname}:{_pl_port}"),
         NoopAction(1000),
         InputAction(
             "textbox 'Email', clickable, focused",
@@ -221,7 +215,7 @@ def pre_login(runtime: Runtime, services: List[str], save_screenshots=True, scre
         NoopAction(1000),
         InputAction(
             "textbox 'Enter password', clickable",
-            "theagentcompany"
+            _admin_pass,
         ),
         NoopAction(1000),
         ClickAction("button 'Go to workspace'")
