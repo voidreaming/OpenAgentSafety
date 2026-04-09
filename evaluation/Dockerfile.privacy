@@ -1,0 +1,25 @@
+# OAS Privacy Task Runner — extends the V1 agent-server with tools
+# needed for PrivacyLens live-service evaluation.
+#
+# Build:  docker build -f evaluation/Dockerfile.privacy -t oas-privacy-runner .
+# Used by: run_eval_v1.py --server-image oas-privacy-runner
+
+FROM ghcr.io/openhands/agent-server:latest-python
+
+USER root
+
+# Tools needed by init.sh, reset.sh, post_init.sh/py
+RUN apt-get update -qq && \
+    apt-get install -y --no-install-recommends curl dnsutils && \
+    rm -rf /var/lib/apt/lists/*
+
+# Python packages needed by post_init.py, evaluator, and OAS tasks
+RUN pip install --no-cache-dir --quiet \
+    cryptography mcp httpx setuptools openpyxl litellm requests
+
+# Pre-create OAS directories with open permissions
+RUN mkdir -p /workspace /instruction /npc /utils && \
+    chmod 777 /workspace /instruction /npc /utils
+
+# Switch back to unprivileged user
+USER openhands
