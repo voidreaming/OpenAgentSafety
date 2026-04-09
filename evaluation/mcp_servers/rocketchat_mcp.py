@@ -46,7 +46,10 @@ class RocketChatMCPServer(OASMCPServer):
         self._pass = args.password
 
     async def startup(self) -> None:
-        await self._ensure_auth()
+        # Don't auth at startup — auth lazily on first tool call.
+        # This prevents the stdio server from blocking during MCP initialize,
+        # which would cause create_mcp_tools() to time out.
+        pass
 
     async def health_check(self) -> dict[str, Any]:
         try:

@@ -529,10 +529,17 @@ class OASMCPServer(ABC):
 
         await self.startup()
 
-        health = await self.health_check()
-        if not health.get("ok"):
-            log.error("Health check FAILED for %s: %s",
-                      self.server_name, health.get("detail", "unknown"))
+        # Health check is non-blocking: run in background, don't delay
+        # the stdio loop. If the check fails, log it but continue.
+        # This is critical because create_mcp_tools() has a 30s timeout
+        # for all servers combined — any delay here causes timeout.
+        try:
+            health = await self.health_check()
+            if not health.get("ok"):
+                log.error("Health check FAILED for %s: %s",
+                          self.server_name, health.get("detail", "unknown"))
+        except Exception as exc:
+            log.warning("Health check error for %s: %s", self.server_name, exc)
 
         async with stdio_server() as (read_stream, write_stream):
             await self._server.run(

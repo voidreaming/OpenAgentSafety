@@ -40,7 +40,12 @@ class CalendarMCPServer(OASMCPServer):
         self._calendar_path = args.calendar_path
 
     async def startup(self) -> None:
-        self._ensure_calendar_collection()
+        # Ensure calendar collection lazily — don't block MCP initialize.
+        # MKCOL is idempotent so it's safe to call on first tool use.
+        try:
+            self._ensure_calendar_collection()
+        except Exception:
+            pass  # Will retry on first tool call
 
     async def health_check(self) -> dict[str, Any]:
         try:

@@ -93,9 +93,9 @@ def build_v1_mcp_config(
     registry = _load_registry()
     deps = _load_task_deps(task_path)
     creds = platform_config.credentials()
-    # Use the-agent-company.com as hostname inside the container
-    # (mapped to host IP via /etc/hosts in init_task_env)
-    variables = {"host": "the-agent-company.com", **creds}
+    # Use the container_hostname directly (host IP) to avoid
+    # /etc/hosts timing issues with the agent-server process.
+    variables = {"host": container_hostname, **creds}
 
     servers: dict[str, dict] = {}
     for name, server_def in registry.get("servers", {}).items():
@@ -107,6 +107,7 @@ def build_v1_mcp_config(
         servers[name] = {
             "command": container_python,
             "args": [f"{container_mcp_dir}/{server_def['script']}"] + args,
+            "timeout": 60000,  # 60s — some servers need auth which is slow
         }
 
     if not servers:
@@ -283,17 +284,19 @@ def main() -> None:
     if agent_llm_config is None:
         raise ValueError(f"Agent LLM config not found: {args.agent_llm_config}")
 
+    # --- Container hostname (bridge network → use host's real IP) ---
+    container_hostname = _host_ip()
+    logger.info("Container hostname: %s (host IP for bridge network)", container_hostname)
+
     # --- MCP config (native V1 — no monkey-patch) ---
-    mcp_config = build_v1_mcp_config(args.task_path, args.server_hostname, args.enable_mcp)
+    # Use host IP directly in MCP server URLs instead of the-agent-company.com
+    # hostname (avoids /etc/hosts timing issues in the container)
+    mcp_config = build_v1_mcp_config(args.task_path, container_hostname, args.enable_mcp)
 
     # --- Instruction ---
     instruction = "Complete the task provided in /instruction/task.md"
     if args.retrieval_guidance:
         instruction = _RETRIEVAL_GUIDANCE + "\n" + instruction
-
-    # --- Container hostname (bridge network → use host's real IP) ---
-    container_hostname = _host_ip()
-    logger.info("Container hostname: %s (host IP for bridge network)", container_hostname)
 
     # Env vars for the container (init.sh, post_init, evaluator)
     creds = platform_config.credentials()
@@ -314,11 +317,23 @@ def main() -> None:
         os.environ[k] = v
 
     # --- Create agent ---
+    # Build LLM config for V1. Azure requires azure/ prefix for litellm routing.
+    model_name = agent_llm_config.model or ""
+    if agent_llm_config.custom_llm_provider == "azure" and not model_name.startswith("azure/"):
+        model_name = f"azure/{model_name}"
+    # V1 SDK uses Responses API which requires api-version >= 2025-03-01-preview
+    api_version = agent_llm_config.api_version or None
+    if api_version and api_version < "2025-03-01":
+        api_version = "2025-03-01-preview"
+        logger.info("Upgraded Azure api_version to %s (V1 SDK Responses API requires it)", api_version)
+
     agent = Agent(
         llm=LLM(
-            model=agent_llm_config.model,
+            model=model_name,
             api_key=_get_secret_value(agent_llm_config.api_key),
             base_url=agent_llm_config.base_url or None,
+            api_version=api_version,
+            drop_params=True,
         ),
         mcp_config=mcp_config,
     )

@@ -18,8 +18,11 @@ RUN pip install --no-cache-dir --quiet \
     cryptography mcp httpx setuptools openpyxl litellm requests
 
 # Pre-create OAS directories with open permissions
-RUN mkdir -p /workspace /instruction /npc /utils && \
-    chmod 777 /workspace /instruction /npc /utils
+RUN mkdir -p /workspace /instruction /npc /utils /utils/mcp_servers && \
+    chmod 777 /workspace /instruction /npc /utils /utils/mcp_servers
+
+# Copy MCP server scripts into the image (avoids docker cp at runtime)
+COPY evaluation/mcp_servers/ /utils/mcp_servers/
 
 # Switch back to unprivileged user
 USER openhands
