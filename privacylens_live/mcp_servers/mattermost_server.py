@@ -131,6 +131,42 @@ async def _get_or_create_dm(
     return dm["id"]
 
 
+async def _resolve_user_ids_to_usernames(
+    user_ids: list[str], headers: dict[str, str]
+) -> dict[str, str]:
+    """Batch-resolve Mattermost user IDs to usernames via /api/v4/users/ids.
+
+    Returns a ``{user_id: username}`` map. Callers should fall back to the
+    raw user_id on a miss via ``id_to_name.get(uid, uid)``.
+
+    Failure handling: HTTP 401 propagates so the outer ``_authenticated_call``
+    can refresh the auth cache and retry. All other failures are tolerated
+    and logged at warning level — the caller will fall through to raw IDs
+    rather than turning a perf optimization into a tool failure.
+    """
+    if not user_ids:
+        return {}
+    try:
+        users = await http_post(
+            f"{API}/users/ids",
+            json_data=user_ids,
+            headers=headers,
+        )
+    except HTTPToolError as exc:
+        if exc.status_code == 401:
+            raise
+        logger.warning(
+            f"_resolve_user_ids_to_usernames: failed to resolve "
+            f"{len(user_ids)} ids ({exc}); falling back to raw IDs"
+        )
+        return {}
+    return {
+        u["id"]: u.get("username", u["id"])
+        for u in (users or [])
+        if isinstance(u, dict) and "id" in u
+    }
+
+
 # ── Tools ──
 
 
@@ -184,14 +220,14 @@ async def list_messages(
 ) -> dict:
     """List recent direct messages across all DM conversations.
 
-    `time` is a Mattermost epoch-milliseconds integer, not an ISO timestamp.
-    `sender` is a Mattermost user ID (cleanup pending — see Phase B).
+    `sender` is a Mattermost username, suitable for passing to send_message
+    as `recipient`. `time` is a Mattermost epoch-milliseconds integer.
     """
 
     async def _do(headers: dict[str, str]) -> list[dict[str, Any]]:
         channels = await http_get(f"{API}/users/me/channels", headers=headers)
         dm_channels = [c for c in channels if c.get("type") == "D"]
-        messages: list[dict[str, Any]] = []
+        raw_posts: list[dict[str, Any]] = []
         for ch in dm_channels[:10]:
             data = await http_get_params(
                 f"{API}/channels/{ch['id']}/posts",
@@ -203,15 +239,20 @@ async def list_messages(
             for post_id in order[:max_count]:
                 post = posts.get(post_id, {})
                 if post.get("message"):
-                    messages.append(
-                        {
-                            "message_id": post["id"],
-                            "sender": post.get("user_id", ""),
-                            "time": post.get("create_at", ""),
-                            "text": post["message"],
-                        }
-                    )
-        return messages
+                    raw_posts.append(post)
+
+        user_ids = list({p.get("user_id", "") for p in raw_posts if p.get("user_id")})
+        id_to_name = await _resolve_user_ids_to_usernames(user_ids, headers)
+
+        return [
+            {
+                "message_id": p["id"],
+                "sender": id_to_name.get(p.get("user_id", ""), p.get("user_id", "")),
+                "time": p.get("create_at", ""),
+                "text": p["message"],
+            }
+            for p in raw_posts
+        ]
 
     messages = await _authenticated_call(_do)
     return {"messages": messages[:max_count]}
@@ -231,12 +272,11 @@ async def search_messages(
 ) -> dict:
     """Search messages by keyword across all conversations.
 
-    `time` is a Mattermost epoch-milliseconds integer; `channel` is a
-    Mattermost channel ID, not a channel name; `sender` is a Mattermost
-    user ID (all three are cleanup items pending in Phase B).
+    `sender` is a Mattermost username, suitable for passing to send_message
+    as `recipient`. `time` is a Mattermost epoch-milliseconds integer.
     """
 
-    async def _do(headers: dict[str, str]) -> dict[str, Any]:
+    async def _do(headers: dict[str, str]) -> list[dict[str, Any]]:
         teams = await http_get(f"{API}/users/me/teams", headers=headers)
         if not teams:
             raise ToolError(
@@ -245,28 +285,34 @@ async def search_messages(
                 "(POST /api/v4/teams) before searching messages."
             )
         team_id = teams[0]["id"]
-        return await http_post(
+        data = await http_post(
             f"{API}/teams/{team_id}/posts/search",
             json_data={"terms": query, "is_or_search": True},
             headers=headers,
         )
 
-    data = await _authenticated_call(_do)
-    order = data.get("order", [])
-    posts = data.get("posts", {})
-    messages = []
-    for post_id in order[:20]:
-        post = posts.get(post_id, {})
-        if post.get("message"):
-            messages.append(
-                {
-                    "message_id": post["id"],
-                    "sender": post.get("user_id", ""),
-                    "time": post.get("create_at", ""),
-                    "text": post["message"],
-                    "channel": post.get("channel_id", ""),
-                }
-            )
+        order = data.get("order", [])
+        posts = data.get("posts", {})
+        raw_posts = [
+            posts.get(pid, {})
+            for pid in order[:20]
+            if posts.get(pid, {}).get("message")
+        ]
+
+        user_ids = list({p.get("user_id", "") for p in raw_posts if p.get("user_id")})
+        id_to_name = await _resolve_user_ids_to_usernames(user_ids, headers)
+
+        return [
+            {
+                "message_id": p["id"],
+                "sender": id_to_name.get(p.get("user_id", ""), p.get("user_id", "")),
+                "time": p.get("create_at", ""),
+                "text": p["message"],
+            }
+            for p in raw_posts
+        ]
+
+    messages = await _authenticated_call(_do)
     return {"messages": messages}
 
 
