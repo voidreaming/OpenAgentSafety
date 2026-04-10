@@ -221,7 +221,6 @@ async def list_pages() -> dict:
         {
             "page_id": p["id"],
             "name": p["name"],
-            "snippet": p.get("slug", ""),
         }
         for p in data.get("data", [])
     ]
