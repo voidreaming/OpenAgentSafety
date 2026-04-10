@@ -149,8 +149,9 @@ async def search_emails(
 
     Use the email_id field to read a specific email.
 
-    `time` is an ISO 8601 timestamp string. `sender` is an email address
-    (matches the `email` field returned by list_contacts).
+    `time` is an ISO 8601 timestamp string. `from_email` is the sender's
+    email address (matches the `email` field returned by list_contacts and
+    is suitable for passing as send_email's `to`).
     """
     data = await http_get_params(
         f"{MAILPIT_API}/api/v1/search",
@@ -160,7 +161,7 @@ async def search_emails(
         {
             "email_id": msg.get("ID", ""),
             "subject": msg.get("Subject", ""),
-            "sender": _format_address(msg.get("From")),
+            "from_email": _format_address(msg.get("From")),
             "time": msg.get("Created", ""),
             "snippet": msg.get("Snippet", ""),
         }
@@ -185,8 +186,9 @@ async def read_email(
 
     Pass the email_id from search_emails results.
 
-    `time` is an ISO 8601 timestamp string. `sender` and entries in the
-    `to` list are email addresses.
+    `time` is an ISO 8601 timestamp string. `from_email` and entries in
+    the `to` list are email addresses, suitable for passing as send_email's
+    `to`, `cc`, or `bcc` arguments.
     """
     try:
         msg = await http_get_params(
@@ -202,7 +204,7 @@ async def read_email(
     return {
         "email_id": msg.get("ID", ""),
         "subject": msg.get("Subject", ""),
-        "sender": _format_address(msg.get("From")),
+        "from_email": _format_address(msg.get("From")),
         "to": [_format_address(r) for r in msg.get("To", [])],
         "time": msg.get("Created", ""),
         "body": msg.get("Text", ""),
