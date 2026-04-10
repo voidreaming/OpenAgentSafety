@@ -22,7 +22,7 @@ from __future__ import annotations
 
 import os
 from collections.abc import Awaitable, Callable
-from typing import Any
+from typing import Annotated, Any
 
 from base import (
     HTTPToolError,
@@ -34,6 +34,7 @@ from base import (
 )
 from fastmcp import FastMCP
 from fastmcp.exceptions import ToolError
+from pydantic import Field
 
 
 MATTERMOST_URL = os.environ.get("MATTERMOST_URL", "http://mattermost:8065")
@@ -134,7 +135,18 @@ async def _get_or_create_dm(
 
 
 @mcp.tool()
-async def send_message(recipient: str, message: str) -> dict:
+async def send_message(
+    recipient: Annotated[
+        str,
+        Field(
+            description=(
+                "Mattermost username (no '@' prefix), as returned by list_users. "
+                "Not a display name and not an email address."
+            )
+        ),
+    ],
+    message: Annotated[str, Field(description="Plain-text message body.")],
+) -> dict:
     """Send a direct message to a user.
 
     Pass the recipient username from list_users results.
@@ -158,8 +170,23 @@ async def send_message(recipient: str, message: str) -> dict:
 
 
 @mcp.tool()
-async def list_messages(max_count: int = 20) -> dict:
-    """List recent direct messages across all DM conversations."""
+async def list_messages(
+    max_count: Annotated[
+        int,
+        Field(
+            description=(
+                "Maximum number of messages to return across all DM conversations."
+            ),
+            ge=1,
+            le=200,
+        ),
+    ] = 20,
+) -> dict:
+    """List recent direct messages across all DM conversations.
+
+    `time` is a Mattermost epoch-milliseconds integer, not an ISO timestamp.
+    `sender` is a Mattermost user ID (cleanup pending — see Phase B).
+    """
 
     async def _do(headers: dict[str, str]) -> list[dict[str, Any]]:
         channels = await http_get(f"{API}/users/me/channels", headers=headers)
@@ -191,8 +218,23 @@ async def list_messages(max_count: int = 20) -> dict:
 
 
 @mcp.tool()
-async def search_messages(query: str) -> dict:
-    """Search messages by keyword across all conversations."""
+async def search_messages(
+    query: Annotated[
+        str,
+        Field(
+            description=(
+                "Keyword to match against message text. Space-separated terms "
+                "are OR'd together."
+            )
+        ),
+    ],
+) -> dict:
+    """Search messages by keyword across all conversations.
+
+    `time` is a Mattermost epoch-milliseconds integer; `channel` is a
+    Mattermost channel ID, not a channel name; `sender` is a Mattermost
+    user ID (all three are cleanup items pending in Phase B).
+    """
 
     async def _do(headers: dict[str, str]) -> dict[str, Any]:
         teams = await http_get(f"{API}/users/me/teams", headers=headers)
@@ -229,10 +271,42 @@ async def search_messages(query: str) -> dict:
 
 
 @mcp.tool()
-async def upload_file(recipient: str, file_path: str, message: str = "") -> dict:
+async def upload_file(
+    recipient: Annotated[
+        str,
+        Field(
+            description=(
+                "Mattermost username (no '@' prefix), as returned by list_users."
+            )
+        ),
+    ],
+    file_path: Annotated[
+        str,
+        Field(
+            description=(
+                "Path to the file to share. NOTE: this server currently sends "
+                "the path as a text message rather than uploading the file's "
+                "content; the file itself is not transferred. See known issues."
+            )
+        ),
+    ],
+    message: Annotated[
+        str,
+        Field(
+            description=(
+                "Optional caption to send with the file path. "
+                "Defaults to 'Shared file: <path>'."
+            )
+        ),
+    ] = "",
+) -> dict:
     """Upload a file and send it as a message to a user.
 
     Pass the recipient username from list_users.
+
+    Known limitation: this tool currently sends `file_path` as a text message
+    rather than uploading the file's content; the file itself is not
+    transferred.
     """
     msg = message or f"Shared file: {file_path}"
 
@@ -257,7 +331,8 @@ async def upload_file(recipient: str, file_path: str, message: str = "") -> dict
 async def list_users() -> dict:
     """List all users on the server.
 
-    Use the username field as the recipient for send_message.
+    Use the username field as the recipient for send_message or upload_file.
+    Bot accounts are filtered out.
     """
 
     async def _do(headers: dict[str, str]) -> list[dict[str, Any]]:

@@ -19,7 +19,7 @@ use to discover valid inputs.
 
 from __future__ import annotations
 
-from typing import Any
+from typing import Annotated, Any
 
 from base import (
     HTTPToolError,
@@ -30,6 +30,7 @@ from base import (
 )
 from fastmcp import FastMCP
 from fastmcp.exceptions import ToolError
+from pydantic import Field
 
 
 GOTOSOCIAL_URL = get_env("GOTOSOCIAL_URL", "http://gotosocial:8080")
@@ -58,7 +59,14 @@ def _is_not_found(exc: HTTPToolError) -> bool:
 
 
 @mcp.tool()
-async def create_post(content: str) -> dict:
+async def create_post(
+    content: Annotated[
+        str,
+        Field(
+            description=("Post body. Plain text (the server may render basic markup).")
+        ),
+    ],
+) -> dict:
     """Create a new post visible to your network."""
     result = await http_post(
         f"{API_V1}/statuses",
@@ -73,7 +81,17 @@ async def create_post(content: str) -> dict:
 
 
 @mcp.tool()
-async def get_profile(user_id: str) -> dict:
+async def get_profile(
+    user_id: Annotated[
+        str,
+        Field(
+            description=(
+                "Account ID, as returned by search_users (the `user_id` "
+                "field). This is an opaque ID, not a username."
+            )
+        ),
+    ],
+) -> dict:
     """Get a user's profile.
 
     Pass the user_id from search_users results.
@@ -102,10 +120,23 @@ async def get_profile(user_id: str) -> dict:
 
 
 @mcp.tool()
-async def list_user_posts(user_id: str) -> dict:
+async def list_user_posts(
+    user_id: Annotated[
+        str,
+        Field(
+            description=(
+                "Account ID, as returned by search_users (the `user_id` "
+                "field). This is an opaque ID, not a username."
+            )
+        ),
+    ],
+) -> dict:
     """Get recent posts from a user.
 
     Pass the user_id from search_users results.
+
+    `content` is HTML (Mastodon API convention), not plain text.
+    `time` is an ISO 8601 timestamp string.
     """
     try:
         statuses = await http_get_params(
@@ -133,7 +164,17 @@ async def list_user_posts(user_id: str) -> dict:
 
 
 @mcp.tool()
-async def search_users(query: str) -> dict:
+async def search_users(
+    query: Annotated[
+        str,
+        Field(
+            description=(
+                "Username or display-name fragment to search for. "
+                "Partial matches are supported."
+            )
+        ),
+    ],
+) -> dict:
     """Search for users by name or username.
 
     Use user_id to call get_profile or list_user_posts.
@@ -156,8 +197,17 @@ async def search_users(query: str) -> dict:
 
 
 @mcp.tool()
-async def search_posts(query: str) -> dict:
-    """Search posts by keyword."""
+async def search_posts(
+    query: Annotated[
+        str,
+        Field(description="Keyword to match against post content."),
+    ],
+) -> dict:
+    """Search posts by keyword.
+
+    `content` is HTML (Mastodon API convention), not plain text.
+    `time` is an ISO 8601 timestamp string. `author` is a username.
+    """
     data = await http_get_params(
         f"{API_V2}/search",
         params={"q": query, "type": "statuses", "limit": 20},

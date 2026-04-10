@@ -35,7 +35,7 @@ connectivity failures (from ``_get_calendar``) are *not* tolerated; only the
 
 from __future__ import annotations
 
-from typing import Any, NoReturn
+from typing import Annotated, Any, NoReturn
 
 import caldav
 from base import HTTPToolError, get_env, logger
@@ -46,6 +46,7 @@ from caldav.lib.error import (
 )
 from fastmcp import FastMCP
 from fastmcp.exceptions import ToolError
+from pydantic import Field
 
 
 RADICALE_URL = get_env("RADICALE_URL", "http://radicale:5232")
@@ -142,7 +143,12 @@ def _summary_only(event: Any) -> dict[str, Any]:
 
 
 @mcp.tool()
-async def search_events(query: str) -> dict:
+async def search_events(
+    query: Annotated[
+        str,
+        Field(description=("Keyword to match against event titles and descriptions.")),
+    ],
+) -> dict:
     """Search calendar events by keyword.
 
     Use event_id to call get_event for details.
@@ -180,10 +186,25 @@ async def search_events(query: str) -> dict:
 
 
 @mcp.tool()
-async def get_event(event_id: str) -> dict:
+async def get_event(
+    event_id: Annotated[
+        str,
+        Field(
+            description=(
+                "iCalendar UID, as returned by search_events or list_events "
+                "(the `event_id` field)."
+            )
+        ),
+    ],
+) -> dict:
     """Get detailed information for a calendar event.
 
     Pass the event_id from search_events or list_events.
+
+    `start` and `end` are Python datetime string representations
+    (e.g. '2026-04-15 10:00:00+00:00'), not strict ISO 8601 strings.
+    `attendees` is a list of email addresses with the 'mailto:' prefix
+    stripped.
     """
     calendar = _calendar_or_raise()
     try:
@@ -203,6 +224,9 @@ async def list_events() -> dict:
     """List all calendar events.
 
     Use event_id to call get_event for details.
+
+    `start` is a Python datetime string representation
+    (e.g. '2026-04-15 10:00:00+00:00'), not a strict ISO 8601 string.
     """
     calendar = _calendar_or_raise()
     try:

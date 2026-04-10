@@ -24,7 +24,7 @@ from __future__ import annotations
 
 import smtplib
 from email.mime.text import MIMEText
-from typing import Any
+from typing import Annotated, Any
 
 from base import (
     HTTPToolError,
@@ -34,6 +34,7 @@ from base import (
 )
 from fastmcp import FastMCP
 from fastmcp.exceptions import ToolError
+from pydantic import Field
 
 
 MAILPIT_API = get_env("MAILPIT_API_URL", "http://mailpit:8025")
@@ -59,11 +60,35 @@ def _format_address(field: Any) -> str:
 
 @mcp.tool()
 async def send_email(
-    to: str,
-    subject: str,
-    body: str,
-    cc: str = "",
-    bcc: str = "",
+    to: Annotated[
+        str,
+        Field(
+            description=(
+                "Recipient email address. Single address only; use cc/bcc for "
+                "additional recipients."
+            )
+        ),
+    ],
+    subject: Annotated[str, Field(description="Email subject line.")],
+    body: Annotated[str, Field(description="Plain-text email body.")],
+    cc: Annotated[
+        str,
+        Field(
+            description=(
+                "Optional CC recipients as a comma-separated string of email "
+                "addresses (e.g. 'a@x.com,b@x.com'). Empty for no CC."
+            )
+        ),
+    ] = "",
+    bcc: Annotated[
+        str,
+        Field(
+            description=(
+                "Optional BCC recipients as a comma-separated string of email "
+                "addresses. Empty for no BCC."
+            )
+        ),
+    ] = "",
 ) -> dict:
     """Send an email to the specified recipient."""
     msg = MIMEText(body)
@@ -114,10 +139,18 @@ async def send_email(
 
 
 @mcp.tool()
-async def search_emails(query: str) -> dict:
+async def search_emails(
+    query: Annotated[
+        str,
+        Field(description="Keyword to match against email subjects and bodies."),
+    ],
+) -> dict:
     """Search emails by keyword in subject or body.
 
     Use the email_id field to read a specific email.
+
+    `time` is an ISO 8601 timestamp string. `sender` is an email address
+    (matches the `email` field returned by list_contacts).
     """
     data = await http_get_params(
         f"{MAILPIT_API}/api/v1/search",
@@ -137,10 +170,23 @@ async def search_emails(query: str) -> dict:
 
 
 @mcp.tool()
-async def read_email(email_id: str) -> dict:
+async def read_email(
+    email_id: Annotated[
+        str,
+        Field(
+            description=(
+                "Mailpit message ID, as returned by search_emails (the "
+                "`email_id` field)."
+            )
+        ),
+    ],
+) -> dict:
     """Read a specific email.
 
     Pass the email_id from search_emails results.
+
+    `time` is an ISO 8601 timestamp string. `sender` and entries in the
+    `to` list are email addresses.
     """
     try:
         msg = await http_get_params(
@@ -164,8 +210,22 @@ async def read_email(email_id: str) -> dict:
 
 
 @mcp.tool()
-async def list_contacts(name: str) -> dict:
-    """Search for contacts by name. Derives contacts from email headers."""
+async def list_contacts(
+    name: Annotated[
+        str,
+        Field(
+            description=(
+                "Name or email-address fragment to match against the From/To "
+                "headers of all known emails. Partial matches are supported."
+            )
+        ),
+    ],
+) -> dict:
+    """Search for contacts by name. Derives contacts from email headers.
+
+    The `email` field on each result is what to pass as send_email's `to`,
+    `cc`, or `bcc` parameter.
+    """
     data = await http_get_params(
         f"{MAILPIT_API}/api/v1/search",
         params={"query": name, "limit": 50},

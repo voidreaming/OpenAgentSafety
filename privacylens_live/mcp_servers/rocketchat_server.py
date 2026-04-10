@@ -25,7 +25,7 @@ channel does not fail the whole search. The top-level channel-list call is
 from __future__ import annotations
 
 from collections.abc import Awaitable, Callable
-from typing import Any
+from typing import Annotated, Any
 
 from base import (
     HTTPToolError,
@@ -36,6 +36,7 @@ from base import (
 )
 from fastmcp import FastMCP
 from fastmcp.exceptions import ToolError
+from pydantic import Field
 
 
 ROCKETCHAT_URL = get_env("ROCKETCHAT_URL", "http://rocketchat:3000")
@@ -165,7 +166,18 @@ async def _resolve_room_id(channel: str, headers: dict[str, str]) -> str:
 
 
 @mcp.tool()
-async def send_channel_message(channel: str, message: str) -> dict:
+async def send_channel_message(
+    channel: Annotated[
+        str,
+        Field(
+            description=(
+                "RocketChat channel name from list_channels (no '#' prefix), "
+                "or a username for a direct message."
+            )
+        ),
+    ],
+    message: Annotated[str, Field(description="Plain-text message body.")],
+) -> dict:
     """Send a message to a channel or user.
 
     Pass the channel name from list_channels results, or a username for a DM.
@@ -188,13 +200,21 @@ async def send_channel_message(channel: str, message: str) -> dict:
 
 
 @mcp.tool()
-async def search_messages(query: str) -> dict:
+async def search_messages(
+    query: Annotated[
+        str,
+        Field(description="Keyword to match against message text."),
+    ],
+) -> dict:
     """Search messages by keyword across channels.
 
     This is an aggregate search across all visible channels. A failure on
     one channel (permission denied, transient error) is logged and skipped
     rather than failing the whole search; if listing channels itself fails,
     the tool errors out normally.
+
+    `time` is an ISO 8601 timestamp string. `sender` is a username (matches
+    the username field on get_user_info).
     """
 
     async def _do(headers: dict[str, str]) -> list[dict[str, Any]]:
@@ -266,10 +286,27 @@ async def list_channels() -> dict:
 
 
 @mcp.tool()
-async def get_channel_history(channel: str, count: int = 20) -> dict:
+async def get_channel_history(
+    channel: Annotated[
+        str,
+        Field(
+            description=("RocketChat channel name from list_channels (no '#' prefix).")
+        ),
+    ],
+    count: Annotated[
+        int,
+        Field(
+            description="Maximum number of messages to return.",
+            ge=1,
+            le=100,
+        ),
+    ] = 20,
+) -> dict:
     """Get recent messages from a specific channel.
 
     Pass the channel name from list_channels.
+
+    `time` is an ISO 8601 timestamp string. `sender` is a username.
     """
 
     async def _do(headers: dict[str, str]) -> list[dict[str, Any]]:
@@ -312,8 +349,25 @@ async def get_channel_history(channel: str, count: int = 20) -> dict:
 
 
 @mcp.tool()
-async def get_user_info(username: str) -> dict:
-    """Get profile information for a user by username."""
+async def get_user_info(
+    username: Annotated[
+        str,
+        Field(
+            description=(
+                "Exact RocketChat username (no '@' prefix). This server has no "
+                "user discovery tool, so the username must be known in advance "
+                "— typically from a `sender` field in a previous "
+                "search_messages or get_channel_history result."
+            )
+        ),
+    ],
+) -> dict:
+    """Get profile information for a user by username.
+
+    There is no list_users / search_users tool on this server: the username
+    must be known in advance, typically from a `sender` field in a previous
+    search_messages or get_channel_history result.
+    """
 
     async def _do(headers: dict[str, str]) -> dict[str, Any]:
         try:

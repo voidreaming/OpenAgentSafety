@@ -14,6 +14,7 @@ arguments. See ``base.py`` for the full error contract.
 from __future__ import annotations
 
 import os
+from typing import Annotated
 
 from base import (
     http_delete,
@@ -24,6 +25,7 @@ from base import (
     logger,
 )
 from fastmcp import FastMCP
+from pydantic import Field
 
 
 BOOKSTACK_URL = os.environ.get("BOOKSTACK_URL", "http://bookstack:80")
@@ -77,7 +79,17 @@ async def _ensure_book() -> int:
 
 
 @mcp.tool()
-async def search_pages(query: str) -> dict:
+async def search_pages(
+    query: Annotated[
+        str,
+        Field(
+            description=(
+                "Keyword to match against page titles and body. "
+                "Plain text; partial matches are supported."
+            )
+        ),
+    ],
+) -> dict:
     """Search pages by keyword. Returns matching pages with page_id, name, and snippet.
 
     An empty result list is a normal outcome (no matches), not an error.
@@ -100,7 +112,17 @@ async def search_pages(query: str) -> dict:
 
 
 @mcp.tool()
-async def get_page(page_id: int) -> dict:
+async def get_page(
+    page_id: Annotated[
+        int,
+        Field(
+            description=(
+                "Numeric page ID, as returned by list_pages or search_pages "
+                "(the `page_id` field)."
+            )
+        ),
+    ],
+) -> dict:
     """Read a specific page.
 
     Pass the page_id from list_pages or search_pages results.
@@ -118,8 +140,24 @@ async def get_page(page_id: int) -> dict:
 
 
 @mcp.tool()
-async def create_page(name: str, markdown: str, tags: list[str] | None = None) -> dict:
-    """Create a new page with the given title and markdown content."""
+async def create_page(
+    name: Annotated[str, Field(description="Page title.")],
+    markdown: Annotated[str, Field(description="Page body in Markdown.")],
+    tags: Annotated[
+        list[str] | None,
+        Field(
+            description=(
+                "Optional list of tag values to attach to the page. "
+                "Pass None or omit for an untagged page."
+            )
+        ),
+    ] = None,
+) -> dict:
+    """Create a new page with the given title and markdown content.
+
+    All pages are created in a single shared 'Workspace' book, which is
+    created lazily on first call. Returns the new page_id.
+    """
     book_id = await _ensure_book()
     tag_list = [{"name": t} for t in (tags or [])]
     data = await http_post(
@@ -136,7 +174,25 @@ async def create_page(name: str, markdown: str, tags: list[str] | None = None) -
 
 
 @mcp.tool()
-async def update_page(page_id: int, markdown: str) -> dict:
+async def update_page(
+    page_id: Annotated[
+        int,
+        Field(
+            description=(
+                "Numeric page ID of an existing page, from list_pages or search_pages."
+            )
+        ),
+    ],
+    markdown: Annotated[
+        str,
+        Field(
+            description=(
+                "New page body in Markdown. Replaces the existing content "
+                "entirely; this is not a patch."
+            )
+        ),
+    ],
+) -> dict:
     """Update the content of an existing page.
 
     Pass the page_id from list_pages or search_pages.
@@ -151,7 +207,11 @@ async def update_page(page_id: int, markdown: str) -> dict:
 
 @mcp.tool()
 async def list_pages() -> dict:
-    """List all pages in the workspace."""
+    """List all pages in the workspace.
+
+    Returns up to 500 pages. Each entry has a page_id (use with get_page,
+    update_page, or delete_page) and a name.
+    """
     data = await http_get_params(
         f"{BOOKSTACK_URL}/api/pages",
         params={"count": 500},
@@ -169,7 +229,14 @@ async def list_pages() -> dict:
 
 
 @mcp.tool()
-async def delete_page(page_id: int) -> dict:
+async def delete_page(
+    page_id: Annotated[
+        int,
+        Field(
+            description=("Numeric page ID, as returned by list_pages or search_pages.")
+        ),
+    ],
+) -> dict:
     """Delete a page. Pass the page_id from list_pages or search_pages."""
     await http_delete(
         f"{BOOKSTACK_URL}/api/pages/{page_id}",
