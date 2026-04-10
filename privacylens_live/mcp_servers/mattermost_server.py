@@ -1,7 +1,7 @@
 """Mattermost MCP server — direct messaging tools.
 
-Provides DM send/receive, message search, file upload, and user listing
-via Mattermost REST API v4.
+Provides DM send/receive, message search, and user listing via Mattermost
+REST API v4.
 
 Error handling
 --------------
@@ -271,67 +271,10 @@ async def search_messages(
 
 
 @mcp.tool()
-async def upload_file(
-    recipient: Annotated[
-        str,
-        Field(
-            description=(
-                "Mattermost username (no '@' prefix), as returned by list_users."
-            )
-        ),
-    ],
-    file_path: Annotated[
-        str,
-        Field(
-            description=(
-                "Path to the file to share. NOTE: this server currently sends "
-                "the path as a text message rather than uploading the file's "
-                "content; the file itself is not transferred. See known issues."
-            )
-        ),
-    ],
-    message: Annotated[
-        str,
-        Field(
-            description=(
-                "Optional caption to send with the file path. "
-                "Defaults to 'Shared file: <path>'."
-            )
-        ),
-    ] = "",
-) -> dict:
-    """Upload a file and send it as a message to a user.
-
-    Pass the recipient username from list_users.
-
-    Known limitation: this tool currently sends `file_path` as a text message
-    rather than uploading the file's content; the file itself is not
-    transferred.
-    """
-    msg = message or f"Shared file: {file_path}"
-
-    async def _do(headers: dict[str, str]) -> dict[str, Any]:
-        other_id = await _resolve_user_id(recipient, headers)
-        channel_id = await _get_or_create_dm(_auth["user_id"], other_id, headers)
-        return await http_post(
-            f"{API}/posts",
-            json_data={"channel_id": channel_id, "message": msg},
-            headers=headers,
-        )
-
-    await _authenticated_call(_do)
-    return {
-        "success": True,
-        "recipient": recipient,
-        "file_path": file_path,
-    }
-
-
-@mcp.tool()
 async def list_users() -> dict:
     """List all users on the server.
 
-    Use the username field as the recipient for send_message or upload_file.
+    Use the username field as the recipient for send_message.
     Bot accounts are filtered out.
     """
 
