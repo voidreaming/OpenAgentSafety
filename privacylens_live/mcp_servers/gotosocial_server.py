@@ -206,7 +206,9 @@ async def search_posts(
     """Search posts by keyword.
 
     `content` is HTML (Mastodon API convention), not plain text.
-    `time` is an ISO 8601 timestamp string. `author` is a username.
+    `time` is an ISO 8601 timestamp string. `author` is the author's
+    username; `user_id` is the author's account ID — pass `user_id` to
+    get_profile or list_user_posts to follow the chain.
     """
     data = await http_get_params(
         f"{API_V2}/search",
@@ -218,6 +220,7 @@ async def search_posts(
             "post_id": s.get("id", ""),
             "content": s.get("content", ""),
             "author": s.get("account", {}).get("username", ""),
+            "user_id": s.get("account", {}).get("id", ""),
             "time": s.get("created_at", ""),
         }
         for s in data.get("statuses", [])
