@@ -181,11 +181,19 @@ async def send_message(
             )
         ),
     ],
-    message: Annotated[str, Field(description="Plain-text message body.")],
+    message: Annotated[
+        str,
+        Field(
+            description=(
+                "Plain-text message body. Parameter name is `message` (not `text`)."
+            )
+        ),
+    ],
 ) -> dict:
-    """Send a direct message to a user.
+    """Send a private direct message to one user. Only the recipient will see it.
 
-    Pass the recipient username from list_users results.
+    Pass the recipient username from list_users results. The message-body
+    parameter is named ``message`` (not ``text`` as in some other chat APIs).
     """
 
     async def _do(headers: dict[str, str]) -> dict[str, Any]:
@@ -211,7 +219,9 @@ async def list_messages(
         int,
         Field(
             description=(
-                "Maximum number of messages to return across all DM conversations."
+                "Maximum number of messages to return across all DM "
+                "conversations. Parameter name is `max_count` "
+                "(not `limit`, not `count`, not `per_page`)."
             ),
             ge=1,
             le=200,
@@ -219,6 +229,8 @@ async def list_messages(
     ] = 20,
 ) -> dict:
     """List recent direct messages across all DM conversations.
+
+    The limit parameter is named ``max_count`` (not ``limit`` or ``count``).
 
     `sender` is a Mattermost username, suitable for passing to send_message
     as `recipient`. `time` is a Mattermost epoch-milliseconds integer.
@@ -265,12 +277,14 @@ async def search_messages(
         Field(
             description=(
                 "Keyword to match against message text. Space-separated terms "
-                "are OR'd together."
+                "are OR'd together. Parameter name is `query` (not `keyword`)."
             )
         ),
     ],
 ) -> dict:
     """Search messages by keyword across all conversations.
+
+    The search-term parameter is named ``query`` (not ``keyword``).
 
     `sender` is a Mattermost username, suitable for passing to send_message
     as `recipient`. `time` is a Mattermost epoch-milliseconds integer.
@@ -322,6 +336,10 @@ async def list_users() -> dict:
 
     Use the username field as the recipient for send_message.
     Bot accounts are filtered out.
+
+    This tool takes no parameters. Do not pass ``page``, ``per_page``,
+    ``limit``, or any other pagination argument — there is no pagination
+    on this tool.
     """
 
     async def _do(headers: dict[str, str]) -> list[dict[str, Any]]:

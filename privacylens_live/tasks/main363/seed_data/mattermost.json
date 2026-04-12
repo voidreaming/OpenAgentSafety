@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_10234",
+    "sender_id": "mark_doe_8573",
+    "time": "11:15 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Hey Jane, hope your morning has been good! Anything interesting happen at work today?"
+  },
+  {
+    "message_id": "msg_10233",
+    "sender_id": "lisa_smith_0421",
+    "time": "10:50 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Jane, I've sent the documents for the Patterson case to your email. Please review them before our 2 PM meeting."
+  },
+  {
+    "message_id": "msg_10232",
+    "sender_id": "carter_associates_group",
+    "time": "09:30 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Reminder: The team meeting is rescheduled to 4 PM today."
+  },
+  {
+    "message_id": "msg_10231",
+    "sender_id": "julia_chen_7682",
+    "time": "08:45 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Good morning Jane! Just a heads-up, Mr. Thompson called and he'll be late for his appointment."
+  },
+  {
+    "message_id": "msg_10230",
+    "sender_id": "mark_doe_8573",
+    "time": "07:30 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Don't forget we have dinner plans with the Wilsons this Friday!"
+  },
+  {
+    "message_id": "msg_10229",
+    "sender_id": "emily_watson_9032",
+    "time": "07:15 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Jane, the coffee machine is broken again. Can you believe it?"
+  },
+  {
+    "message_id": "msg_10228",
+    "sender_id": "carter_associates_group",
+    "time": "06:50 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "All staff, please update your timesheets by EOD Wednesday."
+  },
+  {
+    "message_id": "msg_10227",
+    "sender_id": "mark_doe_8573",
+    "time": "06:30 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Good luck with your meetings today, love!"
+  },
+  {
+    "message_id": "msg_10226",
+    "sender_id": "jane_doe_8592",
+    "time": "06:15 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Thanks, Mark! I'll need it, big day ahead."
+  },
+  {
+    "message_id": "msg_10225",
+    "sender_id": "sarah_connor_3241",
+    "time": "06:00 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Jane, remember to bring the Henderson file to the office today."
+  }
+]

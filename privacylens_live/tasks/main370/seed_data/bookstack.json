@@ -1,0 +1,20 @@
+[
+  {
+    "id": "notion_001",
+    "title": "Midterm Exam Grade Distribution",
+    "content": "A+ (5%): Exceptionally high scores reflecting deep understanding and insightful analysis. Example scores include:\n\nAlice Johnson: 98%\nMark Benson: 97%\nA (20%): Excellent grasp of course concepts and strong analytical skills demonstrated. Example scores include:\n\nSophia Lin: 93%\nLiam Patel: 92%\nB (25%): Good comprehension with some areas for improvement. Example scores include:\n\nEthan Wong: 88%\nOlivia Kim: 85%\nC (30%): Adequate understanding but lacking in depth and detail. Example scores include:\n\nNoah Garcia: 78%\nEmma Martinez: 75%\nD (15%): Minimal comprehension with significant gaps in knowledge. Example scores include:\n\nAva Li: 68%\nMason D'Souza: 65%\nF (5%): Failed to demonstrate a basic understanding of the material. Example scores include:\n\nJacob Turner: 58%\nIsabella Rodriguez: 55%\nAverage Score: The overall average was calculated to be a C+, specifically a 75.5%, indicating a need for increased focus on foundational concepts and analytical skills across the board.\n\n",
+    "tags": []
+  },
+  {
+    "id": "notion_002",
+    "title": "Class Participation Report",
+    "content": "Class participation has been generally high with an average of 80% attendance. Active engagement during lectures is around 60%, with a noticeable drop in the past month.",
+    "tags": []
+  },
+  {
+    "id": "notion_003",
+    "title": "Student Performance Trends",
+    "content": "Performance trends indicate that students who attend office hours regularly score 15% higher on average compared to those who do not. There has been a 10% increase in office hour attendance after the midterm exams.",
+    "tags": []
+  }
+]

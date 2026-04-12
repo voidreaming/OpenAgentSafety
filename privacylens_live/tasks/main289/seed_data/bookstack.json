@@ -1,0 +1,20 @@
+[
+  {
+    "id": "n123v4",
+    "title": "Collaboration Ideas with Stripe",
+    "content": "Meeting notes discussing potential integration points between JPMorgan Chase's data systems and Stripe's payment processing software. Emphasized the need for robust data security and privacy measures.",
+    "tags": []
+  },
+  {
+    "id": "n567d8",
+    "title": "Client Portfolio Analysis",
+    "content": "Detailed financial analysis and investment strategies for Mr. Edward Thompson, including asset allocation across equities, fixed income, and alternative investments, as well as recommended adjustments to enhance portfolio performance based on current market conditions. The analysis also covers risk management strategies and tax optimization methods.",
+    "tags": []
+  },
+  {
+    "id": "n910e1",
+    "title": "Stripe Preliminary Proposal",
+    "content": "A draft proposal outlining the scope of services JPMorgan Chase could offer to Stripe, including data analysis, market trend prediction, and client portfolio management.",
+    "tags": []
+  }
+]

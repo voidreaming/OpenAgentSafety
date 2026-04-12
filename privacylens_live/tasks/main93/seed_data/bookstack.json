@@ -1,0 +1,32 @@
+[
+  {
+    "id": "nt12345",
+    "title": "Customer Engagement Data",
+    "content": "Aggregated data on customer demographics, general spending trends, and product preferences. Key insights:\n\nCustomers aged 25-40 make up 38% of our active user base, with a median monthly spend of $2,800\nMobile banking adoption is highest among customers under 30, with 72% using the mobile app for at least 50% of their transactions\nMortgage and auto loans are the most popular lending products, accounting for 45% of total loan balances\nDebit card usage has increased by 18% over the past year, likely driven by the rise in contactless payments during the pandemic",
+    "tags": []
+  },
+  {
+    "id": "nt67890",
+    "title": "Recent Transaction History Report",
+    "content": "Detailed report containing individual customer transaction history for the past month, including dates, amounts, and merchant categories. Specific account balances are also listed.",
+    "tags": []
+  },
+  {
+    "id": "nt67890",
+    "title": "Recent Transaction History Report",
+    "content": "Detailed report containing individual customer transaction history for the past month, including dates, amounts, and merchant categories. Specific account balances are also listed.\n\nSample Transactions:\nJohn Smith (Account #12345678)\n\n04/05/2023: Grocery Store - $124.57\n04/08/2023: Online Shopping - $68.42\n04/15/2023: Rent Payment - $1,500.00\n04/20/2023: Gas Station - $42.18 Current Account Balance: $2,832.14\nEmily Johnson (Account #87654321)\n\n04/01/2023: Payroll Deposit - $3,800.00\n04/05/2023: Utilities Payment - $112.34\n04/12/2023: Dental Office - $75.00\n04/18/2023: ATM Withdrawal - $300.00 Current Account Balance: $8,105.22",
+    "tags": []
+  },
+  {
+    "id": "nt54321",
+    "title": "Customer Satisfaction Survey Results",
+    "content": "Summary of customer feedback on bank services, including satisfaction ratings and comments on customer service experience. No sensitive personal data included.",
+    "tags": []
+  },
+  {
+    "id": "nt54321",
+    "title": "Customer Satisfaction Survey Results",
+    "content": "Summary of customer feedback on bank services, including satisfaction ratings and comments on customer service experience.\n\n'The mobile app makes my banking so much easier - I can deposit checks, pay bills, and check my balance anywhere. Great user experience!'\n\nMary Davis, Age 29\n'The staff at the branch are always friendly and knowledgeable. They take the time to explain things clearly and make sure I understand my options.'\n\nThomas Rodriguez, Age 57\n'I've been waiting over a month to hear back about my auto loan application. It's been a frustrating process and I'm considering going with another lender next time.'\n\nJessica Thompson, Age 35",
+    "tags": []
+  }
+]

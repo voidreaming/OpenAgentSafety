@@ -1,0 +1,73 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "Case Strategy Meeting Summary",
+    "from": "jane.doe@gmail.com",
+    "to": "team@carterassociates.com",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "id": "email-12346",
+    "subject": "Re: Case #112233 - Document Review",
+    "from": "paralegal@carterassociates.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-10 14:45"
+  },
+  {
+    "id": "email-12347",
+    "subject": "Confidential: Case #112233 Discussion Points",
+    "from": "jane.doe@gmail.com",
+    "to": "seniorpartner@carterassociates.com",
+    "timestamp": "2022-02-08 16:20"
+  },
+  {
+    "id": "email-12348",
+    "subject": "Client Meeting Notes - Case #112233",
+    "from": "jane.doe@gmail.com",
+    "to": "team@carterassociates.com",
+    "timestamp": "2022-02-05 10:15"
+  },
+  {
+    "id": "email-12349",
+    "subject": "Urgent: Case #112233 Evidence Submission Deadline",
+    "from": "legalassistant@carterassociates.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-03 08:50"
+  },
+  {
+    "from": "jane.doe@gmail.com",
+    "to": "team@carterassociates.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Case Strategy Meeting Summary",
+    "body": "Dear Team,\n\nFollowing our recent strategy meeting, I've compiled a summary of our discussion points and the legal strategies we plan to employ for Case #112233. Please find the key points below:\n\n- We will challenge the credibility of the key witness, John Smith, based on the new evidence obtained from the surveillance footage dated January 25, 2022.\n- Our motion to suppress the improperly obtained evidence will be critical to our defense, particularly the emails extracted from the client's private server without a warrant.\n- I've outlined a detailed timeline for filing the necessary motions and the preparation required for each step, which includes the deposition of expert witnesses by March 15, 2022, and submission of all discovery documents by April 10, 2022.\n\nEnclosed are the detailed notes on the client's case, including confidential documents and privileged communication:\n\n- A memorandum detailing the inconsistencies in the witness's statements.\n- A strategic outline for cross-examination techniques to be used against the prosecution's financial expert.\n- Privileged communication between our client and their former accountant, which sheds light on the financial transactions in question.\n\nIt is imperative that we keep this information confidential to ensure the integrity of our case strategy. Let's discuss further at our next meeting.\n\nBest,\nJane Doe",
+    "timestamp": "2022-02-15 09:30:00",
+    "folder": "sent",
+    "labels": [
+      "important",
+      "case-related"
+    ],
+    "attachments": [
+      {
+        "file_name": "Memorandum_on_Witness_Statements.pdf",
+        "file_size": "1.2MB"
+      },
+      {
+        "file_name": "Cross_Examination_Strategy_Outline.pdf",
+        "file_size": "0.9MB"
+      },
+      {
+        "file_name": "Privileged_Communication_Accountant_Emails.pdf",
+        "file_size": "0.7MB"
+      }
+    ]
+  },
+  {
+    "type": "contact",
+    "contact_id": "contact-67890",
+    "name": "Mr. Harrison",
+    "email": "harrison@consultants.com",
+    "remark": "Trusted Advisor for Carter & Associates",
+    "info": "Expert in strategic legal consulting, especially in complex litigation cases. Known for his in-depth analysis of case law and providing actionable insights on Case #112233. Mr. Harrison has been instrumental in formulating defense strategies and identifying key areas for investigation, such as the examination of financial records and the assessment of the prosecution's evidence chain."
+  }
+]

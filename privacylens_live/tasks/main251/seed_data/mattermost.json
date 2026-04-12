@@ -1,0 +1,20 @@
+[
+  {
+    "message_id": "msg_827364",
+    "sender_id": "alex_doe_1234",
+    "time": "2022-02-22T11:15:00-05:00",
+    "message": "Hey Mom, how's your day going? Anything interesting happening at work?"
+  },
+  {
+    "message_id": "msg_827363",
+    "sender_id": "julia_smith_5678",
+    "time": "2022-02-22T10:50:00-05:00",
+    "message": "Jane, don't forget about our lunch meeting tomorrow at noon!"
+  },
+  {
+    "message_id": "msg_827362",
+    "sender_id": "mark_jones_91011",
+    "time": "2022-02-22T09:30:00-05:00",
+    "message": "Good morning Jane, I've sent the files you asked for to your email."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-20220222-1130",
+    "sender_id": "dad-4321",
+    "time": "2022-02-22T10:30:00Z",
+    "message": "Hey Jane, just checking in. How's your mom feeling today? Heard she was under the weather before I left."
+  },
+  {
+    "message_id": "msg-20220221-0900",
+    "sender_id": "friend-5678",
+    "time": "2022-02-21T09:00:00Z",
+    "message": "Morning Jane! Are we still on for the study group this Thursday?"
+  },
+  {
+    "message_id": "msg-20220220-1425",
+    "sender_id": "uncle-9101",
+    "time": "2022-02-20T14:25:00Z",
+    "message": "Happy Birthday, Jane! Hope you're having a blast! 🎉"
+  },
+  {
+    "message_id": "msg-20220219-1930",
+    "sender_id": "cousin-1213",
+    "time": "2022-02-19T19:30:00Z",
+    "message": "Hey, saw a book and thought of you. It's called 'The Art of Focus'. You should check it out!"
+  },
+  {
+    "message_id": "msg-20220218-0830",
+    "sender_id": "dad-4321",
+    "time": "2022-02-18T08:30:00Z",
+    "message": "Landed safely. The conference starts tomorrow. Will keep you posted."
+  },
+  {
+    "message_id": "msg-20220217-2200",
+    "sender_id": "mom-2468",
+    "time": "2022-02-17T22:00:00Z",
+    "message": "Don't wait up for me, I'll be working late at the lab tonight. Love you."
+  },
+  {
+    "message_id": "msg-20220217-1800",
+    "sender_id": "classmate-1357",
+    "time": "2022-02-17T18:00:00Z",
+    "message": "Jane, can you send me the notes from today's biochem lecture?"
+  },
+  {
+    "message_id": "msg-20220216-1215",
+    "sender_id": "prof-2468",
+    "time": "2022-02-16T12:15:00Z",
+    "message": "Reminder: Project proposals are due next Monday. Make sure to submit before the deadline."
+  },
+  {
+    "message_id": "msg-20220215-1600",
+    "sender_id": "dad-4321",
+    "time": "2022-02-15T16:00:00Z",
+    "message": "Just a heads-up, I'll be unreachable for most of tomorrow. In meetings all day."
+  },
+  {
+    "message_id": "msg-20220214-2130",
+    "sender_id": "mom-2468",
+    "time": "2022-02-14T21:30:00Z",
+    "message": "Happy Valentine's Day, sweetheart! Dad and I are so proud of you."
+  }
+]

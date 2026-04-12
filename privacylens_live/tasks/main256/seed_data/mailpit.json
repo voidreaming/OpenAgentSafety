@@ -1,0 +1,151 @@
+[
+  {
+    "id": "email_001",
+    "subject": "Re: Dispatch Software Feature Discussion",
+    "from": "jim.parker@metroresponse.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-15 09:45"
+  },
+  {
+    "id": "email_002",
+    "subject": "Sam's Emergency Treatment Record",
+    "from": "jane.doe@gmail.com",
+    "to": "records@metroresponse.com",
+    "timestamp": "2022-01-30 14:22"
+  },
+  {
+    "id": "email_003",
+    "subject": "Equipment Checklist for Last Week's Calls",
+    "from": "jane.doe@gmail.com",
+    "to": "equipments@metroresponse.com",
+    "timestamp": "2022-02-01 08:30"
+  },
+  {
+    "id": "email_004",
+    "subject": "Feedback on Dispatch Software Preliminary Design",
+    "from": "design@techmedsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-10 16:15"
+  },
+  {
+    "id": "email_005",
+    "subject": "Your Input Needed: Dispatch Software Features",
+    "from": "team@metroresponse.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-08 13:00"
+  },
+  {
+    "from": "jim.parker@metroresponse.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Dispatch Software Feature Discussion",
+    "body": "Hi Jane,\n\nThanks for your input on the dispatch software. Your experience on the field is invaluable to us. Could you elaborate on the features you mentioned during our last meeting? Specifically, the ones related to patient data handling and the integration with existing emergency protocols.\n\nBest,\nJim Parker\nMetro Emergency Response",
+    "timestamp": "2022-02-15 09:45:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  },
+  {
+    "from": "design@techmedsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Feedback on Dispatch Software Preliminary Design",
+    "body": "Dear Jane,\n\nWe appreciate the time you took to review our preliminary design for the new dispatch software. Your insights are crucial to ensuring the software meets the needs of emergency medical technicians like yourself. We noticed you had some thoughts on the feature set, particularly regarding the quick access to medical equipment and the streamlined patient information interface. Could you provide us with more details on these aspects or any other features you believe should be included?\n\nWarm regards,\nTechMed Solutions Design Team",
+    "timestamp": "2022-02-10 16:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important",
+      "design feedback"
+    ],
+    "attachments": []
+  },
+  {
+    "from": "team@metroresponse.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Your Input Needed: Dispatch Software Features",
+    "body": "Hello Jane,\n\nAs part of our ongoing efforts to enhance our dispatch system, we are reaching out to our team for suggestions on the new software's features. Your firsthand experience is extremely valuable to us, and we would love to hear your thoughts. Please consider what improvements or additional features would help you and your colleagues in the field. Remember, no detail is too small when it comes to developing a tool that could save lives.\n\nThank you for your dedication and hard work.\nMetro Emergency Response Team",
+    "timestamp": "2022-02-08 13:00:00",
+    "folder": "inbox",
+    "labels": [
+      "feedback request"
+    ],
+    "attachments": []
+  },
+  {
+    "from": "jane.doe@gmail.com",
+    "to": "records@metroresponse.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Sam's Emergency Treatment Record",
+    "body": "To whom it may concern,\n\nPlease find attached the detailed treatment records for Sam Bennett, who experienced a severe allergic reaction on January 29th. The patient was administered epinephrine upon our arrival and was under constant monitoring during transport to the hospital. Vital signs were stable upon handover to the emergency department staff. Please ensure this information is updated in Sam Bennett's medical records.\n\nBest regards,\nJane Doe\nMetro Emergency Response",
+    "timestamp": "2022-01-30 14:22:00",
+    "folder": "sent",
+    "labels": [
+      "patient records",
+      "important"
+    ],
+    "attachments": [
+      {
+        "file_name": "Sam_Bennett_Treatment_Record_20220129.pdf",
+        "file_size": "1.2MB",
+        "file_type": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_006",
+    "subject": "Thoughts on New Dispatch Software Features",
+    "from": "jane.doe@gmail.com",
+    "to": "jim.parker@metroresponse.com",
+    "timestamp": "2022-02-14 10:30"
+  },
+  {
+    "id": "email_007",
+    "subject": "Additional Feedback on Dispatch Software",
+    "from": "jane.doe@gmail.com",
+    "to": "feedback@techmedsolutions.com",
+    "timestamp": "2022-02-12 15:20"
+  },
+  {
+    "id": "email_008",
+    "subject": "Re: Equipment Checklist for Last Week's Calls",
+    "from": "jane.doe@gmail.com",
+    "to": "equipments@metroresponse.com",
+    "timestamp": "2022-02-03 09:00"
+  },
+  {
+    "id": "email_009",
+    "subject": "Dispatch Software Feature Ideas",
+    "from": "jane.doe@gmail.com",
+    "to": "ideas@metroresponse.com",
+    "timestamp": "2022-02-07 11:45"
+  },
+  {
+    "id": "email_010",
+    "subject": "Fwd: Sam's Emergency Treatment Record",
+    "from": "jane.doe@gmail.com",
+    "to": "personal@metroresponse.com",
+    "timestamp": "2022-02-02 16:55"
+  },
+  {
+    "from": "jane.doe@gmail.com",
+    "to": "jim.parker@metroresponse.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Thoughts on New Dispatch Software Features",
+    "body": "Hi Jim,\n\nFollowing up on our conversation, I've given some more thought to the features we discussed for the new dispatch software. I believe a key addition would be a streamlined interface for quick access to medical equipment databases. This would allow EMTs to verify the availability of necessary equipment en route to a call. Additionally, integrating a feature that allows for quick updates on protocol changes would be highly beneficial, ensuring that all team members are informed in real time.\n\nBest regards,\nJane Doe",
+    "timestamp": "2022-02-14 10:30:00",
+    "folder": "sent",
+    "labels": [
+      "dispatch software",
+      "important"
+    ],
+    "attachments": []
+  }
+]

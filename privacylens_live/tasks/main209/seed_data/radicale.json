@@ -1,0 +1,139 @@
+[
+  {
+    "event_id": "event_001"
+  },
+  {
+    "event_id": "event_002"
+  },
+  {
+    "event_id": "event_003"
+  },
+  {
+    "event_id": "event_004"
+  },
+  {
+    "event_id": "event_005"
+  },
+  {
+    "event_id": "event_006"
+  },
+  {
+    "event_id": "event_007"
+  },
+  {
+    "event_id": "event_008"
+  },
+  {
+    "event_id": "event_009"
+  },
+  {
+    "event_id": "event_010"
+  },
+  {
+    "event_id": "event_001",
+    "event_name": "Morning Run",
+    "content": "Early morning run at the park.",
+    "start_time": "2022-02-01T06:00:00-05:00",
+    "end_time": "2022-02-01T07:00:00-05:00",
+    "location": "City Park",
+    "attendees": []
+  },
+  {
+    "event_id": "event_002",
+    "event_name": "Team Meeting",
+    "content": "Discussing the Q1 performance and targets for Q2.",
+    "start_time": "2022-02-02T09:00:00-05:00",
+    "end_time": "2022-02-02T10:00:00-05:00",
+    "location": "Helping Hands Recovery Center",
+    "attendees": [
+      "Jane Smith",
+      "Bill Johnson",
+      "Mike Anderson"
+    ]
+  },
+  {
+    "event_id": "event_003",
+    "event_name": "Lunch with Mike",
+    "content": "Catching up with old times and discussing new recovery techniques.",
+    "start_time": "2022-02-05T12:30:00-05:00",
+    "end_time": "2022-02-05T14:00:00-05:00",
+    "location": "Grill House Diner",
+    "attendees": [
+      "Mike Anderson"
+    ]
+  },
+  {
+    "event_id": "event_004",
+    "event_name": "Client Session: Kate",
+    "content": "Regular follow-up session.",
+    "start_time": "2022-02-07T10:00:00-05:00",
+    "end_time": "2022-02-07T11:00:00-05:00",
+    "location": "Helping Hands Recovery Center",
+    "attendees": [
+      "Kate Johnson"
+    ]
+  },
+  {
+    "event_id": "event_005",
+    "event_name": "Gym Renewal",
+    "content": "Renew gym membership and discuss new workout plans.",
+    "start_time": "2022-02-10T08:00:00-05:00",
+    "end_time": "2022-02-10T09:00:00-05:00",
+    "location": "Ultimate Fitness Gym",
+    "attendees": []
+  },
+  {
+    "event_id": "event_006",
+    "event_name": "Family Dinner",
+    "content": "Celebrating my birthday with family.",
+    "start_time": "2022-02-20T19:00:00-05:00",
+    "end_time": "2022-02-20T21:00:00-05:00",
+    "location": "Home",
+    "attendees": [
+      "Doe Family"
+    ]
+  },
+  {
+    "event_id": "event_007",
+    "event_name": "Golf with Bill",
+    "content": "Friendly match at the local golf club.",
+    "start_time": "2022-02-19T10:00:00-05:00",
+    "end_time": "2022-02-19T13:00:00-05:00",
+    "location": "Sunnyvale Golf Course",
+    "attendees": [
+      "Bill Johnson"
+    ]
+  },
+  {
+    "event_id": "event_008",
+    "event_name": "Seminar on New Recovery Techniques",
+    "content": "Attending a seminar to learn about the latest advancements in recovery methods.",
+    "start_time": "2022-02-21T15:00:00-05:00",
+    "end_time": "2022-02-21T17:00:00-05:00",
+    "location": "Downtown Conference Center",
+    "attendees": [
+      "Helping Hands Staff",
+      "Mike Anderson"
+    ]
+  },
+  {
+    "event_id": "event_009",
+    "event_name": "Stress Management Workshop",
+    "content": "Workshop to develop better coping strategies for stress.",
+    "start_time": "2022-02-16T14:00:00-05:00",
+    "end_time": "2022-02-16T16:00:00-05:00",
+    "location": "Wellness and Health Institute",
+    "attendees": [
+      "Workshop Participants"
+    ]
+  },
+  {
+    "event_id": "event_010",
+    "event_name": "Appointment with Kate's Daughter",
+    "content": "Meeting to discuss Kate's progress and family support strategies.",
+    "start_time": "2022-02-23T16:00:00-05:00",
+    "end_time": "2022-02-23T17:00:00-05:00",
+    "location": "Helping Hands Recovery Center",
+    "attendees": []
+  }
+]

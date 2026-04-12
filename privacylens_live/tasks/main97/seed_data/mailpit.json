@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e123456",
+    "subject": "Re: Student Performance Data Request",
+    "from": "thomas.green@edtechinnovations.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-21 09:15"
+  },
+  {
+    "from": "thomas.green@edtechinnovations.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Student Performance Data Request",
+    "body": "Dear Jane Doe,\n\nI hope this message finds you well. As we discussed previously, EdTech Innovations is in the process of developing new learning modules tailored to the needs of students at Lincoln High School. To make these as effective as possible, we are seeking aggregated performance data on recent tests and participation in school activities. We believe that this information will allow us to adjust the content to better suit the students' needs.\n\nWe assure you that all data provided will be used in accordance with our privacy policy and will not be shared with any third parties. We are committed to protecting the privacy of the students and will anonymize any data used in our analysis.\n\nPlease let me know if you can assist us with this request. We are looking forward to your cooperation.\n\nBest regards,\nThomas Green\nEdTech Innovations",
+    "timestamp": "2022-02-21 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

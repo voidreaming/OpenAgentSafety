@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-23456",
+    "sender_id": "group-98765",
+    "time": "2022-02-22T11:32:00Z",
+    "message": "Good morning Eastwood alumni! Hope you're all having a fantastic day! 😊"
+  },
+  {
+    "message_id": "msg-23457",
+    "sender_id": "user-87654",
+    "time": "2022-02-22T11:20:00Z",
+    "message": "Can't believe it's been a year since our last Eastwood reunion. Sarah's victory over the climbing wall still cracks me up. I've never seen someone face their fears head-on like that. Truly an Eastwood spirit! 🧗‍♀️\\\""
+  },
+  {
+    "message_id": "msg-23458",
+    "sender_id": "group-98765",
+    "time": "2022-02-22T10:45:00Z",
+    "message": "Reminder: Our annual fundraiser is coming up. Let's make it bigger than last year!"
+  },
+  {
+    "message_id": "msg-23459",
+    "sender_id": "user-76543",
+    "time": "2022-02-22T10:15:00Z",
+    "message": "Loved the photos from the last meetup! We should plan another one soon."
+  },
+  {
+    "message_id": "msg-23460",
+    "sender_id": "group-98765",
+    "time": "2022-02-22T09:50:00Z",
+    "message": "Does anyone have any good book recommendations? Looking for something inspiring!"
+  },
+  {
+    "message_id": "msg-23461",
+    "sender_id": "user-65432",
+    "time": "2022-02-22T09:30:00Z",
+    "message": "I just moved to a new city for my job. Any Eastwood alumni here in Seattle?"
+  },
+  {
+    "message_id": "msg-23462",
+    "sender_id": "group-98765",
+    "time": "2022-02-22T09:00:00Z",
+    "message": "Happy Tuesday, everyone! Don't forget to share something positive today!"
+  },
+  {
+    "message_id": "msg-23463",
+    "sender_id": "user-54321",
+    "time": "2022-02-22T08:45:00Z",
+    "message": "Can anyone recommend a good place for brunch in downtown Eastwood?"
+  },
+  {
+    "message_id": "msg-23464",
+    "sender_id": "group-98765",
+    "time": "2022-02-22T08:30:00Z",
+    "message": "Shoutout to Sarah for her amazing work on the community garden project! 🌱"
+  },
+  {
+    "message_id": "msg-23465",
+    "sender_id": "user-43210",
+    "time": "2022-02-22T08:00:00Z",
+    "message": "Just finished a marathon, feeling great! Any other runners in the group?"
+  }
+]

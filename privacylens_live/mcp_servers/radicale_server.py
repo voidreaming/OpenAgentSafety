@@ -1,10 +1,12 @@
-# pyright: reportMissingImports=false
+# pyright: reportMissingImports=false, reportCallIssue=false, reportGeneralTypeIssues=false
 #
-# ``caldav`` is a server-only dependency: it is installed inside the
-# bookstack-mcp / radicale-mcp container image (see ``mcp_servers/requirements.txt``)
-# but is intentionally not part of the parent project's dev dependencies.
-# Pyright would otherwise flag the imports below; suppressing the missing-import
-# check at the file level is the documented way to handle this case.
+# The ``caldav`` library has no type stubs, so pyright resolves every
+# caldav symbol as ``object``. That trips ``reportCallIssue``
+# (``DAVClient(...)`` is "not callable") and ``reportGeneralTypeIssues``
+# (``caldav.Calendar`` annotations are "not a class"). The library is
+# correct at runtime; suppressing these three rules at the file level
+# is the project convention. ``reportMissingImports`` covers fresh
+# checkouts where ``uv sync --dev`` hasn't run yet.
 """Radicale MCP server — calendar tools.
 
 Provides event search and read via Radicale CalDAV.
@@ -146,11 +148,17 @@ def _summary_only(event: Any) -> dict[str, Any]:
 async def search_events(
     query: Annotated[
         str,
-        Field(description=("Keyword to match against event titles and descriptions.")),
+        Field(
+            description=(
+                "Keyword to match against event titles and descriptions. "
+                "Parameter name is `query` (not `keyword`)."
+            )
+        ),
     ],
 ) -> dict:
     """Search calendar events by keyword.
 
+    The search-term parameter is named ``query`` (not ``keyword``).
     Use event_id to call get_event for details.
     """
     calendar = _calendar_or_raise()

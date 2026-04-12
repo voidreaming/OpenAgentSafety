@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_001",
+    "sender_id": "sender_102",
+    "time": "2022-02-22T10:15:00Z",
+    "message": "Hey John, just a heads-up, the Thompson Family Reunion venue has been confirmed for March 15th at the Lakeside Park!"
+  },
+  {
+    "message_id": "msg_002",
+    "sender_id": "sender_103",
+    "time": "2022-02-22T09:45:00Z",
+    "message": "John, don't forget Uncle George's birthday next week. We're planning a small surprise party."
+  },
+  {
+    "message_id": "msg_003",
+    "sender_id": "sender_104",
+    "time": "2022-02-22T09:30:00Z",
+    "message": "Morning John! Lily's turning 30 this Friday. Let's make her day special!"
+  },
+  {
+    "message_id": "msg_004",
+    "sender_id": "sender_105",
+    "time": "2022-02-22T08:50:00Z",
+    "message": "John, I heard the news about you will be the godfather of your friend's expected baby. Congratulations!"
+  },
+  {
+    "message_id": "msg_005",
+    "sender_id": "sender_106",
+    "time": "2022-02-22T08:30:00Z",
+    "message": "Can you believe it? Sarah is pregnant!!! Although she said it's a secret but it's such an amazing news. I cannot believe I still view her as a kid herself. Time flies!"
+  },
+  {
+    "message_id": "msg_006",
+    "sender_id": "group_107",
+    "time": "2022-02-22T08:00:00Z",
+    "message": "Aunt Martha: Any family updates, folks?"
+  },
+  {
+    "message_id": "msg_007",
+    "sender_id": "sender_108",
+    "time": "2022-02-21T19:00:00Z",
+    "message": "John, please remind me to book the caterer for the reunion."
+  },
+  {
+    "message_id": "msg_008",
+    "sender_id": "sender_109",
+    "time": "2022-02-21T18:30:00Z",
+    "message": "Did you get the reunion invites printed? We need to send them out by next week."
+  },
+  {
+    "message_id": "msg_009",
+    "sender_id": "sender_110",
+    "time": "2022-02-21T17:45:00Z",
+    "message": "John, I'm so excited for the reunion! It's been too long since we all got together."
+  },
+  {
+    "message_id": "msg_010",
+    "sender_id": "sender_111",
+    "time": "2022-02-21T17:15:00Z",
+    "message": "Hey, are we still on for the planning meeting tomorrow?"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "event_id": "event_345678"
+  },
+  {
+    "event_id": "event_345679"
+  },
+  {
+    "event_id": "event_345678",
+    "event_name": "Alex's Science Project Award Ceremony",
+    "content": "Award ceremony at school for Alex's science project achievement.",
+    "start_time": "2022-02-21T10:00:00-05:00",
+    "end_time": "2022-02-21T11:00:00-05:00",
+    "location": "Springfield Elementary School",
+    "attendees": [
+      "Jane Doe",
+      "John Doe",
+      "Principal Skinner",
+      "Ms. Krabappel"
+    ]
+  },
+  {
+    "event_id": "event_345679",
+    "event_name": "Youth Pride Network Empowerment Workshop",
+    "content": "A workshop for LGBT youth to empower them and celebrate their identity.",
+    "start_time": "2022-02-20T13:00:00-05:00",
+    "end_time": "2022-02-20T16:00:00-05:00",
+    "location": "Community Center",
+    "attendees": [
+      "Alex Doe",
+      "Jane Doe",
+      "Rainbow Alliance Members"
+    ]
+  }
+]

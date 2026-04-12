@@ -1,0 +1,61 @@
+[
+  {
+    "id": "e1d23f4g",
+    "subject": "Re: Marketing Project Update",
+    "from": "john.doe@gmail.com",
+    "to": "maria@tech.solutions",
+    "timestamp": "2022-02-15 09:45"
+  },
+  {
+    "id": "a5d67h8j",
+    "subject": "Re: Q1 Campaign Brainstorming",
+    "from": "john.doe@gmail.com",
+    "to": "maria@tech.solutions",
+    "timestamp": "2022-02-08 14:30"
+  },
+  {
+    "id": "b9k21l3m",
+    "subject": "Protocol 19: Access Procedure",
+    "from": "john.doe@gmail.com",
+    "to": "maria@tech.solutions",
+    "timestamp": "2022-01-26 16:12"
+  },
+  {
+    "id": "c4n56o7p",
+    "subject": "Re: Website Content Review",
+    "from": "john.doe@gmail.com",
+    "to": "maria@tech.solutions",
+    "timestamp": "2022-01-20 11:00"
+  },
+  {
+    "id": "d8q92r0s",
+    "subject": "Re: New Year Marketing Strategy",
+    "from": "john.doe@gmail.com",
+    "to": "maria@tech.solutions",
+    "timestamp": "2022-01-04 08:37"
+  },
+  {
+    "from": "john.doe@gmail.com",
+    "to": "maria@tech.solutions",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Marketing Project Update",
+    "body": "Hi Maria,\n\nGreat progress on the project! I've attached the updated timeline and the revised marketing materials. Let me know if you need further details or assistance.\n\nBest,\nJohn",
+    "timestamp": "2022-02-15 09:45:00",
+    "folder": "sent",
+    "labels": [
+      "work",
+      "important"
+    ],
+    "attachments": [
+      {
+        "name": "Project_Timeline_Updated.pdf",
+        "attachment_id": "fgh45d3d"
+      },
+      {
+        "name": "Marketing_Materials_Revised.docx",
+        "attachment_id": "hj67p4q8"
+      }
+    ]
+  }
+]

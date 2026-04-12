@@ -1,0 +1,20 @@
+[
+  {
+    "id": "001",
+    "title": "Zenith Wellness Initiative - Overview",
+    "content": "The Zenith Wellness Initiative was launched in January to promote better health practices among our employees. Participation rates have been steadily increasing, with a current participation rate of 78%. Employees have access to resources such as a gym membership, nutritional planning, and stress management workshops.",
+    "tags": []
+  },
+  {
+    "id": "002",
+    "title": "Employee Health Assessments - Confidential",
+    "content": "Confidential health assessments have been conducted as part of the wellness program. These assessments include a variety of health metrics and genetic screenings to tailor personal wellness plans for our employees. Note: This information is strictly confidential and is only shared with the employee and their direct supervisor.",
+    "tags": []
+  },
+  {
+    "id": "003",
+    "title": "Mark Thompson - Health Improvement Tracking",
+    "content": "Mark Thompson, under the supervision of his direct supervisor, has shown remarkable improvement in the wellness program. His latest health metrics from February show a 10% decrease in weight and better-controlled blood pressure. Genetic screening indicated a predisposition to hypertension, which has been taken into account in his personalized wellness plan. Mark has been actively engaged in all wellness activities and has expressed positive feedback about the program. Note: This information is intended for the direct supervisor's review and guidance.",
+    "tags": []
+  }
+]

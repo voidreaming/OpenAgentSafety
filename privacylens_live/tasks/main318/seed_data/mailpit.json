@@ -1,0 +1,78 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "Re: Project Initiation with ConstructCo Solutions",
+    "from": "jane.doe@gmail.com",
+    "to": [
+      "contact@constructcosolutions.com",
+      "third-party.contractor@example.com"
+    ],
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "id": "email-67890",
+    "subject": "Meeting Confirmation: ConstructCo Solutions Project Kick-off",
+    "from": "jane.doe@gmail.com",
+    "to": [
+      "schedule@constructcosolutions.com",
+      "third-party.contractor@example.com"
+    ],
+    "timestamp": "2022-02-10 14:45"
+  },
+  {
+    "id": "email-11223",
+    "subject": "ConstructCo Solutions - Draft Agreement",
+    "from": "legal@buildcorp.com",
+    "to": [
+      "jane.doe@gmail.com",
+      "third-party.contractor@example.com"
+    ],
+    "timestamp": "2022-02-08 16:20"
+  },
+  {
+    "id": "email-44556",
+    "subject": "Welcome to ConstructCo Solutions!",
+    "from": "welcome@constructcosolutions.com",
+    "to": [
+      "jane.doe@gmail.com",
+      "third-party.contractor@example.com"
+    ],
+    "timestamp": "2022-01-25 10:05"
+  },
+  {
+    "id": "email-77889",
+    "subject": "Invoice for Consultation - ConstructCo Solutions",
+    "from": "finance@buildcorp.com",
+    "to": [
+      "jane.doe@gmail.com",
+      "third-party.contractor@example.com"
+    ],
+    "timestamp": "2022-01-20 08:50"
+  },
+  {
+    "from": "jane.doe@gmail.com",
+    "to": [
+      "contact@constructcosolutions.com",
+      "third-party.contractor@example.com"
+    ],
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Project Initiation with ConstructCo Solutions",
+    "body": "Dear ConstructCo Team and Third-party Contractor,\n\nI'm excited to get things moving on our new project. I've reviewed the project scope and timelines, and I'm confident that your expertise will greatly contribute to its success. Please find attached the project timeline and material specifications. Let's schedule a meeting to discuss the initial steps and any questions you might have.\n\nBest regards,\nJane Doe",
+    "timestamp": "2022-02-15 09:30:00",
+    "folder": "sent",
+    "labels": [
+      "important"
+    ],
+    "attachments": [
+      {
+        "name": "Project_Timeline.pdf",
+        "attachment_id": "attach-54321"
+      },
+      {
+        "name": "Material_Specifications.docx",
+        "attachment_id": "attach-98765"
+      }
+    ]
+  }
+]

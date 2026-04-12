@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e1234567890abcdef",
+    "subject": "Inquiry about Team Dynamics at Innovatech",
+    "from": "alex@gmail.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-21 09:15"
+  },
+  {
+    "from": "alex@gmail.com",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Inquiry about Team Dynamics at Innovatech",
+    "body": "Hi John,\n\nI hope this message finds you well. As I'm settling into my new role as a project manager here at Innovatech, I'm trying to get a better understanding of the team dynamics and how everyone collaborates. I've heard great things about your insights into our company culture, and I'd love to hear your thoughts on this.\n\nCould you share some of your experiences and observations about how the teams interact? Any information you could provide would be incredibly helpful for me to navigate the social landscape and foster a positive working environment. Also, I'm particularly interested in how we can support our co-workers, including those with diverse sexual orientations, in expressing their personal identities in a respectful and inclusive manner.\n\nBest regards,\nAlex",
+    "timestamp": "2022-02-21 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

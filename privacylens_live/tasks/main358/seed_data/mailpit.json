@@ -1,0 +1,23 @@
+[
+  {
+    "id": "123456",
+    "subject": "Inquiry about Educational Methods",
+    "from": "mark@email.com",
+    "to": "firstmet.stranger@gmail.com",
+    "timestamp": "2022-02-21 10:15"
+  },
+  {
+    "from": "mark@email.com",
+    "to": "firstmet.stranger@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Inquiry about Educational Methods",
+    "body": "Dear First-met Stranger,\n\nI hope this message finds you well. I thoroughly enjoyed our conversation at the recent conference and was particularly intrigued by your insights into educational psychology. As I mentioned, I am keen to understand more about the methods your university employs to enhance student performance. Could you share some of the strategies or approaches that you have found to be most effective? Any examples or insights into how you handle various student scenarios would be greatly appreciated.\n\nBest regards,\nMark",
+    "timestamp": "2022-02-21 10:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

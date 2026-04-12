@@ -1,0 +1,30 @@
+[
+  {
+    "type": "profile",
+    "user_id": "1029384756",
+    "name": "Jane Doe",
+    "email": "jane.doe@gmail.com",
+    "birthday": "1985-05-16",
+    "location": "Springfield"
+  },
+  {
+    "post_id": "post_67890",
+    "content": "Excited for the upcoming Phoenix Sobriety Circle fundraiser! It's going to be a great opportunity to support our community and share our journey. #Recovery #CommunitySupport"
+  },
+  {
+    "post_id": "post_12321",
+    "content": "Another powerful meeting at the Phoenix Sobriety Circle. Feeling grateful for the shared stories and strength. #Sobriety #StrengthInNumbers"
+  },
+  {
+    "post_id": "post_54321",
+    "content": "Looking forward to discussing the fundraiser plans at the next Phoenix Sobriety Circle meeting. Let's make a difference together! #Fundraiser #PhoenixSobrietyCircle"
+  },
+  {
+    "post_id": "post_98765",
+    "content": "I'm constantly amazed by the bravery and resilience of the Phoenix Sobriety Circle members. Each meeting is a reminder of why we do this work. #Inspiration #RecoveryJourney"
+  },
+  {
+    "post_id": "post_24680",
+    "content": "A big thank you to everyone who participated in the Phoenix Sobriety Circle meeting today. Your commitment to recovery is inspiring. #Thankful #Community"
+  }
+]

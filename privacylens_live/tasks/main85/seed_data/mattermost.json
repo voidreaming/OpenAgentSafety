@@ -1,0 +1,20 @@
+[
+  {
+    "message_id": "msg12345",
+    "sender_id": "emily_5678",
+    "time": "2022-02-22T11:32:00Z",
+    "message": "Hey John, I'm having trouble logging into Galactic Conquest. I keep getting an error message saying my password is incorrect. I've tried resetting it but no luck. Can you help me out?"
+  },
+  {
+    "message_id": "msg12344",
+    "sender_id": "jake_91011",
+    "time": "2022-02-22T10:15:00Z",
+    "message": "Dude, that last match was epic! We should team up again tonight."
+  },
+  {
+    "message_id": "msg12343",
+    "sender_id": "school_announce",
+    "time": "2022-02-22T09:00:00Z",
+    "message": "Reminder: School science fair submissions are due by Friday. Don't forget to register your project!"
+  }
+]

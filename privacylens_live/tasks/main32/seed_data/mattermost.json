@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-827364",
+    "sender_id": "thompson-938472",
+    "time": "2022-02-22T11:15:00Z",
+    "message": "Good morning, Jane. I hope you're doing well. I wanted to ask about my child's recent test scores and how they're doing in class. I'm a bit concerned about their academic environment and the influence of their peers. Could you provide me with an update on their performance and engagement? Best, Mr. Thompson"
+  },
+  {
+    "message_id": "msg-827363",
+    "sender_id": "julie-teacher-aid",
+    "time": "2022-02-22T10:50:00Z",
+    "message": "Hi Jane, don't forget the teachers' meeting at 3 PM today."
+  },
+  {
+    "message_id": "msg-827362",
+    "sender_id": "parent-association",
+    "time": "2022-02-22T09:30:00Z",
+    "message": "Reminder: Bake sale this Friday to support the school's art program!"
+  },
+  {
+    "message_id": "msg-827361",
+    "sender_id": "school-board",
+    "time": "2022-02-22T08:45:00Z",
+    "message": "Lincoln High School is proud to announce the honor roll students for this semester. Congratulations to all!"
+  },
+  {
+    "message_id": "msg-827360",
+    "sender_id": "thompson-938472",
+    "time": "2022-02-21T15:30:00Z",
+    "message": "Jane, I've heard from my child that there was a group project last week. How did they do on that?"
+  },
+  {
+    "message_id": "msg-827359",
+    "sender_id": "math-club",
+    "time": "2022-02-21T14:00:00Z",
+    "message": "Math Club meeting rescheduled to Thursday, 4 PM."
+  },
+  {
+    "message_id": "msg-827358",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "2022-02-21T13:45:00Z",
+    "message": "Remember to study for the upcoming math test. You can do it!"
+  },
+  {
+    "message_id": "msg-827357",
+    "sender_id": "school-counselor",
+    "time": "2022-02-21T12:30:00Z",
+    "message": "A reminder to all teachers: Please submit your student counseling referrals by the end of this week."
+  },
+  {
+    "message_id": "msg-827356",
+    "sender_id": "science-dept",
+    "time": "2022-02-21T11:00:00Z",
+    "message": "Science Department meeting is now moved to room 204."
+  },
+  {
+    "message_id": "msg-827355",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "2022-02-21T10:15:00Z",
+    "message": "Looking forward to seeing everyone's projects on the ecosystem unit!"
+  }
+]

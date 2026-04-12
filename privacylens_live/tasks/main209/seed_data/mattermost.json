@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_12345",
+    "sender_id": "mike_67890",
+    "time": "2022-02-22T10:30:00-05:00",
+    "message": "Hey John, how's it going? Haven't heard from you in a while!"
+  },
+  {
+    "message_id": "msg_12346",
+    "sender_id": "jane_54321",
+    "time": "2022-02-22T09:45:00-05:00",
+    "message": "John, don't forget the team meeting tomorrow at 10 AM."
+  },
+  {
+    "message_id": "msg_12347",
+    "sender_id": "helping_hands_11223",
+    "time": "2022-02-22T08:55:00-05:00",
+    "message": "Reminder: Seminar on new recovery techniques next Monday at 3 PM."
+  },
+  {
+    "message_id": "msg_12348",
+    "sender_id": "kate_98765",
+    "time": "2022-02-21T16:00:00-05:00",
+    "message": "Thank you for today's session, John. I feel more hopeful."
+  },
+  {
+    "message_id": "msg_12349",
+    "sender_id": "gym_24680",
+    "time": "2022-02-21T07:00:00-05:00",
+    "message": "Your gym membership is due for renewal. Stay fit!"
+  },
+  {
+    "message_id": "msg_12350",
+    "sender_id": "mike_67890",
+    "time": "2022-02-20T15:22:00-05:00",
+    "message": "Saw an interesting article on addiction recovery. Will send it your way."
+  },
+  {
+    "message_id": "msg_12351",
+    "sender_id": "family_334455",
+    "time": "2022-02-20T13:37:00-05:00",
+    "message": "Happy Birthday, John! We love you!"
+  },
+  {
+    "message_id": "msg_12352",
+    "sender_id": "workshop_778899",
+    "time": "2022-02-19T11:00:00-05:00",
+    "message": "Workshop on stress management techniques this Wednesday."
+  },
+  {
+    "message_id": "msg_12353",
+    "sender_id": "bill_123321",
+    "time": "2022-02-18T17:30:00-05:00",
+    "message": "Is our golf game still on for this weekend?"
+  },
+  {
+    "message_id": "msg_12354",
+    "sender_id": "mike_67890",
+    "time": "2022-02-18T08:45:00-05:00",
+    "message": "We should catch up soon, it's been too long!"
+  }
+]

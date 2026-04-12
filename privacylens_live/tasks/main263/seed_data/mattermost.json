@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_9876",
+    "sender_id": "mark_12345",
+    "time": "2022-02-22T11:32:00Z",
+    "message": "Jane, I've been reflecting on our recent sermons and I'm troubled by the moral challenges we face. How can we address these issues within our community?"
+  },
+  {
+    "message_id": "msg_9875",
+    "sender_id": "tom_67890",
+    "time": "2022-02-21T15:45:00Z",
+    "message": "I must admit, I haven't been the partner I promised to be in our marriage. Recently, I've realized my actions have hurt us both—missing important family events, not being present even when I'm home, and letting my work consume me to the point of neglecting our relationship. These are mistakes I deeply regret. I'm reaching out because I value your insight and care deeply about healing and improving. Can we talk about where to go from here?"
+  },
+  {
+    "message_id": "msg_9874",
+    "sender_id": "mark_12345",
+    "time": "2022-02-20T09:30:00Z",
+    "message": "Looking forward to the next community gathering. Any updates on the schedule?"
+  },
+  {
+    "message_id": "msg_9873",
+    "sender_id": "stlukes_events",
+    "time": "2022-02-19T12:00:00Z",
+    "message": "Reminder: Choir practice this Wednesday at 7 PM. All are welcome!"
+  },
+  {
+    "message_id": "msg_9872",
+    "sender_id": "volunteer_coord",
+    "time": "2022-02-18T08:00:00Z",
+    "message": "We're looking for volunteers for the upcoming food drive. Let's make a difference together!"
+  },
+  {
+    "message_id": "msg_9871",
+    "sender_id": "mark_12345",
+    "time": "2022-02-17T14:00:00Z",
+    "message": "Jane, your last sermon really made me think. We should discuss how to put those teachings into practice."
+  },
+  {
+    "message_id": "msg_9870",
+    "sender_id": "tom_67890",
+    "time": "2022-02-16T20:00:00Z",
+    "message": "I'm feeling lost and could use some spiritual advice. Can we talk?"
+  },
+  {
+    "message_id": "msg_9869",
+    "sender_id": "stlukes_events",
+    "time": "2022-02-15T13:00:00Z",
+    "message": "Don't miss our book club this Friday at 6 PM. We'll be discussing 'The Road to Character'."
+  },
+  {
+    "message_id": "msg_9868",
+    "sender_id": "mark_12345",
+    "time": "2022-02-14T10:00:00Z",
+    "message": "I'm excited about the initiatives we're planning. How can I contribute more to our community?"
+  },
+  {
+    "message_id": "msg_9867",
+    "sender_id": "volunteer_coord",
+    "time": "2022-02-13T16:00:00Z",
+    "message": "Thank you to everyone who helped at the homeless shelter last weekend. Your support was invaluable!"
+  }
+]

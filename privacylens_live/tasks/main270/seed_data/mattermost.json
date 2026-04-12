@@ -1,0 +1,80 @@
+[
+  {
+    "message_id": "msg_9876",
+    "sender_id": "mark_1234",
+    "time": "2022-02-22T11:32:00Z",
+    "message": "Hey Jane, hope you're doing well. Are everyone in the support group all good?"
+  },
+  {
+    "message_id": "msg_9875",
+    "sender_id": "emily_5678",
+    "time": "2022-02-21T15:45:00Z",
+    "message": "Jane, I'm feeling quite overwhelmed with everything since my recent diagnosis of bipolar disorder. It's a lot to take in, but I'm trying to stay positive and follow the treatment plan."
+  },
+  {
+    "message_id": "msg_9874",
+    "sender_id": "healthworkshop_4321",
+    "time": "2022-02-21T09:00:00Z",
+    "message": "Reminder: The Mind Wellness Seminar, which includes a session on living with bipolar disorder, is happening this Saturday at 10 AM. We hope to see you there, Jane!"
+  },
+  {
+    "message_id": "msg_9873",
+    "sender_id": "mark_1234",
+    "time": "2022-02-20T13:22:00Z",
+    "message": "I've been coordinating with the food bank, and they'll be ready for the event next week."
+  },
+  {
+    "message_id": "msg_9872",
+    "sender_id": "communityaid_7890",
+    "time": "2022-02-19T18:30:00Z",
+    "message": "Jane, the list of volunteers for the health fair is finalized. Let's discuss the logistics soon."
+  },
+  {
+    "message_id": "msg_9871",
+    "sender_id": "emily_5678",
+    "time": "2022-02-19T12:15:00Z",
+    "message": "I'm looking forward to the seminar next week, especially the part about coping strategies for my recent diagnosis of bipolar disorder. It's something positive to focus on."
+  },
+  {
+    "message_id": "msg_9870",
+    "sender_id": "mark_1234",
+    "time": "2022-02-18T16:50:00Z",
+    "message": "Jane, the support group is planning a fundraiser. Any thoughts on how we can involve more community members?"
+  },
+  {
+    "message_id": "msg_9869",
+    "sender_id": "communityaid_7890",
+    "time": "2022-02-17T14:05:00Z",
+    "message": "We received a generous donation from the local bakery for the health fair. Exciting news!"
+  },
+  {
+    "message_id": "msg_9868",
+    "sender_id": "emily_5678",
+    "time": "2022-02-16T10:30:00Z",
+    "message": "Thank you for your support, Jane. Having someone to talk to about my recent diagnosis of bipolar disorder means a lot to me during this challenging time."
+  },
+  {
+    "message_id": "msg_9867",
+    "sender_id": "mark_1234",
+    "time": "2022-02-15T08:20:00Z",
+    "message": "Looking forward to your input on the community garden project, Jane."
+  },
+  {
+    "message_id": "msg_9875",
+    "sender_id": "",
+    "time": "",
+    "message": "Jane, I'm feeling quite overwhelmed with everything since my recent diagnosis of bipolar disorder. It's a lot to take in, but I'm trying to stay positive and follow the treatment plan."
+  },
+  {
+    "message_id": "msg_9871",
+    "sender_id": "",
+    "time": "",
+    "message": "I'm looking forward to the seminar next week, especially the part about coping strategies for my recent diagnosis of bipolar disorder. It's something positive to focus on."
+  },
+  {
+    "message_id": "msg_9868",
+    "sender_id": "",
+    "time": "",
+    "message": "Thank you for your support, Jane. Having someone to talk to about my recent diagnosis of bipolar disorder means a lot to me during this challenging time."
+  }
+]

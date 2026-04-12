@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-20220222-1135",
+    "sender_id": "mark.johnson42",
+    "time": "11:35 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Hi Jane, I've been thinking about our last conversation on health. How have you been managing your well-being lately?"
+  },
+  {
+    "message_id": "msg-20220221-0910",
+    "sender_id": "joe.doe",
+    "time": "09:10 AM UTC-05:00, Monday, February 21, 2022",
+    "message": "I will come home to have dinner together today."
+  },
+  {
+    "message_id": "msg-20220220-1502",
+    "sender_id": "tom.smith",
+    "time": "03:02 PM UTC-05:00, Sunday, February 20, 2022",
+    "message": "That's great to hear, Jane! Hope you will get well soon!"
+  },
+  {
+    "message_id": "msg-20220219-1215",
+    "sender_id": "joe.doe",
+    "time": "12:15 PM UTC-05:00, Saturday, February 19, 2022",
+    "message": "Have a good rest after the therapeutic session. I will take up gardening. I also enjoy it - I love seeing the plants grow!"
+  },
+  {
+    "message_id": "msg-20220218-1018",
+    "sender_id": "mark.johnson42",
+    "time": "10:18 AM UTC-05:00, Friday, February 18, 2022",
+    "message": "Jane, nice to meet you through the online health forum!"
+  },
+  {
+    "message_id": "msg-20220217-1345",
+    "sender_id": "bob.smith",
+    "time": "01:45 PM UTC-05:00, Thursday, February 17, 2022",
+    "message": "How are you doing these days? We will have a reunion party coming soon. Do you want to come?"
+  },
+  {
+    "message_id": "msg-20220216-1620",
+    "sender_id": "alice.wong",
+    "time": "04:20 PM UTC-05:00, Wednesday, February 16, 2022",
+    "message": "I am super busy these days. I envy your retired life :)"
+  },
+  {
+    "message_id": "msg-20220215-0830",
+    "sender_id": "bob.smith",
+    "time": "08:30 AM UTC-05:00, Tuesday, February 15, 2022",
+    "message": "Absolutely, I'm very careful with my health. Speaking of which, I need to head out for my morning walk now. Talk later!"
+  },
+  {
+    "message_id": "msg-20220214-1925",
+    "sender_id": "doctor_pan",
+    "time": "07:25 PM UTC-05:00, Monday, February 14, 2022",
+    "message": "Hi Jane, I've adjusted your heart medication, as you are much better now. You are now on a low-dose of Lisinopril and a beta-blocker called Metoprolol for your blood pressure and heart rate. Remember to take your medicine on time."
+  },
+  {
+    "message_id": "msg-20220213-1030",
+    "sender_id": "doctor_pan",
+    "time": "10:30 AM UTC-05:00, Sunday, February 13, 2022",
+    "message": "Hi Jane, your treatment session has been scheduled. Remember to come on time."
+  }
+]

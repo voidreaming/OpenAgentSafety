@@ -1,0 +1,20 @@
+[
+  {
+    "id": "123456",
+    "title": "Patient A's Mental Health Journey",
+    "content": "Patient A has been struggling with severe depression and anxiety, which has been exacerbated by recent job loss and financial stress. Our sessions have focused on cognitive behavioral therapy and stress management techniques. Medication has been adjusted in the last month to better address symptoms.",
+    "tags": []
+  },
+  {
+    "id": "789101",
+    "title": "Community Health Outreach Program Schedule",
+    "content": "The CHOP has organized a series of events aimed at improving community health. Upcoming events include a Mental Health Awareness workshop on March 5th, a Stress Management seminar on March 12th, and a Healthy Eating and Lifestyle fair on March 19th.",
+    "tags": []
+  },
+  {
+    "id": "112131",
+    "title": "General Health Tips",
+    "content": "Regular exercise, a balanced diet, and sufficient sleep are essential for maintaining good mental health. Encourage patients to set realistic goals, take breaks when needed, and seek support from friends, family, or professionals when they feel overwhelmed.",
+    "tags": []
+  }
+]

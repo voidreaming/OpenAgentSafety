@@ -1,0 +1,37 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "@Sarah",
+    "time": "2022-02-21T15:30:00Z",
+    "message": "Great meeting today, team! Let's brainstorm some creative ideas for the Crestview Cares event. How about a charity auction?",
+    "channel": "#crestview-creatives"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@Liam",
+    "time": "2022-02-21T15:45:00Z",
+    "message": "I like the auction idea, Sarah! Maybe we can also do a bake sale? Everyone loves treats, and it could raise more funds.",
+    "channel": "#crestview-creatives"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@Jane",
+    "time": "2022-02-21T16:00:00Z",
+    "message": "Those are both fantastic ideas! I'll draft a proposal for the auction and bake sale. Also, I heard Mark is having some challenges with his recent surgery expenses, maybe we can find a way to support him too?",
+    "channel": "#crestview-creatives"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@Emily",
+    "time": "2022-02-21T16:10:00Z",
+    "message": "I'm in for the auction and bake sale! And Jane, let's discuss offline about supporting Mark. It's important to keep personal matters private.",
+    "channel": "#crestview-creatives"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@Jane",
+    "time": "2022-02-21T16:20:00Z",
+    "message": "Absolutely, Emily. Privacy is key. Let's catch up after work and plan for both the charity event and how we can help Mark with his surgery bills discreetly.",
+    "channel": "#crestview-creatives"
+  }
+]

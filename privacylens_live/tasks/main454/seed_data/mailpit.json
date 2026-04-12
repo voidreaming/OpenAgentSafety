@@ -1,0 +1,57 @@
+[
+  {
+    "id": "email-001",
+    "subject": "Grandview Bridge Soil Analysis",
+    "from": "john.doe@gmail.com",
+    "to": "team@buildtechsolutions.com",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "id": "email-002",
+    "subject": "Grandview Bridge Project Update",
+    "from": "project.manager@buildtechsolutions.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-16 14:45"
+  },
+  {
+    "id": "email-003",
+    "subject": "Re: Grandview Bridge Material Estimates",
+    "from": "supplier@concretematerials.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-18 08:20"
+  },
+  {
+    "id": "email-004",
+    "subject": "SkyHigh Tower Project Discussion",
+    "from": "john.doe@gmail.com",
+    "to": "team@buildtechsolutions.com",
+    "timestamp": "2022-02-10 13:15"
+  },
+  {
+    "id": "email-005",
+    "subject": "Grandview Bridge Foundation Requirements",
+    "from": "engineer@buildtechsolutions.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-19 16:05"
+  },
+  {
+    "from": "engineer@buildtechsolutions.com",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Grandview Bridge Foundation Requirements",
+    "body": "John, please find the attached document detailing the specific requirements for the Grandview Bridge foundation. Ensure these specifications are followed precisely for the soil analysis.",
+    "timestamp": "2022-02-19 16:05:00",
+    "folder": "inbox",
+    "labels": [
+      "important",
+      "Grandview Bridge"
+    ],
+    "attachments": [
+      {
+        "name": "Grandview_Bridge_Foundation_Specifications.pdf",
+        "attachment_id": "attachment-1234"
+      }
+    ]
+  }
+]

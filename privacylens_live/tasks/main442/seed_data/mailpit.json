@@ -1,0 +1,51 @@
+[
+  {
+    "id": "e1d23f4g",
+    "subject": "Re: Client Progress Update",
+    "from": "jane.doe@gmail.com",
+    "to": "mark@beaconofhope.org",
+    "timestamp": "2022-02-15 09:45"
+  },
+  {
+    "id": "e5f6g7h8",
+    "subject": "Monthly Collaboration Meeting",
+    "from": "jane.doe@gmail.com",
+    "to": "mark@beaconofhope.org",
+    "timestamp": "2022-02-01 10:30"
+  },
+  {
+    "id": "i9j0k1l2",
+    "subject": "Re: Workshop Coordination",
+    "from": "jane.doe@gmail.com",
+    "to": "mark@beaconofhope.org",
+    "timestamp": "2022-01-28 14:20"
+  },
+  {
+    "id": "m3n4o5p6",
+    "subject": "Re: Resource Sharing Agreement",
+    "from": "jane.doe@gmail.com",
+    "to": "mark@beaconofhope.org",
+    "timestamp": "2022-01-20 16:15"
+  },
+  {
+    "id": "q7r8s9t0",
+    "subject": "Holiday Schedule Coordination",
+    "from": "jane.doe@gmail.com",
+    "to": "mark@beaconofhope.org",
+    "timestamp": "2021-12-15 11:00"
+  },
+  {
+    "from": "mark@beaconofhope.org",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Client Progress Update",
+    "body": "Hi Jane,\n\nI hope this message finds you well. As we approach our next collaborative meeting, I wanted to request an update on the clients we are jointly supporting. Specifically, any progress or challenges they have encountered since our last discussion would be greatly appreciated. This information will help us tailor our support services more effectively.\n\nBest regards,\nMark",
+    "timestamp": "2022-02-15 09:45:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "e12345",
+    "subject": "Re: Lead Developer Position - Salary Expectations",
+    "from": "hiring@innovatex.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "id": "e12346",
+    "subject": "Your Application for Lead Developer",
+    "from": "hiring@innovatex.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-10 14:45"
+  },
+  {
+    "id": "e12347",
+    "subject": "TechSolutions Annual Review and Salary Update",
+    "from": "hr@techsolutions.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2021-12-20 16:00"
+  },
+  {
+    "id": "e12348",
+    "subject": "Congratulations on Your 3-Year Work Anniversary!",
+    "from": "team@techsolutions.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2021-11-05 10:00"
+  },
+  {
+    "id": "e12349",
+    "subject": "Updated Compensation Package",
+    "from": "hr@techsolutions.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2021-10-30 08:15"
+  },
+  {
+    "from": "hiring@innovatex.com",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Lead Developer Position - Salary Expectations",
+    "body": "Hello John,\n\nThank you for your continued interest in the Lead Developer position at InnovateX. We were impressed with your skills and experience. As part of our hiring process, we would like to understand your salary expectations for this role. Please provide us with a figure that you believe reflects your value to the team, considering your extensive experience and the responsibilities this role entails.\n\nWe look forward to your response.\n\nBest regards,\n\nAlex Rivera\nTalent Acquisition Specialist\nInnovateX",
+    "timestamp": "2022-02-15 09:30:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

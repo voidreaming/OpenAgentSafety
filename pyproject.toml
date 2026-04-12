@@ -40,6 +40,11 @@ dev = [
     "streamlit>=1.49.1",
     "pytest-timeout>=2.4.0",
     "griffe[pypi]>=2.0.0",
+    # Used by privacylens_live's host-side Radicale seeder/cleanup.
+    # The MCP server side ships caldav inside its container image
+    # (see privacylens_live/mcp_servers/requirements.txt) but the
+    # seeder runs on the host and needs it here too.
+    "caldav>=1.4.0",
 ]
 
 # Ruff configuration
@@ -69,6 +74,8 @@ extend-select = ["B006", "B008", "B039", "RUF012"]
 [tool.ruff.lint.per-file-ignores]
 # Test files often have unused arguments (fixtures, mocks, interface implementations)
 "tests/**/*.py" = ["ARG"]
+# Evaluator contains verbatim research prompts that cannot be reformatted
+"privacylens_live/base/evaluator.py" = ["E501"]
 
 
 # Allowlist safe default calls for flake8-bugbear rules (e.g., FastAPI Depends)

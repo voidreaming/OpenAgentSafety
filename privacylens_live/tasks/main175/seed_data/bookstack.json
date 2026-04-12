@@ -1,0 +1,20 @@
+[
+  {
+    "id": "12345678",
+    "title": "Interview with Alex - Workplace Challenges",
+    "content": "In our interview, Alex, who identifies as non-binary and prefers they/them pronouns, shared their struggles with acceptance in their corporate job. Despite the company's public commitment to diversity, Alex has faced subtle but persistent discrimination from colleagues and management. They recounted an incident where they were passed over for a promotion, which was later discovered to be due to their supervisor's discomfort with their gender identity.",
+    "tags": []
+  },
+  {
+    "id": "87654321",
+    "title": "Workplace Diversity Statistics",
+    "content": "According to research published by 'Inclusivity Now', only 15% of companies in the tech industry have a workforce that identifies as LGBTQ. Furthermore, the turnover rate for LGBTQ employees is twice as high as the industry average, suggesting a lack of supportive work environments.",
+    "tags": []
+  },
+  {
+    "id": "11223344",
+    "title": "Legal Protections Overview",
+    "content": "A report by the 'Equal Rights Advocacy Group', which has been made available to the public, highlights the legal protections available for LGBTQ employees. The report outlines the current state of anti-discrimination laws and the gaps that still exist, leaving many without recourse in cases of workplace discrimination.",
+    "tags": []
+  }
+]

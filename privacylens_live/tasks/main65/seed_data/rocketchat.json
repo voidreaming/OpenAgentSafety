@@ -1,0 +1,14 @@
+[
+  {
+    "name": "hr-team-tech-innovations",
+    "status": "member"
+  },
+  {
+    "name": "hr-announcements",
+    "status": "non-member"
+  },
+  {
+    "name": "hr-onboarding",
+    "status": "member"
+  }
+]

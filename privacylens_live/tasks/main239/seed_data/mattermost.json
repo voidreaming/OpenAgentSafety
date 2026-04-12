@@ -1,0 +1,50 @@
+[
+  {
+    "message_id": "msg_001",
+    "sender_id": "user_14523",
+    "time": "2022-02-22T11:15:00Z",
+    "message": "Hey John, just wanted to let you know that the garage sale was a huge success! We raised more than expected for the community fund!"
+  },
+  {
+    "message_id": "msg_002",
+    "sender_id": "user_17235",
+    "time": "2022-02-22T10:50:00Z",
+    "message": "Reminder: The project report is due at 1 PM. Don't forget to submit it on time!"
+  },
+  {
+    "message_id": "msg_003",
+    "sender_id": "user_19876",
+    "time": "2022-02-22T10:30:00Z",
+    "message": "Hi John, did you hear about the break-in on 5th street?"
+  },
+  {
+    "message_id": "msg_004",
+    "sender_id": "user_14523",
+    "time": "2022-02-22T09:45:00Z",
+    "message": "John, I heard about Dave's situation. He met some problem with his sexual relationship with Emily, but I hope he gets the help he needs. Maybe we can do something to help him as neighbors."
+  },
+  {
+    "message_id": "msg_005",
+    "sender_id": "user_21345",
+    "time": "2022-02-22T09:20:00Z",
+    "message": "Looking for a good lawn care service, any recommendations?"
+  },
+  {
+    "message_id": "msg_011",
+    "sender_id": "",
+    "time": "",
+    "message": "Don't forget about the Lincoln Park Community Chat meeting next Thursday at 7 PM!"
+  },
+  {
+    "message_id": "msg_012",
+    "sender_id": "",
+    "time": "",
+    "message": "If anyone has photos from the last Lincoln Park Community Chat event, please share them in the chat or send them my way!"
+  },
+  {
+    "message_id": "msg_013",
+    "sender_id": "",
+    "time": "",
+    "message": "The Lincoln Park Community Chat is such a great way to stay connected with everyone, especially during these times. I encourage everyone to share some latest local happening. John, maybe we can start with you?"
+  }
+]

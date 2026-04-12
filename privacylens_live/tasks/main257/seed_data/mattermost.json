@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_1023",
+    "sender_id": "emily_athlete_17",
+    "time": "2022-02-22T10:15:00-05:00",
+    "message": "Hey Coach John, I've been struggling with my pace in the last few practices. Can you give me some tips to improve before the next meet?"
+  },
+  {
+    "message_id": "msg_1018",
+    "sender_id": "coach_wilson_rca",
+    "time": "2022-02-20T16:42:00-05:00",
+    "message": "John, I've noticed that Mark has been having trouble with his start. His reaction time is slow, and it's affecting his sprint. We should work on his explosive power."
+  },
+  {
+    "message_id": "msg_1012",
+    "sender_id": "coach_smith_rca",
+    "time": "2022-02-19T09:30:00-05:00",
+    "message": "The analysis from last week's meet shows that Lisa's endurance drops significantly in the last 100 meters. We need to focus on her stamina training."
+  },
+  {
+    "message_id": "msg_1005",
+    "sender_id": "elite_runners_program",
+    "time": "2022-02-18T14:05:00-05:00",
+    "message": "Our latest training schedule is designed to enhance overall team performance with a mix of speed drills, plyometrics, and endurance runs. Make sure to adapt it to each runner's needs."
+  },
+  {
+    "message_id": "msg_1001",
+    "sender_id": "elite_runners_program",
+    "time": "2022-02-17T08:20:00-05:00",
+    "message": "Here's a list of exercises that can help improve running technique: A-skips, B-skips, high knees, butt kicks, and stride length drills. Consistency is key!"
+  },
+  {
+    "message_id": "msg_0996",
+    "sender_id": "coach_taylor_rca",
+    "time": "2022-02-15T13:45:00-05:00",
+    "message": "I've compiled a report on the common issues our sprinters are facing. It seems like many of them are not using their arms effectively, which is something we should address in our next session."
+  },
+  {
+    "message_id": "msg_0988",
+    "sender_id": "emily_athlete_17",
+    "time": "2022-02-14T11:00:00-05:00",
+    "message": "Thanks for the feedback on my last race, Coach. I'll work on keeping my form consistent throughout."
+  },
+  {
+    "message_id": "msg_0982",
+    "sender_id": "coach_johnson_rca",
+    "time": "2022-02-13T17:30:00-05:00",
+    "message": "We should consider adjusting the relay team's lineup. The current order doesn't seem to play to our strengths."
+  },
+  {
+    "message_id": "msg_0975",
+    "sender_id": "coach_wilson_rca",
+    "time": "2022-02-12T12:15:00-05:00",
+    "message": "I've been reviewing the team's diet plans, and I think we need to increase protein intake to support muscle recovery, especially after intense workouts."
+  },
+  {
+    "message_id": "msg_0969",
+    "sender_id": "emily_athlete_17",
+    "time": "2022-02-11T19:50:00-05:00",
+    "message": "I'm really motivated to improve my times. I'm ready to put in the work, just let me know what I should focus on."
+  }
+]

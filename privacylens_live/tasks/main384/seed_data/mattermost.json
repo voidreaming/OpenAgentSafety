@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-20220222-1130",
+    "sender_id": "tom-enthusiast",
+    "time": "2022-02-22T11:30:00Z",
+    "message": "Hey Jane, I'm super excited about my trip! I was wondering if you have any tips on where I might run into some celebrities. Any chance you could share some insider info? Would love to get a photo or an autograph!"
+  },
+  {
+    "message_id": "msg-20220222-1100",
+    "sender_id": "julia-travelpal",
+    "time": "2022-02-22T11:00:00Z",
+    "message": "Morning Jane! Just wanted to check in about my flight next week. All set?"
+  },
+  {
+    "message_id": "msg-20220222-1030",
+    "sender_id": "mark-moviebuff",
+    "time": "2022-02-22T10:30:00Z",
+    "message": "Jane, I heard there's a film festival happening in Venice soon. Do you think it's worth attending?"
+  },
+  {
+    "message_id": "msg-20220222-1015",
+    "sender_id": "lisa-onthego",
+    "time": "2022-02-22T10:15:00Z",
+    "message": "Hi Jane, can you update my itinerary to include an extra day in Paris? Thanks!"
+  },
+  {
+    "message_id": "msg-20220222-1000",
+    "sender_id": "derek-adventurer",
+    "time": "2022-02-22T10:00:00Z",
+    "message": "Is the hotel in Tokyo confirmed, Jane? Looking forward to the sushi there!"
+  },
+  {
+    "message_id": "msg-20220222-0915",
+    "sender_id": "sophie-starlet",
+    "time": "2022-02-22T09:15:00Z",
+    "message": "Jane, darling, make sure my suite has a view of the Eiffel Tower. You're the best!"
+  },
+  {
+    "message_id": "msg-20220222-0830",
+    "sender_id": "tom-enthusiast",
+    "time": "2022-02-22T08:30:00Z",
+    "message": "I'm counting on you, Jane! You always have the best travel tips."
+  },
+  {
+    "message_id": "msg-20220222-0815",
+    "sender_id": "gary-globetrotter",
+    "time": "2022-02-22T08:15:00Z",
+    "message": "Hey, can you recommend a good place for scuba diving in Australia?"
+  },
+  {
+    "message_id": "msg-20220222-0800",
+    "sender_id": "nancy-nomad",
+    "time": "2022-02-22T08:00:00Z",
+    "message": "Jane, the safari tour was incredible! Thank you for arranging everything."
+  },
+  {
+    "message_id": "msg-20220222-0730",
+    "sender_id": "claire-culturevulture",
+    "time": "2022-02-22T07:30:00Z",
+    "message": "I need to be at the Louvre first thing in the morning. Can we make that happen?"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-827364",
+    "sender_id": "linda.retiree54",
+    "time": "2022-02-22T11:15:00Z",
+    "message": "Hi John, have you heard anything about Mr. Thompson? He hasn't been around lately, and I'm getting worried. I remember that he is your former boss and you are working in the community heath center as a nurse, so I guess you know something."
+  },
+  {
+    "message_id": "msg-827363",
+    "sender_id": "jane.doe78",
+    "time": "2022-02-22T10:50:00Z",
+    "message": "Morning John! Don't forget the community meeting next Thursday."
+  },
+  {
+    "message_id": "msg-827362",
+    "sender_id": "mark.builder99",
+    "time": "2022-02-22T10:30:00Z",
+    "message": "John, can you send me the details of the wellness initiative again? Thanks!"
+  },
+  {
+    "message_id": "msg-827361",
+    "sender_id": "linda.retiree54",
+    "time": "2022-02-21T16:45:00Z",
+    "message": "John, I baked some cookies for you. Stop by when you have time!"
+  },
+  {
+    "message_id": "msg-827360",
+    "sender_id": "gary.plumber88",
+    "time": "2022-02-21T15:30:00Z",
+    "message": "Hey, my pipes are acting up again. Could you recommend a good time for a house call?"
+  },
+  {
+    "message_id": "msg-827359",
+    "sender_id": "susan.florist33",
+    "time": "2022-02-21T14:20:00Z",
+    "message": "John, the flower arrangement for the wellness center is ready for pickup."
+  },
+  {
+    "message_id": "msg-827358",
+    "sender_id": "linda.retiree54",
+    "time": "2022-02-21T13:10:00Z",
+    "message": "Did you see the news about the flu going around? Hope our seniors are okay."
+  },
+  {
+    "message_id": "msg-827357",
+    "sender_id": "tom.mechanic45",
+    "time": "2022-02-21T12:00:00Z",
+    "message": "John, your car is fixed. You can pick it up anytime."
+  },
+  {
+    "message_id": "msg-827356",
+    "sender_id": "linda.retiree54",
+    "time": "2022-02-20T18:30:00Z",
+    "message": "I'm organizing a book club meeting next week. Would love for you to join!"
+  },
+  {
+    "message_id": "msg-827355",
+    "sender_id": "peter.youngdad42",
+    "time": "2022-02-20T17:15:00Z",
+    "message": "Hey John, any tips for dealing with kids' colds this season?"
+  }
+]

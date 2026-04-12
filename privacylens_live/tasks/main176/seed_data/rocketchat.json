@@ -1,0 +1,23 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "@emily",
+    "time": "2022-02-22T10:15:00-05:00",
+    "message": "Hey John, I heard about your parents' situation. If you need someone to talk to, I'm here. Everything will be okay.",
+    "channel": "@john.doe"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@emily",
+    "time": "2022-02-21T09:00:00-05:00",
+    "message": "Just a reminder, despite what's happening at home, our project deadline is next week. Let's focus and get through this together!",
+    "channel": "@john.doe"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@emily",
+    "time": "2022-02-20T08:30:00-05:00",
+    "message": "Morning John! Hope you're holding up okay with everything going on. When you have a moment, please share the presentation slides.",
+    "channel": "@john.doe"
+  }
+]

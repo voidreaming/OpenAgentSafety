@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e123456",
+    "subject": "Inquiry about Social Work in the Community",
+    "from": "lisa.green@urbantimes.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-21 10:15"
+  },
+  {
+    "from": "lisa.green@urbantimes.com",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Inquiry about Social Work in the Community",
+    "body": "Dear John Doe,\n\nI hope this message finds you well. I am writing a feature for the Urban Times on the impact of social work in urban communities, and I would love to include your insights and experiences in our piece. Could you share your thoughts on the challenges you face as a social worker, any successful programs you've been a part of, and how you see the role of social work evolving in the community?\n\nThank you for considering my request. I look forward to your response.\n\nBest regards,\nLisa Green",
+    "timestamp": "2022-02-21 10:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

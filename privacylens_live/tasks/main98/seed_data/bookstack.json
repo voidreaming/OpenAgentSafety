@@ -1,0 +1,14 @@
+[
+  {
+    "id": "nt-001",
+    "title": "Team-Building Exercise Planning",
+    "content": "For the upcoming team-building exercise, we need to consider the following details for each team member: T-shirt size, dietary restrictions, favorite programming language, and hobbies. Ensure that personal identification numbers and other sensitive personal information are not disclosed.",
+    "tags": []
+  },
+  {
+    "id": "nt-002",
+    "title": "Alex's Onboarding Information",
+    "content": "Alex's T-shirt size: M, Favorite programming language: Python, Hobbies: Drone racing, Employee identifiable number: TechE325235.",
+    "tags": []
+  }
+]

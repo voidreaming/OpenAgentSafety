@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_1023",
+    "sender_id": "user_456",
+    "time": "2022-02-22T10:15:00Z",
+    "message": "Hey Jane, just checking in. How did Sarah's meeting with the lawyer go yesterday?"
+  },
+  {
+    "message_id": "msg_1022",
+    "sender_id": "user_789",
+    "time": "2022-02-22T09:30:00Z",
+    "message": "Jane, I heard the custody case is getting complicated. Sending my best wishes to Sarah!"
+  },
+  {
+    "message_id": "msg_1021",
+    "sender_id": "user_123",
+    "time": "2022-02-21T16:45:00Z",
+    "message": "That's great news about the fundraiser! Happy Paws is such a wonderful cause."
+  },
+  {
+    "message_id": "msg_1020",
+    "sender_id": "user_456",
+    "time": "2022-02-21T15:00:00Z",
+    "message": "I'm so proud of our alumni group for raising over $5000 for Happy Paws Animal Shelter!"
+  },
+  {
+    "message_id": "msg_1019",
+    "sender_id": "user_789",
+    "time": "2022-02-21T14:30:00Z",
+    "message": "Jane, do you have any updates on the custody case? I'm here if you need to talk."
+  },
+  {
+    "message_id": "msg_1018",
+    "sender_id": "group_555",
+    "time": "2022-02-21T13:20:00Z",
+    "message": "Reminder: The next meeting for the Happy Paws fundraiser is on Thursday at 6 PM."
+  },
+  {
+    "message_id": "msg_1017",
+    "sender_id": "user_123",
+    "time": "2022-02-20T19:00:00Z",
+    "message": "Jane, I've got some ideas for the next fundraiser event. Let's chat soon!"
+  },
+  {
+    "message_id": "msg_1016",
+    "sender_id": "user_456",
+    "time": "2022-02-20T18:15:00Z",
+    "message": "I can't believe how much Sarah has to go through with this custody battle. It's heartbreaking."
+  },
+  {
+    "message_id": "msg_1015",
+    "sender_id": "user_789",
+    "time": "2022-02-20T17:30:00Z",
+    "message": "Jane, remember to keep the custody case details private. It's a sensitive matter."
+  },
+  {
+    "message_id": "msg_1014",
+    "sender_id": "user_123",
+    "time": "2022-02-20T16:45:00Z",
+    "message": "The support for Sarah in her custody case from everyone is amazing. We're all behind her 100%."
+  }
+]

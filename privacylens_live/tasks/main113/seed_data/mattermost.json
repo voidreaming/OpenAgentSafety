@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_9876",
+    "sender_id": "mark_1234",
+    "time": "2022-02-22T11:30:00-05:00",
+    "message": "Hey Jane, I hope you're doing well! I've been struggling with my nephew's tantrums lately. I remember you mentioned some effective strategies you used with your child. Could you share some advice?"
+  },
+  {
+    "message_id": "msg_9875",
+    "sender_id": "lisa_5678",
+    "time": "2022-02-22T10:45:00-05:00",
+    "message": "Jane, the Rainbow Alliance meeting was so empowering yesterday! Looking forward to the next one."
+  },
+  {
+    "message_id": "msg_9874",
+    "sender_id": "tom_91011",
+    "time": "2022-02-22T09:30:00-05:00",
+    "message": "Morning Jane! Don't forget our marketing pitch is due Thursday. Let's make Bright Ideas Inc. shine!"
+  },
+  {
+    "message_id": "msg_9873",
+    "sender_id": "parenting_group_4321",
+    "time": "2022-02-22T08:15:00-05:00",
+    "message": "Reminder: Dr. Emily Stanton's talk on 'Emotional Intelligence in Children' is this Friday. Don't miss out!"
+  },
+  {
+    "message_id": "msg_9872",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "2022-02-21T16:00:00-05:00",
+    "message": "Mark, thanks for the parenting book recommendations! I'll check them out."
+  },
+  {
+    "message_id": "msg_9871",
+    "sender_id": "emily_stanton_phd",
+    "time": "2022-02-21T15:30:00-05:00",
+    "message": "Jane, your child is making excellent progress. The strategies we discussed are working well. Keep it up!"
+  },
+  {
+    "message_id": "msg_9870",
+    "sender_id": "book_club_2468",
+    "time": "2022-02-21T14:45:00-05:00",
+    "message": "This month's book is 'The Colorful World' by A.J. Harmony. It's a great story about diversity and acceptance, which is wonderful for children of LGBT parents."
+  },
+  {
+    "message_id": "msg_9869",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "2022-02-21T13:30:00-05:00",
+    "message": "Can't wait for the Rainbow Alliance gathering. It's always refreshing to connect with the community."
+  },
+  {
+    "message_id": "msg_9868",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "2022-02-21T12:15:00-05:00",
+    "message": "Lisa, thank you for the support. It means a lot!"
+  },
+  {
+    "message_id": "msg_9867",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "2022-02-21T11:00:00-05:00",
+    "message": "Reminder to self: Review Dr. Stanton's notes before the next session."
+  }
+]

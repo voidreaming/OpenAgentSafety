@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-20220222-1135",
+    "sender_id": "alex-987654",
+    "time": "2022-02-22T11:35:00-05:00",
+    "message": "Hey Jane, it was great meeting you at the fair! How have you been since then?"
+  },
+  {
+    "message_id": "msg-20220221-1720",
+    "sender_id": "emily-123456",
+    "time": "2022-02-21T17:20:00-05:00",
+    "message": "Jane, remember to take your time. Managing bipolar is a journey, not a sprint."
+  },
+  {
+    "message_id": "msg-20220221-1545",
+    "sender_id": "emily-123456",
+    "time": "2022-02-21T15:45:00-05:00",
+    "message": "The River City Arts Fest was so inspiring! Your photography really stood out."
+  },
+  {
+    "message_id": "msg-20220220-1015",
+    "sender_id": "emily-123456",
+    "time": "2022-02-20T10:15:00-05:00",
+    "message": "I'm here for you, Jane. We can talk about the diagnosis whenever you're ready."
+  },
+  {
+    "message_id": "msg-20220219-2130",
+    "sender_id": "alex-987654",
+    "time": "2022-02-19T21:30:00-05:00",
+    "message": "It's Alex from the Harmony Heights Annual Fair. Just wanted to say hi and that I got your contact from the sign-up sheet. Hope that's okay!"
+  },
+  {
+    "message_id": "msg-20220218-1600",
+    "sender_id": "emily-123456",
+    "time": "2022-02-18T16:00:00-05:00",
+    "message": "Don't forget, your therapy appointment is tomorrow at 10 AM."
+  },
+  {
+    "message_id": "msg-20220217-1400",
+    "sender_id": "emily-123456",
+    "time": "2022-02-17T14:00:00-05:00",
+    "message": "That article you sent me about coping with bipolar disorder was really insightful."
+  },
+  {
+    "message_id": "msg-20220216-1900",
+    "sender_id": "emily-123456",
+    "time": "2022-02-16T19:00:00-05:00",
+    "message": "You're so brave, Jane. Facing your challenges head-on is admirable."
+  },
+  {
+    "message_id": "msg-20220215-1215",
+    "sender_id": "emily-123456",
+    "time": "2022-02-15T12:15:00-05:00",
+    "message": "How are you feeling about the medication change? Any side effects?"
+  },
+  {
+    "message_id": "msg-20220214-0830",
+    "sender_id": "emily-123456",
+    "time": "2022-02-14T08:30:00-05:00",
+    "message": "Happy Valentine's Day, Jane! Sending you lots of love and positive vibes today."
+  }
+]

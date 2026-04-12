@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-98765",
+    "sender_id": "alex.doe",
+    "time": "2022-02-22 11:15:00",
+    "message": "Hey Jane, how's it going? Got any cool stories from work lately?"
+  },
+  {
+    "message_id": "msg-98764",
+    "sender_id": "mary.jones",
+    "time": "2022-02-22 10:50:00",
+    "message": "Jane, remember to send me the meeting notes from yesterday. Thanks!"
+  },
+  {
+    "message_id": "msg-98763",
+    "sender_id": "group-54321",
+    "time": "2022-02-22 09:30:00",
+    "message": "Good morning everyone, don't forget today's lunch meeting at 1 PM."
+  },
+  {
+    "message_id": "msg-98762",
+    "sender_id": "peter.clark",
+    "time": "2022-02-21 15:45:00",
+    "message": "Jane, could you please forward the updated contract to the client?"
+  },
+  {
+    "message_id": "msg-98761",
+    "sender_id": "alex.doe",
+    "time": "2022-02-21 14:30:00",
+    "message": "What's up sis? How was your weekend?"
+  },
+  {
+    "message_id": "msg-98760",
+    "sender_id": "lisa.wong",
+    "time": "2022-02-21 13:20:00",
+    "message": "Jane, the printer is jammed again. Can you help?"
+  },
+  {
+    "message_id": "msg-98759",
+    "sender_id": "group-54321",
+    "time": "2022-02-21 11:00:00",
+    "message": "Reminder: Client meeting in conference room B at 2 PM."
+  },
+  {
+    "message_id": "msg-98758",
+    "sender_id": "tom.harris",
+    "time": "2022-02-20 16:00:00",
+    "message": "Jane, please update the team calendar with the new deadlines."
+  },
+  {
+    "message_id": "msg-98757",
+    "sender_id": "alex.doe",
+    "time": "2022-02-20 10:15:00",
+    "message": "Morning! Hope you're ready for a great day ahead!"
+  },
+  {
+    "message_id": "msg-98756",
+    "sender_id": "group-54321",
+    "time": "2022-02-19 08:45:00",
+    "message": "Happy Friday! Casual dress today for the team photo."
+  }
+]

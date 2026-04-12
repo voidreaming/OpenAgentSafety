@@ -1,0 +1,30 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "@jane.doe",
+    "time": "2022-02-21T14:45:00Z",
+    "message": "I think we should consider customizing insurance packages based on age and lifestyle. It's important to tailor our services to the client's needs.",
+    "channel": "@mark"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@jane.doe",
+    "time": "2022-02-20T09:30:00Z",
+    "message": "Absolutely, we can use data analytics to segment our customer base and identify patterns. This will help us in customizing packages effectively.",
+    "channel": "@mark"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@jane.doe",
+    "time": "2022-02-19T16:15:00Z",
+    "message": "We should also consider the feedback from our recent customer satisfaction survey to see what aspects of our insurance packages need improvement.",
+    "channel": "@mark"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@jane.doe",
+    "time": "2022-02-18T11:00:00Z",
+    "message": "I've been reviewing our policy options and I think there's a lot of potential to develop more personalized packages. I'll send over a summary of my findings along with the detailed policy numbers and coverage limits for several of Jane's clients to provide concrete examples.",
+    "channel": "@mark"
+  }
+]

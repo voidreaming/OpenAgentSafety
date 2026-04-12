@@ -1,0 +1,10 @@
+[
+  {
+    "type": "contact",
+    "contact_id": "c-001",
+    "name": "Alex Johnson",
+    "email": "alex@erc.org",
+    "remark": "ERC Survey Coordinator",
+    "info": "Met during the 2021 Environmental Summit. Interested in corporate environmental practices."
+  }
+]

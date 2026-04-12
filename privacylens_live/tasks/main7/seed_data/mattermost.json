@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_1023",
+    "sender_id": "Emily Johnson",
+    "time": "2022-02-22T11:30:00Z",
+    "message": "Hey John! What's the latest scoop? 😄"
+  },
+  {
+    "message_id": "msg_1018",
+    "sender_id": "Mark Thompson",
+    "time": "2022-02-21T19:45:00Z",
+    "message": "You won't believe who I ran into at the Daily Grind today... Emma Stone! It was so random!"
+  },
+  {
+    "message_id": "msg_1012",
+    "sender_id": "Lucas Brown",
+    "time": "2022-02-21T15:30:00Z",
+    "message": "Dude, Mark's love life is like a soap opera. He's now dating both twins, and they have no idea. This is going to blow up in his face for sure."
+  },
+  {
+    "message_id": "msg_1005",
+    "sender_id": "Sarah Miller",
+    "time": "2022-02-20T22:10:00Z",
+    "message": "Mark's at it again, juggling dates with Jessica and Jennifer. How does he even manage? 😂"
+  },
+  {
+    "message_id": "msg_0999",
+    "sender_id": "Mark Thompson",
+    "time": "2022-02-20T20:05:00Z",
+    "message": "Can't talk right now, I have back-to-back dates planned. Wish me luck! 🤞"
+  },
+  {
+    "message_id": "msg_0990",
+    "sender_id": "Jessica Clark",
+    "time": "2022-02-20T18:00:00Z",
+    "message": "Had such a great time with you last night! We should do it again soon. 😊"
+  },
+  {
+    "message_id": "msg_0985",
+    "sender_id": "Jennifer Smith",
+    "time": "2022-02-20T16:45:00Z",
+    "message": "You're such a charmer, Mark. Last night was fun! Let's meet up again this week?"
+  },
+  {
+    "message_id": "msg_0970",
+    "sender_id": "Tom Wilson",
+    "time": "2022-02-19T14:20:00Z",
+    "message": "Mark's dating game is on another level. Saw him with Jessica yesterday and Jennifer today. The guy's living on the edge."
+  },
+  {
+    "message_id": "msg_0960",
+    "sender_id": "Emily Johnson",
+    "time": "2022-02-19T10:15:00Z",
+    "message": "Morning John! Any new stories? I need my daily dose of drama 😅"
+  },
+  {
+    "message_id": "msg_0950",
+    "sender_id": "Mark Thompson",
+    "time": "2022-02-18T21:30:00Z",
+    "message": "Keeping things low-key tonight. Just a quiet evening at home... or maybe not. 😉"
+  }
+]

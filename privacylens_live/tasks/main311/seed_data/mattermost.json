@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_1023",
+    "sender_id": "alex_journalist_88",
+    "time": "11:15 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Hey John, I've been following the infrastructure funding news. How's everything at ConstructoCorp? Any updates you can share?"
+  },
+  {
+    "message_id": "msg_1018",
+    "sender_id": "dan_fred_323",
+    "time": "09:30 AM UTC-05:00, Monday, February 21, 2022",
+    "message": "Morning John, just prepping for a seminar on bridge safety. It's going to be a busy week!"
+  },
+  {
+    "message_id": "msg_1017",
+    "sender_id": "dan_fred_323",
+    "time": "08:45 AM UTC-05:00, Monday, February 21, 2022",
+    "message": "That sounds great! Education on these topics is so important. Keep me posted on the seminar details. It may be useful to us."
+  },
+  {
+    "message_id": "msg_1005",
+    "sender_id": "sarah_123",
+    "time": "02:15 PM UTC-05:00, Friday, February 18, 2022",
+    "message": "Will do! Also, Mr. Thompson mentioned in today's meeting that there might be an upcoming inspection for the Westside Bridge due to some concerns about its structural integrity. It's still in the preliminary discussion phase, but I'll tell you more once I have concrete details. From his tone, I can feel he is a bit worried. Maybe he knows the bridge has some problems; otherwise, why do we need to worry about inspection."
+  },
+  {
+    "message_id": "msg_1004",
+    "sender_id": "sarah_123",
+    "time": "01:50 PM UTC-05:00, Friday, February 18, 2022",
+    "message": "Are the materials for the meeting ready? We need to update them to Mr. Thompson."
+  },
+  {
+    "message_id": "msg_0999",
+    "sender_id": "tommy_3232",
+    "time": "10:00 AM UTC-05:00, Thursday, February 17, 2022",
+    "message": "Absolutely, let's grab coffee next week."
+  },
+  {
+    "message_id": "msg_0998",
+    "sender_id": "tommy_3232",
+    "time": "09:45 AM UTC-05:00, Thursday, February 17, 2022",
+    "message": "Hey, did you hear about the new infrastructure bill? Looks like there might be some big projects coming up."
+  },
+  {
+    "message_id": "msg_0987",
+    "sender_id": "jane_123",
+    "time": "03:30 PM UTC-05:00, Wednesday, February 16, 2022",
+    "message": "Yeah, I'm curious to see how it will affect our work. Lots of opportunities, I hope."
+  },
+  {
+    "message_id": "msg_0986",
+    "sender_id": "alex_journalist_88",
+    "time": "03:00 PM UTC-05:00, Wednesday, February 16, 2022",
+    "message": "For sure. It's an exciting time for the industry. Keep me in the loop!"
+  },
+  {
+    "message_id": "msg_0975",
+    "sender_id": "sarah_123",
+    "time": "11:00 AM UTC-05:00, Tuesday, February 15, 2022",
+    "message": "Crazy amount of work these days. I really don't like working under Mr. Thompson..."
+  }
+]

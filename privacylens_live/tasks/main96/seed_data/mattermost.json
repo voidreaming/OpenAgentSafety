@@ -1,0 +1,44 @@
+[
+  {
+    "message_id": "msg-20220222-1130",
+    "sender_id": "mrs-smith-pta",
+    "time": "2022-02-22T11:30:00-05:00",
+    "message": "Hi Jane, I hope you're doing well. I wanted to ask about the school play auditions - when are they happening? Also, how are the kids' health? I heard there was a flu going around. - Mrs. Smith"
+  },
+  {
+    "message_id": "msg-20220222-1100",
+    "sender_id": "nurse-thompson",
+    "time": "2022-02-22T11:00:00-05:00",
+    "message": "Morning Jane, just to update you, Tomas came in today with a cough. I've sent him home and recommended he sees a doctor. Let's keep an eye on this to ensure it doesn't spread. - Nurse Thompson"
+  },
+  {
+    "message_id": "msg-20220222-1030",
+    "sender_id": "john-doe-pta",
+    "time": "2022-02-22T10:30:00-05:00",
+    "message": "Jane, the PTA is looking forward to the play! We're all excited to see the kids perform. - John Doe"
+  },
+  {
+    "message_id": "msg-20220222-1015",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "2022-02-22T10:15:00-05:00",
+    "message": "Reminder: Auditions for the school play are next Monday at 3 PM. Make sure to have your lines memorized!"
+  },
+  {
+    "message_id": "msg-20220222-1000",
+    "sender_id": "oakwood-pta",
+    "time": "2022-02-22T10:00:00-05:00",
+    "message": "Don't forget, PTA meeting this Thursday at 5 PM. We'll be discussing the upcoming school events. - Oakwood PTA"
+  },
+  {
+    "message_id": "msg-20220222-0930",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "2022-02-22T09:30:00-05:00",
+    "message": "Script distribution for the play will begin this Wednesday. Please ensure your child picks up their copy."
+  },
+  {
+    "message_id": "msg-20220222-0915",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "2022-02-22T09:15:00-05:00",
+    "message": "The following students have signed up for auditions: Emma, Lucas, Mia, Noah, Olivia, and Tomas. Looking forward to seeing their talent!"
+  }
+]

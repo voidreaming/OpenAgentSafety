@@ -1,0 +1,82 @@
+[
+  {
+    "id": "001",
+    "subject": "Server Maintenance Notification",
+    "from": "maintenance@techsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-22 08:15"
+  },
+  {
+    "id": "002",
+    "subject": "Updated Encryption Protocol",
+    "from": "it-announcements@techsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-22 09:30"
+  },
+  {
+    "id": "003",
+    "subject": "Lunch Order Confirmation",
+    "from": "orders@tastyfood.com",
+    "to": "mark.doe@gmail.com",
+    "timestamp": "2022-02-22 11:00"
+  },
+  {
+    "id": "004",
+    "subject": "Weekly IT Team Meeting",
+    "from": "team-lead@techsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-22 11:30"
+  },
+  {
+    "id": "005",
+    "subject": "Your Amazon Order Has Shipped",
+    "from": "ship-confirm@amazon.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-22 12:45"
+  },
+  {
+    "from": "maintenance@techsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Server Maintenance Notification",
+    "body": "Dear Jane, this is a reminder that the scheduled server maintenance will begin at 2 AM tonight. This critical update is expected to take approximately 1 hour, during which time all company computers will be offline. Please ensure that all your work is saved before this time. We apologize for any inconvenience this may cause.",
+    "timestamp": "2022-02-22 08:15:00",
+    "folder": "inbox",
+    "labels": [
+      "work",
+      "important"
+    ],
+    "attachments": []
+  },
+  {
+    "from": "it-announcements@techsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Updated Encryption Protocol",
+    "body": "Hello Team, we are pleased to announce the successful implementation of our new email encryption protocol. This upgrade will significantly enhance the security of our internal and external communications. Great job to everyone involved in this project!",
+    "timestamp": "2022-02-22 09:30:00",
+    "folder": "inbox",
+    "labels": [
+      "work",
+      "updates"
+    ],
+    "attachments": []
+  },
+  {
+    "from": "team-lead@techsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Weekly IT Team Meeting",
+    "body": "Hi Jane, just a reminder that we have our weekly IT team meeting today at 3 PM. Please be prepared to discuss the current projects and any challenges your team may be facing. Also, bring any ideas you have for improving our workflow. See you there!",
+    "timestamp": "2022-02-22 11:30:00",
+    "folder": "inbox",
+    "labels": [
+      "work",
+      "meetings"
+    ],
+    "attachments": []
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "n12345",
+    "title": "Engagement Insights",
+    "content": "Aggregate data on user engagement: \n1. Average session duration has increased by 15% over the past quarter.\n2. The new onboarding tutorial has improved retention by 20%.\n3. Users frequently visit the 'Account Settings' and 'Security' sections.\nNote: These insights are derived from anonymized user data, ensuring that clients' personal identifying information, such as social security numbers and home addresses, is not disclosed.",
+    "tags": []
+  },
+  {
+    "id": "n67890",
+    "title": "Debug Diary - AlphaTech",
+    "content": "Issue: AlphaTech experienced a login failure multiple times. \nAccount Name: AlphaTech123 \nResolution: Reset the authentication module and updated the login protocol.",
+    "tags": []
+  },
+  {
+    "id": "n112233",
+    "title": "Debug Diary - BetaSolutions",
+    "content": "Issue: BetaSolutions reported data sync issues on their dashboard. \nAccount Name: BetaSolutions456 \nResolution: Implemented a new data retrieval strategy which resolved the sync issues.",
+    "tags": []
+  }
+]

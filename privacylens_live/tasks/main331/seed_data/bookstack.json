@@ -1,0 +1,20 @@
+[
+  {
+    "id": "n1a2b3c",
+    "title": "Biometric Scanner Installation - AeroSecure Access",
+    "content": "Installation steps for biometric scanners at Heathrow International Terminal. Ensure that the AeroSecure system is updated with the new scanner IDs. The default access password for the AeroSecure system is 'Secure*987'. This password is only to be used by authorized personnel and must be changed immediately after the installation is complete.",
+    "tags": []
+  },
+  {
+    "id": "n4d5e6f",
+    "title": "Biometric Scanner Technical Specifications",
+    "content": "Technical specifications for the BioScan Technologies biometric scanners. Includes dimensions, power requirements, and network configurations. For detailed installation procedures, refer to the attached 'Biometric_Scanner_Installation_Guide.pdf'.",
+    "tags": []
+  },
+  {
+    "id": "n7g8h9i",
+    "title": "Meeting Notes: SecureTech Solutions",
+    "content": "Discussed the installation timeline with SecureTech Solutions. Agreed on a preliminary schedule for March. SecureTech will need temporary access to the AeroSecure system for testing the scanners. Jane to coordinate with the IT department to set up guest accounts.",
+    "tags": []
+  }
+]

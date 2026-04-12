@@ -1,0 +1,23 @@
+[
+  {
+    "id": "12345",
+    "subject": "Additional Information Required for Your Application at Tech Innovations Inc.",
+    "from": "sarah.thompson@techinnovations.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-21 09:15"
+  },
+  {
+    "from": "sarah.thompson@techinnovations.com",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Additional Information Required for Your Application at Tech Innovations Inc.",
+    "body": "Dear John Doe,\n\nWe appreciate your interest in joining Tech Innovations Inc. and the time you've invested in your job application. To proceed with your application, we require the following additional information:\n\n1. An updated copy of your resume.\n2. A list of professional references.\n3. Any recent certifications or awards relevant to the position you've applied for.\n\nPlease send these documents at your earliest convenience. We look forward to reviewing your complete application.\n\nBest regards,\nSarah Thompson\nHR Department\nTech Innovations Inc.",
+    "timestamp": "2022-02-21 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

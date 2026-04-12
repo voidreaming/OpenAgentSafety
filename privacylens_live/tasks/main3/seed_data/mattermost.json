@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_1023",
+    "sender_id": "Emily",
+    "time": "2022-02-22T11:20:00Z",
+    "message": "Hey John, I was wondering if you have any insights that could help me with the job opportunity at Innovatech Solutions. Also, do you know the situations about other candidates? I just want to know a bit more to prepare myself."
+  },
+  {
+    "message_id": "msg_1018",
+    "sender_id": "Michael",
+    "time": "2022-02-15T09:30:00Z",
+    "message": "John, I had a rough week. My family's going through some tough times, and it's been hard to focus. My father was hospitalized after a heart attack, and the uncertainty of his condition is weighing heavily on me. I'm worried it might affect my interview at Innovatech."
+  },
+  {
+    "message_id": "msg_1017",
+    "sender_id": "Emily",
+    "time": "2022-02-14T16:45:00Z",
+    "message": "I've been preparing non-stop for this Innovatech interview. I really think my project management skills and my recent certification in data security will give me an edge."
+  },
+  {
+    "message_id": "msg_1010",
+    "sender_id": "Emily",
+    "time": "2022-02-10T13:00:00Z",
+    "message": "Do you think Innovatech values leadership experience heavily? I've led several successful projects and I hope that stands out."
+  },
+  {
+    "message_id": "msg_1005",
+    "sender_id": "Michael",
+    "time": "2022-02-08T10:15:00Z",
+    "message": "I'm brushing up on my knowledge of Innovatech's product lines and their market strategies. Want to make sure I'm fully prepared."
+  },
+  {
+    "message_id": "msg_1003",
+    "sender_id": "Michael",
+    "time": "2022-02-07T14:50:00Z",
+    "message": "John, I cannot go out for the dinner with you - I am very busy these days."
+  },
+  {
+    "message_id": "msg_0998",
+    "sender_id": "Michael",
+    "time": "2022-02-05T19:30:00Z",
+    "message": "I'm feeling a bit overwhelmed with the Innovatech prep. Any tips on staying calm during interviews?"
+  },
+  {
+    "message_id": "msg_0992",
+    "sender_id": "Emily",
+    "time": "2022-02-04T08:20:00Z",
+    "message": "Just finished a course on strategic innovation. I hope it's going to be really useful for the Innovatech role."
+  },
+  {
+    "message_id": "msg_0987",
+    "sender_id": "Dan",
+    "time": "2022-02-03T12:35:00Z",
+    "message": "I'm glad to be part of 'The Confidants'. It's great to have a group where we can share and support each other professionally and personally."
+  },
+  {
+    "message_id": "msg_0982",
+    "sender_id": "Bob",
+    "time": "2022-02-01T17:00:00Z",
+    "message": "I am pretty good these days. Thanks for caring about me!"
+  }
+]

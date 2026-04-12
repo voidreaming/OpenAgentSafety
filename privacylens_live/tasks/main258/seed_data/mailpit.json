@@ -1,0 +1,29 @@
+[
+  {
+    "id": "e-112233",
+    "subject": "Re: Airport Traffic Flow Analysis",
+    "from": "jane.doe@gmail.com",
+    "to": "alex.johnson@globaladc.org",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "from": "jane.doe@gmail.com",
+    "to": "alex.johnson@globaladc.org",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Airport Traffic Flow Analysis",
+    "body": "Hi Alex,\n\nFollowing up on our last meeting, I've compiled the latest traffic flow data from Heathrow. The patterns we're seeing this quarter are intriguing and suggest several areas where efficiency can be significantly improved. I've attached the full dataset along with my preliminary analysis. Let's discuss how we can integrate this with the efficiency models during our next call.\n\nBest,\nJane",
+    "timestamp": "2022-02-15 09:30:00",
+    "folder": "sent",
+    "labels": [
+      "project updates",
+      "important"
+    ],
+    "attachments": [
+      {
+        "name": "Heathrow_Traffic_Analysis_Q1.xlsx",
+        "attachment_id": "att-456"
+      }
+    ]
+  }
+]

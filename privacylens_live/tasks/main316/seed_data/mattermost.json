@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_987654",
+    "sender_id": "robert_inlaw_123",
+    "time": "2022-02-22T11:30:00Z",
+    "message": "Hey John, how's the Apex Dynamics case going? It's quite a hot news and I remembered you are working on related stuff."
+  },
+  {
+    "message_id": "msg_987653",
+    "sender_id": "jane_doe_456",
+    "time": "2022-02-22T09:15:00Z",
+    "message": "Good morning John! Don't forget we have dinner with the Robertsons tonight."
+  },
+  {
+    "message_id": "msg_987652",
+    "sender_id": "client_apex_789",
+    "time": "2022-02-21T16:45:00Z",
+    "message": "John, please review the updated contract clauses before tomorrow's meeting."
+  },
+  {
+    "message_id": "msg_987651",
+    "sender_id": "colleague_lawfirm_321",
+    "time": "2022-02-21T14:30:00Z",
+    "message": "Team meeting rescheduled to 3 PM today. Please confirm your availability."
+  },
+  {
+    "message_id": "msg_987650",
+    "sender_id": "gym_partner_654",
+    "time": "2022-02-21T07:00:00Z",
+    "message": "Hey, are we hitting the gym tomorrow morning?"
+  },
+  {
+    "message_id": "msg_987649",
+    "sender_id": "robert_inlaw_123",
+    "time": "2022-02-20T19:00:00Z",
+    "message": "John, I saw the news about Apex Dynamics. Is everything alright financially?"
+  },
+  {
+    "message_id": "msg_987648",
+    "sender_id": "neighbor_890",
+    "time": "2022-02-20T15:30:00Z",
+    "message": "Can you lend me your lawn mower this weekend?"
+  },
+  {
+    "message_id": "msg_987647",
+    "sender_id": "jane_doe_456",
+    "time": "2022-02-20T13:00:00Z",
+    "message": "John, remember to pick up milk on your way home."
+  },
+  {
+    "message_id": "msg_987646",
+    "sender_id": "client_apex_789",
+    "time": "2022-02-19T11:00:00Z",
+    "message": "Urgent: The court has ruled in our favor regarding the patent dispute. This is a huge win!"
+  },
+  {
+    "message_id": "msg_987645",
+    "sender_id": "colleague_lawfirm_321",
+    "time": "2022-02-19T08:45:00Z",
+    "message": "The deposition transcripts have been uploaded to the shared drive."
+  }
+]

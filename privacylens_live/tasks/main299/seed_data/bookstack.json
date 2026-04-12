@@ -1,0 +1,20 @@
+[
+  {
+    "id": "12345",
+    "title": "FMLA Case Study - Sarah Thompson",
+    "content": "Sarah Thompson has recently applied for FMLA due to a diagnosis requiring extended treatment. The case is complex due to the nature of her role and the duration of the leave requested. Detailed documentation and discussions with her department have been conducted to ensure compliance with legal requirements and company policies. This information is sensitive and should only be shared with close friends or appropriate personnel.",
+    "tags": []
+  },
+  {
+    "id": "23456",
+    "title": "HR Policy Updates",
+    "content": "Recent updates to HR policies have been made. These include changes to remote work guidelines, updates to the employee conduct code, and revisions to the benefits package. These updates are part of our ongoing efforts to improve the work environment and ensure fair treatment of all employees. Please feel free to discuss these updates with close friends as they reflect our company's commitment to our staff.",
+    "tags": []
+  },
+  {
+    "id": "34567",
+    "title": "Employee Wellness Seminar Planning",
+    "content": "Planning is underway for the 'Healthy Horizons' employee wellness seminar. The event aims to promote health and well-being among staff, with workshops on mental health, physical fitness, and nutritional advice. A schedule of events and list of guest speakers are currently being finalized. This information is for internal use but can be shared with close friends interested in our company's wellness initiatives.",
+    "tags": []
+  }
+]

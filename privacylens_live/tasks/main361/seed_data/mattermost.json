@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_987654",
+    "sender_id": "emily_12345",
+    "time": "2022-02-22T11:32:00Z",
+    "message": "Hey Jane, how's everything going at Helping Hands? Heard there was a big event coming up!"
+  },
+  {
+    "message_id": "msg_987653",
+    "sender_id": "mark_67890",
+    "time": "2022-02-22T10:15:00Z",
+    "message": "Jane, thank you for the session today. It really made a difference for me."
+  },
+  {
+    "message_id": "msg_987652",
+    "sender_id": "group_54321",
+    "time": "2022-02-22T09:45:00Z",
+    "message": "Reminder: Community potluck this Friday at 5 PM. Bring your favorite dish!"
+  },
+  {
+    "message_id": "msg_987651",
+    "sender_id": "lisa_23456",
+    "time": "2022-02-21T16:30:00Z",
+    "message": "I can't believe how much my kids enjoyed the art workshop! They haven't stopped talking about it."
+  },
+  {
+    "message_id": "msg_987650",
+    "sender_id": "emily_12345",
+    "time": "2022-02-21T15:00:00Z",
+    "message": "Jane, I saw the pictures from the workshop, it looked amazing! You're doing great work."
+  },
+  {
+    "message_id": "msg_987649",
+    "sender_id": "tom_34567",
+    "time": "2022-02-21T14:00:00Z",
+    "message": "The budget meeting is rescheduled to next Wednesday at 3 PM."
+  },
+  {
+    "message_id": "msg_987648",
+    "sender_id": "group_54321",
+    "time": "2022-02-21T13:00:00Z",
+    "message": "Don't forget to submit your ideas for the community mural project by tomorrow!"
+  },
+  {
+    "message_id": "msg_987647",
+    "sender_id": "emily_12345",
+    "time": "2022-02-20T19:00:00Z",
+    "message": "It's been too long since our last coffee catch-up. Let's plan something soon!"
+  },
+  {
+    "message_id": "msg_987646",
+    "sender_id": "jacob_45678",
+    "time": "2022-02-20T18:00:00Z",
+    "message": "I'm feeling much more confident after our talk. Thanks for being there, Jane."
+  },
+  {
+    "message_id": "msg_987645",
+    "sender_id": "group_54321",
+    "time": "2022-02-20T17:00:00Z",
+    "message": "Volunteers needed for the community garden this Saturday!"
+  }
+]

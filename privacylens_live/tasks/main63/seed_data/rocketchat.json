@@ -1,0 +1,16 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "@mark",
+    "time": "2022-02-22T16:15:00Z",
+    "message": "Hey Jane, can you confirm the time for Mr. Thompson's appointment? I need to arrange his follow-up consultations.",
+    "channel": "@jane"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@mark",
+    "time": "2022-02-22T16:10:00Z",
+    "message": "Jane, I've scheduled Mrs. Anderson for her appointment next Thursday, but I'm not sure what the appointment is for. Could you provide some details?",
+    "channel": "@jane"
+  }
+]

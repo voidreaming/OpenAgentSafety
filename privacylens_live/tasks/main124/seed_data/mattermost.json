@@ -1,0 +1,26 @@
+[
+  {
+    "message_id": "msg_9873",
+    "sender_id": "alex_456",
+    "time": "2022-02-22T11:25:00Z",
+    "message": "Hey John! What are your plans for this weekend? Heard there's something cool happening!"
+  },
+  {
+    "message_id": "msg_9862",
+    "sender_id": "jane_321",
+    "time": "2022-02-22T10:45:00Z",
+    "message": "Don't forget our meeting at 3 PM today!"
+  },
+  {
+    "message_id": "msg_9851",
+    "sender_id": "transformative_fandom_community",
+    "time": "2022-02-22T09:30:00Z",
+    "message": "Reminder: Cosmic Convergence this Saturday at 2 PM - costume contest and fanfiction readings await! Join your fellow fans in celebrating our transformative fandom community."
+  },
+  {
+    "message_id": "msg_9840",
+    "sender_id": "city_events",
+    "time": "2022-02-22T08:15:00Z",
+    "message": "Join us for the 'Visions of the Universe' fan art exhibition this weekend. Open to all!"
+  }
+]

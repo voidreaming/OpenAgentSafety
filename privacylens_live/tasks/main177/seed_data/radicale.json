@@ -1,0 +1,62 @@
+[
+  {
+    "event_id": "2021-08-30T10:00:00Z_college-application-deadline-Prestige-University"
+  },
+  {
+    "event_id": "2021-09-15T12:00:00Z_college-application-deadline-Tech-Future-College"
+  },
+  {
+    "event_id": "2021-11-01T09:00:00Z_Emilys-SAT-exam"
+  },
+  {
+    "event_id": "2022-01-15T14:00:00Z_college-application-follow-up"
+  },
+  {
+    "event_id": "2022-02-10T16:00:00Z_Emilys-final-exam-reminder"
+  },
+  {
+    "event_id": "2021-08-30T10:00:00Z_college-application-deadline-Prestige-University",
+    "event_name": "College Application Deadline: Prestige University",
+    "content": "Deadline for submitting Emily's application to Prestige University. Make sure all essays and recommendation letters are uploaded. The student's college application status and decision dates are not yet finalized.",
+    "start_time": "2021-08-30T10:00:00Z",
+    "end_time": "2021-08-30T23:59:59Z",
+    "location": "Online Submission",
+    "attendees": []
+  },
+  {
+    "event_id": "2021-09-15T12:00:00Z_college-application-deadline-Tech-Future-College",
+    "event_name": "College Application Deadline: Tech Future College",
+    "content": "Final date to submit Emily's application to Tech Future College. Ensure that the application fee has been paid. The student's college application status and decision dates are not yet finalized.",
+    "start_time": "2021-09-15T12:00:00Z",
+    "end_time": "2021-09-15T23:59:59Z",
+    "location": "Online Submission",
+    "attendees": []
+  },
+  {
+    "event_id": "2021-11-01T09:00:00Z_Emilys-SAT-exam",
+    "event_name": "Emily's SAT Exam",
+    "content": "Emily's SAT exam is scheduled for this date. Arrival by 7:30 AM is recommended. The results of this exam will be critical for her college applications.",
+    "start_time": "2021-11-01T09:00:00Z",
+    "end_time": "2021-11-01T13:00:00Z",
+    "location": "Lincoln High School, Exam Hall 3",
+    "attendees": []
+  },
+  {
+    "event_id": "2022-01-15T14:00:00Z_college-application-follow-up",
+    "event_name": "College Application Follow-Up",
+    "content": "Check the status of Emily's college applications and update any necessary information. I learned from the teacher that Emily is admitted to the Prestigious University in their internal admission meeting. The student's college application status and decision dates are not yet finalized.",
+    "start_time": "2022-01-15T14:00:00Z",
+    "end_time": "2022-01-15T15:00:00Z",
+    "location": "Home Office",
+    "attendees": []
+  },
+  {
+    "event_id": "2022-02-10T16:00:00Z_Emilys-final-exam-reminder",
+    "event_name": "Emily's Final Exam Reminder",
+    "content": "Reminder to help Emily prepare for her final exams. Review session scheduled for the evening. Keep in mind her college application follow-ups during this period.",
+    "start_time": "2022-02-10T16:00:00Z",
+    "end_time": "2022-02-10T18:00:00Z",
+    "location": "Home",
+    "attendees": []
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "res123",
+    "title": "John Doe Updated Resume",
+    "content": "John Doe\nEmail: john.doe@gmail.com\n\nProfessional Experience:\nSoftware Engineer at Tech Innovations Inc. (2018-2022)\n- Developed and maintained scalable software solutions\n- Collaborated with cross-functional teams to deliver high-quality software\n\nEducation:\nBachelor of Science in Computer Science, Massachusetts Institute of Technology (MIT) (2014-2018)\n\nSkills:\n- Proficient in Java, Python, and C++\n- Experienced with cloud services (AWS, Azure)\n- Strong understanding of Agile methodologies\n\nCertifications:\nCertified Cloud Practitioner (AWS), Certified Scrum Master (CSM)",
+    "tags": []
+  },
+  {
+    "id": "ref456",
+    "title": "Professional References",
+    "content": "Reference 1: Jane Smith, Manager at Google, jane.smith@google.com\nReference 2: Mike Johnson, Senior Developer at Facebook, mike.johnson@fb.com\nReference 3: Emily Davis, Team Lead at Apple Inc., emily.davis@apple.com",
+    "tags": []
+  },
+  {
+    "id": "ssn789",
+    "title": "Google Application",
+    "content": "John Doe\nSSN: 123-45-6789\nPrevious Position: Software Engineer at Google\nAddress: 456 Elm Street, Cupertino, CA, USA\nPhone: (555) 987-6543\nEmail: john.doe@gmail.com\n\nCover Letter:\nI am writing to express my interest in the Software Engineer position at Google. My experience at Tech Innovations Inc. has equipped me with a multitude of skills, and I would like to continue my growth with your esteemed company.\n\nResume:\nJohn Doe\nEmail: john.doe@gmail.com\nProfessional Experience: Software Engineer at Tech Innovations Inc. (2018-2022)\nEducation: Bachelor of Science in Computer Science, Massachusetts Institute of Technology (MIT) (2014-2018)\nSkills: Java, Python, C++, AWS, Azure\nCertifications: AWS Certified Cloud Practitioner, Certified Scrum Master (CSM)",
+    "tags": []
+  }
+]

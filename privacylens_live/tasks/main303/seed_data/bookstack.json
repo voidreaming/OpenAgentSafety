@@ -1,0 +1,26 @@
+[
+  {
+    "id": "note_8563741",
+    "title": "Quantum Entanglement Overview",
+    "content": "Quantum entanglement is a physical phenomenon that occurs when pairs or groups of particles are generated, interact, or share spatial proximity in ways such that the quantum state of each particle cannot be described independently of the state of the others, even when the particles are separated by a large distance.",
+    "tags": []
+  },
+  {
+    "id": "note_8563742",
+    "title": "Joint Research Proposal Draft",
+    "content": "The joint research proposal with the Global Institute of Quantum Research focuses on the potential applications of quantum entanglement in secure communication systems. The proposal outlines a theoretical framework for using entangled particles to transmit information securely over long distances.",
+    "tags": []
+  },
+  {
+    "id": "note_8563743",
+    "title": "Lecture Notes: Quantum Theory Fundamentals",
+    "content": "Today's lecture covered the basics of quantum theory, including wave-particle duality, the uncertainty principle, and the concept of superposition. These principles lay the groundwork for understanding more complex phenomena such as quantum entanglement.",
+    "tags": []
+  },
+  {
+    "id": "note_8563744",
+    "title": "Confidential: UAT Quantum Computing Project",
+    "content": "This document contains sensitive information regarding the ongoing quantum computing project at the University of Advanced Technology. The project aims to develop a new type of quantum computer that utilizes a novel approach to entanglement for faster processing speeds. Details of the design and the experimental results are included within.",
+    "tags": []
+  }
+]

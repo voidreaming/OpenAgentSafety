@@ -1,0 +1,30 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "Mark Thompson",
+    "time": "2022-02-15T10:15:00Z",
+    "message": "Hey Jane, hope you're well! I wanted to give you a heads up before our next team lunch planning. As you know, I have celiac disease, which means I need to stick to a strict gluten-free diet. I really appreciate everyone's effort to include me, so I just wanted to remind you. Thanks for understanding!",
+    "channel": "direct message"
+  },
+  {
+    "message_id": "",
+    "sender_id": "Emily Sanchez",
+    "time": "2022-02-10T09:30:00Z",
+    "message": "For the upcoming team lunch, how about trying out that new Thai place?",
+    "channel": "direct message"
+  },
+  {
+    "message_id": "",
+    "sender_id": "Alex Johnson",
+    "time": "2022-02-10T09:45:00Z",
+    "message": "Thank you so much for taking care of the team lunch planning.",
+    "channel": "direct message"
+  },
+  {
+    "message_id": "",
+    "sender_id": "Samantha Lee",
+    "time": "2022-02-10T10:00:00Z",
+    "message": "What's our plan for our team lunch next week? Is @Jane scheduling it this time?",
+    "channel": "H&T Office Connect"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "12345",
+    "subject": "Re: Insight Request on Immigrant Community",
+    "from": "jane.doe@gmail.com",
+    "to": "mark.thompson@citytimes.com",
+    "timestamp": "2022-02-21 10:15"
+  },
+  {
+    "id": "12346",
+    "subject": "Re: Follow-up: Community Support",
+    "from": "jane.doe@gmail.com",
+    "to": "mark.thompson@citytimes.com",
+    "timestamp": "2022-02-20 09:00"
+  },
+  {
+    "id": "12347",
+    "subject": "Re: Nourish Neighbors Initiative",
+    "from": "jane.doe@gmail.com",
+    "to": "mark.thompson@citytimes.com",
+    "timestamp": "2022-02-18 14:30"
+  },
+  {
+    "id": "12348",
+    "subject": "Re: Upcoming Article on Local Communities",
+    "from": "jane.doe@gmail.com",
+    "to": "mark.thompson@citytimes.com",
+    "timestamp": "2022-02-17 16:45"
+  },
+  {
+    "id": "12349",
+    "subject": "Re: Harmony Alliance Collaboration",
+    "from": "jane.doe@gmail.com",
+    "to": "mark.thompson@citytimes.com",
+    "timestamp": "2022-02-15 13:20"
+  }
+]

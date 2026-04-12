@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-20220222-1130",
+    "sender_id": "emily.harrison",
+    "time": "10:45 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Hey Jane! I couldn't wait to tell you that Mark proposed to me last night! We're engaged!!! 🥰💍"
+  },
+  {
+    "message_id": "msg-20220221-0920",
+    "sender_id": "john.harrison",
+    "time": "09:15 AM UTC-05:00, Monday, February 21, 2022",
+    "message": "Morning, Jane! Did you see the news about the Harrison's new bakery opening next week? We should totally share this!"
+  },
+  {
+    "message_id": "msg-20220220-1015",
+    "sender_id": "lisa.harrison",
+    "time": "10:10 AM UTC-05:00, Sunday, February 20, 2022",
+    "message": "Jane, you won't believe it! Little Timmy took his first steps today! It was so precious! 😊"
+  },
+  {
+    "message_id": "msg-20220219-1345",
+    "sender_id": "michael.harrison",
+    "time": "01:40 PM UTC-05:00, Saturday, February 19, 2022",
+    "message": "Hey, I just finished the marathon in record time for me! Feeling proud and exhausted! 🏃‍♂️"
+  },
+  {
+    "message_id": "msg-20220218-2130",
+    "sender_id": "susan.harrison",
+    "time": "09:25 PM UTC-05:00, Friday, February 18, 2022",
+    "message": "Jane, Aunt Martha's 90th birthday party was a hit! We missed you there."
+  },
+  {
+    "message_id": "msg-20220217-1600",
+    "sender_id": "group-12345",
+    "time": "04:00 PM UTC-05:00, Thursday, February 17, 2022",
+    "message": "Reminder: Family reunion this summer! Save the date: June 25th."
+  },
+  {
+    "message_id": "msg-20220216-1205",
+    "sender_id": "peter.harrison",
+    "time": "12:00 PM UTC-05:00, Wednesday, February 16, 2022",
+    "message": "Jane, I just got promoted to regional manager! Drinks on me this weekend!"
+  },
+  {
+    "message_id": "msg-20220215-0830",
+    "sender_id": "group-67890",
+    "time": "08:30 AM UTC-05:00, Tuesday, February 15, 2022",
+    "message": "Book club alert: Next meeting is on the 20th. We're discussing 'The Great Gatsby'."
+  },
+  {
+    "message_id": "msg-20220214-1915",
+    "sender_id": "claire.harrison",
+    "time": "07:10 PM UTC-05:00, Monday, February 14, 2022",
+    "message": "Valentine's Day dinner was perfect. Thanks for recommending that restaurant, Jane!"
+  },
+  {
+    "message_id": "msg-20220213-1030",
+    "sender_id": "david.harrison",
+    "time": "10:25 AM UTC-05:00, Sunday, February 13, 2022",
+    "message": "Jane, our team won the championship! Can't wait to celebrate with everyone!"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_001",
+    "sender_id": "user_14523",
+    "time": "2022-02-22T10:15:00Z",
+    "message": "Your latest 'Star Voyagers' piece was stunning, John! -StellarMage42"
+  },
+  {
+    "message_id": "msg_002",
+    "sender_id": "user_67890",
+    "time": "2022-02-22T09:45:00Z",
+    "message": "Hey John, it's Mike from the comic book shop. Loved the prints you dropped off!"
+  },
+  {
+    "message_id": "msg_003",
+    "sender_id": "group_54321",
+    "time": "2022-02-22T09:30:00Z",
+    "message": "We're all rooting for you in the upcoming 'Star Voyagers' fan art contest!"
+  },
+  {
+    "message_id": "msg_004",
+    "sender_id": "user_11223",
+    "time": "2022-02-22T08:50:00Z",
+    "message": "The color palette in your last artwork is incredible, how do you do it?"
+  },
+  {
+    "message_id": "msg_005",
+    "sender_id": "user_31415",
+    "time": "2022-02-21T17:00:00Z",
+    "message": "Can't wait to see what you create next, your work is always so inspiring!"
+  },
+  {
+    "message_id": "msg_006",
+    "sender_id": "user_27182",
+    "time": "2022-02-21T15:45:00Z",
+    "message": "I've shared your 'Star Voyagers' series with my friends, and they're in love with it!"
+  },
+  {
+    "message_id": "msg_007",
+    "sender_id": "user_16180",
+    "time": "2022-02-21T14:30:00Z",
+    "message": "Your tutorial on space scenery helped me improve so much, thank you!"
+  },
+  {
+    "message_id": "msg_008",
+    "sender_id": "user_14142",
+    "time": "2022-02-21T13:20:00Z",
+    "message": "I saw your interview about 'Star Voyagers', and it was so insightful!"
+  },
+  {
+    "message_id": "msg_009",
+    "sender_id": "user_93238",
+    "time": "2022-02-21T12:10:00Z",
+    "message": "I'm a huge fan of your work, it's always a highlight of the conventions!"
+  },
+  {
+    "message_id": "msg_010",
+    "sender_id": "user_62643",
+    "time": "2022-02-21T11:00:00Z",
+    "message": "Your dedication to the 'Star Voyagers' fandom is incredible, keep it up!"
+  }
+]

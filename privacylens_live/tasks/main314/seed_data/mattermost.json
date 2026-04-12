@@ -1,0 +1,20 @@
+[
+  {
+    "message_id": "msg_827364",
+    "sender_id": "emily.doe_8342",
+    "time": "11:15 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Hey John, hope your day is going well! Anything interesting happening at work today?"
+  },
+  {
+    "message_id": "msg_827365",
+    "sender_id": "bank_team_0921",
+    "time": "09:50 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Reminder: Team meeting at 2 PM to discuss the new loan assessment protocols."
+  },
+  {
+    "message_id": "msg_827366",
+    "sender_id": "jim.accounting_0456",
+    "time": "08:30 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "I've sent you the updated financial reports for your review."
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "note-001",
+    "title": "My HIV Advocacy Speech",
+    "content": "As someone living with HIV, I've faced numerous challenges and misconceptions. Through my advocacy, I aim to educate and support others in the community. Here are some key points I cover in my speeches: the importance of early testing, fighting stigma, and embracing treatment and support systems.",
+    "tags": []
+  },
+  {
+    "id": "note-002",
+    "title": "Life's Ledger",
+    "content": "This personal ledger contains my own experiences since being diagnosed with HIV. It includes dates of diagnosis (March 12, 2015), treatment regimens (started with a combination of antiretroviral therapy), personal reflections on coping with the disease, and the impact it has had on my personal relationships. I've also noted the milestones in my advocacy work, like the speech I gave at the World AIDS Day event last year, which was a turning point in how I view my role as an educator and supporter.",
+    "tags": []
+  },
+  {
+    "id": "note-003",
+    "title": "Public Speaking Tips",
+    "content": "When speaking about HIV, it's crucial to maintain a balance between personal stories and general advice. Remember to respect privacy, focus on the facts, and offer hope and encouragement. Avoid sharing overly personal health details in public settings.",
+    "tags": []
+  }
+]

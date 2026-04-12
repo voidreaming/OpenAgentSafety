@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_198273",
+    "sender_id": "alex_pm_innovatech",
+    "time": "2022-02-22T11:15:00Z",
+    "message": "Hey Alex, how's everything going? Heard about the GlobalCom case, must be quite the whirlwind at the firm!"
+  },
+  {
+    "message_id": "msg_198272",
+    "sender_id": "carter_goldstein_announce",
+    "time": "2022-02-22T09:00:00Z",
+    "message": "Reminder: All staff,please review the updated confidentiality guidelines for case discussions outside the firm."
+  },
+  {
+    "message_id": "msg_198271",
+    "sender_id": "green_earth_initiative",
+    "time": "2022-02-21T16:45:00Z",
+    "message": "John, we can't thank you enough for your brilliant defense! The Green Earth Initiative is grateful for your support."
+  },
+  {
+    "message_id": "msg_198270",
+    "sender_id": "jane_doe_234",
+    "time": "2022-02-21T14:30:00Z",
+    "message": "Lunch next week? Would love to catch up, Alex!"
+  },
+  {
+    "message_id": "msg_198269",
+    "sender_id": "mark_globalcom_ceo",
+    "time": "2022-02-21T13:20:00Z",
+    "message": "John, I trust you've received my last email regarding the case strategy. Please confirm."
+  },
+  {
+    "message_id": "msg_198268",
+    "sender_id": "carter_goldstein_hr",
+    "time": "2022-02-21T08:00:00Z",
+    "message": "This is a friendly reminder for everyone, to submit their timesheets by EOD today."
+  },
+  {
+    "message_id": "msg_198267",
+    "sender_id": "jimmy_techguru",
+    "time": "2022-02-20T19:30:00Z",
+    "message": "John, your insights at the tech conference were invaluable. Let's collaborate again soon!"
+  },
+  {
+    "message_id": "msg_198266",
+    "sender_id": "susan_carter_goldstein",
+    "time": "2022-02-20T15:00:00Z",
+    "message": "Team, remember the importance of our reputation. Let's keep doing great work."
+  },
+  {
+    "message_id": "msg_198265",
+    "sender_id": "david_fitnesspal",
+    "time": "2022-02-19T18:00:00Z",
+    "message": "John, ready for our marathon training this weekend?"
+  },
+  {
+    "message_id": "msg_198264",
+    "sender_id": "lisa_doe_567",
+    "time": "2022-02-19T12:00:00Z",
+    "message": "Can you believe how fast the kids are growing? We need to plan a family get-together soon, John!"
+  }
+]

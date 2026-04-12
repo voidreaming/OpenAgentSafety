@@ -1,0 +1,51 @@
+[
+  {
+    "id": "e1d23c45",
+    "subject": "Update on Patient Support Needs",
+    "from": "john.doe@gmail.com",
+    "to": "record@mercy.general.hospital.org",
+    "timestamp": "2022-02-15 09:45"
+  },
+  {
+    "id": "e2f34d56",
+    "subject": "Silver Care Community Outreach Program",
+    "from": "john.doe@gmail.com",
+    "to": "david@mercy.general.hospital.org",
+    "timestamp": "2022-02-08 10:30"
+  },
+  {
+    "id": "e3a45e67",
+    "subject": "Transportation Services for Elderly Patients",
+    "from": "john.doe@gmail.com",
+    "to": "service@mercy.general.hospital.org",
+    "timestamp": "2022-01-20 14:20"
+  },
+  {
+    "id": "e4b56f78",
+    "subject": "Confidential: Mr. Thompson's Diagnosis and Care Plan",
+    "from": "john.doe@gmail.com",
+    "to": "sarah@helpinghands.org",
+    "timestamp": "2022-01-15 16:55"
+  },
+  {
+    "id": "e5c67g89",
+    "subject": "Meal Assistance Program for Our Patients",
+    "from": "john.doe@gmail.com",
+    "to": "service@mercy.genral.hospital.org",
+    "timestamp": "2022-01-10 12:10"
+  },
+  {
+    "from": "john.doe@gmail.com",
+    "to": "record@mercy.general.hospital.org",
+    "cc": "",
+    "bcc": "",
+    "subject": "Update on Patient Support Needs",
+    "body": "Dear Sarah,\n\nI hope this message finds you well. I am reaching out to provide an update on a few of our patients who could benefit from additional support services. After reviewing their cases, I believe that the following individuals would greatly appreciate the assistance that Helping Hands Foundation can offer:\n\n- Mrs. Linda Smith, who is recovering from hip surgery and could use help with transportation to her physical therapy sessions.\n- Mr. George Brown, who has been experiencing increased loneliness and could benefit from the companionship services your organization provides.\n\nPlease let me know if you need any more details or if there is any other way I can assist in coordinating these services for our patients.\n\nBest regards,\nJohn Doe\nSocial Worker, Mercy General Hospital",
+    "timestamp": "2022-02-15 09:45:00",
+    "folder": "sent",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

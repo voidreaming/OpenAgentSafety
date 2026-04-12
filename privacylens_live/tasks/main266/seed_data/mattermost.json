@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_987654321",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "11:15 AM UTC-05:00",
+    "message": "Hey Mark! How's your day going? Any new stuff happening at work?"
+  },
+  {
+    "message_id": "msg_987654320",
+    "sender_id": "lisa.teamlead",
+    "time": "10:50 AM UTC-05:00",
+    "message": "Reminder: Team meeting at 2 PM. Don't forget to bring your Q2 forecast drafts."
+  },
+  {
+    "message_id": "msg_987654319",
+    "sender_id": "jenny.hr",
+    "time": "09:30 AM UTC-05:00",
+    "message": "Hi Mark, please review the updated training schedule and provide your feedback."
+  },
+  {
+    "message_id": "msg_987654318",
+    "sender_id": "greg_ceo",
+    "time": "08:45 AM UTC-05:00",
+    "message": "All, please ensure confidentiality on the new strategic initiatives. Let's keep it within our walls until official release. Thanks!"
+  },
+  {
+    "message_id": "msg_987654317",
+    "sender_id": "sarah.accounting",
+    "time": "Yesterday",
+    "message": "Mark, can you double-check the figures for the ad spend? They seem off."
+  },
+  {
+    "message_id": "msg_987654316",
+    "sender_id": "tom.sales",
+    "time": "Yesterday",
+    "message": "Got a lead on the new account, fingers crossed!"
+  },
+  {
+    "message_id": "msg_987654315",
+    "sender_id": "party_planning_committee",
+    "time": "Yesterday",
+    "message": "Don't miss out on this Friday's end-of-year party! Theme: The Roaring 20s!"
+  },
+  {
+    "message_id": "msg_987654314",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "Yesterday",
+    "message": "Loved the mockups you sent over, Mark! Your eye for detail is amazing."
+  },
+  {
+    "message_id": "msg_987654313",
+    "sender_id": "mark.designer82",
+    "time": "Yesterday",
+    "message": "Jane, could you look over the color palette for the new ad campaign? I'm not sure if it's too bold."
+  },
+  {
+    "message_id": "msg_987654312",
+    "sender_id": "jenny.hr",
+    "time": "Yesterday",
+    "message": "Mark, your input on the training program was invaluable. Thanks!"
+  }
+]

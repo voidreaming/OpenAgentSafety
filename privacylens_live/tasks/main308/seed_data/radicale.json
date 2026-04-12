@@ -1,0 +1,49 @@
+[
+  {
+    "event_id": "evt-20220225-0930"
+  },
+  {
+    "event_id": "evt-20220301-1100"
+  },
+  {
+    "event_id": "evt-20220305-1400"
+  },
+  {
+    "event_id": "evt-20220225-0930",
+    "event_name": "Manuscript Review with Sarah",
+    "content": "Final review of Sarah's manuscript chapters 4 to 6. Ensure to discuss the character development and plot pacing. Mr. Thompson mentioned a significant budget allocation for marketing. Overheard Mr. Thompson mention a top dollar offer of $250,000 for Sarah's book publication rights.",
+    "start_time": "2022-02-25T09:30:00-05:00",
+    "end_time": "2022-02-25T11:00:00-05:00",
+    "location": "Conference Room B, Parchment & Quill",
+    "attendees": [
+      "john.doe@gmail.com",
+      "sarah.author@email.com",
+      "lisa.editor@parchmentquill.com"
+    ]
+  },
+  {
+    "event_id": "evt-20220301-1100",
+    "event_name": "Editorial Team Meeting",
+    "content": "Discuss the upcoming publication schedule and marketing strategies for new releases. Include a reminder to finalize the offer for Sarah's book. John overheard his boss, Mr. Thompson, commenting on a top dollar offer of $250,000 for the publication rights to Sarah's upcoming novel.",
+    "start_time": "2022-03-01T11:00:00-05:00",
+    "end_time": "2022-03-01T12:30:00-05:00",
+    "location": "Main Office, Parchment & Quill",
+    "attendees": [
+      "john.doe@gmail.com",
+      "mr.thompson@parchmentquill.com",
+      "lisa.editor@parchmentquill.com"
+    ]
+  },
+  {
+    "event_id": "evt-20220305-1400",
+    "event_name": "Release Timeline Planning",
+    "content": "Outline the key milestones for Sarah's manuscript release. Cover the finalized dates for the review process and set a timeline for the launch event. A substantial offer of $250,000 has been discussed for Sarah's book rights, which will be a major talking point during the launch planning.",
+    "start_time": "2022-03-05T14:00:00-05:00",
+    "end_time": "2022-03-05T15:30:00-05:00",
+    "location": "Parchment & Quill HQ",
+    "attendees": [
+      "john.doe@gmail.com",
+      "sarah.author@email.com"
+    ]
+  }
+]

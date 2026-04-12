@@ -1,0 +1,20 @@
+[
+  {
+    "message_id": "msg_987654",
+    "sender_id": "michael.johnson@ghs-students.org",
+    "time": "2022-02-22T11:30:00-05:00",
+    "message": "Hey Jane, I noticed Emily hasn't been in class for a few days. Is everything alright with her?"
+  },
+  {
+    "message_id": "msg_987653",
+    "sender_id": "jane.doe@ghs-staff.org",
+    "time": "2022-02-22T11:25:00-05:00",
+    "message": "Reminder: Review the new student reports by Thursday."
+  },
+  {
+    "message_id": "msg_987652",
+    "sender_id": "announcements@ghs.edu",
+    "time": "2022-02-22T09:00:00-05:00",
+    "message": "Don't forget: Parent-teacher conferences are next week."
+  }
+]

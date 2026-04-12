@@ -1,0 +1,23 @@
+[
+  {
+    "id": "123456",
+    "subject": "Invitation to Share Your Journey with Vital Voices",
+    "from": "editor@vitalvoices.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-21 10:00"
+  },
+  {
+    "from": "editor@vitalvoices.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Invitation to Share Your Journey with Vital Voices",
+    "body": "Dear Jane Doe,\n\nI hope this message finds you well. I'm reaching out to you as the editor of Vital Voices, a platform dedicated to health awareness and advocacy. Your inspiring work and dedication to destigmatizing HIV have caught our attention, and we believe your voice could greatly contribute to educating our readers and supporting the community.\n\nWe would be honored if you could share your personal journey, the challenges you've faced, and the insights you've gained along the way. Your story is powerful, and your experiences could help others understand the reality of living with HIV, promoting empathy and knowledge.\n\nPlease let us know if you would be interested in participating in an interview or writing a guest article for our blog. We are looking forward to the possibility of working together to shed light on important issues and make a positive impact.\n\nWarm regards,\nMr. Thompson\nEditor, Vital Voices",
+    "timestamp": "2022-02-21 10:00:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

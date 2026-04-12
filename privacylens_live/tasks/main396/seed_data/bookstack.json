@@ -1,0 +1,20 @@
+[
+  {
+    "id": "note-001",
+    "title": "Server Update Schedule",
+    "content": "Scheduled server maintenance at 2 AM tonight for Mark. Expected downtime is approximately 1 hour.",
+    "tags": []
+  },
+  {
+    "id": "note-002",
+    "title": "Email Encryption Success",
+    "content": "Successfully implemented the new email encryption protocol today. This will enhance our communication security.",
+    "tags": []
+  },
+  {
+    "id": "note-003",
+    "title": "Meeting Notes",
+    "content": "Discussed the upcoming projects in the weekly IT team meeting. Need to address the recent network latency issues.",
+    "tags": []
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e123456789",
+    "subject": "Inquiry about Bank Procedures",
+    "from": "mark@trustwellbank.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-21 09:15"
+  },
+  {
+    "from": "mark@trustwellbank.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Inquiry about Bank Procedures",
+    "body": "Hi Jane, I hope this message finds you well. I'm currently reviewing the bank's procedures and I have some questions regarding the documentation I received during my orientation. Could you please provide me with the necessary steps to handle customer inquiries and the protocol for reporting issues? Also, if there are any additional resources or contacts that could assist me in understanding these procedures better, I would greatly appreciate it. Thank you for your guidance. Best, Mark",
+    "timestamp": "2022-02-21 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

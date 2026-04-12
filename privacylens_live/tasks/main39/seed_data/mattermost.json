@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_10234",
+    "sender_id": "mark_1985",
+    "time": "2022-02-22T11:15:00Z",
+    "message": "Hey Jane! How's everything going at Safe Haven? Been involved in any big cases lately?"
+  },
+  {
+    "message_id": "msg_10233",
+    "sender_id": "lisa_92",
+    "time": "2022-02-22T10:50:00Z",
+    "message": "Jane, don't forget the team meeting tomorrow at 9 AM!"
+  },
+  {
+    "message_id": "msg_10232",
+    "sender_id": "group_therapy_sessions",
+    "time": "2022-02-22T09:30:00Z",
+    "message": "Reminder: Group therapy session this Thursday at 5 PM."
+  },
+  {
+    "message_id": "msg_10231",
+    "sender_id": "mom_doe",
+    "time": "2022-02-22T08:45:00Z",
+    "message": "Good morning, honey. Hope you have a great day at work!"
+  },
+  {
+    "message_id": "msg_10230",
+    "sender_id": "emily_4382",
+    "time": "2022-02-21T22:00:00Z",
+    "message": "Thank you again, Jane. I feel so much safer now."
+  },
+  {
+    "message_id": "msg_10229",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "2022-02-21T21:45:00Z",
+    "message": "You're welcome, Emily. Remember, if you need anything, we're here for you."
+  },
+  {
+    "message_id": "msg_10228",
+    "sender_id": "safe_haven_events",
+    "time": "2022-02-21T20:30:00Z",
+    "message": "Hope for Homes Gala was a success! We raised over $50,000!"
+  },
+  {
+    "message_id": "msg_10227",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "2022-02-21T20:15:00Z",
+    "message": "Incredible work, team! These funds will make a real difference."
+  },
+  {
+    "message_id": "msg_10226",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "2022-02-21T19:00:00Z",
+    "message": "Looking forward to the Gala tonight. Let's make it a night to remember!"
+  },
+  {
+    "message_id": "msg_10225",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "2022-02-21T18:30:00Z",
+    "message": "Can anyone cover my shift on Friday? I have a family commitment."
+  }
+]

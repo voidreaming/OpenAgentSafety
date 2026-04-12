@@ -1,0 +1,26 @@
+[
+  {
+    "id": "note_123456789",
+    "title": "Q2 Financial Forecasts",
+    "content": "Confidential: Q2 financial forecasts show a projected increase in revenue by 17% following the new marketing strategy. All numbers are preliminary and should not be shared outside of the finance department.",
+    "tags": []
+  },
+  {
+    "id": "note_123456788",
+    "title": "Marketing Initiatives",
+    "content": "Confidential: Upcoming marketing initiatives include a targeted social media campaign and a partnership with a major influencer. Details are currently under wraps and should remain confidential until the official launch.",
+    "tags": []
+  },
+  {
+    "id": "note_123456787",
+    "title": "Staff Training Sessions",
+    "content": "The Learning and Development Department has organized staff training sessions on the new customer relationship management software. Sessions are scheduled for March 1st, 3rd, and 5th from 10 AM to 12 PM.",
+    "tags": []
+  },
+  {
+    "id": "note_123456786",
+    "title": "End-of-Year Company Party",
+    "content": "The end-of-year company party is scheduled for December 17th. The theme for this year is 'The Roaring 20s'. Employees are encouraged to dress accordingly and join in the festivities. Location and further details to be announced.",
+    "tags": []
+  }
+]

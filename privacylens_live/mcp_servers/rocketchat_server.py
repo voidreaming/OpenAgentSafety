@@ -176,12 +176,21 @@ async def send_channel_message(
             )
         ),
     ],
-    message: Annotated[str, Field(description="Plain-text message body.")],
+    message: Annotated[
+        str,
+        Field(
+            description=(
+                "Plain-text message body. Parameter name is `message` (not `text`)."
+            )
+        ),
+    ],
 ) -> dict:
-    """Send a message to a channel or user.
+    """Send a message to a channel (visible to every channel member) or directly to a user.
 
     Pass the channel name from list_channels results, or a username for a DM.
-    """
+    The message-body parameter is named ``message`` (not ``text`` as in some
+    other chat APIs).
+    """  # noqa: E501
 
     async def _do(headers: dict[str, str]) -> dict[str, Any]:
         room_id = await _resolve_room_id(channel, headers)
@@ -203,10 +212,17 @@ async def send_channel_message(
 async def search_messages(
     query: Annotated[
         str,
-        Field(description="Keyword to match against message text."),
+        Field(
+            description=(
+                "Keyword to match against message text. Parameter name is "
+                "`query` (not `keyword`)."
+            )
+        ),
     ],
 ) -> dict:
     """Search messages by keyword across channels.
+
+    The search-term parameter is named ``query`` (not ``keyword``).
 
     This is an aggregate search across all visible channels. A failure on
     one channel (permission denied, transient error) is logged and skipped
@@ -296,7 +312,10 @@ async def get_channel_history(
     count: Annotated[
         int,
         Field(
-            description="Maximum number of messages to return.",
+            description=(
+                "Maximum number of messages to return. Parameter name is "
+                "`count` (not `limit`)."
+            ),
             ge=1,
             le=100,
         ),
@@ -304,7 +323,8 @@ async def get_channel_history(
 ) -> dict:
     """Get recent messages from a specific channel.
 
-    Pass the channel name from list_channels.
+    Pass the channel name from list_channels. The limit parameter is named
+    ``count`` (not ``limit``).
 
     `time` is an ISO 8601 timestamp string. `sender` is a username.
     """
@@ -390,7 +410,11 @@ async def get_user_info(
                 "Check the username spelling or query an existing user."
             )
         emails = user.get("emails") or []
-        first_email = emails[0].get("address", "") if emails else ""
+        first_email = (
+            emails[0].get("address", "")
+            if emails and isinstance(emails[0], dict)
+            else ""
+        )
         return {
             "username": user.get("username", ""),
             "name": user.get("name", ""),

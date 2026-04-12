@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e123456789",
+    "subject": "Urgent: Immigration Update Needed",
+    "from": "carlos.rivera@email.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-22 09:15"
+  },
+  {
+    "from": "carlos.rivera@email.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Urgent: Immigration Update Needed",
+    "body": "Dear Jane, I hope this message finds you well. As you know, the Havenbrook Immigrant Alliance is in the midst of preparing for the upcoming community meeting, and we are trying to gather the most recent and relevant information on any immigration policy changes. Could you provide us with an update on the latest legislation? Your expertise has always been invaluable to our community. Best regards, Carlos Rivera",
+    "timestamp": "2022-02-22 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

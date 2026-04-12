@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_10234",
+    "sender_id": "mary.teacher@lincolnschool.org",
+    "time": "11:15 AM UTC-05:00",
+    "message": "Hey John, hope your day is going well. How are things at the New Hope Recovery Center?"
+  },
+  {
+    "message_id": "msg_10233",
+    "sender_id": "sarah.counselor@newhoperecovery.org",
+    "time": "09:50 AM UTC-05:00",
+    "message": "John, I've documented the witness testimony from today's session with Mr. Thompson. He described the events of the night in question in great detail, recalling the verbal altercation that escalated into physical violence. He specifically mentioned that the perpetrator smashed a ceramic vase and used a shard to threaten the victim. Mr. Thompson was able to provide a timeline of events that corroborates the victim's account. This information will be crucial for his case. Let's discuss it tomorrow."
+  },
+  {
+    "message_id": "msg_10232",
+    "sender_id": "outreach_team@newhoperecovery.org",
+    "time": "08:30 AM UTC-05:00",
+    "message": "Great job on the 'Awareness for Change' event coordination, John! We've had a lot of positive feedback and community engagement. This will definitely boost our program's visibility."
+  },
+  {
+    "message_id": "msg_10231",
+    "sender_id": "jane.doe@communitypartner.org",
+    "time": "Yesterday 04:45 PM UTC-05:00",
+    "message": "John, thank you for your insights during the community partners meeting. Your expertise in substance abuse prevention is invaluable to our joint efforts."
+  },
+  {
+    "message_id": "msg_10230",
+    "sender_id": "mark.smith@cityhall.gov",
+    "time": "Yesterday 02:10 PM UTC-05:00",
+    "message": "Mr. Doe, the city council appreciates your center's contribution to the local community. We're looking forward to the next update on the 'Safe Streets' initiative."
+  },
+  {
+    "message_id": "msg_10229",
+    "sender_id": "julia.anne@newhoperecovery.org",
+    "time": "Yesterday 10:00 AM UTC-05:00",
+    "message": "Reminder: Staff meeting at 3 PM today in the main conference room. We'll be discussing budget allocations for the next quarter."
+  },
+  {
+    "message_id": "msg_10228",
+    "sender_id": "greg.phillips@healthdept.state.gov",
+    "time": "Yesterday 09:15 AM UTC-05:00",
+    "message": "John, the state health department has approved the grant for your 'Youth Outreach Program.' Congratulations to you and your team!"
+  },
+  {
+    "message_id": "msg_10227",
+    "sender_id": "lisa.connors@parentingnetwork.org",
+    "time": "Yesterday 08:50 AM UTC-05:00",
+    "message": "We're thrilled to have New Hope Recovery Center join our 'Parenting Without Borders' webinar next month. Your perspective on adolescent substance abuse will be a great addition."
+  },
+  {
+    "message_id": "msg_10226",
+    "sender_id": "tom.brady@footballfan.net",
+    "time": "Yesterday 07:30 AM UTC-05:00",
+    "message": "Hey John, caught the game last night? That was an incredible comeback by the team!"
+  },
+  {
+    "message_id": "msg_10225",
+    "sender_id": "diana.prince@wonderwomeninitiative.org",
+    "time": "Yesterday 06:45 AM UTC-05:00",
+    "message": "Looking forward to your speech at the 'Empowerment through Recovery' seminar. Your work with New Hope Recovery Center is inspiring!"
+  }
+]

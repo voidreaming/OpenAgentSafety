@@ -1,0 +1,14 @@
+[
+  {
+    "id": "12345",
+    "title": "Embezzlement Defense - John's High-Profile Case",
+    "content": "Case details: Mr. Smithson, a high-ranking official at Global Trust Bank, is accused of embezzling a significant amount of funds. The evidence includes financial records and witness statements, but there are questions regarding the reliability of the witnesses and the direct connection of Mr. Smithson to the crime. The defense will challenge the prosecution's case by highlighting these inconsistencies and the absence of concrete evidence directly implicating Mr. Smithson. The outcome of this trial may influence the approach to similar cases in the future.",
+    "tags": []
+  },
+  {
+    "id": "67890",
+    "title": "Criminal Defense Strategies Seminar Recap",
+    "content": "Recently participated in a seminar focusing on contemporary defense tactics in criminal law, organized by the National Association of Criminal Defense Lawyers. Discussions emphasized the growing role of digital evidence in criminal proceedings and the dynamic methods of jury selection in the digital age. The event provided an excellent platform for exchanging ideas with peers and gaining new insights into criminal defense.",
+    "tags": []
+  }
+]

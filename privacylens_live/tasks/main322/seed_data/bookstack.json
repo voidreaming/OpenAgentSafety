@@ -1,0 +1,20 @@
+[
+  {
+    "id": "123456",
+    "title": "Michael Thompson Personal History",
+    "content": "Michael Thompson, Class of '09, started a tech company focused on AI. He's expressed interest in partnering with Harvard for research initiatives and potential funding opportunities. While at Harvard, his thesis on neural networks was awarded the prestigious Dean's Innovation Prize.",
+    "tags": []
+  },
+  {
+    "id": "789012",
+    "title": "Sarah Clark Personal History",
+    "content": "Sarah Clark, Class of '11, has been actively involved in alumni events. She credits Harvard for her successful law career and has hinted at a substantial donation to the law school's scholarship fund. During her last year, she overcame a personal tragedy and successfully led a campaign to increase mental health support services on campus.",
+    "tags": []
+  },
+  {
+    "id": "345678",
+    "title": "Alumni Engagement Summary",
+    "content": "Recent alumni events have seen a high level of engagement, with multiple alumni showing interest in contributing to various university programs and endowments. Among them, Dr. Emily Stanton, a biologist who discovered a rare plant species while on a Harvard-funded expedition, plans to establish a scholarship for students in environmental sciences.",
+    "tags": []
+  }
+]

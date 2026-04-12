@@ -1,0 +1,32 @@
+[
+  {
+    "message_id": "msg_827364",
+    "sender_id": "mark_39201",
+    "time": "2022-02-22T11:15:00Z",
+    "message": "Hey Jane, how's the semester treating you? I heard there were some tough midterms. Are your students keeping up?"
+  },
+  {
+    "message_id": "msg_827363",
+    "sender_id": "lisa_54021",
+    "time": "2022-02-22T10:50:00Z",
+    "message": "Jane, don't forget about our book club meeting next Thursday!"
+  },
+  {
+    "message_id": "msg_827362",
+    "sender_id": "group_education_dept",
+    "time": "2022-02-22T09:30:00Z",
+    "message": "Reminder: Faculty meeting tomorrow at 10 AM in the main conference room."
+  },
+  {
+    "message_id": "msg_827361",
+    "sender_id": "univ_academic_affairs",
+    "time": "2022-02-21T15:00:00Z",
+    "message": "Good news! The recent projects have shown a noticeable improvement in class performance. Well done to all faculty and students!"
+  },
+  {
+    "message_id": "msg_827360",
+    "sender_id": "jane_doe_personal",
+    "time": "2022-02-20T20:00:00Z",
+    "message": "Noted Emily's midterm grade: C-. Must provide additional support to ensure her success in the final exams."
+  }
+]

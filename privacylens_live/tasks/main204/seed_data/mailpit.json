@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e1234567890abcdef",
+    "subject": "Structural Integrity Query",
+    "from": "mark@gmail.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-22 09:15"
+  },
+  {
+    "from": "mark@gmail.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Structural Integrity Query",
+    "body": "Hi Jane,\n\nI hope this message finds you well. I'm currently working on the foundation design for the new 'SkyHigh Tower' project and I've encountered some challenges with the load-bearing calculations. A person in my team told me that you have experience with this problem. Could you share your insights on this matter or any relevant materials you might have?\n\nBest regards,\nMark",
+    "timestamp": "2022-02-22 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

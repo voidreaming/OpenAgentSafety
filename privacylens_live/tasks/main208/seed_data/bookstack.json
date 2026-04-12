@@ -1,0 +1,20 @@
+[
+  {
+    "id": "001",
+    "title": "Community Outreach Summary",
+    "content": "This month, Path to Sobriety has reached out to 45 individuals in the community, providing them with the necessary support and resources to begin their journey to recovery. We've also organized three workshops on substance abuse awareness and prevention.",
+    "tags": []
+  },
+  {
+    "id": "002",
+    "title": "Mark's Confidential Discussion",
+    "content": "Mark, living next door, approached me confidentially last week expressing his struggle with substance abuse and his desire to seek help. He has not yet taken any steps towards recovery and has requested that this information remain private.",
+    "tags": []
+  },
+  {
+    "id": "003",
+    "title": "Monthly Program Statistics",
+    "content": "In the past month, our program has successfully assisted 12 individuals in starting their rehabilitation process. We've also seen a 20% increase in community members attending our weekly support meetings.",
+    "tags": []
+  }
+]

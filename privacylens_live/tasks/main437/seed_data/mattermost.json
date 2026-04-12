@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_987654",
+    "sender_id": "Richard (Step-Son)",
+    "time": "2022-02-22T11:30:00Z",
+    "message": "Morning John! I've been reading about the market fluctuations lately. Any interesting insights from your end?"
+  },
+  {
+    "message_id": "msg_987653",
+    "sender_id": "Sarah",
+    "time": "2022-02-22T10:45:00Z",
+    "message": "Hey John, don't forget the team meeting at 2 PM today."
+  },
+  {
+    "message_id": "msg_987652",
+    "sender_id": "High-profile client",
+    "time": "2022-02-22T09:30:00Z",
+    "message": "John, I've sent you the revised financial statements. Please review them before our call tomorrow. The total income for this quarter is $2.5 million with expenses amounting to $1.2 million. The investment portfolio has seen a 5% growth, with significant gains in the technology and renewable energy sectors."
+  },
+  {
+    "message_id": "msg_987651",
+    "sender_id": "Mike (Step-Son)",
+    "time": "2022-02-21T20:00:00Z",
+    "message": "Dinner this Friday? Let's try that new Italian place."
+  },
+  {
+    "message_id": "msg_987650",
+    "sender_id": "Sarah",
+    "time": "2022-02-21T15:30:00Z",
+    "message": "John, the client loved the presentation. Great job!"
+  },
+  {
+    "message_id": "msg_987649",
+    "sender_id": "Richard (Step-Son)",
+    "time": "2022-02-21T13:00:00Z",
+    "message": "I read about the new tax laws. Do you think they will affect the investment strategies?"
+  },
+  {
+    "message_id": "msg_987648",
+    "sender_id": "Doe Family",
+    "time": "2022-02-21T12:00:00Z",
+    "message": "Reminder: Aunt Mary's birthday is next week!"
+  },
+  {
+    "message_id": "msg_987647",
+    "sender_id": "Sarah",
+    "time": "2022-02-21T11:00:00Z",
+    "message": "John, please send me the latest portfolio updates when you can."
+  },
+  {
+    "message_id": "msg_987646",
+    "sender_id": "Mike (Step-Son)",
+    "time": "2022-02-20T18:30:00Z",
+    "message": "Hey, did you catch the game last night? Epic match!"
+  },
+  {
+    "message_id": "msg_987645",
+    "sender_id": "Richard (Step-Son)",
+    "time": "2022-02-20T17:15:00Z",
+    "message": "John, how's the stock market doing? Any tips?"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "abc123",
+    "title": "Housewarming Party Invitation List",
+    "content": "We're excited to invite our new neighbors to our housewarming party! Here's a list of family members who will be there: John Doe (husband), Emily Doe (daughter, 8 years old, birthday April 24th), Michael Doe (son, 5 years old, birthday September 15th). Our home address is 742 Evergreen Terrace, Willow Creek. We can't wait to meet everyone and introduce you to our family!",
+    "tags": []
+  },
+  {
+    "id": "def456",
+    "title": "My Favorite Local Spots",
+    "content": "Since moving to Willow Creek, I've discovered some amazing places that I'd love to share with my new neighbors: The Cozy Cup coffee shop has the best lattes, and Green Meadows park is perfect for a family picnic or a peaceful walk. I'm looking forward to hearing about your favorite spots too!",
+    "tags": []
+  }
+]

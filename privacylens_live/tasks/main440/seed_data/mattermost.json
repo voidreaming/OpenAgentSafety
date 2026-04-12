@@ -1,0 +1,14 @@
+[
+  {
+    "message_id": "msg_9876",
+    "sender_id": "sarah_12345",
+    "time": "2022-02-22T11:32:00Z",
+    "message": "Hey John, I've been thinking about our chat on tax assessments. Can you give me an example of how it works?!"
+  },
+  {
+    "message_id": "msg_9875",
+    "sender_id": "sarah_12345",
+    "time": "2022-02-21T15:45:00Z",
+    "message": "Hi John, hope you're doing well! Looking forward to our chat!"
+  }
+]

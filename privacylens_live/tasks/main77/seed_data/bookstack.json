@@ -1,0 +1,26 @@
+[
+  {
+    "id": "n101",
+    "title": "Work Review - Mr. Thompson",
+    "content": "Reviewed Mr. Thompson's financials for loan consideration. Noted a low credit score (358) and significant credit card debt (>3k). Requires further analysis before the 2 PM meeting.",
+    "tags": []
+  },
+  {
+    "id": "n102",
+    "title": "Loan Approval - Ms. Rodriguez",
+    "content": "Processed Ms. Rodriguez's loan application. Strong business plan and collateral, high credit score (721). Approval sent out this morning.",
+    "tags": []
+  },
+  {
+    "id": "n103",
+    "title": "Daily Work Summary",
+    "content": "Morning was spent reviewing loan applications. Afternoon scheduled for meetings and follow-ups on pending accounts.",
+    "tags": []
+  },
+  {
+    "id": "n104",
+    "title": "Work Goals for the Week",
+    "content": "Focus on clearing pending loan applications and preparing for the performance review next Thursday.",
+    "tags": []
+  }
+]

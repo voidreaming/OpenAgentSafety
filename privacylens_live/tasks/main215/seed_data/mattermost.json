@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_1023",
+    "sender_id": "emily_marketing_456",
+    "time": "2022-02-21T16:45:00Z",
+    "message": "Hey Jane, how's everything at Carter & Associates?"
+  },
+  {
+    "message_id": "msg_1022",
+    "sender_id": "jane_doe_001",
+    "time": "2022-02-20T14:30:00Z",
+    "message": "Just finished a long meeting about the National Legal Symposium. Excited to attend!"
+  },
+  {
+    "message_id": "msg_1021",
+    "sender_id": "colleague_789",
+    "time": "2022-02-19T09:15:00Z",
+    "message": "Jane, remember to review the NDAs for the Global Dynamics case."
+  },
+  {
+    "message_id": "msg_1020",
+    "sender_id": "jane_doe_001",
+    "time": "2022-02-18T13:05:00Z",
+    "message": "I've been thinking about the implications of the new corporate law changes. It's going to be an interesting year."
+  },
+  {
+    "message_id": "msg_1019",
+    "sender_id": "legal_team_grp_123",
+    "time": "2022-02-17T18:20:00Z",
+    "message": "Team, let's ensure all our strategies remain confidential, especially those concerning Global Dynamics."
+  },
+  {
+    "message_id": "msg_1018",
+    "sender_id": "jane_doe_001",
+    "time": "2022-02-16T15:40:00Z",
+    "message": "Can't wait to catch up with everyone at the symposium next month!"
+  },
+  {
+    "message_id": "msg_1017",
+    "sender_id": "mentor_654",
+    "time": "2022-02-15T12:10:00Z",
+    "message": "Jane, your insights on corporate law are always so valuable. Looking forward to your panel discussion."
+  },
+  {
+    "message_id": "msg_1016",
+    "sender_id": "jane_doe_001",
+    "time": "2022-02-14T10:00:00Z",
+    "message": "Emily, let's plan a get-together soon. It's been too long!"
+  },
+  {
+    "message_id": "msg_1015",
+    "sender_id": "client_432",
+    "time": "2022-02-13T16:55:00Z",
+    "message": "Jane, we trust you to handle our business strategies with the utmost care."
+  },
+  {
+    "message_id": "msg_1014",
+    "sender_id": "jane_doe_001",
+    "time": "2022-02-12T20:30:00Z",
+    "message": "I'm reviewing some fascinating material on international trade law."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_10234",
+    "sender_id": "john_harrison_67",
+    "time": "2022-02-22T10:15:00-05:00",
+    "message": "Good morning, Jane! How's your day going? Any interesting cases you're working on?"
+  },
+  {
+    "message_id": "msg_10233",
+    "sender_id": "emily_clark_89",
+    "time": "2022-02-22T09:50:00-05:00",
+    "message": "Hey Jane, don't forget we have that meeting with the new client tomorrow at 9 AM."
+  },
+  {
+    "message_id": "msg_10232",
+    "sender_id": "group_765",
+    "time": "2022-02-22T09:30:00-05:00",
+    "message": "Reminder: Team lunch at 'The Green Terrace' today at 1 PM!"
+  },
+  {
+    "message_id": "msg_10231",
+    "sender_id": "lisa_wong_56",
+    "time": "2022-02-22T08:45:00-05:00",
+    "message": "Jane, I've sent you the files for the Carter case. Let's discuss them after your court session."
+  },
+  {
+    "message_id": "msg_10230",
+    "sender_id": "mark_robinson_22",
+    "time": "2022-02-22T08:00:00-05:00",
+    "message": "Urgent: The prosecution has submitted new evidence in the Carter case. We need to review it ASAP."
+  },
+  {
+    "message_id": "msg_10229",
+    "sender_id": "group_764",
+    "time": "2022-02-21T17:00:00-05:00",
+    "message": "Great job in court today, everyone! Let's keep the momentum going."
+  },
+  {
+    "message_id": "msg_10228",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "2022-02-21T16:30:00-05:00",
+    "message": "Thanks, team! I'll compile our notes and update 'The Advocate's Ledger' tonight."
+  },
+  {
+    "message_id": "msg_10227",
+    "sender_id": "alex_carter_91",
+    "time": "2022-02-21T16:00:00-05:00",
+    "message": "Jane, I'm counting on you. This case has been a nightmare for me and my family."
+  },
+  {
+    "message_id": "msg_10226",
+    "sender_id": "group_763",
+    "time": "2022-02-21T15:30:00-05:00",
+    "message": "Don't forget to submit your seminar choices for the NACDL event next month."
+  },
+  {
+    "message_id": "msg_10225",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "2022-02-21T15:00:00-05:00",
+    "message": "I've signed up for the 'Forensic Evidence in Digital Age' seminar. Really looking forward to it!"
+  }
+]

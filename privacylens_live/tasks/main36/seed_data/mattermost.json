@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-20220221103000",
+    "sender_id": "emily_johnson_92",
+    "time": "2022-02-21T10:30:00Z",
+    "message": "Hey Jane, I can't make it to the code jam tonight. I've got another meeting lined up with NexGen Innovations. Fingers crossed!"
+  },
+  {
+    "message_id": "msg-20220220120000",
+    "sender_id": "emily_johnson_92",
+    "time": "2022-02-20T12:00:00Z",
+    "message": "I'm so excited for the team-building event next week! I've been helping to organize it, and I think it's going to be great."
+  },
+  {
+    "message_id": "msg-20220219153000",
+    "sender_id": "emily_johnson_92",
+    "time": "2022-02-19T15:30:00Z",
+    "message": "Thanks for covering for me last minute, Jane. I owe you one!"
+  },
+  {
+    "message_id": "msg-20220218170000",
+    "sender_id": "emily_johnson_92",
+    "time": "2022-02-18T17:00:00Z",
+    "message": "Ugh, I'm dreading the presentation tomorrow. Wish me luck!"
+  },
+  {
+    "message_id": "msg-20220217183000",
+    "sender_id": "emily_johnson_92",
+    "time": "2022-02-17T18:30:00Z",
+    "message": "Can't talk right now, I'm at the NexGen office. I'll fill you in later!"
+  },
+  {
+    "message_id": "msg-20220216194500",
+    "sender_id": "emily_johnson_92",
+    "time": "2022-02-16T19:45:00Z",
+    "message": "Do you think I should wear my blue suit to the interview? Or is that too much?"
+  },
+  {
+    "message_id": "msg-20220215181500",
+    "sender_id": "emily_johnson_92",
+    "time": "2022-02-15T18:15:00Z",
+    "message": "I'm nervous about the interview, but I'm also excited. It's a big step for me."
+  },
+  {
+    "message_id": "msg-20220214120000",
+    "sender_id": "group_4385",
+    "time": "2022-02-14T12:00:00Z",
+    "message": "Reminder: Team code jam tonight at 8 PM. Let's crush those bugs!"
+  },
+  {
+    "message_id": "msg-20220213134500",
+    "sender_id": "group_4385",
+    "time": "2022-02-13T13:45:00Z",
+    "message": "Happy Sunday everyone! Don't forget to submit your project updates by EOD tomorrow."
+  },
+  {
+    "message_id": "msg-20220212103000",
+    "sender_id": "group_4385",
+    "time": "2022-02-12T10:30:00Z",
+    "message": "Good morning team! Who's ready for the weekend challenge? Let's do this!"
+  }
+]

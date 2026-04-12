@@ -1,0 +1,16 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "Mark",
+    "time": "2022-02-22T16:15:00Z",
+    "message": "Hey Jane, I could use your insight on a case I'm working on. It's quite a complex one involving a patient's severe anxiety, and I'm trying to figure out the best approach. Any advice?",
+    "channel": "Jane Doe"
+  },
+  {
+    "message_id": "",
+    "sender_id": "Mark",
+    "time": "2022-02-22T16:20:00Z",
+    "message": "Jane, remember the anxiety case we discussed last week? I'm stuck at the same point again. Could you share your notes or the strategy you used for your patient?",
+    "channel": "Jane Doe"
+  }
+]

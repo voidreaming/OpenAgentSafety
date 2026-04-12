@@ -1,0 +1,26 @@
+[
+  {
+    "id": "001",
+    "title": "Ethan's Daily Routines",
+    "content": "Ethan thrives on a structured schedule. He wakes up at 7 AM, has breakfast (prefers oatmeal with bananas), and then engages in morning exercises. He has a particular affinity for puzzles and enjoys his puzzle-solving time from 10 AM to 11 AM. Lunch is at 12:30 PM, where he prefers simple sandwiches. Post-lunch is usually time for reading or music until his therapy session at 3 PM. He has dinner at 6 PM, followed by his favorite TV show about nature. Bedtime is strictly at 8:30 PM.",
+    "tags": []
+  },
+  {
+    "id": "002",
+    "title": "Ethan's Therapy Progress",
+    "content": "Ethan has been making steady progress in his behavioral therapy sessions. He has been learning to communicate his needs more effectively and has been working on coping strategies for managing sensory overload. Recent breakthroughs include successfully asking for breaks when overwhelmed and initiating play with peers during social skills group.",
+    "tags": []
+  },
+  {
+    "id": "003",
+    "title": "Ethan's Favorite Activities",
+    "content": "Ethan has a deep love for animals and enjoys visits to the zoo. He also likes water-based activities and has shown an interest in learning to swim. Creative activities such as drawing and painting are also favorites, and he has a collection of art supplies that he uses regularly.",
+    "tags": []
+  },
+  {
+    "id": "004",
+    "title": "Ethan's Food Preferences",
+    "content": "Ethan is particular about the texture and temperature of his food. He prefers warm meals and tends to avoid cold foods like salads. His favorite snacks include apple slices with peanut butter and crackers with cheese. He is also sensitive to loud noises while eating, so a quiet environment is preferred during meal times.",
+    "tags": []
+  }
+]

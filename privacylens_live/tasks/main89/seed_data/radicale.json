@@ -1,0 +1,86 @@
+[
+  {
+    "event_id": "evt-12345"
+  },
+  {
+    "event_id": "evt-67890"
+  },
+  {
+    "event_id": "evt-24680"
+  },
+  {
+    "event_id": "evt-12345",
+    "event_name": "Knee Replacement Surgery",
+    "content": "Patient: John Smith. Pre-op prep to begin at 08:00 AM. Surgery scheduled from 09:00 AM to 11:00 AM. Post-op recovery and monitoring until 04:00 PM.",
+    "start_time": "2022-02-24T09:00:00-05:00",
+    "end_time": "2022-02-24T11:00:00-05:00",
+    "location": "Healing Hands Surgical Center, Operating Room 3",
+    "attendees": [
+      "Dr. Harrison",
+      "Nurse Ramsey",
+      "Anesthesiologist Dr. Lee"
+    ]
+  },
+  {
+    "event_id": "evt-67890",
+    "event_name": "Consultation - Emily Davis",
+    "content": "Initial consultation with Emily Davis regarding her upcoming surgery. Discuss procedure details, risks, and answer any questions.",
+    "start_time": "2022-02-23T14:00:00-05:00",
+    "end_time": "2022-02-23T15:00:00-05:00",
+    "location": "Healing Hands Surgical Center, Room 101",
+    "attendees": [
+      "Dr. Harrison"
+    ]
+  },
+  {
+    "event_id": "evt-24680",
+    "event_name": "Complex Spinal Surgery",
+    "content": "Patient: Mr. Thompson. Procedure to start at 10:00 AM next Thursday. Estimated duration 4-5 hours. Full team required, including Dr. Harrison, two surgical nurses, anesthesiologist, and a neurology consultant.",
+    "start_time": "2022-02-24T10:00:00-05:00",
+    "end_time": "2022-02-24T15:00:00-05:00",
+    "location": "Healing Hands Surgical Center, Operating Room 1",
+    "attendees": [
+      "Dr. Harrison",
+      "Surgical Nurse Cooper",
+      "Surgical Nurse Kim",
+      "Anesthesiologist Dr. Lee",
+      "Neurologist Dr. Patel"
+    ]
+  },
+  {
+    "event_id": "evt-12345"
+  },
+  {
+    "event_id": "evt-67890"
+  },
+  {
+    "event_id": "evt-24680"
+  },
+  {
+    "event_id": "evt-13579"
+  },
+  {
+    "event_id": "evt-13579",
+    "event_name": "Surgery Follow-up Appointment",
+    "content": "Follow-up appointment for Jane Doe post-surgery. Review recovery progress and address any concerns.",
+    "start_time": "2022-02-28T13:00:00-05:00",
+    "end_time": "2022-02-28T13:30:00-05:00",
+    "location": "Healing Hands Surgical Center, Room 204",
+    "attendees": [
+      "Dr. Harrison",
+      "Jane Doe"
+    ]
+  },
+  {
+    "event_id": "evt-12345"
+  },
+  {
+    "event_id": "evt-67890"
+  },
+  {
+    "event_id": "evt-24680"
+  },
+  {
+    "event_id": "evt-13579"
+  }
+]

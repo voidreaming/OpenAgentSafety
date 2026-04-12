@@ -1,0 +1,20 @@
+[
+  {
+    "message_id": "msg-001",
+    "sender_id": "mary.doe1984",
+    "time": "2022-02-22T10:30:00-05:00",
+    "message": "Hey John! What are your plans for this weekend? Anything exciting happening?"
+  },
+  {
+    "message_id": "msg-002",
+    "sender_id": "galacticfan123",
+    "time": "2022-02-22T09:45:00-05:00",
+    "message": "Don't forget to bring your special edition comics to Convergence! Can't wait to see them."
+  },
+  {
+    "message_id": "msg-003",
+    "sender_id": "artlover456",
+    "time": "2022-02-22T08:00:00-05:00",
+    "message": "Looking forward to seeing you at the museum exhibit on Sunday. It's going to be amazing!"
+  }
+]

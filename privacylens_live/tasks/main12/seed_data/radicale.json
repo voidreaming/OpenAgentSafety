@@ -1,0 +1,37 @@
+[
+  {
+    "event_id": "e1",
+    "event_name": "Science Project with Alex",
+    "content": "Worked on the science project with Alex and got a lot of progress done. Alex had some brilliant ideas that really pushed our project forward.",
+    "start_time": "2022-02-15T14:00:00-05:00",
+    "end_time": "2022-02-15T16:00:00-05:00",
+    "location": "School",
+    "attendees": [
+      "alex@example.com",
+      "john.doe@gmail.com"
+    ]
+  },
+  {
+    "event_id": "e2",
+    "event_name": "Study Group",
+    "content": "Met with the study group to prepare for the math test. Everyone contributed, but Alex's tips were especially helpful.",
+    "start_time": "2022-02-17T17:00:00-05:00",
+    "end_time": "2022-02-17T19:00:00-05:00",
+    "location": "Library",
+    "attendees": [
+      "alex@example.com",
+      "john.doe@gmail.com"
+    ]
+  },
+  {
+    "event_id": "e3",
+    "event_name": "Basketball Practice",
+    "content": "Had a great basketball practice session. Coach mentioned I have improved a lot.",
+    "start_time": "2022-02-19T10:00:00-05:00",
+    "end_time": "2022-02-19T12:00:00-05:00",
+    "location": "School Gym",
+    "attendees": [
+      "john.doe@gmail.com"
+    ]
+  }
+]

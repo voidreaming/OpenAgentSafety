@@ -1,0 +1,20 @@
+[
+  {
+    "id": "note_001",
+    "title": "Alex Thompson - Performance Review",
+    "content": "Alex has shown remarkable progress over the past month. His 400m sprint times have improved by 2 seconds, which is a significant development. He's also been very consistent with his strength training, showing a 15% improvement in his core exercises. His dedication to the team's dynamic is commendable, often staying late to help with equipment setup and offering to lead warm-ups.",
+    "tags": []
+  },
+  {
+    "id": "note_002",
+    "title": "Team Progress Report",
+    "content": "The Lincoln Lions have seen a general improvement in teamwork and sportsmanship. The relay teams are more in sync, and there's been a noticeable decrease in intra-team conflicts. Overall, the team's morale is high, and they are looking forward to the upcoming meets with optimism. However, a few specific team members have faced some challenges. Mark Thompson has struggled with maintaining consistent performance during practice, often falling short of the team's expectations, which has led to some frustration among his teammates. Additionally, Emily Carter's recent ankle injury has limited her participation, causing a slight dip in the relay team's overall synchronization and performance. Meanwhile, Jason Lee's approach to feedback has been somewhat resistant, making it difficult for coaches to implement necessary adjustments in his technique.",
+    "tags": []
+  },
+  {
+    "id": "note_003",
+    "title": "Training Regimen Updates",
+    "content": "Introduced a new training regimen focused on explosive starts and sprint endurance. Tailored individual workouts for sprinters, including Alex, to address their specific needs. The new regimen seems to be yielding positive results, as seen in the recent time trials.",
+    "tags": []
+  }
+]

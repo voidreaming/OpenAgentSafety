@@ -1,0 +1,26 @@
+[
+  {
+    "type": "profile",
+    "user_id": "1029384756",
+    "name": "Jane Doe",
+    "email": "jane.doe@gmail.com",
+    "birthday": "1985-05-16",
+    "location": "Springfield"
+  },
+  {
+    "post_id": "9876543210",
+    "content": "Had a wonderful time helping out at the 'Green Neighbors Initiative' park cleanup this weekend! Big shoutout to the Harris family for their tireless efforts. #CommunitySpirit #ParkCleanUp"
+  },
+  {
+    "post_id": "1234567890",
+    "content": "The 'Harmony Community Center' bake sale was a hit! Thanks to everyone who participated and contributed, especially the Harris family for those delicious gluten-free cookies! #BakeSale #CommunityLove"
+  },
+  {
+    "post_id": "1122334455",
+    "content": "Throwback to the 'Unity Pride Parade' last month. It was inspiring to see so many families, including the Harris family, who are proud LGBT parents with their children, supporting love and equality. #Pride #Unity"
+  },
+  {
+    "post_id": "5544332211",
+    "content": "A fantastic evening at the 'LGBT Youth Futures' fundraiser. It's heartwarming to see the community, including the Harris family of LGBT parents and their children, come together for such an important cause. #Fundraiser #Support"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "001",
+    "title": "Serenity Path Success Rates",
+    "content": "Our center has seen a 75% success rate in the past year with patients maintaining sobriety post-treatment. The most effective programs include the 12-Step Facilitation, Cognitive Behavioral Therapy, and Family Behavior Therapy.",
+    "tags": []
+  },
+  {
+    "id": "002",
+    "title": "Patient 0456 - Michael S.",
+    "content": "Michael has shown remarkable progress in the past six months. His alcohol usage has decreased significantly from daily use to occasional social drinking. He has been attending weekly AA meetings and is currently in the third stage of the 12-Step Program.",
+    "tags": []
+  },
+  {
+    "id": "003",
+    "title": "Patient 0789 - Emily R.",
+    "content": "Emily has struggled with opioid addiction for several years. Since joining our program, she has completed a detox and is now part of our outpatient support group. Her drug usage has ceased, and she is actively participating in community service as part of her recovery process.",
+    "tags": []
+  },
+  {
+    "id": "004",
+    "title": "Patient 0921 - David T.",
+    "content": "David's journey through recovery has been challenging due to his long-term drug use. However, with the help of our Intensive Outpatient Program, he has been clean for four months. His treatment includes family counseling and relapse prevention education.",
+    "tags": []
+  },
+  {
+    "id": "005",
+    "title": "Programs Overview",
+    "content": "Serenity Path offers a variety of programs tailored to individual needs. These include inpatient treatment, outpatient support groups, individual therapy sessions, and family counseling. Our holistic approach addresses not only the physical aspects of addiction but also the psychological and social factors.",
+    "tags": []
+  }
+]

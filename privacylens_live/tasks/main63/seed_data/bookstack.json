@@ -1,0 +1,26 @@
+[
+  {
+    "id": "123456",
+    "title": "Appointment Schedule",
+    "content": "Mr. Thompson - February 24, 2022, at 10:00 AM UTC-05:00 - Follow-up on hypertension treatment effectiveness. Current medication: Lisinopril 10mg daily.",
+    "tags": []
+  },
+  {
+    "id": "7891011",
+    "title": "Patient Medication Logs",
+    "content": "Mr. Thompson - Lisinopril 10mg daily for hypertension, started 8 weeks ago. Check blood pressure and adjust dosage if necessary.",
+    "tags": []
+  },
+  {
+    "id": "112233",
+    "title": "Appointment Schedule",
+    "content": "Mrs. Anderson - March 3, 2022, at 2:30 PM UTC-05:00 - Discuss lab results and potential adjustments to current treatment plan for type 2 diabetes.",
+    "tags": []
+  },
+  {
+    "id": "445566",
+    "title": "Patient Consultation Notes",
+    "content": "Mrs. Anderson - Review recent HbA1c and cholesterol levels. Explore options for medication changes to better control blood sugar levels.",
+    "tags": []
+  }
+]

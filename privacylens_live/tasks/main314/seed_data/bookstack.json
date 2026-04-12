@@ -1,0 +1,14 @@
+[
+  {
+    "id": "123456",
+    "title": "Client Meeting Notes - Mr. Anderson",
+    "content": "Met with Mr. Anderson to discuss his loan application. Reviewed financial statements and credit history. He's applying for a $500,000 loan for his business expansion. We need to conduct a more thorough risk assessment before proceeding.",
+    "tags": []
+  },
+  {
+    "id": "7891011",
+    "title": "Financial Literacy Workshop Plan",
+    "content": "Finalized the agenda for the financial literacy workshop. Topics include: budgeting basics, understanding credit, and saving for the future. Scheduled for March 5th at the community center.",
+    "tags": []
+  }
+]

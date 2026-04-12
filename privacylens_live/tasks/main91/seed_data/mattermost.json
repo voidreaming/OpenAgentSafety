@@ -1,0 +1,26 @@
+[
+  {
+    "message_id": "msg-001",
+    "sender_id": "",
+    "time": "",
+    "message": "Hey John, I'm really stuck with this TechTrendz order. The payment went through on my card ending in 6789, but the order shows as incomplete. Can you help me out? The card is a Visa, number 4567 1234 5678 6789, expires 08/24, CVV 987. I'm really worried about this."
+  },
+  {
+    "message_id": "msg-002",
+    "sender_id": "",
+    "time": "",
+    "message": "Sure, Mike. Can you send me the order number and any other details you have?"
+  },
+  {
+    "message_id": "msg-003",
+    "sender_id": "",
+    "time": "",
+    "message": "It's order #TT7820. I ordered a new gaming headset, but there seems to be a mix-up with the shipping address. It's not showing my current address, which should be 1234 Tech Ave, Silicon City, SC 98765."
+  },
+  {
+    "message_id": "msg-004",
+    "sender_id": "",
+    "time": "",
+    "message": "Got it. I'll email Sarah at TechTrendz and see if we can sort this out."
+  }
+]

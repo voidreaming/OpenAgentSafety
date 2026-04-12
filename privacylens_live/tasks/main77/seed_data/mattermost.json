@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "m101",
+    "sender_id": "mary.teacher@lincolnhigh.edu",
+    "time": "11:15 AM UTC-05:00",
+    "message": "Hey John, hope you're having a good day! How's work going?"
+  },
+  {
+    "message_id": "m102",
+    "sender_id": "jane.doe@firstcitybank.com",
+    "time": "10:50 AM UTC-05:00",
+    "message": "John, Mr. Thompson's updated credit report came in. Please review before our 2 PM meeting."
+  },
+  {
+    "message_id": "m103",
+    "sender_id": "frank.smith@firstcitybank.com",
+    "time": "09:30 AM UTC-05:00",
+    "message": "Congratulations on the Rodriguez account, John! Her business plan was impressive."
+  },
+  {
+    "message_id": "m104",
+    "sender_id": "gym.partner@fitclub.com",
+    "time": "08:45 AM UTC-05:00",
+    "message": "Ready for our workout session tonight?"
+  },
+  {
+    "message_id": "m105",
+    "sender_id": "peter.thompson@thompsonautos.com",
+    "time": "08:00 AM UTC-05:00",
+    "message": "John, I'm anxious about the loan decision. Please let me know as soon as you can."
+  },
+  {
+    "message_id": "m106",
+    "sender_id": "lisa.rodriguez@rodriguezdesigns.com",
+    "time": "07:15 AM UTC-05:00",
+    "message": "Thank you for the good news, John! I'm thrilled about the loan approval."
+  },
+  {
+    "message_id": "m107",
+    "sender_id": "mark.johnson@firstcitybank.com",
+    "time": "Yesterday",
+    "message": "Reminder: Your performance review is scheduled for next Thursday."
+  },
+  {
+    "message_id": "m108",
+    "sender_id": "newsletter@techworld.com",
+    "time": "Yesterday",
+    "message": "This week's top tech stories!"
+  },
+  {
+    "message_id": "m109",
+    "sender_id": "no-reply@myutilities.com",
+    "time": "Yesterday",
+    "message": "Your monthly bill is now available."
+  },
+  {
+    "message_id": "m110",
+    "sender_id": "family.chat@chatapp.com",
+    "time": "Yesterday",
+    "message": "Don't forget mom's birthday this weekend!"
+  }
+]

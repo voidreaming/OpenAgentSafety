@@ -1,0 +1,14 @@
+[
+  {
+    "id": "12345",
+    "title": "The Codex - Quantum Coders Semester Summary",
+    "content": "Quantum Coders Semester Summary:\n\n- Alice: Consistent A's in all subjects. Excellent participation in group discussions.\n- Bob: Improved from B to A in Quantum Computing. Active in lab sessions.\n- Charlie: Strong performance in Software Engineering. Leading the app development project.\n- Sarah: Struggle with Advanced Algorithms, received a C-. Needs support in upcoming semester.\n\nGroup Project: Received commendations from Professor Smith for outstanding collaborative work on software development project.\n\nNote: Plan a meeting to discuss Sarah's performance and how the group can support her.",
+    "tags": []
+  },
+  {
+    "id": "67890",
+    "title": "Quantum Coders' Virtual Meetups - Transcriptions",
+    "content": "Transcription of Quantum Coders' Virtual Meetup (02/15/2022):\n\n- Discussed the upcoming midterm exams and strategies for studying.\n- Reviewed the semester project timeline and assigned tasks for the next sprint.\n- Alice suggested a review session for Advanced Algorithms to help Sarah and others who might be struggling.\n\nAction Items:\n- Bob to set up the review session date.\n- Charlie to share the latest app development updates in the next meeting.\n- John to compile and send out the semester summary to all members.",
+    "tags": []
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "PRJ20220222",
+    "title": "Project Progress Update",
+    "content": "The team has completed the initial development phase of the new analytics module, which is now ready for testing. The integration of the advanced search feature is underway, with an expected completion by the end of next week. Additionally, Eric has been instrumental in the development of the new database schema, which will significantly improve performance.",
+    "tags": []
+  },
+  {
+    "id": "JOB20220222",
+    "title": "Eric's Job Hunting Notes",
+    "content": "Eric has expressed a desire to seek new employment opportunities and has been in talks with Google and Amazon. He feels that the growth opportunities at TechSolutions are limited and is looking for a position that offers more leadership responsibilities.",
+    "tags": []
+  }
+]

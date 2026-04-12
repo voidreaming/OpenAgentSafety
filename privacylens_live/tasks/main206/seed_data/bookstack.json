@@ -1,0 +1,20 @@
+[
+  {
+    "id": "note_4567321",
+    "title": "State vs. John Doe - Trial Strategy",
+    "content": "Confidential: The primary strategy for our high-profile client John Doe's defense is to discredit the eyewitness testimony based on inconsistencies in their statements. We have a motion to suppress evidence obtained from the unlawful search. Key evidence includes the lack of gun residue on Doe's hands and the alibi provided by his employer.",
+    "tags": []
+  },
+  {
+    "id": "note_4567322",
+    "title": "Upcoming Legal Seminar",
+    "content": "Reminder: Register for the National Association of Criminal Defense Lawyers seminar on March 5th. This year's focus is on digital evidence in criminal trials. It's a great opportunity to network and learn about the latest trends in defense strategies.",
+    "tags": []
+  },
+  {
+    "id": "note_4567323",
+    "title": "Case Notes: People vs. Jane Smith",
+    "content": "Confidential: Jane Smith's case involves financial fraud allegations. Our defense will challenge the credibility of the forensic accounting evidence. We're coordinating with expert witnesses to prepare a counter-analysis. Smith maintains her innocence and claims she was unaware of the company's financial misconduct.",
+    "tags": []
+  }
+]

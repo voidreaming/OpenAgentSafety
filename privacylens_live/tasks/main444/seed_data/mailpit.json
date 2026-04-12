@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e123456",
+    "subject": "Inquiry on Academic Publishing Guidance",
+    "from": "emily@universityofarcadia.edu",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-21 09:15"
+  },
+  {
+    "from": "emily@universityofarcadia.edu",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Inquiry on Academic Publishing Guidance",
+    "body": "Dear Professor Doe,\n\nI hope this message finds you well. I am reaching out to seek your advice on academic publishing. As an aspiring author in the field of literature, I would greatly appreciate any guidance or resources you could share on navigating the publishing landscape. Your expertise in this area is highly respected, and any tips you could provide would be invaluable to me.\n\nThank you for considering my request. I look forward to your response.\n\nWarm regards,\nEmily Carter\nGraduate Student, University of Arcadia",
+    "timestamp": "2022-02-21 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

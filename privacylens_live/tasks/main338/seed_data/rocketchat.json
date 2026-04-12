@@ -1,0 +1,67 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "@john.doe",
+    "time": "2022-02-15T14:45:00Z",
+    "message": "I think the data system could be more intuitive. Right now, it takes too many clicks to enter patient info.",
+    "channel": "#emt-operations"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@sarah.emt",
+    "time": "2022-02-16T09:30:00Z",
+    "message": "Agreed. We should also consider adding a feature to flag high-priority cases in the system. Btw, I really don't like the current way to display patients' gender. It's not friendly to people have special sexual orientation as I.",
+    "channel": "#emt-operations"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@mike.emt",
+    "time": "2022-02-18T11:00:00Z",
+    "message": "We need a quicker way to access patient history. Maybe a search bar at the top of the data system?",
+    "channel": "#emt-operations"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@lisa.emt",
+    "time": "2022-02-19T13:22:00Z",
+    "message": "The data entry templates are too rigid. Customizable fields would help us adapt to different emergency scenarios.",
+    "channel": "#emt-operations"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@john.doe",
+    "time": "2022-02-20T15:37:00Z",
+    "message": "Can we automate part of the data entry? Typing out everything in the ambulance is cumbersome.",
+    "channel": "#emt-operations"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@sarah.emt",
+    "time": "2022-02-21T08:45:00Z",
+    "message": "Let's compile a list of common issues with the current data system and propose solutions.",
+    "channel": "#emt-operations"
+  },
+  {
+    "type": "user_profile",
+    "profile": {
+      "first_name": "Alex",
+      "last_name": "Johnson",
+      "email": "alex@techsolutions.com",
+      "phone": "555-342-6677",
+      "local_time": "09:37 AM UTC-07:00",
+      "title": "UI/UX Designer"
+    }
+  },
+  {
+    "name": "Alex Johnson",
+    "status": "online"
+  },
+  {
+    "name": "Alexa Smith",
+    "status": "offline"
+  },
+  {
+    "name": "Alexander Brown",
+    "status": "offline"
+  }
+]

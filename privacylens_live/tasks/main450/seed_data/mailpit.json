@@ -1,0 +1,9 @@
+[
+  {
+    "id": "e12345",
+    "subject": "Inquiry about Serenity Path's Work",
+    "from": "alex.softwaredev@email.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-21 10:15"
+  }
+]

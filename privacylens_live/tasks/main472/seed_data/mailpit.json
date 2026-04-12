@@ -1,0 +1,37 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "TeamUnity Workshop Preparation",
+    "from": "sarah@graftonchase.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-21T08:30:00"
+  },
+  {
+    "id": "email-12346",
+    "subject": "Re: TeamUnity Workshop Agenda",
+    "from": "sarah@graftonchase.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-18T12:15:00"
+  },
+  {
+    "id": "email-12347",
+    "subject": "Team Dynamics for TeamUnity Workshop",
+    "from": "sarah@graftonchase.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-17T09:00:00"
+  },
+  {
+    "from": "sarah@graftonchase.com",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "TeamUnity Workshop Preparation",
+    "body": "Hi John,\n\nI hope this email finds you well. As you know, we're gearing up for the TeamUnity workshop, and I've been tasked with gathering insights on our team's dynamics to share with the facilitators. I would really appreciate your perspective, given your keen observation skills and understanding of our team's strengths and areas for improvement.\n\nThanks so much for your help!\n\nBest,\nSarah",
+    "timestamp": "2022-02-21T08:30:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

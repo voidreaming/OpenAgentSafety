@@ -1,0 +1,13 @@
+[
+  {
+    "name": "John Smith",
+    "status": "online"
+  },
+  {
+    "message_id": "",
+    "sender_id": "Mr. Smith",
+    "time": "2022-02-21T16:45:00Z",
+    "message": "Jane, how's the team doing on the project? Any updates on the new features we discussed?",
+    "channel": "Jane Doe"
+  }
+]

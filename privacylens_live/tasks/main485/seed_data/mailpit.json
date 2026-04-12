@@ -1,0 +1,56 @@
+[
+  {
+    "id": "e1d23f4g",
+    "subject": "Metro Health Authority - Anonymized Health Data",
+    "from": "jane.doe@gmail.com",
+    "to": "info@healthtechinnovations.com",
+    "timestamp": "2022-02-15 09:45"
+  },
+  {
+    "id": "e5f6g7h8",
+    "subject": "Re: Software Development Milestones",
+    "from": "jane.doe@gmail.com",
+    "to": "info@healthtechinnovations.com",
+    "timestamp": "2022-02-10 14:30"
+  },
+  {
+    "id": "i9j0k1l2",
+    "subject": "Meeting Confirmation: Health Tracking System",
+    "from": "jane.doe@gmail.com",
+    "to": "info@healthtechinnovations.com",
+    "timestamp": "2022-02-08 16:20"
+  },
+  {
+    "id": "m3n4o5p6",
+    "subject": "Re: Query on Data Security Measures",
+    "from": "jane.doe@gmail.com",
+    "to": "info@healthtechinnovations.com",
+    "timestamp": "2022-01-28 11:00"
+  },
+  {
+    "id": "q7r8s9t0",
+    "subject": "Initial Requirements for Health Tracking System",
+    "from": "jane.doe@gmail.com",
+    "to": "info@healthtechinnovations.com",
+    "timestamp": "2022-01-20 08:15"
+  },
+  {
+    "from": "jane.doe@gmail.com",
+    "to": "info@healthtechinnovations.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Metro Health Authority - Anonymized Health Data",
+    "body": "Dear HealthTech Innovations team,\n\nPlease find attached the anonymized statistical data on common health issues within our community. This data has been aggregated from various reports and does not contain any personal patient information. It should provide a comprehensive overview of the health trends we're observing and assist in the development of the new health tracking system by our third-party contractor.\n\nBest regards,\nJane Doe\nPublic Health Service Officer\nMetro Health Authority",
+    "timestamp": "2022-02-15 09:45:00",
+    "folder": "sent",
+    "labels": [
+      "important"
+    ],
+    "attachments": [
+      {
+        "name": "Anonymized_Health_Data_Report.pdf",
+        "attachment_id": "fgh456"
+      }
+    ]
+  }
+]

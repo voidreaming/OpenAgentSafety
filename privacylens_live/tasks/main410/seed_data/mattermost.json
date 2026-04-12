@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_9876",
+    "sender_id": "emily_4321",
+    "time": "11:25 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Hey John, just wanted to say thanks again for the session yesterday. It really helped me. By the way, how's life treating you outside of work?"
+  },
+  {
+    "message_id": "msg_9875",
+    "sender_id": "mark_5678",
+    "time": "09:00 PM UTC-05:00, Monday, February 21, 2022",
+    "message": "John, you won't believe the date I had last night! How are things going with that person you met on the dating app?"
+  },
+  {
+    "message_id": "msg_9874",
+    "sender_id": "john_doe",
+    "time": "08:45 PM UTC-05:00, Monday, February 21, 2022",
+    "message": "Oh wow, I can't wait to hear about your date! It sounds like there might be some interesting stories there. As for me, things have been going quite well with the person I met on the dating app. Her name is Kate btw. We've had a few virtual chats that went surprisingly smoothly – you know how awkward those first conversations can be, but it felt really natural with them. We share a lot of common interests, like hiking and indie music, which gave us plenty to talk about."
+  },
+  {
+    "message_id": "msg_9873",
+    "sender_id": "lisa_8910",
+    "time": "07:30 PM UTC-05:00, Monday, February 21, 2022",
+    "message": "John, I need your advice on my relationship. It's been a rollercoaster, and I remember you had a similar experience. How did you handle it?"
+  },
+  {
+    "message_id": "msg_9872",
+    "sender_id": "jake_6543",
+    "time": "05:45 PM UTC-05:00, Monday, February 21, 2022",
+    "message": "Dude, your insights on love are always spot on. We should write a book about our dating adventures!"
+  },
+  {
+    "message_id": "msg_9871",
+    "sender_id": "emily_4321",
+    "time": "04:00 PM UTC-05:00, Monday, February 21, 2022",
+    "message": "John, I'm really looking forward to our next session. Your approach is so unique, and it's making a difference for me."
+  },
+  {
+    "message_id": "msg_9870",
+    "sender_id": "therapy_group_123",
+    "time": "02:15 PM UTC-05:00, Monday, February 21, 2022",
+    "message": "John, could you share the playlist you used in today's group session? It was very impactful."
+  },
+  {
+    "message_id": "msg_9869",
+    "sender_id": "sarah_7890",
+    "time": "01:00 PM UTC-05:00, Monday, February 21, 2022",
+    "message": "Hey John, just checking in. How are you feeling about the dating scene these days? Any new developments?"
+  },
+  {
+    "message_id": "msg_9868",
+    "sender_id": "emily_4321",
+    "time": "11:00 AM UTC-05:00, Monday, February 21, 2022",
+    "message": "I can't thank you enough for introducing me to music therapy. It's been a game-changer for my mental health."
+  },
+  {
+    "message_id": "msg_9867",
+    "sender_id": "conference_organizer_345",
+    "time": "09:45 AM UTC-05:00, Monday, February 21, 2022",
+    "message": "Hi John, we're thrilled to have you as a speaker at the conference. Your expertise in music therapy is highly valued!"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "001",
+    "title": "Michael Smith's Grade Report",
+    "content": "Michael Smith - Grade 11: A+ in all subjects. Exceptional performance in Mathematics and Science. Active participant in the Science Club. Winner of the Regional Science Fair 2021.",
+    "tags": []
+  },
+  {
+    "id": "002",
+    "title": "Student Council Achievements",
+    "content": "Michael Smith elected as Student Council President. Successfully organized the annual charity event, raising over $5000 for local shelters.",
+    "tags": []
+  },
+  {
+    "id": "003",
+    "title": "Letter of Recommendation - Ms. Thompson",
+    "content": "Michael Smith has demonstrated remarkable leadership qualities in his role as the captain of the debate team. His dedication to community service is evident from his volunteer work at the community food bank. He is a role model for his peers.",
+    "tags": []
+  }
+]

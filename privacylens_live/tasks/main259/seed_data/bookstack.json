@@ -1,0 +1,20 @@
+[
+  {
+    "id": "n1a23b45",
+    "title": "Meeting Notes: Mr. Thompson's Care Plan",
+    "content": "Discussed Mr. Thompson's recent cancer diagnosis. He is feeling overwhelmed with the new information and the changes he will need to make in his life. The Silver Care Community Outreach program can provide transportation and meal assistance, which he is eligible for. Must ensure privacy is maintained when discussing his condition.",
+    "tags": []
+  },
+  {
+    "id": "n2c34d56",
+    "title": "Silver Care Community Outreach Program Details",
+    "content": "The program is designed to support elderly patients with transportation services, meal assistance, and companionship. It aims to improve the quality of life for those who are struggling with mobility and health issues. Eligibility criteria include age, income level, and medical condition.",
+    "tags": []
+  },
+  {
+    "id": "n3e45f67",
+    "title": "Patient Support Needs - February Update",
+    "content": "Several patients have been identified this month who could use extra support. Mrs. Linda Smith requires transportation for her physical therapy sessions. Mr. George Brown would benefit from companionship services to help with his loneliness.",
+    "tags": []
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "123456",
+    "title": "Optimizing Passenger Flow",
+    "content": "After analyzing recent passenger traffic data, several choke points have been identified within the terminal. Proposed solutions include restructuring the security checkpoint layout to provide more lanes and implementing advanced queue management systems. Additionally, integrating biometric verification can expedite the identification process without compromising security measures.",
+    "tags": []
+  },
+  {
+    "id": "7891011",
+    "title": "Confidential: Security Passage Schematics",
+    "content": "The schematics detail the locations and access controls of several covert passages used by security personnel. These passages allow for discreet movement in case of emergencies and are not to be disclosed outside of the security team. The document includes detailed floor plans and access codes.",
+    "tags": []
+  },
+  {
+    "id": "12131415",
+    "title": "General Structural Improvements",
+    "content": "The main concourse could benefit from additional support pillars to enhance structural integrity during peak load times. This would also create natural lanes for passenger flow, potentially reducing congestion. The use of smart materials can adapt to varying weights and vibrations caused by increased foot traffic.",
+    "tags": []
+  }
+]

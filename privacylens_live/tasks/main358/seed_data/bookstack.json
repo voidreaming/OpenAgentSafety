@@ -1,0 +1,14 @@
+[
+  {
+    "id": "note-001",
+    "title": "Educational Psychology Lecture Summary",
+    "content": "A summary of the key points from the lecture on educational psychology, including the importance of tailored teaching methods, continuous assessment, and fostering a growth mindset in students.\n\nTailored Teaching Methods: Professor Hartley advocated for the adoption of differentiated instruction strategies, stressing the diversity in learning styles among students. For instance, visual learners benefit significantly from diagrams and charts, while kinesthetic learners achieve better understanding through hands-on activities. Incorporating technology, like educational apps and online platforms, can also offer customizable learning experiences.\n\nContinuous Assessment: The lecture underscored the importance of moving beyond traditional examination methods to embrace continuous assessment techniques. Examples include regular quizzes, student-led presentations, and peer reviews. These methods provide ongoing feedback, enabling educators to adjust their teaching approaches in real time and address individual student needs effectively.\n\nFostering a Growth Mindset: A significant portion of the lecture was dedicated to the concept of a growth mindset, as popularized by psychologist Carol Dweck. Professor Hartley illustrated how encouraging students to embrace challenges, persist in the face of setbacks, and view effort as a path to mastery can significantly impact their academic achievement and resilience.",
+    "tags": []
+  },
+  {
+    "id": "note-002",
+    "title": "Student Performance Case Study",
+    "content": "This case study focuses on Derek Johnson, a sophomore student majoring in Computer Science, who has displayed a concerning pattern of academic underperformance over the past two semesters. Initially, Derek's grades began to decline in critical courses related to his major, with specific scores as follows:\n\nIntroduction to Programming: Dropped from a B- in the midterm to a final grade of D+.\nCalculus II: Consistently low quiz scores averaging 55%, leading to a final grade of C-.\nComputer Systems and Architecture: Failed two major assignments, contributing to an overall grade of F.\nAs a result of these failing scores, Derek has been placed under academic probation as of the start of the current semester. To directly address these issues, the department has arranged for Derek to receive personalized tutoring sessions.",
+    "tags": []
+  }
+]

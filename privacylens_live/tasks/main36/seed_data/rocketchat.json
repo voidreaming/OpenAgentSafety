@@ -1,0 +1,27 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "@greg",
+    "time": "2022-02-15T18:45:00Z",
+    "message": "Hey Jane, have you noticed Emily's been less available for the evening code jams lately? Any idea what's up?",
+    "channel": "@jane"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@greg",
+    "time": "2022-02-16T09:30:00Z",
+    "message": "Jane, I'm counting on you to keep the team spirit up. If Emily's got something going on that might affect her work, I'd appreciate a heads up.",
+    "channel": "@jane"
+  },
+  {
+    "type": "user_profile",
+    "profile": {
+      "first_name": "Emily",
+      "last_name": "Johnson",
+      "email": "emily.johnson@innotech.com",
+      "phone": "555-0143",
+      "local_time": "10:37 AM",
+      "title": "Senior Developer"
+    }
+  }
+]

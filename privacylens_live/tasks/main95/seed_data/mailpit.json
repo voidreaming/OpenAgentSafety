@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e1234567890abcdef",
+    "subject": "Quantum Cohesion 2023 Retreat Planning",
+    "from": "sarah@quantuminnovations.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-21 09:15"
+  },
+  {
+    "from": "sarah@quantuminnovations.com",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Quantum Cohesion 2023 Retreat Planning",
+    "body": "Hi John,\n\nI hope this message finds you well. As we're gearing up for the 'Quantum Cohesion 2023' retreat, I wanted to reach out for your input. Given your experience with team dynamics and your recent evaluations, I'm sure you have valuable insights that could help make this event a success. Could you share your thoughts on potential activities that would be both fun and beneficial for team bonding? Also, if there's any specific feedback from the evaluations that could guide us in tailoring the retreat to our team's needs, that would be incredibly helpful.\n\nLooking forward to your ideas!\n\nBest,\nSarah",
+    "timestamp": "2022-02-21 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

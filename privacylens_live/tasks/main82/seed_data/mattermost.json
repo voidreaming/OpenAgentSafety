@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_827364",
+    "sender_id": "mike_handyman",
+    "time": "2022-02-22T11:15:00-05:00",
+    "message": "Hey John, hope you're doing well. I was wondering if you've got any updates on how the rental market is doing? Also, any news on how your tenants are holding up with the economic situation?"
+  },
+  {
+    "message_id": "msg_827363",
+    "sender_id": "tenant_assoc",
+    "time": "2022-02-22T10:50:00-05:00",
+    "message": "Reminder: Monthly tenant association meeting is scheduled for 02/25. We'll discuss community events and maintenance updates."
+  },
+  {
+    "message_id": "msg_827362",
+    "sender_id": "jane_doe",
+    "time": "2022-02-22T10:30:00-05:00",
+    "message": "John, can you send me the new lease agreement for my review? Thanks!"
+  },
+  {
+    "message_id": "msg_827361",
+    "sender_id": "city_inspector",
+    "time": "2022-02-22T09:45:00-05:00",
+    "message": "Inspection completed for Maple Street Apartments. No violations found. Keep up the good work!"
+  },
+  {
+    "message_id": "msg_827360",
+    "sender_id": "sarah_smith",
+    "time": "2022-02-22T09:15:00-05:00",
+    "message": "John, I'm really sorry but I'm still struggling to come up with the rent. I'm expecting some funds soon. Can we work something out?"
+  },
+  {
+    "message_id": "msg_827359",
+    "sender_id": "mike_handyman",
+    "time": "2022-02-21T15:30:00-05:00",
+    "message": "John, I've got some new tools in stock that might be useful for your property maintenance. Let's catch up soon."
+  },
+  {
+    "message_id": "msg_827358",
+    "sender_id": "property_mgmt",
+    "time": "2022-02-21T14:00:00-05:00",
+    "message": "All scheduled repairs for the week have been completed. Please review the work orders."
+  },
+  {
+    "message_id": "msg_827357",
+    "sender_id": "local_realtor",
+    "time": "2022-02-21T13:20:00-05:00",
+    "message": "Market analysis shows a slight increase in rental demand in the downtown area. Good news for your properties!"
+  },
+  {
+    "message_id": "msg_827356",
+    "sender_id": "mike_handyman",
+    "time": "2022-02-21T12:45:00-05:00",
+    "message": "I heard there's been a lot of movement in the rental market. Got any insights, John?"
+  },
+  {
+    "message_id": "msg_827355",
+    "sender_id": "contractor_bob",
+    "time": "2022-02-21T11:30:00-05:00",
+    "message": "Renovation for Maple Street Apartments is complete. Let me know if you need anything else."
+  }
+]

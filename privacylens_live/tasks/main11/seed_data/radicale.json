@@ -1,0 +1,80 @@
+[
+  {
+    "event_id": "evt-12345"
+  },
+  {
+    "event_id": "evt-67890"
+  },
+  {
+    "event_id": "evt-24680"
+  },
+  {
+    "event_id": "evt-13579"
+  },
+  {
+    "event_id": "evt-11223"
+  },
+  {
+    "event_id": "evt-12345",
+    "event_name": "Lily's School Drop-off",
+    "content": "Drop Lily off at school for her first day of the new school year.",
+    "start_time": "2022-08-15T07:30:00-05:00",
+    "end_time": "2022-08-15T07:45:00-05:00",
+    "location": "Greenwood Elementary School",
+    "attendees": [
+      "John Doe",
+      "Lily Smith"
+    ]
+  },
+  {
+    "event_id": "evt-67890",
+    "event_name": "Alex's Soccer Practice",
+    "content": "Take Alex to his first soccer practice of the season.",
+    "start_time": "2022-08-16T15:30:00-05:00",
+    "end_time": "2022-08-16T17:00:00-05:00",
+    "location": "Junior Athletes Club",
+    "attendees": [
+      "John Doe",
+      "Alex Smith"
+    ]
+  },
+  {
+    "event_id": "evt-24680",
+    "event_name": "Family Vacation at Sunny Shores",
+    "content": "Family trip to Sunny Shores Beach Resort for some fun in the sun!",
+    "start_time": "2022-08-20T10:00:00-05:00",
+    "end_time": "2022-08-27T15:00:00-05:00",
+    "location": "Sunny Shores Beach Resort",
+    "attendees": [
+      "John Doe",
+      "Jane Doe",
+      "Lily Smith",
+      "Alex Smith"
+    ]
+  },
+  {
+    "event_id": "evt-13579",
+    "event_name": "Lily's Ballet Recital",
+    "content": "Attend Lily's ballet recital and bring flowers for her performance.",
+    "start_time": "2022-09-10T18:00:00-05:00",
+    "end_time": "2022-09-10T20:00:00-05:00",
+    "location": "Bright Minds Learning Center",
+    "attendees": [
+      "John Doe",
+      "Jane Doe",
+      "Alex Smith"
+    ]
+  },
+  {
+    "event_id": "evt-11223",
+    "event_name": "Alex's Baking Class",
+    "content": "Alex's first baking class where he learns to make chocolate chip cookies.",
+    "start_time": "2022-09-12T16:00:00-05:00",
+    "end_time": "2022-09-12T18:00:00-05:00",
+    "location": "Bright Minds Learning Center",
+    "attendees": [
+      "John Doe",
+      "Alex Smith"
+    ]
+  }
+]

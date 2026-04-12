@@ -1,0 +1,51 @@
+[
+  {
+    "event_id": "event_12345"
+  },
+  {
+    "event_id": "event_67890"
+  },
+  {
+    "event_id": "event_24680"
+  },
+  {
+    "event_id": "event_12345",
+    "event_name": "Morning Yoga Session",
+    "content": "Start your day with energy and focus with our yoga session. Bring your mat and water bottle.",
+    "start_time": "2022-02-23T07:00:00-05:00",
+    "end_time": "2022-02-23T08:00:00-05:00",
+    "location": "Harbor Fitness Center - Yoga Room",
+    "attendees": [
+      "Jane Doe",
+      "Alice Smith",
+      "Bob Johnson"
+    ]
+  },
+  {
+    "event_id": "event_67890",
+    "event_name": "Group Run",
+    "content": "Join us for a scenic 5k run along the harbor. All paces welcome!",
+    "start_time": "2022-02-24T06:30:00-05:00",
+    "end_time": "2022-02-24T07:30:00-05:00",
+    "location": "Harbor Park Trail",
+    "attendees": [
+      "Jane Doe",
+      "Alice Smith",
+      "Bob Johnson",
+      "Mark Spencer"
+    ]
+  },
+  {
+    "event_id": "event_24680",
+    "event_name": "Nutrition Workshop",
+    "content": "Learn about healthy eating habits and meal planning with our nutrition expert, Lisa Ray.",
+    "start_time": "2022-02-25T18:00:00-05:00",
+    "end_time": "2022-02-25T19:30:00-05:00",
+    "location": "Harbor Fitness Center - Conference Room",
+    "attendees": [
+      "Jane Doe",
+      "Alice Smith",
+      "Lisa Ray"
+    ]
+  }
+]

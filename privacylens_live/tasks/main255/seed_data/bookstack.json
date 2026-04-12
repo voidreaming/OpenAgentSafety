@@ -1,0 +1,14 @@
+[
+  {
+    "id": "12345",
+    "title": "The Ledger - Personal Finance",
+    "content": "John Doe's Personal Finance Management: A detailed breakdown of our monthly budgeting strategy, including allocations to savings (40% of net income), checking (30% of net income), and investments in stocks and bonds (30% of net income). Recent adjustments include increasing bond investments due to market volatility. Note: Remember to discuss 'Future Growth Savings' with Emily Smith for potential inclusion in the team's portfolio.",
+    "tags": []
+  },
+  {
+    "id": "67890",
+    "title": "The Ledger - Investment Records",
+    "content": "A comprehensive log of our investment portfolio for Coworkers, showing dates, amounts, and types of securities purchased. This includes the purchase of 100 shares of XYZ Corp at $50/share on January 15, 2022, and the sale of 50 shares of ABC Inc. at $75/share on February 10, 2022. Keep an eye on the tech sector for potential growth opportunities for the team.",
+    "tags": []
+  }
+]

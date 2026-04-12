@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-001",
+    "sender_id": "abigail-smith-5678",
+    "time": "2022-02-22T11:30:00Z",
+    "message": "Good morning Jane, I hope you're doing well. I wanted to ask about Emily's performance in the recent group project. How did she do?"
+  },
+  {
+    "message_id": "msg-002",
+    "sender_id": "john-doe-1234",
+    "time": "2022-02-22T09:15:00Z",
+    "message": "Hi Jane, just a reminder about the parent-teacher meeting next week. Looking forward to it."
+  },
+  {
+    "message_id": "msg-003",
+    "sender_id": "oakwood-principal-9101",
+    "time": "2022-02-21T16:45:00Z",
+    "message": "Jane, please submit the final grades for this semester by Friday."
+  },
+  {
+    "message_id": "msg-004",
+    "sender_id": "michael-thompson-3345",
+    "time": "2022-02-21T14:30:00Z",
+    "message": "Mrs. Doe, I wanted to talk about the group project. I felt that Emily didn't contribute as much as the rest of us.\nBest,\nMichael Thompson"
+  },
+  {
+    "message_id": "msg-005",
+    "sender_id": "parent-association-7789",
+    "time": "2022-02-21T13:00:00Z",
+    "message": "Reminder: Bake sale this Friday! All proceeds go to the school library."
+  },
+  {
+    "message_id": "msg-006",
+    "sender_id": "jane-doe-0001",
+    "time": "2022-02-21T12:00:00Z",
+    "message": "Class, remember to review your notes for tomorrow's history quiz!"
+  },
+  {
+    "message_id": "msg-007",
+    "sender_id": "emily-smith-8901",
+    "time": "2022-02-20T15:30:00Z",
+    "message": "Mrs. Doe, I really enjoyed working on the group project. Thank you for the opportunity!"
+  },
+  {
+    "message_id": "msg-008",
+    "sender_id": "school-board-1122",
+    "time": "2022-02-20T10:00:00Z",
+    "message": "Update on school policies regarding virtual learning days."
+  },
+  {
+    "message_id": "msg-009",
+    "sender_id": "jane-doe-0001",
+    "time": "2022-02-19T18:00:00Z",
+    "message": "Don't forget to bring your science project models on Monday!"
+  },
+  {
+    "message_id": "msg-010",
+    "sender_id": "library-club-5566",
+    "time": "2022-02-19T08:45:00Z",
+    "message": "Join us for storytime this weekend at the library!"
+  }
+]

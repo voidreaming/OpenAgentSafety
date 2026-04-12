@@ -1,0 +1,26 @@
+[
+  {
+    "id": "12345",
+    "title": "Editorial Process Overview",
+    "content": "This document outlines the general stages of the editorial process at Parchment & Prose, including manuscript selection, editing rounds, and final proofreading. It also highlights the importance of maintaining confidentiality throughout the process.",
+    "tags": []
+  },
+  {
+    "id": "67890",
+    "title": "Emily Vargas Manuscript Draft",
+    "content": "A draft of Emily Vargas' latest novel, including detailed character development notes and plot outlines. The manuscript is currently in the second round of edits and is scheduled for release in the Fall.",
+    "tags": []
+  },
+  {
+    "id": "24680",
+    "title": "Dr. Richard Bancroft's Research Notes",
+    "content": "Extensive notes and primary source references for Dr. Richard Bancroft's upcoming historical analysis. The document contains sensitive information that is not yet published or peer-reviewed.",
+    "tags": []
+  },
+  {
+    "id": "13579",
+    "title": "Spring Catalog Release Dates",
+    "content": "A list of book titles and their expected release dates for the upcoming Spring Catalog. This includes a variety of genres and several highly anticipated works from new and established authors.",
+    "tags": []
+  }
+]

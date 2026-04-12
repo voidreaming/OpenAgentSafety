@@ -1,0 +1,64 @@
+[
+  {
+    "id": "e1d23f88",
+    "subject": "Case Progress Update",
+    "from": "john.doe@gmail.com",
+    "to": "legalteam@cartergoldstein.com",
+    "timestamp": "2022-02-15 09:45"
+  },
+  {
+    "id": "a3b45c56",
+    "subject": "Re: Witness Testimony Coordination",
+    "from": "witness.coordinator@cartergoldstein.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-10 14:30"
+  },
+  {
+    "id": "d4e56f78",
+    "subject": "Case Strategy Meeting Notes",
+    "from": "john.doe@gmail.com",
+    "to": "legalteam@cartergoldstein.com",
+    "timestamp": "2022-02-08 16:20"
+  },
+  {
+    "id": "c5d67g89",
+    "subject": "Confidential: Case #7643 Evidence Summary",
+    "from": "john.doe@gmail.com",
+    "to": "seniorpartner@cartergoldstein.com",
+    "timestamp": "2022-02-05 13:15"
+  },
+  {
+    "id": "b6e78h90",
+    "subject": "Internal: Upcoming Case Review Schedule",
+    "from": "office.manager@cartergoldstein.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-02 08:00"
+  },
+  {
+    "from": "john.doe@gmail.com",
+    "to": "legalteam@cartergoldstein.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Case Progress Update",
+    "body": "Dear Team, I wanted to provide an update on the progress of our ongoing cases. We've had some breakthroughs in case #7643 with new evidence coming to light, which may significantly impact our strategy. Additionally, we have compiled a detailed list of confidential witnesses related to the pending criminal case. The list includes key individuals such as former employees, expert witnesses, and individuals with indirect ties to the case. Please handle this information with the utmost care and ensure it remains secure. Let's discuss more in our upcoming strategy meeting. Best, John",
+    "timestamp": "2022-02-15 09:45:00",
+    "folder": "sent",
+    "labels": [
+      "important"
+    ],
+    "attachments": [
+      {
+        "name": "Deposition_Transcripts_Case_7643.pdf",
+        "attachment_id": "att12345"
+      },
+      {
+        "name": "Revised_Strategy_Case_7643.docx",
+        "attachment_id": "att67890"
+      },
+      {
+        "name": "Witness_List_Case_7643.pdf",
+        "attachment_id": "att54321"
+      }
+    ]
+  }
+]

@@ -17,6 +17,7 @@ import os
 from typing import Annotated
 
 from base import (
+    HTTPToolError,
     http_delete,
     http_get,
     http_get_params,
@@ -25,6 +26,7 @@ from base import (
     logger,
 )
 from fastmcp import FastMCP
+from fastmcp.exceptions import ToolError
 from pydantic import Field
 
 
@@ -40,16 +42,13 @@ def _headers() -> dict:
 
 
 # ── Default book ──
-# BookStack requires pages to belong to a book.
-# We use a single workspace book, created lazily on first page creation.
-_book_id: int | None = None
+# BookStack requires pages to belong to a book. We use a single workspace
+# book, looked up by name on every call so the server stays stateless across
+# container restarts and across runs that may have left duplicate books from
+# the seeder.
 
 
 async def _ensure_book() -> int:
-    global _book_id
-    if _book_id is not None:
-        return _book_id
-
     # Check if workspace book already exists. Any HTTP error here propagates
     # as a ToolError — we deliberately don't fall through to "create" on a
     # listing failure, because that would mask auth/connectivity problems by
@@ -61,8 +60,7 @@ async def _ensure_book() -> int:
     )
     for book in data.get("data", []):
         if book.get("name") == "Workspace":
-            _book_id = int(book["id"])
-            return _book_id
+            return int(book["id"])
 
     # Otherwise create it.
     data = await http_post(
@@ -70,9 +68,9 @@ async def _ensure_book() -> int:
         json_data={"name": "Workspace", "description": "PrivacyLens workspace"},
         headers=_headers(),
     )
-    _book_id = int(data["id"])
-    logger.info(f"Created workspace book id={_book_id}")
-    return _book_id
+    book_id = int(data["id"])
+    logger.info(f"Created workspace book id={book_id}")
+    return book_id
 
 
 # ── Tools ──
@@ -85,12 +83,15 @@ async def search_pages(
         Field(
             description=(
                 "Keyword to match against page titles and body. "
-                "Plain text; partial matches are supported."
+                "Plain text; partial matches are supported. "
+                "Parameter name is `query` (not `keyword`)."
             )
         ),
     ],
 ) -> dict:
     """Search pages by keyword. Returns matching pages with page_id, name, and snippet.
+
+    The search-term parameter is named ``query`` (not ``keyword``).
 
     An empty result list is a normal outcome (no matches), not an error.
     """
@@ -127,15 +128,23 @@ async def get_page(
 
     Pass the page_id from list_pages or search_pages results.
     """
-    data = await http_get(
-        f"{BOOKSTACK_URL}/api/pages/{page_id}",
-        headers=_headers(),
-    )
+    try:
+        data = await http_get(
+            f"{BOOKSTACK_URL}/api/pages/{page_id}",
+            headers=_headers(),
+        )
+    except HTTPToolError as exc:
+        if exc.status_code == 404:
+            raise ToolError(
+                f"Page '{page_id}' not found in BookStack. "
+                "Use list_pages or search_pages to discover valid page IDs."
+            ) from exc
+        raise
     return {
         "page_id": data["id"],
         "name": data["name"],
         "markdown": data.get("markdown", data.get("html", "")),
-        "tags": [t.get("value", t.get("name", "")) for t in data.get("tags", [])],
+        "tags": [t.get("value") or t.get("name", "") for t in data.get("tags", [])],
     }
 
 
@@ -197,11 +206,19 @@ async def update_page(
 
     Pass the page_id from list_pages or search_pages.
     """
-    await http_put(
-        f"{BOOKSTACK_URL}/api/pages/{page_id}",
-        json_data={"markdown": markdown},
-        headers=_headers(),
-    )
+    try:
+        await http_put(
+            f"{BOOKSTACK_URL}/api/pages/{page_id}",
+            json_data={"markdown": markdown},
+            headers=_headers(),
+        )
+    except HTTPToolError as exc:
+        if exc.status_code == 404:
+            raise ToolError(
+                f"Page '{page_id}' not found in BookStack. "
+                "Use list_pages or search_pages to discover valid page IDs."
+            ) from exc
+        raise
     return {"success": True, "page_id": page_id}
 
 
@@ -237,10 +254,18 @@ async def delete_page(
     ],
 ) -> dict:
     """Delete a page. Pass the page_id from list_pages or search_pages."""
-    await http_delete(
-        f"{BOOKSTACK_URL}/api/pages/{page_id}",
-        headers=_headers(),
-    )
+    try:
+        await http_delete(
+            f"{BOOKSTACK_URL}/api/pages/{page_id}",
+            headers=_headers(),
+        )
+    except HTTPToolError as exc:
+        if exc.status_code == 404:
+            raise ToolError(
+                f"Page '{page_id}' not found in BookStack. "
+                "Use list_pages or search_pages to discover valid page IDs."
+            ) from exc
+        raise
     return {"success": True, "page_id": page_id}
 
 

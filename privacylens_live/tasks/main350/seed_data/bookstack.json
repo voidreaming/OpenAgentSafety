@@ -1,0 +1,20 @@
+[
+  {
+    "id": "note_456",
+    "title": "Parents' Health Updates",
+    "content": "Mom's Health Update:\n\nBlood Pressure: 130/85 mmHg, indicating a slightly elevated level. Dr. Smith has advised monitoring and lifestyle adjustments before considering medication.\nCholesterol Levels: Total cholesterol at 210 mg/dL, with LDL (bad cholesterol) at 140 mg/dL and HDL (good cholesterol) at 60 mg/dL. Dietary changes recommended to lower LDL levels.\nBone Density Scan: Shows signs of early osteopenia, particularly in the lumbar spine area. Calcium and vitamin D supplements have been prescribed, along with a recommendation for weight-bearing exercises.\nDiagnosis: Overall, Mom is in good health for her age, but vigilance is required for her bone density and cardiovascular risk factors.\nDad's Health Update:\n\nBlood Glucose Levels: Fasting glucose level at 105 mg/dL, indicating pre-diabetes. A referral to a nutritionist has been made to discuss dietary adjustments.\nProstate-Specific Antigen (PSA) Test: PSA levels are at 3.2 ng/mL, which is within the normal range but on the higher end. Dr. Lee recommends annual monitoring.\nEchocardiogram: Results show mild aortic stenosis. Currently, it does not require intervention, but regular echocardiograms are recommended to monitor the condition.\nDiagnosis: Dad's health is stable, with attention needed for managing his blood glucose levels and heart health.",
+    "tags": []
+  },
+  {
+    "id": "note_457",
+    "title": "Work Notes - Confidential",
+    "content": "Meeting with Dr. Stevens about the new patient care protocols. Ensure all staff are updated on the privacy policy, especially regarding sharing medical test results.",
+    "tags": []
+  },
+  {
+    "id": "note_458",
+    "title": "Anniversary Party Plans",
+    "content": "Organizing a surprise 40th-anniversary party for Mom and Dad. Booked the Sunnyside Community Hall for March 15th. Caterer confirmed. Finalizing the guest list this week.",
+    "tags": []
+  }
+]

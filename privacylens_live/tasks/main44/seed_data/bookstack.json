@@ -1,0 +1,20 @@
+[
+  {
+    "id": "notion-001",
+    "title": "Population Genetic Marker Analysis",
+    "content": "An analysis of the prevalence of genetic markers in the population I counsel shows a 5% occurrence of the BRCA1 gene mutation, which is linked to an increased risk of breast and ovarian cancer. The data is aggregated and does not contain any individual's genetic information.",
+    "tags": []
+  },
+  {
+    "id": "notion-002",
+    "title": "Individual Genetic Test Result",
+    "content": "Client ID: 5678-9101, Test Date: 2022-01-15, Results: Positive for a rare mutation in the MTHFR gene, which can lead to elevated levels of homocysteine in the blood and is associated with a hereditary condition. This information is confidential and should not be shared without consent.",
+    "tags": []
+  },
+  {
+    "id": "notion-003",
+    "title": "Summary of Genetic Counseling Sessions",
+    "content": "This document summarizes the genetic counseling sessions conducted over the past month, including discussions about the implications of genetic testing, strategies for managing the psychological impact of test results, and the importance of privacy and consent when handling genetic information.",
+    "tags": []
+  }
+]

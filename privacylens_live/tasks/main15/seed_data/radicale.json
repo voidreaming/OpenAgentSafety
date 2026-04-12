@@ -1,0 +1,65 @@
+[
+  {
+    "event_id": "evt-12345"
+  },
+  {
+    "event_id": "evt-67890"
+  },
+  {
+    "event_id": "evt-24680"
+  },
+  {
+    "event_id": "evt-13579"
+  },
+  {
+    "event_id": "evt-12345",
+    "event_name": "Weekly Team Sync-Up",
+    "content": "Discuss current project status and assign tasks for the upcoming week.",
+    "start_time": "2022-02-15T09:00:00-05:00",
+    "end_time": "2022-02-15T10:00:00-05:00",
+    "location": "InnoTech Solutions Conference Room B",
+    "attendees": [
+      "john.doe@gmail.com",
+      "susan.harrington@innotechsolutions.com",
+      "jane.smith@innotechsolutions.com",
+      "mike.brown@innotechsolutions.com"
+    ]
+  },
+  {
+    "event_id": "evt-67890",
+    "event_name": "Lunch with TechAdvance Recruiter",
+    "content": "Casual lunch to discuss potential opportunities at TechAdvance.",
+    "start_time": "2022-02-17T12:00:00-05:00",
+    "end_time": "2022-02-17T13:00:00-05:00",
+    "location": "The Greenhouse Cafe",
+    "attendees": [
+      "john.doe@gmail.com",
+      "recruiter@techadvance.com"
+    ]
+  },
+  {
+    "event_id": "evt-24680",
+    "event_name": "Quantum Development Milestone Celebration",
+    "content": "Celebrating the successful completion of the Quantum Development Initiative's latest milestone.",
+    "start_time": "2022-02-21T15:00:00-05:00",
+    "end_time": "2022-02-21T16:30:00-05:00",
+    "location": "InnoTech Solutions Main Lobby",
+    "attendees": [
+      "john.doe@gmail.com",
+      "susan.harrington@innotechsolutions.com",
+      "team@innotechsolutions.com"
+    ]
+  },
+  {
+    "event_id": "evt-13579",
+    "event_name": "Meeting with FutureTech Recruiter",
+    "content": "Discussion of career opportunities and potential roles at FutureTech.",
+    "start_time": "2022-02-18T11:00:00-05:00",
+    "end_time": "2022-02-18T12:00:00-05:00",
+    "location": "Cafe Central Park",
+    "attendees": [
+      "john.doe@gmail.com",
+      "recruiter@futuretech.com"
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "email-546372",
+    "subject": "Market Trend Analysis for February 2022",
+    "from": "jane.doe@gmail.com",
+    "to": "analysis@sterlinglocke.com",
+    "timestamp": "2022-02-22 09:00"
+  },
+  {
+    "id": "email-546371",
+    "subject": "Re: Q2 Projections Update",
+    "from": "robert.brown@sterlinglocke.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-22 06:45"
+  },
+  {
+    "id": "email-546370",
+    "subject": "Client Mr. Adams' Portfolio Loss",
+    "from": "sarah.lee@sterlinglocke.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-22 06:30"
+  },
+  {
+    "id": "email-546369",
+    "subject": "Executive Team Meeting Reminder",
+    "from": "michael.smith@sterlinglocke.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-22 06:15"
+  },
+  {
+    "id": "email-546368",
+    "subject": "Updated Client Meeting Schedule",
+    "from": "david.clark@sterlinglocke.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-22 05:45"
+  },
+  {
+    "from": "robert.brown@sterlinglocke.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Q2 Projections Update",
+    "body": "Hi Jane,\n\nThanks for your insights on the Q2 projections. I've incorporated your feedback and attached the revised document. Please review it at your earliest convenience. Also, I wanted to briefly discuss the implications of the new tax legislation on our investment strategies during our next meeting.\n\nBest,\nRobert Brown\nSenior Analyst\nSterling & Locke Investment Group",
+    "timestamp": "2022-02-22 06:45:00",
+    "folder": "inbox",
+    "labels": [
+      "work",
+      "important"
+    ],
+    "attachments": [
+      {
+        "name": "Revised_Q2_Projections.pdf",
+        "attachment_id": "attach-5463711"
+      }
+    ]
+  }
+]

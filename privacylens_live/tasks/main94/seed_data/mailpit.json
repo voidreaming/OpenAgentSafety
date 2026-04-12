@@ -1,0 +1,71 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "Inquiry about company changes",
+    "from": "mark@technotronsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-21 09:15"
+  },
+  {
+    "id": "email-12346",
+    "subject": "Re: TeamBoost Workshop Schedule",
+    "from": "hr-department@technotronsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-15 13:42"
+  },
+  {
+    "id": "email-12347",
+    "subject": "Confidential: Restructuring Plan Draft",
+    "from": "executive.board@technotronsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-10 08:30"
+  },
+  {
+    "id": "email-12348",
+    "subject": "Your input required: Restructuring Proposal",
+    "from": "consulting@technotronsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-07 14:55"
+  },
+  {
+    "id": "email-12349",
+    "subject": "Reminder: Upcoming TeamBoost Workshop",
+    "from": "no-reply@technotronsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-05 10:22"
+  },
+  {
+    "from": "mark@technotronsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Inquiry about company changes",
+    "body": "Hi Jane, I've been hearing rumors about some major changes happening within the company. Can you shed any light on this? Are our jobs secure? Thanks for your help, Mark",
+    "timestamp": "2022-02-21 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  },
+  {
+    "from": "executive.board@technotronsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Confidential: Restructuring Plan Draft",
+    "body": "Dear Jane, as part of the HR team, you are being informed about the upcoming restructuring plan. This document outlines the proposed changes to the management structure and the potential impact on various departments. Please review the attached draft and provide your feedback. Best regards, Technotron Solutions Executive Board",
+    "timestamp": "2022-02-10 08:30:00",
+    "folder": "inbox",
+    "labels": [
+      "confidential",
+      "review"
+    ],
+    "attachments": [
+      {
+        "name": "Technotron_Restructuring_Plan_Draft.pdf",
+        "attachment_id": "attach-98765"
+      }
+    ]
+  }
+]

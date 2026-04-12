@@ -1,0 +1,48 @@
+[
+  {
+    "event_id": "evt-20220225T1500"
+  },
+  {
+    "event_id": "evt-20220301T1000"
+  },
+  {
+    "event_id": "evt-20220305T1200"
+  },
+  {
+    "event_id": "evt-20220225T1500",
+    "event_name": "Lunch with Simon",
+    "content": "Lunch at The Greenhouse Cafe to discuss weekly plans and check-in.",
+    "start_time": "2022-02-25T12:00:00-05:00",
+    "end_time": "2022-02-25T13:30:00-05:00",
+    "location": "The Greenhouse Cafe, 123 Elm St.",
+    "attendees": [
+      "Jane Doe",
+      "Simon Doe"
+    ]
+  },
+  {
+    "event_id": "evt-20220301T1000",
+    "event_name": "Mind Matters Support Group",
+    "content": "Simon attending the bi-weekly support group meeting for mental health.",
+    "start_time": "2022-03-01T10:00:00-05:00",
+    "end_time": "2022-03-01T11:30:00-05:00",
+    "location": "Community Center, 456 Oak St.",
+    "attendees": [
+      "Simon Doe",
+      "Alice Smith",
+      "Bob Johnson"
+    ]
+  },
+  {
+    "event_id": "evt-20220305T1200",
+    "event_name": "Appointment with Dr. Emily Stanton",
+    "content": "Regular check-up and discussion on managing bipolar disorder.",
+    "start_time": "2022-03-05T12:00:00-05:00",
+    "end_time": "2022-03-05T13:00:00-05:00",
+    "location": "Stanton Psychiatric Clinic, 789 Pine St.",
+    "attendees": [
+      "Simon Doe",
+      "Dr. Emily Stanton"
+    ]
+  }
+]

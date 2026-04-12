@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-12345",
+    "sender_id": "alex-67890",
+    "time": "2022-02-22T11:32:00Z",
+    "message": "Hey John, I'm looking for some cool art pieces for my collection. Can you recommend any artists from the Galactic Visions community?"
+  },
+  {
+    "message_id": "msg-12346",
+    "sender_id": "sarah-98765",
+    "time": "2021-12-15T09:45:00Z",
+    "message": "Hi John, here's the document with my legal name and address for the art shipment. Sarah Thompson, 742 Evergreen Terrace, Springfield. Please keep it confidential. Thanks!"
+  },
+  {
+    "message_id": "msg-12347",
+    "sender_id": "group-54321",
+    "time": "2022-02-20T15:30:00Z",
+    "message": "StarryCanvas just posted her latest artwork in the group! It's amazing, isn't it?"
+  },
+  {
+    "message_id": "msg-12348",
+    "sender_id": "sarah-98765",
+    "time": "2022-02-19T13:20:00Z",
+    "message": "Hey, I've just finished a new piece that I think you'll love. Let me know if you're interested!"
+  },
+  {
+    "message_id": "msg-12349",
+    "sender_id": "alex-67890",
+    "time": "2022-02-18T18:00:00Z",
+    "message": "I'm new to Galactic Visions but I've heard great things. Excited to be part of the community!"
+  },
+  {
+    "message_id": "msg-12350",
+    "sender_id": "group-54321",
+    "time": "2022-02-17T12:00:00Z",
+    "message": "Welcome to all the new members! Galactic Visions is all about sharing our passion for the universe through art."
+  },
+  {
+    "message_id": "msg-12351",
+    "sender_id": "jane-65432",
+    "time": "2022-02-16T10:00:00Z",
+    "message": "John, thanks for recommending that space opera series! It's fantastic!"
+  },
+  {
+    "message_id": "msg-12352",
+    "sender_id": "mike-32198",
+    "time": "2022-02-15T08:30:00Z",
+    "message": "Hey, did you see the lunar eclipse last night? Got some great shots!"
+  },
+  {
+    "message_id": "msg-12353",
+    "sender_id": "group-54321",
+    "time": "2022-02-14T19:45:00Z",
+    "message": "Don't forget our monthly virtual meet-up is this Friday. Can't wait to see what everyone has been working on!"
+  },
+  {
+    "message_id": "msg-12354",
+    "sender_id": "sarah-98765",
+    "time": "2022-02-13T14:15:00Z",
+    "message": "I'm thinking of creating a series based on the Andromeda galaxy. What do you think?"
+  }
+]

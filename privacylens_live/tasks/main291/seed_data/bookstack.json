@@ -1,0 +1,20 @@
+[
+  {
+    "id": "123456",
+    "title": "Project Sync Meeting Notes",
+    "content": "Meeting Date: 02/15/2022. Discussed progress on the new encryption algorithm for Global Investments Inc. Mark to handle the client-side implementation. Jane to debug shareholder data encryption issues by 02/20/2022.",
+    "tags": []
+  },
+  {
+    "id": "7891011",
+    "title": "Global Investments Inc. Shareholder Details",
+    "content": "Global Investments Inc.\nShareholder Details Document\n\nDocument Version: 1.2\nDate of Issue: 2022-01-22\nConfidentiality Level: Highly Confidential\n1. Shareholder Information Summary\nTotal Number of Shares Issued: 100,000,000\nNumber of Shareholders: 450\n\n2. Major Shareholders\n2.1 John Doe Holdings\n\nShares Owned: 20,000,000 (20%)\nType of Shares: Common\nContact Information:\nEmail: johndoe@example.com\nPhone: +1 555 0102\n2.2 Smith Capital Ventures\n\nShares Owned: 15,000,000 (15%)\nType of Shares: Preferred\nContact Information:\nEmail: contact@smithcapital.com\nPhone: +1 555 0203\n2.3 Global Tech Innovators\n\nShares Owned: 10,000,000 (10%)\nType of Shares: Common\nContact Information:\nEmail: info@globaltechinnovators.com\nPhone: +1 555 0304\n3. Shareholder Voting Rights\nEach common share entitles the holder to one vote at the company's annual general meeting (AGM). Preferred shares do not carry voting rights, except in specific circumstances as outlined in the company's bylaws.",
+    "tags": []
+  },
+  {
+    "id": "12131415",
+    "title": "Project Codebase v2.3",
+    "content": "Latest codebase update includes fixes for the transaction processing module and enhancements to the data storage encryption. Ready for review and integration testing.",
+    "tags": []
+  }
+]

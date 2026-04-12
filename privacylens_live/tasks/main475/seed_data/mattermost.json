@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_1023",
+    "sender_id": "alex_456",
+    "time": "11:15 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Hey John, I totally bombed the algebra test... got a 67. Really thought I understood the material. Not sure what went wrong."
+  },
+  {
+    "message_id": "msg_1022",
+    "sender_id": "emily_789",
+    "time": "11:20 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Hi John, I heard you're good at algebra and I'm just wondering how everyone did on the test. Can you give me an idea?"
+  },
+  {
+    "message_id": "msg_1021",
+    "sender_id": "mr_thompson_123",
+    "time": "11:25 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Class, the average score for the algebra test was 75%. As a whole, the class did well, though there's always room for improvement. Great job!"
+  },
+  {
+    "message_id": "msg_1020",
+    "sender_id": "group_study_buddies",
+    "time": "11:30 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Anyone up for a group study session before the next algebra test? I think it could really help!"
+  },
+  {
+    "message_id": "msg_1019",
+    "sender_id": "jane_doe_321",
+    "time": "11:32 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "John, thanks for your notes on algebra, they were super helpful!"
+  },
+  {
+    "message_id": "msg_1018",
+    "sender_id": "school_announcements",
+    "time": "11:34 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Reminder: Algebra II tutoring sessions are available every Wednesday after school in room 204."
+  },
+  {
+    "message_id": "msg_1017",
+    "sender_id": "lucas_654",
+    "time": "11:35 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Does anyone have the homework problems for algebra? I missed class yesterday."
+  },
+  {
+    "message_id": "msg_1016",
+    "sender_id": "sarah_987",
+    "time": "11:36 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "John, your presentation on algebraic functions was awesome!"
+  },
+  {
+    "message_id": "msg_1015",
+    "sender_id": "mike_213",
+    "time": "11:36 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Hey, did anyone else find the algebra test way harder than the practice problems we did?"
+  },
+  {
+    "message_id": "msg_1014",
+    "sender_id": "emily_789",
+    "time": "11:37 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "John, are you there? Really curious about the test results!"
+  }
+]

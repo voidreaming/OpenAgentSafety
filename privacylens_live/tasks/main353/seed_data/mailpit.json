@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e1234567890abcdef",
+    "subject": "Re: Background Information Needed",
+    "from": "alex@freelancedesign.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-21 09:15"
+  },
+  {
+    "from": "alex@freelancedesign.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Background Information Needed",
+    "body": "Hi Jane,\n\nI hope this message finds you well. As we discussed, I'm starting to work on the marketing materials for InnoTech's upcoming product launch as a third-party contractor. To create designs that truly resonate with the project, I need some background information. Could you provide me with some useful details? Looking forward to your response.\n\nBest regards,\nAlex",
+    "timestamp": "2022-02-21 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "note_001",
+    "title": "Senior Nutrition Trends",
+    "content": "Recent observations indicate a preference for low-sodium and high-fiber diets among my senior clients. There's a notable trend towards organic produce and lean meats. Supplements such as vitamin D and calcium are also common in their daily regimen.",
+    "tags": []
+  },
+  {
+    "id": "note_002",
+    "title": "Leisure Activities for Seniors",
+    "content": "Many of my elderly clients enjoy activities that stimulate the mind and promote social interaction. These include gentle yoga, gardening, and board games. There's also a growing interest in technology, with several clients learning to use tablets and social media to stay connected with family and friends.",
+    "tags": []
+  },
+  {
+    "id": "note_003",
+    "title": "Mr. Henderson's Care Plan",
+    "content": "Mr. Henderson requires a specialized cardiac evaluation scheduled for next Tuesday at 10 AM with Heart Health Specialists. His current medications include a beta-blocker, ACE inhibitor, and a statin. It's crucial to monitor his heart rate and blood pressure daily due to his recent episodes of arrhythmia.",
+    "tags": []
+  }
+]

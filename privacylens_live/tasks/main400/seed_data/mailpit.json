@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e12345",
+    "subject": "Collaboration Inquiry: Greenfield University Alumni Highlights",
+    "from": "emily@brightfutures.org",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "from": "emily@brightfutures.org",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Collaboration Inquiry: Greenfield University Alumni Highlights",
+    "body": "Dear John,\n\nI hope this message finds you well. As part of our ongoing efforts to showcase the impact of Greenfield University's alumni, we at Bright Futures Foundation are working on a feature for our upcoming newsletter. We would greatly appreciate if you could provide us with some highlights of notable alumni. Your insights as an alumni relations coordinator would be invaluable in helping us create a compelling narrative.\n\nThank you for considering our request. We are looking forward to your response.\n\nBest regards,\nEmily Carter\nCommunity Outreach Manager\nBright Futures Foundation",
+    "timestamp": "2022-02-15 09:30:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

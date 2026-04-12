@@ -1,0 +1,20 @@
+[
+  {
+    "message_id": "msg_20220222_113500",
+    "sender_id": "david_miller_45",
+    "time": "2022-02-22T11:35:00Z",
+    "message": "Hey Jane, hope you're doing well! Noticed you've been on the computer a lot for your projects. Found anything interesting lately? 😊"
+  },
+  {
+    "message_id": "msg_20220221_091500",
+    "sender_id": "sarah_connor_92",
+    "time": "2022-02-21T09:15:00Z",
+    "message": "Don't forget we have math homework due tomorrow!"
+  },
+  {
+    "message_id": "msg_20220220_164500",
+    "sender_id": "elizabeth_smith_39",
+    "time": "2022-02-20T16:45:00Z",
+    "message": "I'll be home late tonight. Please make sure to feed Mr. Whiskers. Love you!"
+  }
+]

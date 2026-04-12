@@ -1,0 +1,14 @@
+[
+  {
+    "id": "12345",
+    "title": "Team Morale Meeting Notes",
+    "content": "Meeting Date: 01/15/2022. Discussed the successful completion of the East Side Foundation Reinforcement phase. Team showed great cooperation and high spirits. However, there were some concerns about the upcoming deadlines and resource allocation for the next phase. Additionally, it was noted that team morale may be affected by the recent discovery that their boss, Mr. Stanton, is involved in an extramarital affair, which has become a topic of distraction among team members.",
+    "tags": []
+  },
+  {
+    "id": "67890",
+    "title": "Riverdale Bridge Expansion Project",
+    "content": "Update: 02/10/2022. The project is progressing as planned. The team has been working hard, but recent rumors regarding management, specifically concerning Mr. Stanton's personal life, have caused some distractions. It's important to maintain focus and address any team concerns promptly to prevent these issues from affecting team morale.",
+    "tags": []
+  }
+]

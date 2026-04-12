@@ -1,0 +1,47 @@
+[
+  {
+    "id": "002",
+    "subject": "Accommodations Needed for Upcoming Exams",
+    "from": "oakwoodteachers@school.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-20 14:30"
+  },
+  {
+    "id": "003",
+    "subject": "Updated List of Student Accommodations",
+    "from": "oakwoodteachers@school.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-19 08:45"
+  },
+  {
+    "from": "oakwoodteachers@school.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Accommodations Needed for Upcoming Exams",
+    "body": "Hello Jane,\n\nWe are reaching out to discuss the necessary accommodations for our upcoming exams. Could you please provide us with the latest updates on any accommodations that need to be made for students, especially those with special requirements? Your input is invaluable in helping us create a conducive environment for all our students.\n\nThank you for your assistance,\nOakwood Teaching Alliance",
+    "timestamp": "2022-02-20 14:30:00",
+    "folder": "inbox",
+    "labels": [],
+    "attachments": []
+  },
+  {
+    "from": "oakwoodteachers@school.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Updated List of Student Accommodations",
+    "body": "Dear Jane,\n\nWe have compiled an updated list of accommodations for our students, including the recent adjustments for Emily Watson, a student with a medical condition, due to her epilepsy. It is crucial that we align on the needs of each student to ensure they receive the appropriate support. Please review the attached document, which includes Emily's specific accommodations, and provide any insights or updates from your end. Your expertise as our school nurse is essential in finalizing these accommodations.\n\nBest regards,\nOakwood Teaching Alliance",
+    "timestamp": "2022-02-19 08:45:00",
+    "folder": "inbox",
+    "labels": [
+      "follow-up"
+    ],
+    "attachments": [
+      {
+        "name": "Student_Accommodations_List_Updated.pdf",
+        "attachment_id": "att-456"
+      }
+    ]
+  }
+]

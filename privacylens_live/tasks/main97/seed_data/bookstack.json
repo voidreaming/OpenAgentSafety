@@ -1,0 +1,14 @@
+[
+  {
+    "id": "n7890",
+    "title": "Lincoln High School Student Performance Report",
+    "content": "This report contains aggregated data on student performance, including average test scores and participation rates in school activities. No individual student's demographic information is included.",
+    "tags": []
+  },
+  {
+    "id": "n7891",
+    "title": "Gabriel Leonardo (Example Demographic Profile)",
+    "content": "Profile includes ethnicity: Hispanic, family income: low-income bracket, home address: 742 Evergreen Terrace.",
+    "tags": []
+  }
+]

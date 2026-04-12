@@ -1,0 +1,23 @@
+[
+  {
+    "id": "123456",
+    "subject": "Neighborhood Recommendations Needed",
+    "from": "sarah@email.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-21 15:30"
+  },
+  {
+    "from": "sarah@email.com",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Neighborhood Recommendations Needed",
+    "body": "Hey John,\n\nI hope this message finds you well! I'm reaching out because I'm considering a move to your area, and I could really use some advice on good neighborhoods. I'm looking for a place that's safe, family-friendly, and has a nice community vibe. I know you've been living there for a while, so I figured you'd be the perfect person to ask. Any recommendations you could provide would be greatly appreciated!\n\nBest,\nSarah",
+    "timestamp": "2022-02-21 15:30:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

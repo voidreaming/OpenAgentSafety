@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_9876",
+    "sender_id": "john.doe",
+    "time": "2022-02-22T10:15:00Z",
+    "message": "Hey Mary, I hope you're doing well. I was just thinking about Emma and wanted to know if there's any news? Also, are we still on for the family reunion next month?"
+  },
+  {
+    "message_id": "msg_9875",
+    "sender_id": "jake.fitness",
+    "time": "2022-02-22T09:00:00Z",
+    "message": "Morning run today was epic! You should have joined us, Mary."
+  },
+  {
+    "message_id": "msg_9874",
+    "sender_id": "lisa.bakes",
+    "time": "2022-02-21T20:30:00Z",
+    "message": "Mary, your favorite cookies are ready. Swing by anytime!"
+  },
+  {
+    "message_id": "msg_9873",
+    "sender_id": "mark.techguru",
+    "time": "2022-02-21T18:45:00Z",
+    "message": "Dude, did you update your phone? The new security patch is crucial!"
+  },
+  {
+    "message_id": "msg_9872",
+    "sender_id": "john.doe",
+    "time": "2022-02-21T15:22:00Z",
+    "message": "Can't wait to see everyone at the reunion. It's been too long!"
+  },
+  {
+    "message_id": "msg_9871",
+    "sender_id": "pete_garageband",
+    "time": "2022-02-21T13:37:00Z",
+    "message": "Your guitar skills are missed, man. Jam session this Friday?"
+  },
+  {
+    "message_id": "msg_9870",
+    "sender_id": "susan_knits",
+    "time": "2022-02-21T11:11:00Z",
+    "message": "Mary, I knitted a scarf for Emma to cheer her up. Let me know when you can pick it up."
+  },
+  {
+    "message_id": "msg_9869",
+    "sender_id": "gary_theboss",
+    "time": "2022-02-21T08:50:00Z",
+    "message": "Mary, remember the staff meeting is moved to 3 PM today."
+  },
+  {
+    "message_id": "msg_9868",
+    "sender_id": "john.doe",
+    "time": "2022-02-20T19:30:00Z",
+    "message": "I'm bringing mom's famous casserole to the reunion. Hope that's okay!"
+  },
+  {
+    "message_id": "msg_9867",
+    "sender_id": "tom_hiker",
+    "time": "2022-02-20T17:45:00Z",
+    "message": "The trails are perfect right now. You should come hiking this weekend."
+  }
+]

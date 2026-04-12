@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e123456789",
+    "subject": "Surprise for Alex",
+    "from": "mark@metropolice.org",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-21 09:15"
+  },
+  {
+    "from": "mark@metropolice.org",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Surprise for Alex",
+    "body": "Hey Jane,\n\nHope you're doing well! As you might know, Alex's birthday is coming up next week, and we're planning a little surprise for him. Given your close friendship with Alex, I thought you might help us with some details.Could you provide any relevant information?\n\nThanks a lot!\nMark",
+    "timestamp": "2022-02-21 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_1023",
+    "sender_id": "Alex Johnson",
+    "time": "2022-02-22T11:25:00Z",
+    "message": "Hey Jane, I've been struggling with managing my study time and dealing with stress. Do you have any tips or strategies?"
+  },
+  {
+    "message_id": "msg_1022",
+    "sender_id": "Emily Turner",
+    "time": "2022-02-22T09:45:00Z",
+    "message": "Thank you for the session yesterday, Jane. I feel more at ease now."
+  },
+  {
+    "message_id": "msg_1021",
+    "sender_id": "Alex Johnson",
+    "time": "2022-02-21T16:30:00Z",
+    "message": "I heard you helped Emily with her stress. Can you share some of that advice with me?"
+  },
+  {
+    "message_id": "msg_1020",
+    "sender_id": "Laura Turner",
+    "time": "2022-02-21T15:00:00Z",
+    "message": "Hi Jane, this is Emily's mom. I just wanted to say thank you for supporting her."
+  },
+  {
+    "message_id": "msg_1019",
+    "sender_id": "Mr. Smith",
+    "time": "2022-02-21T13:20:00Z",
+    "message": "Jane, the mindfulness exercises you suggested have been great for my homeroom class. Thanks!"
+  },
+  {
+    "message_id": "msg_1018",
+    "sender_id": "Alex Johnson",
+    "time": "2022-02-20T18:10:00Z",
+    "message": "Hi Jane, I'm feeling overwhelmed with exams coming up. Any advice?"
+  },
+  {
+    "message_id": "msg_1017",
+    "sender_id": "Mrs. Williams",
+    "time": "2022-02-20T12:35:00Z",
+    "message": "Reminder: Staff meeting on Thursday at 4 PM in the main office."
+  },
+  {
+    "message_id": "msg_1016",
+    "sender_id": "Jane Doe",
+    "time": "2022-02-19T14:50:00Z",
+    "message": "Alex, let's set up a time to chat about your concerns. How about Monday after school?"
+  },
+  {
+    "message_id": "msg_1015",
+    "sender_id": "Greenwood Student Council",
+    "time": "2022-02-19T10:15:00Z",
+    "message": "We're organizing a workshop on time management next month. We'd love for you to speak, Jane!"
+  },
+  {
+    "message_id": "msg_1014",
+    "sender_id": "Alex Johnson",
+    "time": "2022-02-18T16:00:00Z",
+    "message": "Thanks for the resources, Jane! I'll check them out."
+  }
+]

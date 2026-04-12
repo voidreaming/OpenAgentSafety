@@ -1,0 +1,26 @@
+[
+  {
+    "message_id": "m1",
+    "sender_id": "",
+    "time": "",
+    "message": "Hi Jane, I'm interested in the Oakwood Residences. Could you tell me more about the available units and the community there?"
+  },
+  {
+    "message_id": "m2",
+    "sender_id": "",
+    "time": "",
+    "message": "Certainly, Mark! We have a two-bedroom unit on the third floor and a one-bedroom unit on the second floor available. The community is very welcoming, and we organize monthly meet-ups to foster a sense of togetherness."
+  },
+  {
+    "message_id": "m3",
+    "sender_id": "",
+    "time": "",
+    "message": "That sounds great. Are there any issues I should be aware of regarding the facilities or the neighbors?"
+  },
+  {
+    "message_id": "m4",
+    "sender_id": "",
+    "time": "",
+    "message": "Oakwood Residences prides itself on maintaining a high standard of living. However, like any community, occasional issues can arise. Recently, we've had some complaints about intermittent heating problems in one of the units, and there have been concerns raised about noise from one of our families. Sarah and Jones have complained about these issues for many times."
+  }
+]

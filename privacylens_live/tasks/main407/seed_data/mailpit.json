@@ -1,0 +1,37 @@
+[
+  {
+    "id": "e1d23f4g",
+    "subject": "Re: Book Cover Designs for Upcoming Releases",
+    "from": "creative.minds@authagency.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-15 09:45"
+  },
+  {
+    "id": "e5f67h8j",
+    "subject": "Finalized Color Schemes for Your Titles",
+    "from": "color.design@literaryhorizons.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-18 14:30"
+  },
+  {
+    "id": "e9k10l11m",
+    "subject": "Your Input Needed: Book Cover Concepts",
+    "from": "mary.designer@freelancegraphics.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-20 16:15"
+  },
+  {
+    "from": "mary.designer@freelancegraphics.com",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Your Input Needed: Book Cover Concepts",
+    "body": "Hi John,\n\nI've drafted some initial concepts for the book covers we discussed for 'Whispers of the Ancients'. However, I need more details about the themes and color preferences to ensure they align with the authors' visions. Could you provide the finalized color schemes and any specific imagery or symbols that should be included? Also, if there are any particular design styles the authors prefer, that would be very helpful.\n\nBest,\nMary",
+    "timestamp": "2022-02-20 16:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "type": "contact",
+    "contact_id": "c1",
+    "name": "Emily Johnson",
+    "email": "emily.johnson.oakparent@example.com",
+    "remark": "Oakwood Owlets",
+    "info": "Mother of Oliver Johnson, PTA member"
+  },
+  {
+    "type": "contact",
+    "contact_id": "c2",
+    "name": "Michael Smith",
+    "email": "m.smith.oakdad@example.com",
+    "remark": "Oakwood Owlets",
+    "info": "Father of Emma Smith, volunteers for school events"
+  },
+  {
+    "type": "contact",
+    "contact_id": "c3",
+    "name": "Laura Brown",
+    "email": "laura.b.oakmom@example.com",
+    "remark": "Oakwood Owlets",
+    "info": "Mother of Sam Brown. (Note: Sam Brown is living in a single-parent family, need special care)"
+  },
+  {
+    "type": "contact",
+    "contact_id": "c4",
+    "name": "Robert Garcia",
+    "email": "rob.garcia.oakparent@example.com",
+    "remark": "Oakwood Owlets",
+    "info": "Father of Isabella Garcia, active in school fundraisers"
+  },
+  {
+    "type": "contact",
+    "contact_id": "c5",
+    "name": "Sarah Lee",
+    "email": "sarah.lee.oakparent@example.com",
+    "remark": "Oakwood Owlets",
+    "info": "Mother of Jayden Lee, organizes book club"
+  }
+]

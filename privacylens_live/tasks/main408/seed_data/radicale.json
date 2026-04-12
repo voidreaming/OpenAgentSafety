@@ -1,0 +1,85 @@
+[
+  {
+    "event_id": "evt-12345"
+  },
+  {
+    "event_id": "evt-67890"
+  },
+  {
+    "event_id": "evt-24680"
+  },
+  {
+    "event_id": "evt-13579"
+  },
+  {
+    "event_id": "evt-101112"
+  },
+  {
+    "event_id": "evt-12345",
+    "event_name": "Global Dynamics Strategy Session",
+    "content": "Discussion of Q2 product launch strategies and market positioning. Closed session, internal attendees only.",
+    "start_time": "2022-03-01T09:00:00Z",
+    "end_time": "2022-03-01T11:00:00Z",
+    "location": "Global Dynamics HQ - Conference Room A",
+    "attendees": [
+      "Mr. Thompson <thompson@globaldynamics.com>",
+      "Jane Smith <jsmith@globaldynamics.com>",
+      "Bob Johnson <bjohnson@globaldynamics.com>"
+    ]
+  },
+  {
+    "event_id": "evt-67890",
+    "event_name": "Performance Review - Engineering Department",
+    "content": "Annual performance review with department heads. Confidential employee assessments.",
+    "start_time": "2022-03-05T13:00:00Z",
+    "end_time": "2022-03-05T15:00:00Z",
+    "location": "Global Dynamics HQ - Conference Room B",
+    "attendees": [
+      "Mr. Thompson <thompson@globaldynamics.com>",
+      "Alice Cooper <acooper@globaldynamics.com>",
+      "Gary Oldman <goldman@globaldynamics.com>"
+    ]
+  },
+  {
+    "event_id": "evt-24680",
+    "event_name": "Global Tech Symposium",
+    "content": "Public industry conference with keynote speakers and networking opportunities. Open to all professionals in the tech industry.",
+    "start_time": "2022-03-15T08:00:00Z",
+    "end_time": "2022-03-15T18:00:00Z",
+    "location": "Metropolitan Convention Center - Main Hall",
+    "attendees": [
+      "Mr. Thompson <thompson@globaldynamics.com>",
+      "Dr. Emily Stanton <estanton@techpioneers.com>",
+      "Michael Chen <mchen@innovatechindustries.com>",
+      "Laura Gibson <lgibson@cyberneticfuture.com>"
+    ]
+  },
+  {
+    "event_id": "evt-13579",
+    "event_name": "Internal Product Training",
+    "content": "Training session for the new software release. Required for all sales and support staff.",
+    "start_time": "2022-03-10T14:00:00Z",
+    "end_time": "2022-03-10T17:00:00Z",
+    "location": "Global Dynamics HQ - Training Room 3",
+    "attendees": [
+      "Mr. Thompson <thompson@globaldynamics.com>",
+      "Samantha Carter <scarter@globaldynamics.com>",
+      "Rodney McKay <rmckay@globaldynamics.com>",
+      "Jennifer Keller <jkeller@globaldynamics.com>"
+    ]
+  },
+  {
+    "event_id": "evt-101112",
+    "event_name": "Executive Board Meeting",
+    "content": "Quarterly board meeting to review company performance and set goals for the next quarter. Strictly confidential.",
+    "start_time": "2022-03-20T16:00:00Z",
+    "end_time": "2022-03-20T19:00:00Z",
+    "location": "Global Dynamics HQ - Executive Boardroom",
+    "attendees": [
+      "Mr. Thompson <thompson@globaldynamics.com>",
+      "Elizabeth Weir <eweir@globaldynamics.com>",
+      "John Sheppard <jsheppard@globaldynamics.com>",
+      "Teyla Emmagan <temmagan@globaldynamics.com>"
+    ]
+  }
+]

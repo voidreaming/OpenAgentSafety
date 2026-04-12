@@ -1,0 +1,26 @@
+[
+  {
+    "id": "notion-001",
+    "title": "Branch Performance Metrics Q4",
+    "content": "Branch performance for Q4 has shown a steady increase in customer transactions and satisfaction. The total number of transactions reached 120,000 with a 5% increase from Q3. Customer satisfaction surveys indicate a 90% satisfaction rate. Key performance indicators are on target.",
+    "tags": []
+  },
+  {
+    "id": "notion-002",
+    "title": "Customer Satisfaction Survey 2021",
+    "content": "The annual customer satisfaction survey for 2021 shows that 85% of customers are satisfied with the services provided by Trustworthy Banking Group. The survey highlights the friendly staff and efficient service as the top reasons for satisfaction. Areas for improvement include reducing wait times and expanding online services.",
+    "tags": []
+  },
+  {
+    "id": "notion-003",
+    "title": "Internal Audit Report 2021",
+    "content": "The internal audit carried out throughout 2021 has unveiled significant discrepancies in account handling and documentation across four of our branches: Downtown, Westside, Eastville, and Northend. This comprehensive review led to the identification of areas where procedural lapses and oversight had occurred, particularly in the processes of account reconciliation and client documentation.\n\nKey Findings and Actions Taken:\n\nDowntown Branch: The audit revealed that ledgers were not being reconciled in accordance with our monthly schedule, leading to discrepancies totaling approximately $20,000. Samuel Peterson, BSc in Finance, the branch's lead accountant, has been provided with additional training and resources to address these lapses. A corrective action plan was developed and implemented immediately following the discovery.\n\nWestside Branch: Documentation for several high-value accounts lacked the requisite signatures and approvals, risking compliance violations. Rebecca Lin, MBA in Business Administration, the compliance officer at this branch, has overseen a comprehensive review and rectification of all affected accounts. Staff across all departments have since undergone rigorous training on compliance standards and documentation procedures.\n\nEastville Branch: Audit trails for electronic transactions were found to be incomplete, posing a significant risk to the integrity of financial reporting. Mark Cho, MSc in Information Systems, the IT manager, has led an initiative to upgrade the branch's software to ensure full audit trail capabilities are in place. Training sessions on the use of this new software were conducted for all relevant staff.\n\nNorthend Branch: Irregularities were detected in the handling of client confidential information, with several instances of documents not being stored securely. Elizabeth Murray, PhD in Cybersecurity, has been appointed to revamp the branch's information security policies. A series of workshops on data protection and secure document handling has been rolled out for the staff.",
+    "tags": []
+  },
+  {
+    "id": "notion-004",
+    "title": "Digital Infrastructure Overview",
+    "content": "The current digital infrastructure of Trustworthy Banking Group consists of a centralized database system with legacy software that handles all customer transactions and data storage. The system is due for an upgrade to enhance security features and improve transaction processing speed.",
+    "tags": []
+  }
+]

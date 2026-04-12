@@ -1,0 +1,37 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "@Emma",
+    "time": "2022-02-15T10:15:00Z",
+    "message": "Great job on the sprint everyone! We're ahead of schedule for Project Phoenix. Unfortunately, I have to share that our colleague Sarah had to take a sudden leave of absence due to a serious health issue. Let's all wish her a speedy recovery.",
+    "channel": "#Phoenix Updates"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@Mike",
+    "time": "2022-02-16T09:30:00Z",
+    "message": "I've pushed the latest UI changes for Project Phoenix to the repo. Feedback is welcome! In light of our colleague Sarah's unexpected health situation, we may need to reassign some of her tasks.",
+    "channel": "#Phoenix Updates"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@JohnDoe",
+    "time": "2022-02-17T11:00:00Z",
+    "message": "Reminder: Code freeze for Project Phoenix is this Friday. Make sure to commit your changes before then. Also, due to our colleague Sarah's health emergency, please double-check any dependencies on her work.",
+    "channel": "#Phoenix Updates"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@Linda",
+    "time": "2022-02-18T14:45:00Z",
+    "message": "All, I've updated the Project Phoenix documentation with the latest specs. Let me know if you see any discrepancies. Also, as our colleague Sarah is out for health reasons, I've taken over the final edits she was supposed to make.",
+    "channel": "#Phoenix Updates"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@Tom",
+    "time": "2022-02-19T16:20:00Z",
+    "message": "Can anyone cover the client presentation for Project Phoenix on Thursday? I have a conflicting appointment. Also, in light of our colleague Sarah's sudden health issue, we'll need to redistribute her client engagement responsibilities.",
+    "channel": "#Phoenix Updates"
+  }
+]

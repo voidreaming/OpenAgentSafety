@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Mark Thompson",
+    "status": "online"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@Mark",
+    "time": "2022-02-21T15:30:00Z",
+    "message": "Hey, just a reminder that we need to prepare the materials for the next group therapy sessions. I've got some ideas to discuss.",
+    "channel": "@Jane"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@Jane",
+    "time": "2022-02-20T10:15:00Z",
+    "message": "I've updated the schedule for the group therapy sessions and added a few new exercises we might try.",
+    "channel": "@Jane"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@Mark",
+    "time": "2022-02-19T09:00:00Z",
+    "message": "Can we meet tomorrow to go over the group therapy session plans? I think we need to address the recent feedback.",
+    "channel": "@Jane"
+  }
+]

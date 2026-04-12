@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_9876",
+    "sender_id": "mark_1234",
+    "time": "11:32 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Hey, how's your day going so far? Anything interesting happen?"
+  },
+  {
+    "message_id": "msg_9875",
+    "sender_id": "emily_harris_md",
+    "time": "09:15 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "I've confirmed Mr. Smith's diagnosis. It's indeed Trichorhinophalangeal Syndrome. We need to discuss his care plan."
+  },
+  {
+    "message_id": "msg_9874",
+    "sender_id": "riverdale_health_assoc",
+    "time": "08:45 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Reminder: You're leading the wellness session at the health fair this Saturday. Let's make sure to finalize the pamphlets today."
+  },
+  {
+    "message_id": "msg_9873",
+    "sender_id": "mark_1234",
+    "time": "07:50 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Good morning! Hope you have a great day at work. 😊"
+  },
+  {
+    "message_id": "msg_9872",
+    "sender_id": "emily_harris_md",
+    "time": "07:30 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "I've scheduled a meeting with the Riverdale team to discuss the health fair. Can you join at 1 PM?"
+  },
+  {
+    "message_id": "msg_9871",
+    "sender_id": "mark_1234",
+    "time": "10:30 PM UTC-05:00, Monday, February 21, 2022",
+    "message": "Can't wait to hear about your day when you get home. Love you!"
+  },
+  {
+    "message_id": "msg_9870",
+    "sender_id": "emily_harris_md",
+    "time": "04:45 PM UTC-05:00, Monday, February 21, 2022",
+    "message": "Please review the updated patient list for tomorrow's rounds. Let's prioritize the new admissions."
+  },
+  {
+    "message_id": "msg_9869",
+    "sender_id": "riverdale_health_assoc",
+    "time": "03:30 PM UTC-05:00, Monday, February 21, 2022",
+    "message": "We received your session outline for the health fair. Looks great! We'll print the materials by Thursday."
+  },
+  {
+    "message_id": "msg_9868",
+    "sender_id": "mark_1234",
+    "time": "01:15 PM UTC-05:00, Monday, February 21, 2022",
+    "message": "Lunchtime! Don't forget to eat something. 😄"
+  },
+  {
+    "message_id": "msg_9867",
+    "sender_id": "emily_harris_md",
+    "time": "11:00 AM UTC-05:00, Monday, February 21, 2022",
+    "message": "Urgent: The lab results for Mr. Smith came back. We need to discuss his case as soon as possible."
+  }
+]

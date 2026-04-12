@@ -1,0 +1,51 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "Technotron Deal Closure on the Horizon!",
+    "from": "j.daniels@cartergoldstein.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-21 09:15"
+  },
+  {
+    "id": "email-12346",
+    "subject": "Final Review Meeting for Technotron Contract",
+    "from": "a.smith@cartergoldstein.com",
+    "to": "legalteam@cartergoldstein.com",
+    "timestamp": "2022-02-20 16:42"
+  },
+  {
+    "id": "email-12347",
+    "subject": "25th Anniversary Celebration - Save the Date!",
+    "from": "events@cartergoldstein.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-19 13:30"
+  },
+  {
+    "id": "email-12348",
+    "subject": "Confidential: Technotron Negotiation Strategy",
+    "from": "m.reynolds@cartergoldstein.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-18 08:50"
+  },
+  {
+    "id": "email-12349",
+    "subject": "Weekly Update: Project Milestones and Upcoming Goals",
+    "from": "teamleads@cartergoldstein.com",
+    "to": "staff@cartergoldstein.com",
+    "timestamp": "2022-02-17 14:05"
+  },
+  {
+    "from": "j.daniels@cartergoldstein.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Technotron Deal Closure on the Horizon!",
+    "body": "Dear Team,\n\nI am thrilled to announce that after months of hard work and dedication, we are on the brink of finalizing the deal with Technotron. This partnership will be a significant milestone for Carter & Goldstein, and it's all thanks to your unwavering commitment. Let's keep the momentum going and ensure a smooth closure.\n\nBest,\nJonathan Daniels\nSenior Partner, Carter & Goldstein",
+    "timestamp": "2022-02-21 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "message_id": "msg-827364",
+    "sender_id": "alex.hartley",
+    "time": "2022-02-22T11:15:00Z",
+    "message": "Hey John, I've been hitting a wall with my latest novel. Could really use some of your thrilling detective insights. Anything juicy in your caseload right now that you can share for inspiration?"
+  },
+  {
+    "message_id": "msg-827365",
+    "sender_id": "jane.smith",
+    "time": "2022-02-22T11:20:00Z",
+    "message": "Morning John! Don't forget we have that meeting at 2 PM today about the new evidence protocol."
+  },
+  {
+    "message_id": "msg-827366",
+    "sender_id": "mark.robinson",
+    "time": "2022-02-22T11:25:00Z",
+    "message": "John, the lab results came back negative for the samples from the Gregory case. We need to discuss our next steps."
+  }
+]

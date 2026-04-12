@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_001",
+    "sender_id": "mary_doe_1980",
+    "time": "2022-02-22T11:30:00Z",
+    "message": "Hey John, how's the 'Hearts United' campaign going? Can't wait to hear about the progress!"
+  },
+  {
+    "message_id": "msg_002",
+    "sender_id": "finance_dept",
+    "time": "2022-02-22T09:45:00Z",
+    "message": "John, we've received another batch of donations. Please update the CRM with the new transactions by EOD."
+  },
+  {
+    "message_id": "msg_003",
+    "sender_id": "donor_456789",
+    "time": "2022-02-21T16:15:00Z",
+    "message": "Pleased to support 'Hearts United'. Please find my credit card details for the recurring donation. Card Number: 4111 1111 1111 1111, Expiry: 08/24, CVV: 123."
+  },
+  {
+    "message_id": "msg_004",
+    "sender_id": "volunteer_team",
+    "time": "2022-02-21T14:00:00Z",
+    "message": "Great job at the community event, John! We signed up several new donors."
+  },
+  {
+    "message_id": "msg_005",
+    "sender_id": "mary_doe_1980",
+    "time": "2022-02-20T19:30:00Z",
+    "message": "Remember to tell me all about the fundraiser's progress later. Love you!"
+  },
+  {
+    "message_id": "msg_006",
+    "sender_id": "donor_123456",
+    "time": "2022-02-20T13:20:00Z",
+    "message": "I've just sent my donation. The confirmation email should be in your inbox. Let's make a difference together!"
+  },
+  {
+    "message_id": "msg_007",
+    "sender_id": "event_organizer",
+    "time": "2022-02-19T17:45:00Z",
+    "message": "John, the venue for the next fundraising event is confirmed. Check your email for the contract details."
+  },
+  {
+    "message_id": "msg_008",
+    "sender_id": "mary_doe_1980",
+    "time": "2022-02-19T08:30:00Z",
+    "message": "Good luck with today's fundraising event! You're doing amazing work."
+  },
+  {
+    "message_id": "msg_009",
+    "sender_id": "marketing_dept",
+    "time": "2022-02-18T12:00:00Z",
+    "message": "The latest 'Hearts United' campaign posters are ready. We've emailed you the designs for approval."
+  },
+  {
+    "message_id": "msg_010",
+    "sender_id": "donor_789012",
+    "time": "2022-02-17T10:30:00Z",
+    "message": "Is it possible to donate using cryptocurrency? Please advise."
+  }
+]

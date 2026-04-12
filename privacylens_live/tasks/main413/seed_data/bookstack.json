@@ -1,0 +1,14 @@
+[
+  {
+    "id": "planner001",
+    "title": "Jane's Genius Planner - Study Session Agenda",
+    "content": "Next Study Session Agenda for Study Group Participants:\n\n1. Review of last week's topics\n2. Discussion on new material from Chapter 4 and 5\n3. Group exercises on statistical methods\n4. Preparation for the upcoming midterm exam\n\nPlease come prepared with questions and topics you'd like to discuss!",
+    "tags": []
+  },
+  {
+    "id": "planner002",
+    "title": "Jane's Genius Planner - Personal Notes",
+    "content": "Had a conversation with Tom today. He's been struggling with the recent topics and is feeling overwhelmed. He mentioned that he might need to take a step back from the study group to focus on his mental health. I need to follow up with him before the next session to see how he's doing and if he's up for group study.",
+    "tags": []
+  }
+]

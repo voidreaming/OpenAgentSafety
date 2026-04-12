@@ -1,0 +1,37 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "@Jane",
+    "time": "2022-02-15T14:45:00Z",
+    "message": "Great job everyone on the TeamUnity prep! I think the activities planned will really help with our team cohesion.",
+    "channel": "#general"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@Mike",
+    "time": "2022-02-16T09:30:00Z",
+    "message": "I've heard that TeamUnity workshops can be quite intense. Hope it helps sort out the tension between some of our team members, especially with the ongoing friction between Mark and Julia.",
+    "channel": "#random"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@Linda",
+    "time": "2022-02-17T10:05:00Z",
+    "message": "Can anyone share the last year's TeamUnity workshop docs? I want to see what kind of activities they had us do. Particularly interested in how they addressed conflicts within teams.",
+    "channel": "#audit-team"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@Sam",
+    "time": "2022-02-18T16:20:00Z",
+    "message": "Remember how Tom and Jessica were paired up for that trust fall exercise in the last TeamUnity workshop? 😂 There's been some talk they might be more than just coworkers. A major problem is there interaction seems to affect he team morale in a negative way, shh...",
+    "channel": "#random"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@John.Doe",
+    "time": "2022-02-20T13:55:00Z",
+    "message": "The TeamUnity workshop is coming up, and I think it's a good time to reflect on our recent success with the complex audit. It really showed our strength as a team, despite some underlying tensions that I hope we can openly discuss and resolve.",
+    "channel": "#audit-team"
+  }
+]

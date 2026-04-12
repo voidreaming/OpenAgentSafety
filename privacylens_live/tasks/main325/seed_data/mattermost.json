@@ -1,0 +1,20 @@
+[
+  {
+    "message_id": "msg_198273",
+    "sender_id": "mary_d_92",
+    "time": "2022-02-22T11:15:00Z",
+    "message": "Hey John, how's your day going? Heard anything interesting at work today?"
+  },
+  {
+    "message_id": "msg_198272",
+    "sender_id": "pete_s_88",
+    "time": "2022-02-22T10:50:00Z",
+    "message": "John, don't forget about the golf game this weekend!"
+  },
+  {
+    "message_id": "msg_198271",
+    "sender_id": "lisa_m_85",
+    "time": "2022-02-22T10:30:00Z",
+    "message": "Morning John! Can you send me the updated contract by noon?"
+  }
+]

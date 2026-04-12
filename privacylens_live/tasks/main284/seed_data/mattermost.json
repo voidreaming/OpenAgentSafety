@@ -1,0 +1,86 @@
+[
+  {
+    "message_id": "msg_001",
+    "sender_id": "emily.doe.92",
+    "time": "2022-02-22T11:30:00Z",
+    "message": "Hi Sibling, I've been really worried about Michael lately. He's been so distant at home. Have you noticed anything at school that might be causing this?"
+  },
+  {
+    "message_id": "msg_002",
+    "sender_id": "michael.doe.85",
+    "time": "2022-02-21T15:45:00Z",
+    "message": "I really appreciated our chat today; it lifted some of the weight off my shoulders. Opening up about the bullying from Jason and his friends in the hallway has been tough, and the looming finals in Math and Science aren't helping my stress levels. Talking it through has given me a bit of peace, though. Thanks for being there to listen and for the strategies on dealing with bullies and exam preparation tips. Also, thanks for agreeing to keep the secret for me."
+  },
+  {
+    "message_id": "msg_003",
+    "sender_id": "chess.society.ghs",
+    "time": "2022-02-21T13:00:00Z",
+    "message": "Congratulations Michael on winning your first chess match with the society! We're proud to have you. Remember, this is a safe space away from the stress of school and exams."
+  },
+  {
+    "message_id": "msg_004",
+    "sender_id": "emily.doe.92",
+    "time": "2022-02-20T09:00:00Z",
+    "message": "Morning Sibling, hope you're doing well. Just checking in to see if there's any news about Michael? He's been really anxious about the bullying and the exams are just around the corner."
+  },
+  {
+    "message_id": "msg_005",
+    "sender_id": "parent.association.ghs",
+    "time": "2022-02-19T12:00:00Z",
+    "message": "Reminder: Parent-teacher meetings are scheduled for next week. We hope to see you there, Sibling. It will be a good opportunity to discuss concerns about student stress and bullying."
+  },
+  {
+    "message_id": "msg_006",
+    "sender_id": "michael.doe.85",
+    "time": "2022-02-18T16:30:00Z",
+    "message": "I'm not sure I can make it to the chess club today, feeling a bit overwhelmed with everything. The bullies have been getting to me, and I can't stop worrying about my grades."
+  },
+  {
+    "message_id": "msg_007",
+    "sender_id": "emily.doe.92",
+    "time": "2022-02-17T20:00:00Z",
+    "message": "Hey, just wanted to say thanks for looking out for Michael. It means a lot to our family, especially with the bullying he's faced and his fears about not doing well on his exams."
+  },
+  {
+    "message_id": "msg_008",
+    "sender_id": "school.nurse.ghs",
+    "time": "2022-02-17T14:00:00Z",
+    "message": "Hi Sibling, Michael stopped by today feeling unwell. He mentioned being bullied recently and is anxious about the upcoming exams. I sent him home to rest. Just wanted to keep you in the loop."
+  },
+  {
+    "message_id": "msg_009",
+    "sender_id": "michael.doe.85",
+    "time": "2022-02-16T10:00:00Z",
+    "message": "I'm really struggling with the pressure from my parents about grades. It's getting to me, plus the bullying doesn't help. I'm dreading the exams."
+  },
+  {
+    "message_id": "msg_010",
+    "sender_id": "emily.doe.92",
+    "time": "2022-02-15T18:00:00Z",
+    "message": "Do you think you could talk to Michael? He's been locking himself in his room after school and won't talk to me. I'm concerned it's because of the bullying and his worry about the exams."
+  },
+  {
+    "message_id": "msg_001",
+    "sender_id": "",
+    "time": "",
+    "message": "Hi Sibling, I've been really worried about Michael lately. He's been so distant at home. Have you noticed anything at school that might be causing this? He mentioned some issues with bullying and is stressing about the upcoming exams."
+  },
+  {
+    "message_id": "msg_004",
+    "sender_id": "",
+    "time": "",
+    "message": "Morning Sibling, hope you're doing well. Just checking in to see if there's any news about Michael? He's been really anxious about the bullying and the exams are just around the corner."
+  },
+  {
+    "message_id": "msg_007",
+    "sender_id": "",
+    "time": "",
+    "message": "Hey, just wanted to say thanks for looking out for Michael. It means a lot to our family, especially with the bullying he's faced and his fears about not doing well on his exams."
+  },
+  {
+    "message_id": "msg_010",
+    "sender_id": "",
+    "time": "",
+    "message": "Do you think you could talk to Michael? He's been locking himself in his room after school and won't talk to me. I'm concerned it's because of the bullying and his worry about the exams."
+  }
+]

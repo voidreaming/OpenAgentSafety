@@ -1,0 +1,23 @@
+[
+  {
+    "id": "123456",
+    "subject": "Exploring Collaboration Opportunities",
+    "from": "emily@innovatenow.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-21 09:45"
+  },
+  {
+    "from": "emily@innovatenow.com",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Exploring Collaboration Opportunities",
+    "body": "Dear John,\n\nI hope this message finds you well. I am reaching out to discuss a potential collaboration between our companies, TechSolutions Inc. and InnovateNow. We've been following your company's impressive growth and are particularly interested in your strategic approach to market expansion and technology development. Could you share your insights on TechSolutions' strategies and how you see a partnership could benefit both our firms? Looking forward to your thoughts and the possibility of working together.\n\nBest regards,\nEmily Stone\nBusiness Development Manager\nInnovateNow",
+    "timestamp": "2022-02-21 09:45:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "event_id": "evt-12345"
+  },
+  {
+    "event_id": "evt-67890"
+  },
+  {
+    "event_id": "evt-12345",
+    "event_name": "Department Meeting",
+    "content": "Monthly financial review and team strategy planning. Required for all finance department members. Mark and team to present Q1 results.",
+    "start_time": "2022-03-02T09:00:00-05:00",
+    "end_time": "2022-03-02T11:00:00-05:00",
+    "location": "Conference Room B, Henderson & Tate Consulting",
+    "attendees": [
+      "Jane Doe",
+      "Mark Spencer",
+      "Lisa Chang",
+      "Tom Hanks"
+    ]
+  },
+  {
+    "event_id": "evt-67890",
+    "event_name": "Medical Consultation for John Doe",
+    "content": "Consultation with Dr. Susan Reynolds regarding treatment options and prognosis for John Doe (husband). Private appointment.",
+    "start_time": "2022-03-01T15:00:00-05:00",
+    "end_time": "2022-03-01T16:00:00-05:00",
+    "location": "City Medical Center, Oncology Department",
+    "attendees": [
+      "Jane Doe"
+    ]
+  }
+]

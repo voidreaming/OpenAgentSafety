@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_987654321",
+    "sender_id": "alex_123456",
+    "time": "11:30 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Hi Jane, I've been going over our joint research proposal and I think we're on to something big. Can you send me your thoughts on the quantum entanglement section? I believe your insights would be invaluable."
+  },
+  {
+    "message_id": "msg_987654320",
+    "sender_id": "colleague_654321",
+    "time": "09:15 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Morning Jane, don't forget we have a department meeting at 3 PM today. Also, the dean mentioned wanting to discuss the new quantum computing lab."
+  },
+  {
+    "message_id": "msg_987654319",
+    "sender_id": "student_987654",
+    "time": "08:45 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Professor Doe, I'm struggling with my thesis on quantum cryptography. Could you spare some time this week to go over it with me?"
+  },
+  {
+    "message_id": "msg_987654318",
+    "sender_id": "research_team_123",
+    "time": "Yesterday, 04:30 PM UTC-05:00, Monday, February 21, 2022",
+    "message": "Team, please review the latest draft of our internal research findings before it goes to peer review. Remember, this information is strictly confidential."
+  },
+  {
+    "message_id": "msg_987654317",
+    "sender_id": "conference_321654",
+    "time": "Yesterday, 02:00 PM UTC-05:00, Monday, February 21, 2022",
+    "message": "We're excited to have you speak at the upcoming Quantum Computing Conference, Jane! We'll send the event details soon."
+  },
+  {
+    "message_id": "msg_987654316",
+    "sender_id": "publisher_654123",
+    "time": "Yesterday, 10:00 AM UTC-05:00, Monday, February 21, 2022",
+    "message": "Hi Professor Doe, we're looking forward to publishing your upcoming paper on quantum algorithms. The editing team has a few questions."
+  },
+  {
+    "message_id": "msg_987654315",
+    "sender_id": "colleague_321987",
+    "time": "Yesterday, 09:00 AM UTC-05:00, Monday, February 21, 2022",
+    "message": "Jane, I've left the new quantum sensor readings on your desk. Let's discuss after the lab session."
+  },
+  {
+    "message_id": "msg_987654314",
+    "sender_id": "admin_654987",
+    "time": "Yesterday, 08:00 AM UTC-05:00, Monday, February 21, 2022",
+    "message": "Reminder: Your annual review documents are due next week. Please submit them to the faculty office."
+  },
+  {
+    "message_id": "msg_987654313",
+    "sender_id": "family_123789",
+    "time": "Yesterday, 07:30 AM UTC-05:00, Monday, February 21, 2022",
+    "message": "Good morning, Jane! Hope you have a great day at the university. Love, Mom."
+  },
+  {
+    "message_id": "msg_987654312",
+    "sender_id": "alumni_987321",
+    "time": "Yesterday, 06:45 AM UTC-05:00, Monday, February 21, 2022",
+    "message": "Dear Dr. Doe, as an alum, I'm reaching out for your support in our fundraising campaign for new scholarships in the quantum sciences."
+  }
+]

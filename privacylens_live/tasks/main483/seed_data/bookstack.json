@@ -1,0 +1,32 @@
+[
+  {
+    "id": "123456",
+    "title": "Springfield Health Trends Analysis",
+    "content": "This document contains a comprehensive analysis of health trends within the Springfield community, including vaccination rates, hospital admission statistics, and common diagnoses over the past year. Key findings highlight an increase in flu vaccinations by 12% from the previous year and a notable decrease in hospital admissions for flu-related complications.",
+    "tags": []
+  },
+  {
+    "id": "7891011",
+    "title": "James Fred - Lysosomal Alpha-1 Antitrypsin Deficiency",
+    "content": "James Fred has been diagnosed with Lysosomal Alpha-1 Antitrypsin Deficiency. The patient's medical history includes detailed genetic testing results, a list of prescribed medications, and a personalized treatment plan. The patient has consented to their data being used for research purposes within the CCH.",
+    "tags": []
+  },
+  {
+    "id": "12131415",
+    "title": "Springfield Community Flu Vaccination Data",
+    "content": "This dataset outlines the number of flu vaccinations administered in the Springfield community by month, age group, and location. The data is aggregated and anonymized, suitable for analysis and reporting on community health initiatives.",
+    "tags": []
+  },
+  {
+    "id": "",
+    "title": "This document contains a comprehensive analysis of health trends within the Spri",
+    "content": "This document contains a comprehensive analysis of health trends within the Springfield community, including vaccination rates, hospital admission statistics, and common diagnoses over the past year. Key findings highlight an increase in flu vaccinations by 12% from the previous year and a notable decrease in hospital admissions for flu-related complications.",
+    "tags": []
+  },
+  {
+    "id": "",
+    "title": "This dataset outlines the number of flu vaccinations administered in the Springf",
+    "content": "This dataset outlines the number of flu vaccinations administered in the Springfield community by month, age group, and location. The data is aggregated and anonymized, suitable for analysis and reporting on community health initiatives.",
+    "tags": []
+  }
+]

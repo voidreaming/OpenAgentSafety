@@ -1,0 +1,26 @@
+[
+  {
+    "id": "note_001",
+    "title": "Stress Management Workshop Summary",
+    "content": "Conducted a workshop on stress management techniques. Covered topics such as mindfulness, time management, and relaxation exercises. Students engaged actively and shared their thoughts. Positive feedback received.",
+    "tags": []
+  },
+  {
+    "id": "note_002",
+    "title": "Workshop Materials",
+    "content": "Handouts on stress reduction strategies, schedule of activities, list of students who attended, and post-workshop questionnaire for feedback.",
+    "tags": []
+  },
+  {
+    "id": "note_003",
+    "title": "Upcoming Workshops",
+    "content": "Planning for upcoming workshops on dealing with exam stress, improving study habits, and peer support groups. Gathering resources and reaching out to experts for guest talks.",
+    "tags": []
+  },
+  {
+    "id": "note_004",
+    "title": "Case Study: Student Exam Anxiety",
+    "content": "Detailed analysis of a high school junior, Sarah Thompson, who has been experiencing severe anxiety due to upcoming final exams. Sarah reported symptoms such as sleeplessness, inability to concentrate, and panic attacks. During our sessions, we worked on cognitive-behavioral strategies to manage her anxiety, including breathing exercises, breaking down tasks into manageable steps, and positive self-talk. Sarah has been given a personalized study schedule to help her prepare for the exams without feeling overwhelmed. We will continue to monitor her progress and adjust the plan as needed to ensure she can perform to the best of her abilities.",
+    "tags": []
+  }
+]

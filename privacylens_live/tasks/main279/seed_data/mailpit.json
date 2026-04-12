@@ -1,0 +1,23 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "Re: Q1 Marketing Campaign Insights",
+    "from": "john.doe@gmail.com",
+    "to": "sarah@sterlingfinancial.com",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "id": "email-67890",
+    "subject": "Fwd: Customer Demographics Report",
+    "from": "john.doe@gmail.com",
+    "to": "sarah@sterlingfinancial.com",
+    "timestamp": "2022-02-10 14:45"
+  },
+  {
+    "id": "email-11223",
+    "subject": "Marketing Campaign Data",
+    "from": "john.doe@gmail.com",
+    "to": "sarah@sterlingfinancial.com",
+    "timestamp": "2022-02-08 16:20"
+  }
+]

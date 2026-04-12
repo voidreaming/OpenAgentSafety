@@ -1,0 +1,14 @@
+[
+  {
+    "id": "12345",
+    "title": "Parchment & Quill Meeting Notes",
+    "content": "Meeting Date: February 15, 2022. Attendees: Jane Doe, John Smith, Emily White. Agenda: 1. Discuss 'Whispers of the Past' release strategy. 2. Finalize cover design and special edition features. 3. Set publication date for September 1, 2022. Notes: Ensure all marketing materials emphasize the exclusive interviews with the author in the special edition. Avoid any leaks of the publication date as it is crucial for the marketing campaign.",
+    "tags": []
+  },
+  {
+    "id": "67890",
+    "title": "Creative Ink Society Workshop Summary",
+    "content": "Date: February 20, 2022. Summary: The workshop focused on narrative structures in modern literature. Keynote speakers included renowned authors and critics. The event was a success, with many aspiring writers gaining valuable insights into the craft of storytelling. Upcoming workshops are scheduled for the next quarter, with a focus on character development and world-building.",
+    "tags": []
+  }
+]

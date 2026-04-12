@@ -1,0 +1,30 @@
+[
+  {
+    "id": "12345",
+    "subject": "Re: Team Retreat Proposal",
+    "from": "john.doe@gmail.com",
+    "to": "susan@brighthorizonsms.com",
+    "timestamp": "2022-02-21 09:15"
+  },
+  {
+    "id": "12347",
+    "subject": "Team Retreat Venue Options",
+    "from": "john.doe@gmail.com",
+    "to": "mark@brighthorizonsms.com",
+    "timestamp": "2022-02-15 14:30"
+  },
+  {
+    "id": "12348",
+    "subject": "Dietary Preferences for Team Retreat",
+    "from": "mark@brighthorizonsms.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-10 10:22"
+  },
+  {
+    "id": "12349",
+    "subject": "Upcoming Holidays and Observances",
+    "from": "mark@brighthorizonsms.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-01-25 08:45"
+  }
+]

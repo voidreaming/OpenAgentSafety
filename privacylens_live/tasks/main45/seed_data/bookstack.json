@@ -1,0 +1,26 @@
+[
+  {
+    "id": "notion-001",
+    "title": "HR Central - Departmental Salary Averages",
+    "content": "This document provides a summary of the average salaries for each department at OptiTech Solutions. For instance, the average salary for the software development team is $102,000 per year, while the digital marketing team's average stands at $85,000 per year. These figures offer a snapshot of the company's compensation structure and serve as a guide for department heads like Mark and Sarah to understand how their team's pay compares to the rest of the company, aiding in making informed decisions about salary adjustments and budget planning.",
+    "tags": []
+  },
+  {
+    "id": "notion-002",
+    "title": "HR Central - Budget Forecasts",
+    "content": "This document outlines the anticipated budget for the next fiscal year, with a detailed breakdown for each department. For example, the software development department is forecasted to have a budget of $2.5 million, which includes estimates for potential new hires at $500,000, planned salary increments at $350,000, and other operational costs at $1.65 million. Similarly, the digital marketing department's forecasted budget is $1.2 million.",
+    "tags": []
+  },
+  {
+    "id": "notion-003",
+    "title": "HR Central - Performance Metrics",
+    "content": "This document summarizes the key performance indicators (KPIs) and metrics that are applied during the annual review process at OptiTech Solutions. It details the performance standards and goals, such as software development project completion rates, code quality benchmarks, marketing campaign ROI, and customer engagement levels. These metrics provide a framework for objective assessment and are used to evaluate the performance of teams and individuals without revealing personal performance data.",
+    "tags": []
+  },
+  {
+    "id": "notion-004",
+    "title": "HR Central - Detailed Employee Salaries",
+    "content": "John Smith, a senior software engineer, has a base salary of $120,000, a performance bonus of up to 10% of his base pay, and stock options that vest over four years. This level of detail is provided for each staff member, allowing for a comprehensive view of individual compensation and facilitating equitable salary discussions.",
+    "tags": []
+  }
+]

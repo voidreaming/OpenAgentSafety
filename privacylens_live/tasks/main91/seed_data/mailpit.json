@@ -1,0 +1,23 @@
+[
+  {
+    "id": "123456",
+    "subject": "Re: Your TechTrendz Order Issue - Urgent Assistance Needed",
+    "from": "sarah@techtrendz.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-22 09:15"
+  },
+  {
+    "from": "sarah@techtrendz.com",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Your TechTrendz Order Issue - Urgent Assistance Needed",
+    "body": "Hello John,\n\nI hope this message finds you well. We have received your inquiry regarding the order placed by Mike and the payment issue that ensued. To assist you further, could you please provide us with the order number and a brief description of the problem? We aim to resolve this as quickly as possible.\n\nBest regards,\nSarah\nTechTrendz Customer Support",
+    "timestamp": "2022-02-22 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

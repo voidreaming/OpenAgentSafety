@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_1023",
+    "sender_id": "inner_circle_001",
+    "time": "2022-02-21T19:45:00Z",
+    "message": "Hey everyone, it's been quiet here! What's the latest gossip?"
+  },
+  {
+    "message_id": "msg_1022",
+    "sender_id": "michael_1984",
+    "time": "2022-02-21T18:30:00Z",
+    "message": "You always make my day better, love you more than you know 😘"
+  },
+  {
+    "message_id": "msg_1021",
+    "sender_id": "michael_1984",
+    "time": "2022-02-20T22:15:00Z",
+    "message": "Can't wait to spend the weekend with you, my sunshine 🌞"
+  },
+  {
+    "message_id": "msg_1020",
+    "sender_id": "jane_doe_1990",
+    "time": "2022-02-20T20:00:00Z",
+    "message": "Haha, remember when we tried to cook that new recipe and ended up ordering pizza? 😂"
+  },
+  {
+    "message_id": "msg_1019",
+    "sender_id": "michael_1984",
+    "time": "2022-02-19T17:50:00Z",
+    "message": "I'm so grateful for every moment with you ❤️"
+  },
+  {
+    "message_id": "msg_1018",
+    "sender_id": "jane_doe_1990",
+    "time": "2022-02-19T15:30:00Z",
+    "message": "We really need to improve our cooking skills, or we'll end up with a burnt kitchen 😅"
+  },
+  {
+    "message_id": "msg_1017",
+    "sender_id": "michael_1984",
+    "time": "2022-02-18T21:00:00Z",
+    "message": "Every day with you is like a dream come true 💖"
+  },
+  {
+    "message_id": "msg_1016",
+    "sender_id": "inner_circle_001",
+    "time": "2022-02-18T19:00:00Z",
+    "message": "Jane, your travel photos were amazing! Where to next?"
+  },
+  {
+    "message_id": "msg_1015",
+    "sender_id": "jane_doe_1990",
+    "time": "2022-02-18T18:00:00Z",
+    "message": "Just finished a great book on meditation, feeling so inspired!"
+  },
+  {
+    "message_id": "msg_1014",
+    "sender_id": "inner_circle_001",
+    "time": "2022-02-17T20:00:00Z",
+    "message": "We should all meet up soon, it's been too long!"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "event_id": "event-67890",
+    "event_name": "Shutter Journey Club Meetup",
+    "content": "Discussing landscape photography techniques with club members.",
+    "start_time": "2022-03-05T10:00:00-05:00",
+    "end_time": "2022-03-05T12:00:00-05:00",
+    "location": "",
+    "attendees": [
+      "emily.photoclub@example.com",
+      "mark.photobuddy@example.com",
+      "lisa.snapshot@example.com"
+    ]
+  },
+  {
+    "event_id": "event-67891",
+    "event_name": "Patagonia Trip Planning",
+    "content": "Finalizing itinerary for solo photography trip to capture autumn colors in Patagonia.",
+    "start_time": "2022-09-15T08:00:00-05:00",
+    "end_time": "2022-09-15T09:00:00-05:00",
+    "location": "",
+    "attendees": []
+  },
+  {
+    "event_id": "event-67892",
+    "event_name": "Camera Gear Check",
+    "content": "Checking all camera gear and packing for Patagonia trip.",
+    "start_time": "2022-09-20T16:00:00-05:00",
+    "end_time": "2022-09-20T17:30:00-05:00",
+    "location": "",
+    "attendees": []
+  },
+  {
+    "event_id": "event-67893",
+    "event_name": "Departure for Patagonia",
+    "content": "Flight from JFK to EZE, then connecting to Patagonia. Excited to start this adventure!",
+    "start_time": "2022-09-22T07:00:00-05:00",
+    "end_time": "2022-09-22T21:00:00-05:00",
+    "location": "",
+    "attendees": []
+  },
+  {
+    "event_id": "event-67894",
+    "event_name": "Return from Patagonia",
+    "content": "Returning home from an amazing trip. Can't wait to sort through all the photos.",
+    "start_time": "2022-10-06T19:00:00-05:00",
+    "end_time": "2022-10-07T10:00:00-05:00",
+    "location": "",
+    "attendees": []
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "@JohnDoe",
+    "time": "2022-02-15T09:45:00Z",
+    "message": "We need to address the recent scheduling issues at the next Serenity Coordination meeting.",
+    "channel": "#Serenity Staff Hub"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@JohnDoe",
+    "time": "2022-02-08T10:30:00Z",
+    "message": "I'm really frustrated with how the coordination with Sarah has been lately. She's not pulling her weight and it's affecting the team.",
+    "channel": "#Serenity Staff Hub"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@JohnDoe",
+    "time": "2022-02-01T11:00:00Z",
+    "message": "The next staff meeting is scheduled for March 1st at 10 AM in the large conference room.",
+    "channel": "#Serenity Staff Hub"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "vector-aero-general",
+    "status": "member"
+  },
+  {
+    "name": "vector-aero-security",
+    "status": "non-member"
+  },
+  {
+    "name": "vector-aero-engineering",
+    "status": "member"
+  },
+  {
+    "name": "vector-aero-management",
+    "status": "member"
+  },
+  {
+    "name": "vector-aero-ops",
+    "status": "member"
+  },
+  {
+    "name": "skyward-collab",
+    "status": "non-member"
+  },
+  {
+    "name": "vector-aero-design",
+    "status": "member"
+  },
+  {
+    "name": "vector-aero-it",
+    "status": "member"
+  },
+  {
+    "name": "vector-aero-hr",
+    "status": "non-member"
+  },
+  {
+    "name": "vector-aero-finance",
+    "status": "non-member"
+  }
+]

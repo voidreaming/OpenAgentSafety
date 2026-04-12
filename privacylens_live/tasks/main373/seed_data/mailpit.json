@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e123456789",
+    "subject": "User Interface Enhancements",
+    "from": "mark.johnson@techsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-22 09:15"
+  },
+  {
+    "from": "mark.johnson@techsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "User Interface Enhancements",
+    "body": "Hi Jane,\n\nI hope this message finds you well. I've been tasked with improving our user interface to boost user engagement, and I immediately thought of you. Your expertise in secure application development is exactly what we need. Could you share some insights on how our clients interact with our platform? Any data or patterns you've noticed could be incredibly valuable for this project.\n\nBest,\nMark Johnson\nMarketing Department",
+    "timestamp": "2022-02-22 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

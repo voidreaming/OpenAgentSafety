@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_10234",
+    "sender_id": "dave_thompson_857",
+    "time": "2022-02-21T16:45:00Z",
+    "message": "Hey John, just wanted to let you know that I've been feeling a bit down lately due to my divorce. It's been tough, but I'm trying to keep my spirits up."
+  },
+  {
+    "message_id": "msg_10233",
+    "sender_id": "lisa_wong_324",
+    "time": "2022-02-21T15:30:00Z",
+    "message": "John, I've scheduled a meeting for Thursday to discuss the Brand Evolution campaign. Dave has some great ideas!"
+  },
+  {
+    "message_id": "msg_10232",
+    "sender_id": "group_764",
+    "time": "2022-02-21T14:00:00Z",
+    "message": "Reminder: Team lunch this Wednesday at 1 PM. Let's try that new Italian place!"
+  },
+  {
+    "message_id": "msg_10231",
+    "sender_id": "mike_johnson_468",
+    "time": "2022-02-21T10:15:00Z",
+    "message": "John, can you send me the latest analytics report? I need it for the client meeting tomorrow."
+  },
+  {
+    "message_id": "msg_10230",
+    "sender_id": "dave_thompson_857",
+    "time": "2022-02-20T09:45:00Z",
+    "message": "I've been working on the new slogan for the campaign, what do you think of 'Evolving with You - Every Step of the Way'?"
+  },
+  {
+    "message_id": "msg_10229",
+    "sender_id": "sarah_connor_529",
+    "time": "2022-02-19T17:30:00Z",
+    "message": "John, the client loved the preliminary designs! Great job on leading the team."
+  },
+  {
+    "message_id": "msg_10228",
+    "sender_id": "group_764",
+    "time": "2022-02-19T13:20:00Z",
+    "message": "Don't forget to submit your weekly timesheets by EOD today."
+  },
+  {
+    "message_id": "msg_10227",
+    "sender_id": "dave_thompson_857",
+    "time": "2022-02-18T08:50:00Z",
+    "message": "Morning John, I've uploaded the revised graphics for the campaign to the shared drive."
+  },
+  {
+    "message_id": "msg_10226",
+    "sender_id": "lisa_wong_324",
+    "time": "2022-02-17T16:00:00Z",
+    "message": "John, we need to finalize the budget for Q2. Let's set up a time to go over it."
+  },
+  {
+    "message_id": "msg_10225",
+    "sender_id": "mike_johnson_468",
+    "time": "2022-02-17T11:30:00Z",
+    "message": "Heads up, the server will be down for maintenance this Saturday from 3 AM to 6 AM."
+  }
+]

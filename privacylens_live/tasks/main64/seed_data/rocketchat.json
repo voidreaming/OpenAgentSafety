@@ -1,0 +1,23 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "@executive-lead",
+    "time": "2022-02-22T10:30:00Z",
+    "message": "We need to evaluate our team members for the new project. Who do you think has the potential to take on a leadership role?",
+    "channel": "#executive-circle"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@project-manager",
+    "time": "2022-02-22T10:35:00Z",
+    "message": "I agree with the previous message. It's crucial we choose someone with a proven track record. Jane, could you provide your input based on the recent projects?",
+    "channel": "#executive-circle"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@hr-director",
+    "time": "2022-02-22T10:40:00Z",
+    "message": "Jane, your insights are always valuable. Please share your thoughts on the team's dynamics and who could be the best fit for the project manager role.",
+    "channel": "#executive-circle"
+  }
+]

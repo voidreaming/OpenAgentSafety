@@ -1,0 +1,20 @@
+[
+  {
+    "message_id": "msg-12345",
+    "sender_id": "",
+    "time": "",
+    "message": "Hey Harold, I've been reviewing the recent changes in patent law and I think they might affect our filing strategy. What do you think?"
+  },
+  {
+    "message_id": "msg-12346",
+    "sender_id": "",
+    "time": "",
+    "message": "Jane, remember the Smith vs. Jones case? It set a precedent that might be relevant to the patent case we discussed last month."
+  },
+  {
+    "message_id": "msg-12347",
+    "sender_id": "",
+    "time": "",
+    "message": "I'm struggling with a patent application at the moment. It's about a new solar panel technology. The application includes detailed descriptions of the photovoltaic cells' innovative layering technique, which significantly increases energy efficiency. It also contains technical drawings demonstrating the unique interlocking frame design that reduces installation time and costs. Could really use your insight on this, Harold."
+  }
+]

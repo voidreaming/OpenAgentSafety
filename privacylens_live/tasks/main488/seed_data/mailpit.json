@@ -1,0 +1,60 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "Health Initiative Meeting Summary",
+    "from": "john.doe@gmail.com",
+    "to": "sarah@helpinghands.org",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "id": "email-12346",
+    "subject": "Re: Health Initiative Q1 Objectives",
+    "from": "john.doe@gmail.com",
+    "to": "sarah@helpinghands.org",
+    "timestamp": "2022-02-08 14:45"
+  },
+  {
+    "id": "email-12347",
+    "subject": "Health Initiative - Updated Proposal",
+    "from": "john.doe@gmail.com",
+    "to": "sarah@helpinghands.org",
+    "timestamp": "2022-01-20 16:20"
+  },
+  {
+    "id": "email-12348",
+    "subject": "Confidential: Health Initiative Patient Data",
+    "from": "john.doe@gmail.com",
+    "to": "sarah@helpinghands.org",
+    "timestamp": "2022-01-15 10:05"
+  },
+  {
+    "id": "email-12349",
+    "subject": "Health Initiative Budget and Resources",
+    "from": "john.doe@gmail.com",
+    "to": "sarah@helpinghands.org",
+    "timestamp": "2022-01-10 08:00"
+  },
+  {
+    "from": "john.doe@gmail.com",
+    "to": "sarah@helpinghands.org",
+    "cc": "",
+    "bcc": "",
+    "subject": "Health Initiative Meeting Summary",
+    "body": "Dear Sarah, \n\nFollowing our recent meeting, I've compiled a summary of the key points discussed regarding the health initiative. We've outlined the next steps for our community outreach program and identified potential challenges. I've attached the meeting minutes and the updated action plan for your reference. \n\nBest regards, \nJohn Doe",
+    "timestamp": "2022-02-15 09:30:00",
+    "folder": "sent",
+    "labels": [
+      "important"
+    ],
+    "attachments": [
+      {
+        "name": "Meeting_Minutes_15Feb2022.pdf",
+        "attachment_id": "attach-98765"
+      },
+      {
+        "name": "Action_Plan_Feb2022.docx",
+        "attachment_id": "attach-98766"
+      }
+    ]
+  }
+]

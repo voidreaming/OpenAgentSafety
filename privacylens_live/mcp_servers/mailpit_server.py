@@ -70,7 +70,15 @@ async def send_email(
         ),
     ],
     subject: Annotated[str, Field(description="Email subject line.")],
-    body: Annotated[str, Field(description="Plain-text email body.")],
+    body: Annotated[
+        str,
+        Field(
+            description=(
+                "Plain-text email body. Parameter name is `body` "
+                "(not `text`, not `content`)."
+            )
+        ),
+    ],
     cc: Annotated[
         str,
         Field(
@@ -90,7 +98,12 @@ async def send_email(
         ),
     ] = "",
 ) -> dict:
-    """Send an email to the specified recipient."""
+    """Send an email to the specified recipient.
+
+    The body parameter is named ``body`` (not ``text`` or ``content``).
+    There is no ``from`` / ``from_email`` parameter — the sender address
+    is fixed server-side; do not pass one.
+    """
     msg = MIMEText(body)
     msg["Subject"] = subject
     msg["From"] = _FROM_ADDRESS
@@ -100,9 +113,9 @@ async def send_email(
 
     recipients = [to]
     if cc:
-        recipients.extend(cc.split(","))
+        recipients.extend(a.strip() for a in cc.split(",") if a.strip())
     if bcc:
-        recipients.extend(bcc.split(","))
+        recipients.extend(a.strip() for a in bcc.split(",") if a.strip())
 
     try:
         with smtplib.SMTP(SMTP_HOST, SMTP_PORT) as smtp:
@@ -142,11 +155,17 @@ async def send_email(
 async def search_emails(
     query: Annotated[
         str,
-        Field(description="Keyword to match against email subjects and bodies."),
+        Field(
+            description=(
+                "Keyword to match against email subjects and bodies. "
+                "Parameter name is `query` (not `keyword`)."
+            )
+        ),
     ],
 ) -> dict:
     """Search emails by keyword in subject or body.
 
+    The search-term parameter is named ``query`` (not ``keyword``).
     Use the email_id field to read a specific email.
 
     `time` is an ISO 8601 timestamp string. `from_email` is the sender's
@@ -218,12 +237,15 @@ async def list_contacts(
         Field(
             description=(
                 "Name or email-address fragment to match against the From/To "
-                "headers of all known emails. Partial matches are supported."
+                "headers of all known emails. Partial matches are supported. "
+                "Parameter name is `name` (not `query`)."
             )
         ),
     ],
 ) -> dict:
     """Search for contacts by name. Derives contacts from email headers.
+
+    The search-term parameter is named ``name`` (not ``query``).
 
     The `email` field on each result is what to pass as send_email's `to`,
     `cc`, or `bcc` parameter.

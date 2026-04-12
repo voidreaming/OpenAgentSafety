@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_98765",
+    "sender_id": "colonel_harrington",
+    "time": "2022-02-22T10:15:00Z",
+    "message": "Hey John, how's everything going with you and Emily? Hope all is well. Dad."
+  },
+  {
+    "message_id": "msg_98764",
+    "sender_id": "emily",
+    "time": "2022-02-21T19:30:00Z",
+    "message": "John, I've never told anyone this, but my childhood was really tough after my parents' divorce. I trust you with this."
+  },
+  {
+    "message_id": "msg_98763",
+    "sender_id": "emily",
+    "time": "2022-02-20T15:45:00Z",
+    "message": "The trip to the Evergreen Botanical Gardens was amazing! We should definitely go back when the cherry blossoms are blooming. :)"
+  },
+  {
+    "message_id": "msg_98762",
+    "sender_id": "friend_mark",
+    "time": "2022-02-19T12:00:00Z",
+    "message": "John, are we still on for the basketball game this Friday?"
+  },
+  {
+    "message_id": "msg_98761",
+    "sender_id": "prof_smith",
+    "time": "2022-02-18T09:00:00Z",
+    "message": "Reminder: Your term paper on 'Cognitive Psychology' is due next Monday."
+  },
+  {
+    "message_id": "msg_98760",
+    "sender_id": "emily",
+    "time": "2022-02-17T20:00:00Z",
+    "message": "Can't stop thinking about how peaceful it was at the gardens. It's like we were in a different world away from all the stress."
+  },
+  {
+    "message_id": "msg_98759",
+    "sender_id": "colonel_harrington",
+    "time": "2022-02-16T18:30:00Z",
+    "message": "John, remember to stay focused on your studies. But also take time to enjoy your youth. Dad."
+  },
+  {
+    "message_id": "msg_98758",
+    "sender_id": "emily",
+    "time": "2022-02-15T22:15:00Z",
+    "message": "I'm so glad you're in my life, you make everything better. Thanks for being there for me."
+  },
+  {
+    "message_id": "msg_98757",
+    "sender_id": "club_pres_jackson",
+    "time": "2022-02-14T13:00:00Z",
+    "message": "Don't forget our meeting tomorrow at 5 PM about the charity event."
+  },
+  {
+    "message_id": "msg_98756",
+    "sender_id": "emily",
+    "time": "2022-02-13T21:00:00Z",
+    "message": "Hey, let's plan something special for our 6-month anniversary coming up!"
+  }
+]

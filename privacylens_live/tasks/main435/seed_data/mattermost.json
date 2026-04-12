@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_9873",
+    "sender_id": "mary_doe_5621",
+    "time": "2022-02-22T11:30:00Z",
+    "message": "Hey John, have you heard anything about updates to our insurance plan with SecureLife? I'm starting to plan for the next school year and want to make sure we're covered."
+  },
+  {
+    "message_id": "msg_9862",
+    "sender_id": "peter_griffin_0245",
+    "time": "2022-02-22T09:15:00Z",
+    "message": "John, great job on the Wilson account! Let's discuss the new leads tomorrow. Also, I heard there might be changes to the dental coverage in our insurance policy. We should look into how that could affect our ongoing orthodontic treatments. I think it will potentially affect the insurance coverage for many clients"
+  },
+  {
+    "message_id": "msg_9851",
+    "sender_id": "securelife_news_0303",
+    "time": "2022-02-21T16:45:00Z",
+    "message": "SecureLife Newsletter: Open Enrollment Period is coming! Check out our tips on choosing the right plan for your family. Stay tuned for updates on potential policy changes that may offer more comprehensive mental health support."
+  },
+  {
+    "message_id": "msg_9840",
+    "sender_id": "jane_smith_0789",
+    "time": "2022-02-21T14:30:00Z",
+    "message": "Can you send me the presentation from last week's meeting? Also, if you have any insights on the rumored updates to our insurance regarding telemedicine services, that would be great."
+  },
+  {
+    "message_id": "msg_9830",
+    "sender_id": "mark_johnson_0456",
+    "time": "2022-02-21T13:20:00Z",
+    "message": "Reminder: Team lunch this Thursday at 1 PM. Plus, let's discuss how the proposed insurance changes could affect our health savings account contributions."
+  },
+  {
+    "message_id": "msg_9820",
+    "sender_id": "lisa_white_0921",
+    "time": "2022-02-21T08:50:00Z",
+    "message": "John, I've sent you the updated client list. Please review it by EOD. Also, there's a meeting next week about the insurance policy updates, specifically regarding the coverage of wellness programs. Might be worth attending."
+  },
+  {
+    "message_id": "msg_9810",
+    "sender_id": "securelife_hr_0111",
+    "time": "2022-02-20T17:00:00Z",
+    "message": "HR Update: A reminder to submit your personal days off for the next quarter. Additionally, we're evaluating feedback on the proposed changes to our life insurance policy, which includes an increase in the benefit amount."
+  },
+  {
+    "message_id": "msg_9800",
+    "sender_id": "tom_baker_0567",
+    "time": "2022-02-20T15:45:00Z",
+    "message": "John, can we reschedule our meeting to 3 PM tomorrow? I'd also like to go over the implications of the new policy under discussion that might extend coverage to include genetic testing."
+  },
+  {
+    "message_id": "msg_9790",
+    "sender_id": "mary_doe_5621",
+    "time": "2022-02-19T19:30:00Z",
+    "message": "Don't forget to pick up milk on your way home! And did you get a chance to read about the insurance policy pilot program for covering fitness memberships? Could be a good perk for us."
+  },
+  {
+    "message_id": "msg_9780",
+    "sender_id": "gary_lee_0881",
+    "time": "2022-02-19T18:20:00Z",
+    "message": "Is the report on the new policy changes ready? We need it for the upcoming board meeting. It's essential to understand how the changes might affect coverage for international travel, especially with the upcoming business trips."
+  }
+]

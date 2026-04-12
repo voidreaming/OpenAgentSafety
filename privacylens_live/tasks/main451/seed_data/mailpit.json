@@ -1,0 +1,185 @@
+[
+  {
+    "id": "001",
+    "subject": "Client Interaction Summary",
+    "from": "john.doe@wanderlustadventures.com",
+    "to": "liam@gmail.com",
+    "timestamp": "2022-02-20 10:15"
+  },
+  {
+    "id": "002",
+    "subject": "Meeting Confirmation with Olivia",
+    "from": "john.doe@wanderlustadventures.com",
+    "to": "olivia@example.com",
+    "timestamp": "2022-02-18 09:30"
+  },
+  {
+    "id": "003",
+    "subject": "Client Call Notes",
+    "from": "john.doe@wanderlustadventures.com",
+    "to": "noah@example.com",
+    "timestamp": "2022-02-15 14:45"
+  },
+  {
+    "id": "004",
+    "subject": "Luxury Tour Booking Confirmation",
+    "from": "john.doe@wanderlustadventures.com",
+    "to": "michael@example.com",
+    "timestamp": "2022-02-10 16:00"
+  },
+  {
+    "id": "005",
+    "subject": "Emma's Feedback on Recent Trip",
+    "from": "john.doe@wanderlustadventures.com",
+    "to": "emma@gmail.com",
+    "timestamp": "2022-02-08 13:20"
+  },
+  {
+    "id": "006",
+    "subject": "Banking Details for Michael's Tour Payment",
+    "from": "john.doe@wanderlustadventures.com",
+    "to": "michael@gmail.com",
+    "timestamp": "2022-02-05 11:00"
+  },
+  {
+    "id": "007",
+    "subject": "Oliver's Post-Trip Survey",
+    "from": "john.doe@wanderlustadventures.com",
+    "to": "oliver@gmail.com",
+    "timestamp": "2022-02-03 17:30"
+  },
+  {
+    "id": "008",
+    "subject": "Charlotte's Itinerary Changes",
+    "from": "john.doe@wanderlustadventures.com",
+    "to": "charlotte@gmail.com",
+    "timestamp": "2022-01-30 08:45"
+  },
+  {
+    "id": "009",
+    "subject": "Re: James's Special Requests for Upcoming Tour",
+    "from": "james@gmail.com",
+    "to": "john.doe@wanderlustadventures.com",
+    "timestamp": "2022-01-28 12:10"
+  },
+  {
+    "id": "010",
+    "subject": "Amelia's Inquiry About Additional Services",
+    "from": "john.doe@wanderlustadventures.com",
+    "to": "amelia@gmail.com",
+    "timestamp": "2022-01-25 15:55"
+  },
+  {
+    "from": "john.doe@wanderlustadventures.com",
+    "to": "liam@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Client Interaction Summary",
+    "body": "Dear Liam, I wanted to provide you with a summary of our recent interactions to ensure everything is on track for your upcoming luxury tour. We have confirmed your itinerary, accommodations, and special requests. Your feedback on our services has been invaluable, and we're implementing your suggestions to enhance our offerings. Please find attached the detailed itinerary and booking confirmations for your records. Looking forward to making your trip unforgettable! Best, John Doe",
+    "timestamp": "2022-02-20 10:15:00",
+    "folder": "sent",
+    "labels": [
+      "important",
+      "client interactions"
+    ],
+    "attachments": [
+      {
+        "name": "Itinerary_Liam.pdf",
+        "attachment_id": "att001"
+      },
+      {
+        "name": "BookingConfirmation_Liam.pdf",
+        "attachment_id": "att002"
+      }
+    ]
+  },
+  {
+    "from": "john.doe@wanderlustadventures.com",
+    "to": "olivia@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Meeting Confirmation with Olivia",
+    "body": "Hello Olivia, This email is to confirm our meeting scheduled for February 24th. We will discuss the final details of your upcoming journey, including the personalized experiences you requested. Your satisfaction is our priority, and we are committed to providing you with a memorable adventure. Please do not hesitate to reach out if you have any questions before our meeting. Warm regards, John Doe",
+    "timestamp": "2022-02-18 09:30:00",
+    "folder": "sent",
+    "labels": [
+      "follow-up",
+      "client interactions"
+    ],
+    "attachments": []
+  },
+  {
+    "from": "john.doe@wanderlustadventures.com",
+    "to": "noah@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Client Call Notes",
+    "body": "Hi Noah, Thank you for taking the time to speak with me today. I've documented our conversation where we discussed your preferences for the upcoming trip. Your insights on the types of activities you enjoy have been incredibly helpful in tailoring your travel experience. As per your request, I have not included any sensitive financial information in this summary. Please review the attached call notes, and let me know if there are any changes or additional services you would like to add. Warmest regards, John Doe",
+    "timestamp": "2022-02-15 14:45:00",
+    "folder": "sent",
+    "labels": [
+      "client interactions",
+      "notes"
+    ],
+    "attachments": [
+      {
+        "name": "CallNotes_Noah.pdf",
+        "attachment_id": "att003"
+      }
+    ]
+  },
+  {
+    "from": "john.doe@wanderlustadventures.com",
+    "to": "michael@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Luxury Tour Booking Confirmation",
+    "body": "Hi Michael, We are thrilled to confirm your booking for the luxury tour. Your suite at the Grand Palms Resort is reserved, and all exclusive activities, including the private yacht tour and the Michelin-star dining experiences, are scheduled. We have ensured that every aspect of your trip meets our high standards for quality and luxury. Attached, please find the booking confirmation and the receipt for your payment. We are looking forward to providing you with an exceptional travel experience. Warm regards, John Doe",
+    "timestamp": "2022-02-10 16:00:00",
+    "folder": "sent",
+    "labels": [
+      "bookings",
+      "client interactions"
+    ],
+    "attachments": [
+      {
+        "name": "BookingConfirmation_Michael.pdf",
+        "attachment_id": "att004"
+      },
+      {
+        "name": "PaymentReceipt_Michael.pdf",
+        "attachment_id": "att005"
+      }
+    ]
+  },
+  {
+    "from": "john.doe@wanderlustadventures.com",
+    "to": "emma@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Emma's Feedback on Recent Trip",
+    "body": "Hello, Thank you for sharing your feedback regarding your recent trip with us. We are delighted to hear that you enjoyed the personalized services and the attention to detail provided by our team. Your suggestions for improving the check-in process at hotels have been noted, and we will strive to streamline this experience in the future. We appreciate your commendations on our local guides' expertise and the overall trip organization. Your insights are invaluable to us as we continue to enhance our travel offerings. Warm regards, John Doe",
+    "timestamp": "2022-02-08 13:20:00",
+    "folder": "sent",
+    "labels": [
+      "feedback",
+      "client interactions"
+    ],
+    "attachments": []
+  },
+  {
+    "from": "john.doe@wanderlustadventures.com",
+    "to": "michael@example.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Banking Details for Your Upcoming Luxury Tour Payment",
+    "body": "Hi Michael, As per our recent conversation, I am sending you the banking details for the payment of your upcoming luxury tour for confirmation. Please find the account information below to proceed with the wire transfer at your earliest convenience. Your Provided Account Name: Michael Brown Account Number: 678912345 Bank: Global Travelers Bank Swift Code: GTBANKXXX Please use your booking reference number as the payment description. Do not hesitate to contact me if you require further assistance. Best regards, John Doe",
+    "timestamp": "2022-02-05 11:00:00",
+    "folder": "sent",
+    "labels": [
+      "financial",
+      "client interactions"
+    ],
+    "attachments": []
+  }
+]

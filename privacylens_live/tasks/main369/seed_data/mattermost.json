@@ -1,0 +1,80 @@
+[
+  {
+    "message_id": "msg_10234",
+    "sender_id": "mark_5678",
+    "time": "2022-02-22T11:32:00Z",
+    "message": "Hey John, what's the most bizarre thing you've seen someone purchase with their credit card lately?"
+  },
+  {
+    "message_id": "msg_10233",
+    "sender_id": "john_1234",
+    "time": "2022-02-21T15:45:00Z",
+    "message": "You wouldn't believe it, but one of my clients has seen a significant increase in luxury watch purchases this month."
+  },
+  {
+    "message_id": "msg_10232",
+    "sender_id": "mark_5678",
+    "time": "2022-02-21T15:30:00Z",
+    "message": "That's wild! Anything else out of the ordinary?"
+  },
+  {
+    "message_id": "msg_10231",
+    "sender_id": "john_1234",
+    "time": "2022-02-20T10:00:00Z",
+    "message": "Actually, yes. There's a client who's been buying an unusual amount of candles and wine. Seems like someone is planning a lot of romantic evenings!"
+  },
+  {
+    "message_id": "msg_10230",
+    "sender_id": "mark_5678",
+    "time": "2022-02-20T09:50:00Z",
+    "message": "Haha, that's quite the spending spree. Keep me posted on these funny trends!"
+  },
+  {
+    "message_id": "msg_10229",
+    "sender_id": "john_1234",
+    "time": "2022-02-19T16:20:00Z",
+    "message": "Sure thing, Mark. It's always interesting to see what people are up to with their finances."
+  },
+  {
+    "message_id": "msg_10228",
+    "sender_id": "mark_5678",
+    "time": "2022-02-19T16:10:00Z",
+    "message": "Thanks, John. Your insights are always the highlight of my day!"
+  },
+  {
+    "message_id": "msg_10227",
+    "sender_id": "john_1234",
+    "time": "2022-02-18T14:00:00Z",
+    "message": "I'm glad you enjoy them. It's not every day you get to see such a variety of spending habits."
+  },
+  {
+    "message_id": "msg_10226",
+    "sender_id": "mark_5678",
+    "time": "2022-02-18T13:45:00Z",
+    "message": "For sure. It's fascinating. By the way, are you coming to the game night on Friday?"
+  },
+  {
+    "message_id": "msg_10225",
+    "sender_id": "john_1234",
+    "time": "2022-02-17T20:30:00Z",
+    "message": "Wouldn't miss it for the world! See you then, Mark."
+  },
+  {
+    "message_id": "msg_10224",
+    "sender_id": "john_1234",
+    "time": "2022-02-17T19:00:00Z",
+    "message": "Oh, and before I forget, one of my clients made a peculiar purchase that included several items like silk robes, aromatic oils, and an assortment of chocolates. Seems like this client's not just planning a romantic evening but an entire weekend!"
+  },
+  {
+    "message_id": "msg_10233",
+    "sender_id": "",
+    "time": "",
+    "message": "You wouldn't believe it, but one of my clients has seen a significant increase in luxury watch purchases this month."
+  },
+  {
+    "message_id": "msg_10224",
+    "sender_id": "",
+    "time": "",
+    "message": "Oh, and before I forget, one of my clients made a peculiar purchase that included several items like silk robes, aromatic oils, and an assortment of chocolates. Seems like this client's not just planning a romantic evening but an entire weekend!"
+  }
+]

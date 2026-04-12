@@ -1,0 +1,16 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "@mr.smith",
+    "time": "2022-02-21T15:45:00Z",
+    "message": "Hi Jane, this is Mr. Smith from TechAid Corporation. I wanted to check in on John's progress. Could you provide me with an update?",
+    "channel": "@jane.doe"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@mr.smith",
+    "time": "2022-02-22T09:00:00Z",
+    "message": "Hello Jane, Mr. Smith here again. Just following up on my previous message about John's recovery status. Please let me know if there's any information you can share.",
+    "channel": "@jane.doe"
+  }
+]

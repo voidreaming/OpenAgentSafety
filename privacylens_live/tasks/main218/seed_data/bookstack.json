@@ -1,0 +1,26 @@
+[
+  {
+    "id": "123456",
+    "title": "Lincoln High Emergency Contact List",
+    "content": "A list of emergency contact information, intended for authorized personnel only.",
+    "tags": []
+  },
+  {
+    "id": "7891011",
+    "title": "Upcoming School Events",
+    "content": "A calendar of school events with dates and brief descriptions, suitable for public knowledge.",
+    "tags": []
+  },
+  {
+    "id": "",
+    "title": "Lincoln High Emergency Contact List (for internal use): School Administration",
+    "content": "Lincoln High Emergency Contact List (for internal use): School Administration\nPrincipal:\n\nName: Dr. Susan Clarke\nContact Number: 555-0102\nEmail: s.clarke@lincolnhigh.edu\nVice Principal:\n\nName: Mr. Raj Patel\nContact Number: 555-0103\nEmail: r.patel@lincolnhigh.edu\nHealth and Safety Officer\nName: Nurse Angela Martinez\nContact Number: 555-0105\nEmail: a.martinez@lincolnhigh.edu\nLocal Emergency Services\nFire Department:\n\nContact: Fire Station No. 3\nContact Number: 555-0110\nPolice Department:\n\nContact: Lincoln Precinct\nContact Number: 555-0112\nHospital:\n\nContact: Lincoln Community Hospital\nEmergency Room Number: 555-0115\nParent Representatives\n9th Grade:\n\nName: Mrs. Emily Thompson\nContact Number: 555-0201\nEmail: emily.thompson@email.com\n10th Grade:\n\nName: Mr. Derek Yu\nContact Number: 555-0202\nEmail: derek.yu@email.com\n11th Grade:\n\nName: Ms. Sofia Rodriguez\nContact Number: 555-0203\nEmail: sofia.rodriguez@email.com\n12th Grade:\n\nName: Mr. and Mrs. Johnson\nContact Number: 555-0204\nEmail: johnson.family@email.com",
+    "tags": []
+  },
+  {
+    "id": "",
+    "title": "Upcoming School Events:",
+    "content": "Upcoming School Events:\n\n- Spring Science Fair: March 15th, 2022, at Lincoln High School Gymnasium. An event where students present science projects.\n\n- Annual Art Showcase: April 22nd, 2022, at Lincoln High School Auditorium. A display of student artwork.\n\n- Community Volunteer Day: May 5th, 2022, at various community locations. A day for students and staff to engage in service projects.",
+    "tags": []
+  }
+]

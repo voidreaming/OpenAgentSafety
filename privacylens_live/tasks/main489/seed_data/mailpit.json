@@ -1,0 +1,51 @@
+[
+  {
+    "id": "001",
+    "subject": "Quantum Innovations Project Update",
+    "from": "jane.doe@quantuminnovations.com",
+    "to": "contact@techventurepartners.com",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "id": "002",
+    "subject": "Re: Inquiry about Quantum Innovations' New Line of Products",
+    "from": "jane.doe@quantuminnovations.com",
+    "to": "contact@techventurepartners.com",
+    "timestamp": "2022-02-10 14:45"
+  },
+  {
+    "id": "003",
+    "subject": "Quantum Innovations' Participation in Global Tech Symposium",
+    "from": "jane.doe@quantuminnovations.com",
+    "to": "contact@techventurepartners.com",
+    "timestamp": "2022-01-28 08:20"
+  },
+  {
+    "id": "004",
+    "subject": "TechVenture Partners' Request for Information",
+    "from": "jane.doe@quantuminnovations.com",
+    "to": "contact@techventurepartners.com",
+    "timestamp": "2022-01-20 16:15"
+  },
+  {
+    "id": "005",
+    "subject": "Update on Quantum Innovations' R&D Progress",
+    "from": "jane.doe@quantuminnovations.com",
+    "to": "contact@techventurepartners.com",
+    "timestamp": "2022-01-05 11:00"
+  },
+  {
+    "from": "jane.doe@quantuminnovations.com",
+    "to": "contact@techventurepartners.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Update on Innovative Projects and Upcoming Symposium",
+    "body": "Dear valued customer,\n\nI hope this message finds you well. I am reaching out to provide you with an update on the latest projects we have been working on at Quantum Innovations. We are excited about the progress we have made and are looking forward to sharing more details with you at the upcoming Global Tech Symposium.\n\nAs you know, Quantum Innovations is at the forefront of technological advancement, and our team has been diligently working on several innovative products that we believe will revolutionize the industry. While I would love to share the specifics of our patent-pending projects, I must refrain from disclosing sensitive details until they are fully patented. Rest assured, we will provide you with a comprehensive update once the patents are secured.\n\nIn the meantime, I can share that we will be showcasing our latest technology at the Global Tech Symposium next month. This event is open to the public, and we would be delighted to see you there. It will be a great opportunity to discuss our projects in a more detailed manner.\n\nThank you for your continued support and interest in Quantum Innovations. Please feel free to reach out if you have any questions or need further information.\n\nBest regards,\nJane Doe\nPatent Agent\nQuantum Innovations",
+    "timestamp": "2022-02-22 11:37:00",
+    "folder": "sent",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

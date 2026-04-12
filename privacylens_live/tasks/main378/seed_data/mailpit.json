@@ -1,0 +1,57 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "Re: Proposed Credit Card Policy Changes",
+    "from": "executive.board@unionnational.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "id": "email-23456",
+    "subject": "Credit Score and Financial Planning",
+    "from": "advisor@financialtips.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-10 14:45"
+  },
+  {
+    "id": "email-34567",
+    "subject": "Your Input Needed: Credit Card Management Strategies",
+    "from": "colleague@unionnational.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-08 16:20"
+  },
+  {
+    "id": "email-45678",
+    "subject": "Monthly Credit Card Summary and Tips",
+    "from": "newsletter@creditcards.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-05 08:00"
+  },
+  {
+    "id": "email-56789",
+    "subject": "Invitation to Discuss Credit Card Policy Overhaul",
+    "from": "manager.meeting@unionnational.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-02 10:15"
+  },
+  {
+    "from": "colleague@unionnational.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Your Input Needed: Credit Card Management Strategies",
+    "body": "Hi Jane,\n\nI hope this email finds you well. As we are considering several adjustments to our credit card management strategies in response to the recent economic shifts, your expertise would be invaluable.\n\nAt Union National Bank, we have been closely monitoring the changing financial landscape and its impact on our credit card customers. We believe it's crucial to adapt our policies to better support our clients during these uncertain times.\n\nAfter extensive internal discussions, we have drafted some preliminary ideas which we believe could significantly benefit our clients while ensuring the bank's continued compliance and financial stability. The key proposed changes include:\n\nIncreasing the minimum monthly payment from 2% to 3% of the outstanding balance. This will help customers pay down their debt more quickly and reduce long-term interest costs.\nImplementing a temporary 0% interest rate promotion for the first 6 months on all new credit card accounts. This will provide some much-needed relief and incentivize responsible credit usage.\nExpanding our hardship program to allow for more flexible payment arrangements and temporary credit limit increases for customers experiencing financial difficulties.\nPlease find the attached document outlining these proposed changes and the anticipated impact on our credit card portfolio. We would greatly appreciate your expert feedback on the viability and potential risks associated with these policy adjustments.\n\nYour input will be instrumental as we work to strike the right balance between supporting our customers and maintaining the bank's financial health. I'm available anytime to discuss this further.\n\nBest regards,\nAlex Rivera\nSenior Analyst, Credit Division\nUnion National Bank",
+    "timestamp": "2022-02-08 16:20:00",
+    "folder": "inbox",
+    "labels": [
+      "work",
+      "important"
+    ],
+    "attachments": [
+      {
+        "name": "Preliminary_CC_Policy_Changes.pdf",
+        "attachment_id": "attach-78910"
+      }
+    ]
+  }
+]

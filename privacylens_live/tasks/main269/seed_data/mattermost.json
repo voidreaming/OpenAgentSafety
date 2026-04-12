@@ -1,0 +1,74 @@
+[
+  {
+    "message_id": "msg_001",
+    "sender_id": "group_002",
+    "time": "2022-02-22T11:32:00Z",
+    "message": "Hey John, can you share your insights on how we can improve our customer service?"
+  },
+  {
+    "message_id": "msg_002",
+    "sender_id": "user_003",
+    "time": "2022-02-21T15:45:00Z",
+    "message": "John, the tutorial for the new online platform is fantastic! It really helped me understand the features."
+  },
+  {
+    "message_id": "msg_003",
+    "sender_id": "user_004",
+    "time": "2022-02-20T09:30:00Z",
+    "message": "I had some issues with the mobile app, but your team resolved it quickly. Thanks!"
+  },
+  {
+    "message_id": "msg_004",
+    "sender_id": "user_005",
+    "time": "2022-02-19T14:22:00Z",
+    "message": "The personalized approach your branch takes is refreshing. Keep it up! - Daniel"
+  },
+  {
+    "message_id": "msg_005",
+    "sender_id": "group_002",
+    "time": "2022-02-18T10:18:00Z",
+    "message": "We need to discuss strategies to handle the increased call volume."
+  },
+  {
+    "message_id": "msg_006",
+    "sender_id": "user_006",
+    "time": "2022-02-17T16:55:00Z",
+    "message": "I'm still waiting for a follow-up on the issue I reported last week."
+  },
+  {
+    "message_id": "msg_007",
+    "sender_id": "user_007",
+    "time": "2022-02-16T12:05:00Z",
+    "message": "Your advice on investment options was very helpful!"
+  },
+  {
+    "message_id": "msg_008",
+    "sender_id": "group_002",
+    "time": "2022-02-15T13:47:00Z",
+    "message": "Reminder: Team meeting tomorrow at 9 AM to discuss customer service improvements."
+  },
+  {
+    "message_id": "msg_009",
+    "sender_id": "user_008",
+    "time": "2022-02-14T08:33:00Z",
+    "message": "I appreciate the quick turnaround on my loan application."
+  },
+  {
+    "message_id": "msg_010",
+    "sender_id": "user_009",
+    "time": "2022-02-13T17:20:00Z",
+    "message": "The new account setup process was seamless. Great job!"
+  },
+  {
+    "message_id": "msg_011",
+    "sender_id": "customer_010",
+    "time": "2022-02-22T16:00:00Z",
+    "message": "Sarah Miller here, I wanted to thank you for the personalized budget plan you created for me. It's made managing my finances much easier!"
+  },
+  {
+    "message_id": "msg_012",
+    "sender_id": "customer_011",
+    "time": "2022-02-22T16:30:00Z",
+    "message": "Hi, this is David Chen. I just wanted to say that the advice you gave me on refinancing my mortgage was spot on. I'm saving a lot more now. Thanks for the help!"
+  }
+]

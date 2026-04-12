@@ -1,0 +1,38 @@
+[
+  {
+    "message_id": "m_123456789",
+    "sender_id": "u_987654321",
+    "time": "2022-02-22T11:32:00Z",
+    "message": "Hi John, I'm really worried about Sarah. How is she doing today? Any updates?"
+  },
+  {
+    "message_id": "m_123456788",
+    "sender_id": "u_123456789",
+    "time": "2022-02-22T10:15:00Z",
+    "message": "John, don't forget the team meeting at 2 PM. See you there!"
+  },
+  {
+    "message_id": "m_123456787",
+    "sender_id": "u_987654322",
+    "time": "2022-02-22T09:50:00Z",
+    "message": "Morning John! Could you please send me the file we discussed yesterday?"
+  },
+  {
+    "message_id": "m_123456786",
+    "sender_id": "u_987654323",
+    "time": "2022-02-22T08:30:00Z",
+    "message": "Reminder: Your dentist appointment is scheduled for tomorrow at 3 PM."
+  },
+  {
+    "message_id": "m_123456785",
+    "sender_id": "u_987654324",
+    "time": "2022-02-21T16:45:00Z",
+    "message": "Hey John, can you cover my shift on Thursday? I have a family emergency."
+  },
+  {
+    "message_id": "m_123456784",
+    "sender_id": "u_987654325",
+    "time": "2022-02-21T15:30:00Z",
+    "message": "John, the lab results for patient #442 are in. Please review them before the afternoon rounds."
+  }
+]

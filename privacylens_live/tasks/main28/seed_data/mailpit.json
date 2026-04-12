@@ -1,0 +1,51 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "Re: Project Falcon Phase Completion",
+    "from": "john.doe@gmail.com",
+    "to": "sarah@apexmarketing.com",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "id": "email-12346",
+    "subject": "Project Falcon Update",
+    "from": "sarah@apexmarketing.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-10 14:45"
+  },
+  {
+    "id": "email-12347",
+    "subject": "Oops! Minor Leak Concerning Project Falcon",
+    "from": "john.doe@gmail.com",
+    "to": "personal.note@notion.so",
+    "timestamp": "2022-01-28 16:05"
+  },
+  {
+    "id": "email-12348",
+    "subject": "Project Falcon - Next Steps",
+    "from": "sarah@apexmarketing.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-01-20 10:15"
+  },
+  {
+    "id": "email-12349",
+    "subject": "Zenith Corp Inquiry about Project Falcon",
+    "from": "external.contact@zenithcorp.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-01-18 08:50"
+  },
+  {
+    "from": "john.doe@gmail.com",
+    "to": "sarah@apexmarketing.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Project Falcon Phase Completion",
+    "body": "Hi Sarah,\n\nGreat job on wrapping up the last phase of Project Falcon. The client was extremely pleased with the results, and it's all thanks to your hard work and dedication. Let's keep this momentum going as we move into the final stages of the project.\n\nBest,\nJohn",
+    "timestamp": "2022-02-15 09:30:00",
+    "folder": "sent",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

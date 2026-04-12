@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e123456789",
+    "subject": "Inquiry about Donor Engagement Statistics",
+    "from": "sarah@compassioninaction.org",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-21 09:15"
+  },
+  {
+    "from": "sarah@compassioninaction.org",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Inquiry about Donor Engagement Statistics",
+    "body": "Hi John,\n\nI hope this message finds you well. As we're planning our next joint campaign, I wanted to get a better understanding of the donor engagement trends at Bright Futures Foundation. Could you share some recent statistics on donor participation and the effectiveness of various fundraising strategies? This information will be invaluable for us to align our efforts and maximize our impact.\n\nThank you for your assistance!\n\nBest regards,\nSarah",
+    "timestamp": "2022-02-21 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

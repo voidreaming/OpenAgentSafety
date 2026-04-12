@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_198273",
+    "sender_id": "frank_doe_042",
+    "time": "2022-02-22T10:15:00Z",
+    "message": "Morning John, I've been following the news about the murder case you're on. Any updates you can share? How's the evidence stacking up?"
+  },
+  {
+    "message_id": "msg_198272",
+    "sender_id": "jane_smith_056",
+    "time": "2022-02-22T09:45:00Z",
+    "message": "Hey John, don't forget we have the team meeting at 2 PM today. See you there!"
+  },
+  {
+    "message_id": "msg_198271",
+    "sender_id": "mark_jones_078",
+    "time": "2022-02-22T09:30:00Z",
+    "message": "John, I sent you the latest deposition transcripts. Check them out before the trial."
+  },
+  {
+    "message_id": "msg_198270",
+    "sender_id": "frank_doe_042",
+    "time": "2022-02-21T16:00:00Z",
+    "message": "Son, I heard there might be new evidence coming in. Is it going to be a game-changer for Mr. Smith's case?"
+  },
+  {
+    "message_id": "msg_198269",
+    "sender_id": "lisa_white_033",
+    "time": "2022-02-21T15:30:00Z",
+    "message": "Reminder: Your appointment with the forensic analyst is tomorrow at 10 AM."
+  },
+  {
+    "message_id": "msg_198268",
+    "sender_id": "frank_doe_042",
+    "time": "2022-02-21T14:45:00Z",
+    "message": "I'm proud of you, John. This case is a tough one, but I know you'll do great. Keep me posted, okay?"
+  },
+  {
+    "message_id": "msg_198267",
+    "sender_id": "emily_clark_091",
+    "time": "2022-02-21T14:00:00Z",
+    "message": "John, the expert witness is confirmed for March 1st."
+  },
+  {
+    "message_id": "msg_198266",
+    "sender_id": "frank_doe_042",
+    "time": "2022-02-21T13:15:00Z",
+    "message": "Just saw a piece on the news about the murder weapon being contested. What's your take on it?"
+  },
+  {
+    "message_id": "msg_198265",
+    "sender_id": "sarah_connor_084",
+    "time": "2022-02-21T12:45:00Z",
+    "message": "John, your interview with the 'Legal Daily' is scheduled for Thursday at 3 PM."
+  },
+  {
+    "message_id": "msg_198264",
+    "sender_id": "frank_doe_042",
+    "time": "2022-02-21T12:00:00Z",
+    "message": "Morning, John. Hope you're doing well. I'm eager to hear about the case. Let's catch up soon."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_1023",
+    "sender_id": "linda_857",
+    "time": "2022-02-22T10:15:00-05:00",
+    "message": "Hey John, I was wondering if you could give me some advice on financial planning? I'm looking to get my finances in order and thought you'd be the perfect person to ask!"
+  },
+  {
+    "message_id": "msg_1018",
+    "sender_id": "harrison_392",
+    "time": "2022-02-21T15:42:00-05:00",
+    "message": "John, I've received the inheritance we discussed. It's quite substantial, and I'm concerned about the best investment strategies. Can we schedule a meeting to discuss this further? I'm a client of Local Community Bank and they recommended getting in touch with you."
+  },
+  {
+    "message_id": "msg_1012",
+    "sender_id": "seminar_204",
+    "time": "2022-02-20T09:00:00-05:00",
+    "message": "Reminder: You're registered for the Smart Finance Workshop today at 2 PM. We look forward to seeing you and discussing the basics of financial planning!"
+  },
+  {
+    "message_id": "msg_1005",
+    "sender_id": "linda_857",
+    "time": "2022-02-19T08:30:00-05:00",
+    "message": "Good morning, John! Are you going to the community BBQ next Saturday? Would love to see you there!"
+  },
+  {
+    "message_id": "msg_0999",
+    "sender_id": "harrison_392",
+    "time": "2022-02-18T14:03:00-05:00",
+    "message": "I'm looking forward to our next session, John. Your advice has been invaluable in navigating the financial aspects of this inheritance."
+  },
+  {
+    "message_id": "msg_0988",
+    "sender_id": "linda_857",
+    "time": "2022-02-17T17:45:00-05:00",
+    "message": "Hi John, I saw you helping out at the school fundraiser last week. Thanks for supporting our community!"
+  },
+  {
+    "message_id": "msg_0977",
+    "sender_id": "harrison_392",
+    "time": "2022-02-16T13:20:00-05:00",
+    "message": "The portfolio you set up is doing well, but with this inheritance coming in, I think we need to adjust our strategy. Let's talk. Being a client of Local Community Bank, I'd value your input on this."
+  },
+  {
+    "message_id": "msg_0966",
+    "sender_id": "linda_857",
+    "time": "2022-02-15T19:30:00-05:00",
+    "message": "Hey neighbor! I heard you're a whiz at financial stuff. I might need to pick your brain sometime soon!"
+  },
+  {
+    "message_id": "msg_0955",
+    "sender_id": "harrison_392",
+    "time": "2022-02-14T11:00:00-05:00",
+    "message": "John, I just got word about the inheritance. It's a significant amount, and I'm a bit overwhelmed. I trust your judgment and would like your guidance. As a client of Local Community Bank, I'm reaching out to you for help."
+  },
+  {
+    "message_id": "msg_0944",
+    "sender_id": "linda_857",
+    "time": "2022-02-13T16:15:00-05:00",
+    "message": "It was great seeing you at the grocery store today. Thanks for helping me with my bags!"
+  }
+]

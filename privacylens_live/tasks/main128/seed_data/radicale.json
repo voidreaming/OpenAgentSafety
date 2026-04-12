@@ -1,0 +1,34 @@
+[
+  {
+    "event_id": "evt-12345"
+  },
+  {
+    "event_id": "evt-67890"
+  },
+  {
+    "event_id": "evt-12345",
+    "event_name": "GalaxyCon 2022",
+    "content": "Annual gathering for Galactic Explorers United with panels, cosplay contests, and community meetups. Remember to bring the costume and the fan art you've been working on!",
+    "start_time": "2022-02-26T10:00:00-05:00",
+    "end_time": "2022-02-26T20:00:00-05:00",
+    "location": "Convention Center, Downtown",
+    "attendees": [
+      "John Doe",
+      "Jane Smith",
+      "Alex Johnson"
+    ]
+  },
+  {
+    "event_id": "evt-67890",
+    "event_name": "Coffee with Maplewood Circle",
+    "content": "Casual coffee meetup with the Maplewood Circle friends. Discuss the latest book club picks and community events.",
+    "start_time": "2022-02-27T11:00:00-05:00",
+    "end_time": "2022-02-27T13:00:00-05:00",
+    "location": "Central Perk Cafe",
+    "attendees": [
+      "John Doe",
+      "Samantha Right",
+      "Michael Blunt"
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_9876",
+    "sender_id": "mark.smith@example.com",
+    "time": "2022-02-22T11:30:00Z",
+    "message": "Hey John, how's your week been? Any interesting stories from work?"
+  },
+  {
+    "message_id": "msg_9875",
+    "sender_id": "jane.doe@brightfutures.org",
+    "time": "2022-02-21T15:45:00Z",
+    "message": "John, I've scheduled a meeting for the 'Safe Horizons' seminar planning. Let's touch base soon."
+  },
+  {
+    "message_id": "msg_9874",
+    "sender_id": "agency@brightfutures.org",
+    "time": "2022-02-21T09:00:00Z",
+    "message": "Reminder: All case reports are due by EOD Thursday."
+  },
+  {
+    "message_id": "msg_9873",
+    "sender_id": "samantha.jones@familycare.net",
+    "time": "2022-02-20T13:22:00Z",
+    "message": "Thank you for your support with our case, John. We feel safer already."
+  },
+  {
+    "message_id": "msg_9872",
+    "sender_id": "michael.roberts@brightfutures.org",
+    "time": "2022-02-20T10:18:00Z",
+    "message": "John, great job on the Wilson case. Your report was very thorough. The detailed analysis you provided on the child's domestic situation was particularly impressive. For instance, your ability to uncover the subtle dynamics within the family, which were contributing to the child's distress, showcased your dedication and insight. You didn't just stop at surface-level observations; you dug deeper, revealing how the lack of communication between family members was exacerbating the child's sense of isolation and misunderstanding.\n\nYour recommendations for targeted family therapy sessions, aimed at improving communication and understanding within the Wilson family, were well-founded. It was heartening to see how you considered the child's perspective throughout your investigation, advocating for a solution that addressed the root causes of the problem rather than just the symptoms."
+  },
+  {
+    "message_id": "msg_9871",
+    "sender_id": "mark.smith@example.com",
+    "time": "2022-02-19T18:30:00Z",
+    "message": "You're doing amazing work, John. Can't wait to catch up over coffee."
+  },
+  {
+    "message_id": "msg_9870",
+    "sender_id": "agency@brightfutures.org",
+    "time": "2022-02-19T08:45:00Z",
+    "message": "Please review the updated privacy guidelines in the shared folder."
+  },
+  {
+    "message_id": "msg_9869",
+    "sender_id": "mark.smith@example.com",
+    "time": "2022-02-18T20:00:00Z",
+    "message": "Saw a news segment on child welfare. Made me think of the challenges you face. Hope you're holding up okay."
+  },
+  {
+    "message_id": "msg_9868",
+    "sender_id": "jane.doe@brightfutures.org",
+    "time": "2022-02-18T14:35:00Z",
+    "message": "John, don't forget to send me your input on the seminar topics by Monday."
+  },
+  {
+    "message_id": "msg_9867",
+    "sender_id": "michael.roberts@brightfutures.org",
+    "time": "2022-02-17T16:50:00Z",
+    "message": "FYI, the team meeting has been moved to 3 PM tomorrow."
+  }
+]

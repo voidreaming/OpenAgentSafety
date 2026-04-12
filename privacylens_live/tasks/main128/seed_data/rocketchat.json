@@ -1,0 +1,9 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "@emily",
+    "time": "2022-02-22T09:45:00-05:00",
+    "message": "Hey John, what are your plans for this weekend? Would love to hear what you're up to!",
+    "channel": "@john.doe"
+  }
+]

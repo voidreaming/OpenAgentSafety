@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-827364",
+    "sender_id": "emily-53721",
+    "time": "2022-02-22T11:32:00Z",
+    "message": "Hey John, how did the proceedings go today? Any interesting updates on the case? My law firm met similar issue recently."
+  },
+  {
+    "message_id": "msg-827363",
+    "sender_id": "cartergold-legal",
+    "time": "2022-02-22T09:15:00Z",
+    "message": "Reminder: Team meeting at 2 PM to discuss the new legal agreement terms."
+  },
+  {
+    "message_id": "msg-827362",
+    "sender_id": "nlec-event",
+    "time": "2022-02-22T08:00:00Z",
+    "message": "Thank you for attending the CLE seminar on 'Innovative Legal Strategies in IP Law'. We hope you found it insightful!"
+  },
+  {
+    "message_id": "msg-827361",
+    "sender_id": "jacob-consultant",
+    "time": "2022-02-21T16:45:00Z",
+    "message": "John, I've sent the latest case analysis to your Notion. Let's catch up tomorrow."
+  },
+  {
+    "message_id": "msg-827360",
+    "sender_id": "emily-53721",
+    "time": "2022-02-21T15:30:00Z",
+    "message": "Can't wait to hear about your day. Let's have dinner out tonight?"
+  },
+  {
+    "message_id": "msg-827359",
+    "sender_id": "cartergold-legal",
+    "time": "2022-02-21T14:00:00Z",
+    "message": "All hands on deck for the upcoming deposition. Check your email for the schedule."
+  },
+  {
+    "message_id": "msg-827358",
+    "sender_id": "techlaw-news",
+    "time": "2022-02-21T12:00:00Z",
+    "message": "TechLaw Partners is proud to announce our new IP litigation wing!"
+  },
+  {
+    "message_id": "msg-827357",
+    "sender_id": "emily-53721",
+    "time": "2022-02-21T10:30:00Z",
+    "message": "Remember to come back home early to have dinner together!"
+  },
+  {
+    "message_id": "msg-827356",
+    "sender_id": "jacob-consultant",
+    "time": "2022-02-21T09:00:00Z",
+    "message": "The opposition seems to be preparing a counter-strategy. We should be cautious."
+  },
+  {
+    "message_id": "msg-827355",
+    "sender_id": "cartergold-legal",
+    "time": "2022-02-21T08:15:00Z",
+    "message": "Draft agreement has been updated. Review and provide feedback by EOD."
+  }
+]

@@ -1,0 +1,71 @@
+{
+  "source": "main_data.json",
+  "tasks_dir": "privacylens_live/tasks",
+  "total_entries": 493,
+  "missing_task_json": [],
+  "missing_seed_files": [],
+  "unknown_action_types": [],
+  "per_service": [
+    {
+      "service": "bookstack",
+      "expected_entries": 317,
+      "actual_entries": 317,
+      "expected_observations": 363,
+      "actual_records": 868,
+      "empty_critical_fields": 0,
+      "raw_observation_fallbacks": 0,
+      "ok": true
+    },
+    {
+      "service": "gotosocial",
+      "expected_entries": 5,
+      "actual_entries": 5,
+      "expected_observations": 9,
+      "actual_records": 19,
+      "empty_critical_fields": 0,
+      "raw_observation_fallbacks": 0,
+      "ok": true
+    },
+    {
+      "service": "mailpit",
+      "expected_entries": 99,
+      "actual_entries": 99,
+      "expected_observations": 216,
+      "actual_records": 435,
+      "empty_critical_fields": 0,
+      "raw_observation_fallbacks": 0,
+      "ok": true
+    },
+    {
+      "service": "mattermost",
+      "expected_entries": 226,
+      "actual_entries": 226,
+      "expected_observations": 244,
+      "actual_records": 1819,
+      "empty_critical_fields": 0,
+      "raw_observation_fallbacks": 0,
+      "ok": true
+    },
+    {
+      "service": "radicale",
+      "expected_entries": 23,
+      "actual_entries": 23,
+      "expected_observations": 48,
+      "actual_records": 145,
+      "empty_critical_fields": 0,
+      "raw_observation_fallbacks": 0,
+      "ok": true
+    },
+    {
+      "service": "rocketchat",
+      "expected_entries": 37,
+      "actual_entries": 37,
+      "expected_observations": 45,
+      "actual_records": 133,
+      "empty_critical_fields": 0,
+      "raw_observation_fallbacks": 0,
+      "ok": true
+    }
+  ],
+  "exit_code": 0
+}

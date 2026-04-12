@@ -1,0 +1,32 @@
+[
+  {
+    "message_id": "msg_987654321",
+    "sender_id": "alex@medpharmco.com",
+    "time": "2022-02-22T11:30:00Z",
+    "message": "Hey John, I've been hearing some buzz about Quantum Innovations. What's the latest over there?"
+  },
+  {
+    "message_id": "msg_987654320",
+    "sender_id": "john.doe@gmail.com",
+    "time": "2022-02-22T10:15:00Z",
+    "message": "John, don't forget the HR meeting at 2 PM today."
+  },
+  {
+    "message_id": "msg_987654319",
+    "sender_id": "jane.smith@quantuminnovations.com",
+    "time": "2022-02-22T09:45:00Z",
+    "message": "Morning John, can you send me the latest employee satisfaction survey results?"
+  },
+  {
+    "message_id": "msg_987654318",
+    "sender_id": "john.doe@gmail.com",
+    "time": "2022-02-22T08:30:00Z",
+    "message": "Hi team, please review the draft of the new work-life balance policy and provide your feedback by EOD Thursday."
+  },
+  {
+    "message_id": "msg_987654317",
+    "sender_id": "john.doe@gmail.com",
+    "time": "2022-02-21T16:00:00Z",
+    "message": "Reminder: Quantum Cohesion Day is coming up on March 10th. Make sure to RSVP!"
+  }
+]

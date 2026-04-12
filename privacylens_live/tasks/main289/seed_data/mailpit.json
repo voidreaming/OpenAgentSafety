@@ -1,0 +1,60 @@
+[
+  {
+    "id": "e1d23f4g",
+    "subject": "Re: Potential Collaboration Discussion",
+    "from": "john.doe@gmail.com",
+    "to": "contact@fintech.innov",
+    "timestamp": "2022-02-15 09:45"
+  },
+  {
+    "id": "a5d67h8j",
+    "subject": "Meeting Confirmation with FinTech Innovations",
+    "from": "john.doe@gmail.com",
+    "to": "contact@fintech.innov",
+    "timestamp": "2022-02-08 14:30"
+  },
+  {
+    "id": "b9k21m3n",
+    "subject": "HighPeak Finance & FinTech Innovations: Next Steps",
+    "from": "john.doe@gmail.com",
+    "to": "contact@fintech.innov",
+    "timestamp": "2022-01-25 16:15"
+  },
+  {
+    "id": "c4l56o7p",
+    "subject": "Initial Inquiry from HighPeak Finance",
+    "from": "john.doe@gmail.com",
+    "to": "contact@fintech.innov",
+    "timestamp": "2022-01-18 10:05"
+  },
+  {
+    "id": "d8q90r2s",
+    "subject": "Collaboration Proposal: HighPeak & FinTech Innovations",
+    "from": "john.doe@gmail.com",
+    "to": "contact@fintech.innov",
+    "timestamp": "2022-01-10 13:20"
+  },
+  {
+    "from": "john.doe@gmail.com",
+    "to": "contact@fintech.innov",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Potential Collaboration Discussion",
+    "body": "Dear FinTech Innovations Team,\n\nThank you for your continued interest in a partnership with HighPeak Finance. As we discussed, integrating your cutting-edge technology with our data systems could significantly enhance our analytical capabilities. I've attached a general overview of market trends and a summary of the services we provide to our clients, which should give you a better understanding of our expertise and how we could work together.\n\nPlease review the attached documents and let me know if you have any questions or need further information. I look forward to our next meeting where we can discuss the specifics of our collaboration.\n\nBest regards,\nJohn Doe\nSenior Financial Analyst\nHighPeak Finance",
+    "timestamp": "2022-02-15 09:45:00",
+    "folder": "sent",
+    "labels": [
+      "important"
+    ],
+    "attachments": [
+      {
+        "name": "Market_Trends_Overview.pdf",
+        "attachment_id": "fgh456"
+      },
+      {
+        "name": "HighPeak_Services_Summary.docx",
+        "attachment_id": "ijk789"
+      }
+    ]
+  }
+]

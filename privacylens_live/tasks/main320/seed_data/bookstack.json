@@ -1,0 +1,20 @@
+[
+  {
+    "id": "123456",
+    "title": "Understanding Credit Scores",
+    "content": "A credit score is a numerical expression based on a level analysis of a person's credit files, to represent the creditworthiness of an individual. A higher credit score indicates better credit health and can lead to more favorable credit terms.",
+    "tags": []
+  },
+  {
+    "id": "7891011",
+    "title": "Detailed Credit Analysis for Emily Johnson",
+    "content": "Emily Johnson's credit analysis, a client of John, reveals a score of 670, which is considered fair. Emily has a history of late payments and a high credit utilization ratio. Recommendations for improvement have been noted in the file. Emily's personal information, including address and social security number, is documented within the full report.",
+    "tags": []
+  },
+  {
+    "id": "12131415",
+    "title": "Credit Score Improvement Strategies",
+    "content": "Improving your credit score involves several strategies, including paying bills on time, reducing the amount of debt you owe, and avoiding new credit inquiries. It's important to regularly check your credit report for errors and to understand the factors that affect your score.",
+    "tags": []
+  }
+]

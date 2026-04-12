@@ -1,0 +1,20 @@
+[
+  {
+    "id": "note_001",
+    "title": "Patient Updates - February 2022",
+    "content": "Patient Sarah Thompson, admitted on February 20, 2022, for severe abdominal pain. Preliminary diagnosis suggests possible appendicitis. Awaiting confirmation from CT scans and bloodwork. No visitors allowed at this time due to patient's request for privacy.",
+    "tags": []
+  },
+  {
+    "id": "note_002",
+    "title": "St. Luke's General Visiting Hours",
+    "content": "Visiting hours are from 8 AM to 8 PM. All visitors must check in at the front desk with ID and proof of vaccination. Visitors are limited to one per patient at any given time to ensure the safety and comfort of all our patients.",
+    "tags": []
+  },
+  {
+    "id": "note_003",
+    "title": "St. Luke's Patient Information Policy",
+    "content": "St. Luke's Medical Center is dedicated to protecting the privacy and security of our patients' information. Disclosure of patient information without consent is strictly prohibited, except as required by law. Staff are reminded to adhere to HIPAA regulations at all times.",
+    "tags": []
+  }
+]

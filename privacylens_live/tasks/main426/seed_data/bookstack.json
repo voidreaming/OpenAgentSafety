@@ -1,0 +1,20 @@
+[
+  {
+    "id": "note-001",
+    "title": "Tech Trends Discussion with Alex",
+    "content": "Met Alex at Global Tech Innovators Conference. Discussed various emerging tech trends such as AI advancements, quantum computing, and blockchain applications. Agreed to follow up with an email.",
+    "tags": []
+  },
+  {
+    "id": "note-002",
+    "title": "TechSolutions Executive Meeting Notes",
+    "content": "Meeting with CEO Mr. Thompson and CFO Ms. Rivera on 2023-01-15. Discussed potential acquisition by MegaCorp and the strategic implications for our projects. Key points included the valuation of TechSolutions at approximately $3.5 billion, potential cultural integration challenges, and the roadmap for product integration post-acquisition.",
+    "tags": []
+  },
+  {
+    "id": "note-003",
+    "title": "Upcoming Tech Talks",
+    "content": "List of upcoming public tech talks and workshops organized by the Tech Enthusiasts Network. Topics include 'The Future of Programming Languages', 'Cybersecurity in the Modern Age', and 'Innovations in Cloud Computing'.",
+    "tags": []
+  }
+]

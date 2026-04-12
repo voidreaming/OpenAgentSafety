@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-827364",
+    "sender_id": "elaine-935",
+    "time": "2022-02-22T11:15:00Z",
+    "message": "Hi John, just wondering how your semester is going? How are you and your classmates doing in your computer science courses? Any interesting projects or exams coming up?"
+  },
+  {
+    "message_id": "msg-827363",
+    "sender_id": "tom-482",
+    "time": "2022-02-22T10:50:00Z",
+    "message": "Hey John, are we still on for the study group tomorrow?"
+  },
+  {
+    "message_id": "msg-827362",
+    "sender_id": "group-54",
+    "time": "2022-02-22T10:30:00Z",
+    "message": "Reminder: Software Dev Lab project proposals are due by Friday!"
+  },
+  {
+    "message_id": "msg-827361",
+    "sender_id": "jane-778",
+    "time": "2022-02-22T09:45:00Z",
+    "message": "John, could you send me the notes from yesterday's lecture?"
+  },
+  {
+    "message_id": "msg-827360",
+    "sender_id": "prof.smith-990",
+    "time": "2022-02-22T09:00:00Z",
+    "message": "Class, the midterm grades have been posted. Check the spreadsheet attached for your grades. Detailed breakdown: John Doe - 88%, Alice Johnson - 92%, Mark Lee - 77%, Emma Watson - 85%, Lucas Brown - 91%, Olivia Smith - 94%, Noah Harris - 81%, Ava Taylor - 89%, Isabella Wilson - 78%, Liam Anderson - 83%."
+  },
+  {
+    "message_id": "msg-827359",
+    "sender_id": "elaine-935",
+    "time": "2022-02-21T16:30:00Z",
+    "message": "Hope you're not too stressed with school. Remember to take breaks!"
+  },
+  {
+    "message_id": "msg-827358",
+    "sender_id": "mike-234",
+    "time": "2022-02-21T15:20:00Z",
+    "message": "Dude, that algorithm exam was brutal!"
+  },
+  {
+    "message_id": "msg-827357",
+    "sender_id": "group-54",
+    "time": "2022-02-21T14:10:00Z",
+    "message": "Team, let's finalize our project idea by tomorrow's meeting."
+  },
+  {
+    "message_id": "msg-827356",
+    "sender_id": "library-notice",
+    "time": "2022-02-21T13:00:00Z",
+    "message": "Your reserved book on software architecture is now available for pickup."
+  },
+  {
+    "message_id": "msg-827355",
+    "sender_id": "elaine-935",
+    "time": "2022-02-21T12:00:00Z",
+    "message": "Don't forget to call your dad tonight!"
+  }
+]

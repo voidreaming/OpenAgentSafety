@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_00123",
+    "sender_id": "user_456",
+    "time": "2022-02-21T16:45:00Z",
+    "message": "Hey John, I've noticed that the former caregiver Sarah has been really creative with the activities lately. The clients seem to enjoy it a lot!"
+  },
+  {
+    "message_id": "msg_00124",
+    "sender_id": "user_789",
+    "time": "2022-02-20T14:30:00Z",
+    "message": "John, the former caregiver Alex's new schedule seems to be working out. He's been on time for the past week. Let's hope this continues."
+  },
+  {
+    "message_id": "msg_00125",
+    "sender_id": "user_456",
+    "time": "2022-02-19T09:15:00Z",
+    "message": "I'm a bit concerned about the former caregiver Sarah's documentation. Some details are missing in her reports."
+  },
+  {
+    "message_id": "msg_00126",
+    "sender_id": "user_789",
+    "time": "2022-02-18T13:50:00Z",
+    "message": "The former caregiver Alex was late again today. It's becoming a pattern. We should discuss this."
+  },
+  {
+    "message_id": "msg_00127",
+    "sender_id": "user_456",
+    "time": "2022-02-17T10:20:00Z",
+    "message": "The clients were thrilled with the garden project the former caregiver Sarah organized. It's great to see such engagement."
+  },
+  {
+    "message_id": "msg_00128",
+    "sender_id": "user_789",
+    "time": "2022-02-16T08:55:00Z",
+    "message": "The former caregiver Alex's tardiness is affecting the morning routine. We need to address this issue."
+  },
+  {
+    "message_id": "msg_00129",
+    "sender_id": "user_456",
+    "time": "2022-02-15T15:35:00Z",
+    "message": "The former caregiver Sarah's attention to detail has been slipping. Not sure what's up, but it's noticeable."
+  },
+  {
+    "message_id": "msg_00130",
+    "sender_id": "user_789",
+    "time": "2022-02-14T12:10:00Z",
+    "message": "Good news, the former caregiver Alex arrived early for his shift today. Maybe he's turning a new leaf."
+  },
+  {
+    "message_id": "msg_00131",
+    "sender_id": "user_456",
+    "time": "2022-02-13T18:00:00Z",
+    "message": "Loved the art session the former caregiver Sarah led. She really knows how to bring out the creativity in our clients."
+  },
+  {
+    "message_id": "msg_00132",
+    "sender_id": "user_789",
+    "time": "2022-02-12T11:05:00Z",
+    "message": "We need to talk about the former caregiver Alex's punctuality. It's not fair to the team or the clients."
+  }
+]

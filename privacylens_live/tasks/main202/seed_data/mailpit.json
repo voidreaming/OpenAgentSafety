@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e123456789",
+    "subject": "Cultural Exchange and Daily Life",
+    "from": "emily@gmail.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-22 10:15"
+  },
+  {
+    "from": "emily@gmail.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Cultural Exchange and Daily Life",
+    "body": "Hi Jane,\n\nI hope this email finds you well! I've been thinking a lot about our discussions on cultural differences, and I'm curious about your work life. What's it like working at Sterling & Locke? Do you enjoy the challenges of accounting? I'd love to hear more about your day-to-day activities and any interesting stories you might have.\n\nWarm regards,\nEmily",
+    "timestamp": "2022-02-22 10:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

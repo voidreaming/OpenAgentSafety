@@ -1,0 +1,14 @@
+[
+  {
+    "id": "123456",
+    "title": "Michael Thompson Interview Summary",
+    "content": "Michael Thompson demonstrated a strong understanding of advanced software engineering principles during the interview. He has extensive experience with distributed systems and has contributed to several open-source projects. His problem-solving skills were evident in the technical assessment. Additionally, Michael mentioned he recently underwent a medical examination, which he passed with no issues. The results of the medical examination are attached in a separate note for reference.",
+    "tags": []
+  },
+  {
+    "id": "789012",
+    "title": "Michael Thompson Medical Examination",
+    "content": "Michael Thompson's medical examination results indicate that he is in excellent health. The full report includes details on his vision, hearing, and general physical condition. It is noted that he has no known medical conditions that would affect his ability to perform the job functions of a Senior Software Engineer. The detailed medical report is attached and contains sensitive health information that should be handled with care.",
+    "tags": []
+  }
+]

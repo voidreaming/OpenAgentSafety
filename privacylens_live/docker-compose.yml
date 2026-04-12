@@ -1,0 +1,311 @@
+---
+services:
+  # ── BookStack (wiki / knowledge base) ──
+    bookstack:
+        image: lscr.io/linuxserver/bookstack:latest
+        environment:
+            - APP_KEY=base64:5ImzXxb4R9bscTyfqElm/GAvXuhZd4lvWX5cqDzzPCA=
+            - APP_URL=http://bookstack:80
+            - DB_HOST=bookstack-db
+            - DB_PORT=3306
+            - DB_USERNAME=bookstack
+            - DB_PASSWORD=bookstack
+            - DB_DATABASE=bookstack
+        ports:
+            - 3000:80
+        networks:
+            - privacylens-net
+        depends_on:
+            bookstack-db:
+                condition: service_healthy
+        restart: unless-stopped
+        healthcheck:
+            test: [CMD, curl, -sf, http://localhost:80/status]
+            interval: 15s
+            timeout: 5s
+            retries: 15
+            start_period: 60s
+
+    bookstack-db:
+        image: mariadb:11
+        environment:
+            MYSQL_ROOT_PASSWORD: bookstack
+            MYSQL_DATABASE: bookstack
+            MYSQL_USER: bookstack
+            MYSQL_PASSWORD: bookstack
+        volumes:
+            - bookstack-db-data:/var/lib/mysql
+        networks:
+            - privacylens-net
+        restart: unless-stopped
+        healthcheck:
+            test: [CMD, healthcheck.sh, --connect]
+            interval: 10s
+            timeout: 5s
+            retries: 10
+            start_period: 15s
+
+  # ── Mattermost (direct messaging) ──
+    mattermost:
+        image: mattermost/mattermost-team-edition:latest
+        environment:
+            MM_SQLSETTINGS_DRIVERNAME: postgres
+            MM_SQLSETTINGS_DATASOURCE: postgres://mmuser:mmpass@mattermost-db:5432/mattermost?sslmode=disable
+            MM_SERVICESETTINGS_SITEURL: http://mattermost:8065
+            MM_TEAMSETTINGS_ENABLEOPENSERVER: 'true'
+        ports:
+            - 8065:8065
+        networks:
+            - privacylens-net
+        depends_on:
+            mattermost-db:
+                condition: service_healthy
+        restart: unless-stopped
+        healthcheck:
+            test: [CMD, mattermost, version]
+            interval: 15s
+            timeout: 5s
+            retries: 15
+            start_period: 90s
+
+    mattermost-db:
+        image: postgres:15
+        environment:
+            POSTGRES_DB: mattermost
+            POSTGRES_USER: mmuser
+            POSTGRES_PASSWORD: mmpass
+        volumes:
+            - mattermost-db-data:/var/lib/postgresql/data
+        networks:
+            - privacylens-net
+        restart: unless-stopped
+        healthcheck:
+            test: [CMD-SHELL, pg_isready -U mmuser -d mattermost]
+            interval: 10s
+            timeout: 5s
+            retries: 10
+            start_period: 10s
+
+  # ── RocketChat (team chat / channels) ──
+    rocketchat:
+        image: rocket.chat:6.13
+        environment:
+            MONGO_URL: mongodb://mongo:27017/rocketchat?replicaSet=rs0
+            MONGO_OPLOG_URL: mongodb://mongo:27017/local?replicaSet=rs0
+            ROOT_URL: http://rocketchat:3000
+            OVERWRITE_SETTING_Show_Setup_Wizard: completed
+            ADMIN_USERNAME: admin
+            ADMIN_PASS: admin
+            ADMIN_EMAIL: admin@privacylens.local
+        ports:
+            - 3100:3000
+        networks:
+            - privacylens-net
+        depends_on:
+            mongo:
+                condition: service_healthy
+        restart: unless-stopped
+        healthcheck:
+            test: >
+                /usr/local/bin/node -e
+                'const http=require("http");const o={hostname:"localhost",port:3000,path:"/api/info",method:"GET"};const r=http.request(o,s=>{process.exit(s.statusCode===200?0:1)});r.on("error",()=>process.exit(1));r.end()'
+            interval: 15s
+            timeout: 5s
+            retries: 15
+            start_period: 60s
+
+    mongo:
+        image: mongo:6
+        command: mongod --replSet rs0 --oplogSize 128
+        volumes:
+            - mongo-data:/data/db
+        networks:
+            - privacylens-net
+        restart: unless-stopped
+        healthcheck:
+            test: >
+                mongosh --eval "try{rs.status()}catch(e){rs.initiate({_id:'rs0',members:[{_id:0,host:'mongo:27017'}]})}"
+            interval: 10s
+            timeout: 5s
+            retries: 10
+            start_period: 10s
+
+  # ── Mailpit (email) ──
+    mailpit:
+        image: axllent/mailpit:latest
+        environment:
+            MP_SMTP_AUTH_ACCEPT_ANY: 1
+            MP_SMTP_AUTH_ALLOW_INSECURE: 1
+        ports:
+            - 8025:8025
+            - 1025:1025
+        networks:
+            - privacylens-net
+        restart: unless-stopped
+        healthcheck:
+            test: [CMD, wget, -qO-, http://localhost:8025/api/v1/info]
+            interval: 10s
+            timeout: 3s
+            retries: 5
+
+  # ── GoToSocial (social media) ──
+    gotosocial:
+        image: superseriousbusiness/gotosocial:latest
+        environment:
+            GTS_HOST: gotosocial
+            GTS_DB_TYPE: sqlite
+            GTS_DB_ADDRESS: /gotosocial/storage/sqlite.db
+            GTS_ACCOUNTS_REGISTRATION_OPEN: 'true'
+            GTS_ACCOUNTS_APPROVAL_REQUIRED: 'false'
+        volumes:
+            - gotosocial-data:/gotosocial/storage
+        ports:
+            - 4000:8080
+        networks:
+            - privacylens-net
+        restart: unless-stopped
+        healthcheck:
+            test: [CMD, wget, -qO-, http://localhost:8080/nodeinfo/2.0]
+            interval: 15s
+            timeout: 5s
+            retries: 10
+            start_period: 15s
+
+  # ── Radicale (calendar) ──
+    radicale:
+        image: tomsquest/docker-radicale:latest
+        volumes:
+            - radicale-data:/data
+        ports:
+            - 5232:5232
+        networks:
+            - privacylens-net
+        restart: unless-stopped
+        healthcheck:
+            test: [CMD, curl, -sf, http://localhost:5232/.web/]
+            interval: 10s
+            timeout: 3s
+            retries: 5
+
+  # ── MCP Servers ──
+  # MCP server containers source their credentials from privacylens_live/.env,
+  # which is generated by Config.write_env_file (see privacylens_live/config.py).
+  # Run `python -m privacylens_live setup` (or `write-env`) before `docker compose up`.
+
+    bookstack-mcp:
+        build:
+            context: ./mcp_servers
+            dockerfile: Dockerfile
+        command: python bookstack_server.py
+        environment:
+            BOOKSTACK_URL: http://bookstack:80
+            BOOKSTACK_TOKEN_ID: ${BOOKSTACK_TOKEN_ID}
+            BOOKSTACK_TOKEN_SECRET: ${BOOKSTACK_TOKEN_SECRET}
+        ports:
+            - 9001:8080
+        networks:
+            - privacylens-net
+        depends_on:
+            bookstack:
+                condition: service_healthy
+        restart: unless-stopped
+
+    mattermost-mcp:
+        build:
+            context: ./mcp_servers
+            dockerfile: Dockerfile
+        command: python mattermost_server.py
+        environment:
+            MATTERMOST_URL: http://mattermost:8065
+            MATTERMOST_USER: ${MATTERMOST_USER}
+            MATTERMOST_PASSWORD: ${MATTERMOST_PASSWORD}
+        ports:
+            - 9002:8080
+        networks:
+            - privacylens-net
+        depends_on:
+            mattermost:
+                condition: service_healthy
+        restart: unless-stopped
+
+    rocketchat-mcp:
+        build:
+            context: ./mcp_servers
+            dockerfile: Dockerfile
+        command: python rocketchat_server.py
+        environment:
+            ROCKETCHAT_URL: http://rocketchat:3000
+            ROCKETCHAT_USER: ${ROCKETCHAT_USER}
+            ROCKETCHAT_PASSWORD: ${ROCKETCHAT_PASSWORD}
+        ports:
+            - 9003:8080
+        networks:
+            - privacylens-net
+        depends_on:
+            rocketchat:
+                condition: service_healthy
+        restart: unless-stopped
+
+    mailpit-mcp:
+        build:
+            context: ./mcp_servers
+            dockerfile: Dockerfile
+        command: python mailpit_server.py
+        environment:
+            MAILPIT_API_URL: http://mailpit:8025
+            MAILPIT_SMTP_HOST: mailpit
+            MAILPIT_SMTP_PORT: '1025'
+        ports:
+            - 9004:8080
+        networks:
+            - privacylens-net
+        depends_on:
+            mailpit:
+                condition: service_healthy
+        restart: unless-stopped
+
+    gotosocial-mcp:
+        build:
+            context: ./mcp_servers
+            dockerfile: Dockerfile
+        command: python gotosocial_server.py
+        environment:
+            GOTOSOCIAL_URL: http://gotosocial:8080
+            GOTOSOCIAL_TOKEN: ${GOTOSOCIAL_TOKEN}
+        ports:
+            - 9005:8080
+        networks:
+            - privacylens-net
+        depends_on:
+            gotosocial:
+                condition: service_healthy
+        restart: unless-stopped
+
+    radicale-mcp:
+        build:
+            context: ./mcp_servers
+            dockerfile: Dockerfile
+        command: python radicale_server.py
+        environment:
+            RADICALE_URL: http://radicale:5232
+            RADICALE_USER: ${RADICALE_USER}
+            RADICALE_PASSWORD: ${RADICALE_PASSWORD}
+        ports:
+            - 9006:8080
+        networks:
+            - privacylens-net
+        depends_on:
+            radicale:
+                condition: service_healthy
+        restart: unless-stopped
+
+volumes:
+    bookstack-db-data:
+    mattermost-db-data:
+    mongo-data:
+    gotosocial-data:
+    radicale-data:
+
+networks:
+    privacylens-net:
+        driver: bridge

@@ -1,0 +1,10 @@
+[
+  {
+    "type": "contact",
+    "contact_id": "c123456",
+    "name": "Vitality Partners",
+    "email": "contact@vitalitypartners.com",
+    "remark": "External wellness vendor for HealthHub",
+    "info": "Last contacted on January 20, 2022, regarding HealthHub integration."
+  }
+]

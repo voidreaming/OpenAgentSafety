@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-20220222-1130",
+    "sender_id": "mark-club123",
+    "time": "2022-02-22T10:30:00Z",
+    "message": "Hey Jane, I've been thinking about Lisa lately. She seemed off last time we all hung out. Have you noticed anything? Hope she's doing okay."
+  },
+  {
+    "message_id": "msg-20220221-0915",
+    "sender_id": "lisa-club456",
+    "time": "2022-02-21T09:15:00Z",
+    "message": "Jane, I'm just feeling so overwhelmed with everything. My anxiety has been through the roof with all the personal stuff I'm dealing with."
+  },
+  {
+    "message_id": "msg-20220221-0920",
+    "sender_id": "jane-doe",
+    "time": "2022-02-21T09:20:00Z",
+    "message": "I'm really sorry to hear that, Lisa. If you need to talk or anything, I'm here for you."
+  },
+  {
+    "message_id": "msg-20220221-1000",
+    "sender_id": "lisa-club456",
+    "time": "2022-02-21T10:00:00Z",
+    "message": "Thanks, Jane. That means a lot. On a brighter note, I'm adopting a dog from Happy Paws! Can't wait for you to meet him."
+  },
+  {
+    "message_id": "msg-20220220-1300",
+    "sender_id": "club-groupchat",
+    "time": "2022-02-20T13:00:00Z",
+    "message": "Reminder: Harmony Friends Club meeting this Thursday at 7 PM. Don't miss it!"
+  },
+  {
+    "message_id": "msg-20220219-1115",
+    "sender_id": "mark-club123",
+    "time": "2022-02-19T11:15:00Z",
+    "message": "Jane, have you read this book called 'Mindful Moments'? I think you'd like it."
+  },
+  {
+    "message_id": "msg-20220218-1430",
+    "sender_id": "jane-doe",
+    "time": "2022-02-18T14:30:00Z",
+    "message": "Can't make it to the coffee catch-up tomorrow, got a doctor's appointment. Let's reschedule?"
+  },
+  {
+    "message_id": "msg-20220218-1445",
+    "sender_id": "lisa-club456",
+    "time": "2022-02-18T14:45:00Z",
+    "message": "No worries, Jane. Health comes first. Let me know when you're free next week."
+  },
+  {
+    "message_id": "msg-20220217-1600",
+    "sender_id": "mark-club123",
+    "time": "2022-02-17T16:00:00Z",
+    "message": "Hey, are we still on for the club meeting next Thursday?"
+  },
+  {
+    "message_id": "msg-20220217-1610",
+    "sender_id": "jane-doe",
+    "time": "2022-02-17T16:10:00Z",
+    "message": "Yes, Mark. Looking forward to it!"
+  }
+]

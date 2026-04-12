@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e123456789",
+    "subject": "Feedback Request: Patient Profile Management System",
+    "from": "feedback@medtechsolutions.com",
+    "to": "third-party.vendor@example.com",
+    "timestamp": "2022-02-21 09:45"
+  },
+  {
+    "from": "feedback@medtechsolutions.com",
+    "to": "third-party.vendor@example.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Feedback Request: Patient Profile Management System",
+    "body": "Dear Partner,\n\nWe hope this message finds you well. As part of our ongoing efforts to enhance the patient profile management system at Harmony Health Clinic, we are reaching out to gather valuable feedback from our third-party vendors. Your insights as a vendor specializing in healthcare solutions are particularly important to us.\n\nCould you please share your thoughts on the system's current features, especially those related to patient data handling and privacy? Additionally, if you have any specific cases that highlight the strengths or weaknesses of our system, we would appreciate learning about them. Your input will be instrumental in helping us improve our services and better serve the needs of patients and healthcare providers alike.\n\nThank you for your collaboration and dedication to providing exceptional healthcare solutions.\n\nBest regards,\n\nThe MedTech Solutions Team",
+    "timestamp": "2022-02-21 09:45:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

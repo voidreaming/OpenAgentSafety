@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_9873",
+    "sender_id": "bob_456",
+    "time": "2022-02-22T11:15:00Z",
+    "message": "Hey John, can you give me an update on how my kid's day is going? Any thing else worth attention?"
+  },
+  {
+    "message_id": "msg_9872",
+    "sender_id": "parent_group_123",
+    "time": "2022-02-22T10:00:00Z",
+    "message": "Reminder: Parent-teacher meetings are scheduled for next week. Please RSVP."
+  },
+  {
+    "message_id": "msg_9871",
+    "sender_id": "little_steps_announce",
+    "time": "2022-02-22T09:45:00Z",
+    "message": "Little Steps Daycare will be closed this Friday for staff training."
+  },
+  {
+    "message_id": "msg_9870",
+    "sender_id": "bob_456",
+    "time": "2022-02-21T16:30:00Z",
+    "message": "Thanks for the photos from the art class, John! My kid looked so happy."
+  },
+  {
+    "message_id": "msg_9869",
+    "sender_id": "health_updates_789",
+    "time": "2022-02-21T15:00:00Z",
+    "message": "Flu season is here. Please ensure your child's vaccination records are up to date."
+  },
+  {
+    "message_id": "msg_9868",
+    "sender_id": "bob_456",
+    "time": "2022-02-21T14:00:00Z",
+    "message": "Is there anything special I need to bring for the cultural diversity day next week?"
+  },
+  {
+    "message_id": "msg_9867",
+    "sender_id": "john_doe_123",
+    "time": "2022-02-21T13:50:00Z",
+    "message": "For cultural diversity day, we're asking parents to bring a traditional dish or story from their culture. It's going to be a fun learning experience for the kids!"
+  },
+  {
+    "message_id": "msg_9866",
+    "sender_id": "john_doe_123",
+    "time": "2022-02-21T12:45:00Z",
+    "message": "I've updated the activity logs for this month. You'll be pleased to see your child's progress in language skills!"
+  },
+  {
+    "message_id": "msg_9865",
+    "sender_id": "bob_456",
+    "time": "2022-02-20T17:30:00Z",
+    "message": "John, I'm concerned about the upcoming weather changes. Will outdoor activities be adjusted accordingly?"
+  },
+  {
+    "message_id": "msg_9864",
+    "sender_id": "john_doe_123",
+    "time": "2022-02-20T17:15:00Z",
+    "message": "Absolutely, we always adjust our schedule to ensure the children's safety and comfort. Indoor activities are planned for days with extreme weather."
+  }
+]

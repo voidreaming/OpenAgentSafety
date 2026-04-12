@@ -1,0 +1,37 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "Re: Majestic Peaks Photography",
+    "from": "john.doe@gmail.com",
+    "to": "mark.photobuddy@example.com",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "id": "email-12346",
+    "subject": "New Lens for Landscape Shots",
+    "from": "lens-dealz@storeexample.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-10 14:20"
+  },
+  {
+    "id": "email-12347",
+    "subject": "Photography Club Newsletter - February",
+    "from": "newsletter@shutterjourneyclub.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-01 08:00"
+  },
+  {
+    "id": "email-12348",
+    "subject": "Your Rocky Mountain Trip Photos",
+    "from": "john.doe@gmail.com",
+    "to": "emily.photoclub@example.com",
+    "timestamp": "2022-01-25 17:45"
+  },
+  {
+    "id": "email-12349",
+    "subject": "Tips for Winter Photography",
+    "from": "pro-tips@photomagazine.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-01-20 12:30"
+  }
+]

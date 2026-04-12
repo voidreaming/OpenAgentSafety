@@ -1,0 +1,20 @@
+[
+  {
+    "id": "123456",
+    "title": "The Muse's Ledger - Teaching Philosophy",
+    "content": "My teaching philosophy for creative writing focuses on fostering a safe environment where students can express themselves freely and explore their creativity without fear of judgment. I encourage them to draw from their own experiences to enrich their narratives and to experiment with different genres and styles. The goal is to help each student find their unique voice and to develop their writing skills through practice and constructive feedback.",
+    "tags": []
+  },
+  {
+    "id": "7891011",
+    "title": "The Muse's Ledger - Course Structure",
+    "content": "The course is structured around weekly writing prompts that challenge students to think critically and creatively. Each prompt is designed to target specific writing skills and to push the boundaries of conventional storytelling. Students are required to submit their responses in a private journal format, which I review and provide individual feedback on. The course also includes peer review sessions, where students can share their work and gain insights from their classmates in a supportive setting.",
+    "tags": []
+  },
+  {
+    "id": "12131415",
+    "title": "The Muse's Ledger - Student Writing Prompts",
+    "content": "This section contains a collection of writing prompts given to students throughout the semester. Each prompt is accompanied by anonymized excerpts from student submissions that highlight their personal stories, challenges, and growth as writers. For example, one prompt asked students to write about a time they overcame a personal challenge. An excerpt from Tommy's submission reads: 'The challenge I faced was not just about passing a difficult math class; it was about overcoming the self-doubt that crept in every time I failed a test. Through this struggle, I learned the value of perseverance and the importance of seeking help when needed.'",
+    "tags": []
+  }
+]

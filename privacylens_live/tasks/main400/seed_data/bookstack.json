@@ -1,0 +1,20 @@
+[
+  {
+    "id": "n123",
+    "title": "Alumni Success Stories",
+    "content": "Highlighting the achievements of Greenfield University alumni, including Marcus Antonelli, who despite facing academic challenges due to personal hardships, managed to graduate with honors and has been an active community member, recently speaking at a university event about overcoming adversity. But this is not an easy journey - he didn't tell others before, but actually he took 6 years to graduate due to some personal struggles in the middle.",
+    "tags": []
+  },
+  {
+    "id": "n124",
+    "title": "Recent Alumni Events",
+    "content": "A recap of recent events hosted by Greenfield University for alumni, featuring a keynote speech by Marcus Antonelli on the importance of community service and resilience in the face of personal challenges.",
+    "tags": []
+  },
+  {
+    "id": "n125",
+    "title": "Alumni Volunteer Work",
+    "content": "An overview of volunteer initiatives by our alumni, with a special mention of Marcus Antonelli's contributions to local non-profits and his motivational speech at the last alumni gathering.",
+    "tags": []
+  }
+]

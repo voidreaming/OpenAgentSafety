@@ -1,0 +1,74 @@
+[
+  {
+    "id": "email-20220210-004",
+    "subject": "Re: Invoice Approval Needed for Account Reconciliation",
+    "from": "thompson@brightedgesolutions.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-10 15:42"
+  },
+  {
+    "id": "email-20220218-005",
+    "subject": "Re: Account Reconciliation Report Drafts",
+    "from": "thompson@brightedgesolutions.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-18 09:15"
+  },
+  {
+    "from": "thompson@brightedgesolutions.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Invoice Approval Needed for Account Reconciliation",
+    "body": "Jane, \n\nPlease find attached the invoice from last month that needs to be included in Mr. Thompson's account reconciliation. Ensure that Mark gets a copy of this for the financial report. \n\nBest, \nMr. Thompson",
+    "timestamp": "2022-02-10 15:42:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": [
+      {
+        "name": "Invoice_2021DEC.pdf",
+        "attachment_id": "attach-20220210-9876"
+      }
+    ]
+  },
+  {
+    "from": "thompson@brightedgesolutions.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Account Reconciliation Report Drafts",
+    "body": "Jane, \n\nI've reviewed the initial drafts of the bank statements and found some discrepancies in the figures. I'm attaching the documents with my notes highlighted. Please go over them and prepare a revised draft for Mr. Thompson's final report. Also, make sure to share the relevant details with Mark for the reconciliation process. \n\nRegards, \nMr. Thompson",
+    "timestamp": "2022-02-18 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "follow-up"
+    ],
+    "attachments": [
+      {
+        "name": "BankStatement_Drafts_Feb2022.pdf",
+        "attachment_id": "attach-20220218-1234"
+      },
+      {
+        "name": "Thompson_Notes_Feb2022.docx",
+        "attachment_id": "attach-20220218-5678"
+      }
+    ]
+  },
+  {
+    "type": "contact",
+    "contact_id": "c-20220225-009",
+    "name": "Mark Spencer",
+    "email": "mark.spencer@brightedgesolutions.com",
+    "remark": "Finance Department",
+    "info": "Responsible for Mr. Thompson's account reconciliation and financial reporting."
+  },
+  {
+    "type": "contact",
+    "contact_id": "c-20220225-010",
+    "name": "Markus Lloyd",
+    "email": "markus.lloyd@brightedgesolutions.com",
+    "remark": "Sales Team",
+    "info": "Handles client accounts and sales projections."
+  }
+]

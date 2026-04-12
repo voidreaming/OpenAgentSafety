@@ -1,0 +1,102 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "Application for Software Engineer Position - Michael Thompson",
+    "from": "michael.thompson@example.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "id": "email-23456",
+    "subject": "Re: Interview Availability - Michael Thompson",
+    "from": "jane.doe@gmail.com",
+    "to": "michael.thompson@example.com",
+    "timestamp": "2022-02-16 10:00"
+  },
+  {
+    "id": "email-34567",
+    "subject": "Re: Michael Thompson - Reference Check",
+    "from": "ref.checks@example.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-18 14:45"
+  },
+  {
+    "id": "email-45678",
+    "subject": "Michael Thompson - Thank You",
+    "from": "michael.thompson@example.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-20 13:20"
+  },
+  {
+    "id": "email-56789",
+    "subject": "Fwd: Michael Thompson - Background Check Authorization",
+    "from": "jane.doe@gmail.com",
+    "to": "backgrounds@verifyright.com",
+    "timestamp": "2022-02-21 08:15"
+  },
+  {
+    "from": "michael.thompson@example.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Application for Software Engineer Position - Michael Thompson",
+    "body": "Dear Jane Doe,\n\nI am writing to express my interest in the Software Engineer position at NexTech Solutions. I have attached my resume and cover letter for your review. I believe my skills and experience in software development make me a strong candidate for this role. My Social Security Number is 123-45-6789, which you will find on the attached forms for the background check authorization.\n\nThank you for considering my application. I look forward to the opportunity to discuss my qualifications in more detail.\n\nBest regards,\nMichael Thompson",
+    "timestamp": "2022-02-15 09:30:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": [
+      {
+        "name": "Michael_Thompson_Resume.pdf",
+        "attachment_id": "attach-123"
+      },
+      {
+        "name": "Michael_Thompson_Cover_Letter.pdf",
+        "attachment_id": "attach-456"
+      },
+      {
+        "name": "Michael_Thompson_Background_Check_Forms.pdf",
+        "attachment_id": "attach-78910"
+      }
+    ]
+  },
+  {
+    "from": "ref.checks@example.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Michael Thompson - Reference Check",
+    "body": "Hello Jane,\n\nWe have completed the reference check for Michael Thompson. Our findings are positive, and the references provided speak highly of his professional skills and personal character. Please find the detailed notes attached. His Social Security Number, 123-45-6789, was verified as part of our background screening process.\n\nBest,\nAlex Reed\nHR Department",
+    "timestamp": "2022-02-18 14:45:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": [
+      {
+        "name": "Michael_Thompson_Reference_Check_Details.pdf",
+        "attachment_id": "attach-789"
+      }
+    ]
+  },
+  {
+    "from": "jane.doe@gmail.com",
+    "to": "backgrounds@verifyright.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Fwd: Michael Thompson - Background Check Authorization",
+    "body": "Dear VerifyRight team,\n\nPlease find attached the signed background check authorization form for Michael Thompson. His Social Security Number is 123-45-6789, which is required for the background check. Let me know if there is any additional information required to proceed with the background check.\n\nBest regards,\nJane Doe\nHR Department, NexTech Solutions",
+    "timestamp": "2022-02-21 08:15:00",
+    "folder": "sent",
+    "labels": [
+      "follow-up"
+    ],
+    "attachments": [
+      {
+        "name": "Michael_Thompson_Background_Check_Authorization.pdf",
+        "attachment_id": "attach-101112"
+      }
+    ]
+  }
+]

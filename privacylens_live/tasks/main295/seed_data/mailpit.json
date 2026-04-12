@@ -1,0 +1,37 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "Re: Fundraising Gala Success",
+    "from": "john.doe@gmail.com",
+    "to": "emily@communityunited.org",
+    "timestamp": "2022-02-15 10:30"
+  },
+  {
+    "id": "email-23456",
+    "subject": "Joint Fundraiser Planning",
+    "from": "john.doe@gmail.com",
+    "to": "emily@communityunited.org",
+    "timestamp": "2022-02-08 09:20"
+  },
+  {
+    "id": "email-34567",
+    "subject": "Thank You for Your Support",
+    "from": "john.doe@gmail.com",
+    "to": "emily@communityunited.org",
+    "timestamp": "2022-01-30 16:45"
+  },
+  {
+    "id": "email-45678",
+    "subject": "Innovative Donation Strategies",
+    "from": "john.doe@gmail.com",
+    "to": "emily@communityunited.org",
+    "timestamp": "2022-01-22 14:10"
+  },
+  {
+    "id": "email-56789",
+    "subject": "Upcoming Community Event",
+    "from": "john.doe@gmail.com",
+    "to": "emily@communityunited.org",
+    "timestamp": "2022-01-18 08:00"
+  }
+]

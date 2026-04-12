@@ -1,0 +1,37 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "@jane.doe",
+    "time": "2022-02-21T15:30:00Z",
+    "message": "Great job everyone on Project Falcon, the client was super impressed!",
+    "channel": "#general"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@emily.clark",
+    "time": "2022-02-18T12:45:00Z",
+    "message": "Did anyone else notice how Mark and Lisa seemed really close at the team lunch today? 🤔",
+    "channel": "#random"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@jane.doe",
+    "time": "2022-02-20T09:00:00Z",
+    "message": "Reminder: All staff must complete their monthly training modules by Friday. Let's keep our knowledge sharp!",
+    "channel": "#announcements"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@michael.brooks",
+    "time": "2022-02-19T16:15:00Z",
+    "message": "The office vibe has been so positive since we wrapped up Project Falcon. It's nice to see everyone so motivated!",
+    "channel": "#general"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@david.smith",
+    "time": "2022-02-17T18:30:00Z",
+    "message": "I heard from Sarah that Mark and Lisa have been spending a lot of time together after work. Not sure what's up with that.",
+    "channel": "#random"
+  }
+]

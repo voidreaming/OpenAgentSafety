@@ -1,0 +1,51 @@
+[
+  {
+    "id": "001",
+    "subject": "Re: Project Titan Update",
+    "from": "mark.thompson@techcorp.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-15 09:45"
+  },
+  {
+    "id": "002",
+    "subject": "Project Titan - Weekly Summary",
+    "from": "mark.thompson@techcorp.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-08 10:30"
+  },
+  {
+    "id": "003",
+    "subject": "Project Titan Objectives Alignment",
+    "from": "mark.thompson@techcorp.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-01-31 08:20"
+  },
+  {
+    "id": "004",
+    "subject": "Project Titan - Performance Metrics",
+    "from": "mark.thompson@techcorp.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-01-24 14:15"
+  },
+  {
+    "id": "005",
+    "subject": "Project Titan - Concerns and Milestones",
+    "from": "mark.thompson@techcorp.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-01-17 16:05"
+  },
+  {
+    "from": "mark.thompson@techcorp.com",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Project Titan Update",
+    "body": "Hi Jane, I hope this message finds you well. As we're approaching the next phase of Project Titan, I wanted to get your insights on how the team is performing. Are there any standout issues or achievements that we should be aware of? Your feedback would be invaluable as we plan the upcoming milestones. Best, Mark",
+    "timestamp": "2022-02-15 09:45:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

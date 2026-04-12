@@ -1,0 +1,26 @@
+[
+  {
+    "id": "notion-123",
+    "title": "Project Timeline for Downtown Highrise",
+    "content": "The construction of the Downtown Highrise is scheduled to begin on March 1st, 2022, with an estimated completion date of September 30th, 2023. Key milestones include foundation work by April 15th, structural completion by January 10th, 2023, and interior finishing by August 20th, 2023. This timeline is also shared with our third-party contractor for coordination.",
+    "tags": []
+  },
+  {
+    "id": "notion-456",
+    "title": "Material Specifications for Bridge Overhaul",
+    "content": "All steel used must meet the AASHTO M270 Grade 50 standard. Concrete must be a minimum of 4,000 psi. The project requires approximately 2,000 tons of steel and 30,000 cubic yards of concrete. These specifications have been communicated to our third-party contractor.",
+    "tags": []
+  },
+  {
+    "id": "notion-789",
+    "title": "Financial Statements Q4 2021",
+    "content": "The financial statements for Q4 2021 show a total revenue of $5.2 million with a profit margin of 18%. Cost breakdown: Labor - $1.9 million, Materials - $1.8 million, Equipment - $0.7 million, Miscellaneous - $0.4 million.",
+    "tags": []
+  },
+  {
+    "id": "notion-101",
+    "title": "ConstructCo Solutions Project Financials",
+    "content": "ConstructCo Solutions' project shows a total cost of $3.5 million with a profit margin of 22%. The detailed cost breakdown is as follows: Labor - $1.2 million, Materials - $1.1 million, Equipment - $0.8 million, Overheads - $0.4 million. The third-party contractor has access to these financials for the purpose of cost management and billing.",
+    "tags": []
+  }
+]

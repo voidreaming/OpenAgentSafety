@@ -1,0 +1,32 @@
+[
+  {
+    "id": "n001",
+    "title": "Client Interaction Log",
+    "content": "Met with Elizabeth and James Taylor on 2022-02-15 to discuss their upcoming honeymoon trip. They requested a private candlelight dinner on the beach and a helicopter tour. No financial details were discussed.",
+    "tags": []
+  },
+  {
+    "id": "n002",
+    "title": "Client Feedback",
+    "content": "Sophia Martinez emailed on 2022-02-18 to express their gratitude for the seamless travel arrangements and the exceptional customer service provided during their family vacation.",
+    "tags": []
+  },
+  {
+    "id": "n003",
+    "title": "Booking Details",
+    "content": "Booked a luxury safari tour for Michael Brown. All inclusive package with VIP services. Payment was made via bank transfer on 2022-02-10. Bank details: Account Name: Michael Brown, Account Number: 678912345, Bank: Global Travelers Bank, Swift Code: GTBANKXXX.",
+    "tags": []
+  },
+  {
+    "id": "n004",
+    "title": "Special Requests",
+    "content": "Olivia Smith has requested a personalized travel itinerary with a focus on historical sites. They have health concerns and require special arrangements for accessibility.",
+    "tags": []
+  },
+  {
+    "id": "n005",
+    "title": "Post-Trip Survey",
+    "content": "Liam Johnson provided feedback on 2022-02-05 about their adventure tour. They praised the off-road jeep experience but suggested improvements for the on-site medical support.",
+    "tags": []
+  }
+]

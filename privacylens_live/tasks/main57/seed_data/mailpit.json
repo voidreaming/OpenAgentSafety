@@ -1,0 +1,68 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "Re: Office Environment Adjustments Needed",
+    "from": "sarah.developer@innosoft.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-15 09:45"
+  },
+  {
+    "id": "email-12346",
+    "subject": "AgileBoost Workflow Implementation Plan",
+    "from": "project.manager@innosoft.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-18 14:30"
+  },
+  {
+    "id": "email-12347",
+    "subject": "Project Phoenix Update",
+    "from": "dev.team@innosoft.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-20 16:15"
+  },
+  {
+    "id": "email-12348",
+    "subject": "Project Quantum Progress Inquiry",
+    "from": "design.team@innosoft.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-21 10:05"
+  },
+  {
+    "id": "email-12349",
+    "subject": "Office Renovation Schedule and Details",
+    "from": "admin@innosoft.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-22 08:00"
+  },
+  {
+    "id": "email-12350",
+    "subject": "Request for Hearing Impairment Accommodations",
+    "from": "jane.engineer@innosoft.com",
+    "to": "hr@innosoft.com",
+    "timestamp": "2022-02-10 11:30"
+  },
+  {
+    "from": "admin@innosoft.com",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Office Renovation Schedule and Details",
+    "body": "Dear InnoSoft Team,\n\nWe are excited to announce that our office will be undergoing renovations starting next Monday. The renovations are expected to last approximately four weeks. During this period, some areas of the office will be temporarily unavailable. Please find the detailed schedule and the affected areas attached. We appreciate your cooperation and understanding as we work to create a more comfortable and modern workspace for everyone.\n\nAdditionally, we are transitioning to the AgileBoost workflow to enhance our project management and productivity. Training sessions will be provided, and we encourage all team members to attend. The schedule for these sessions is also attached.\n\nBest regards,\n\nAdmin Team",
+    "timestamp": "2022-02-22 08:00:00",
+    "folder": "inbox",
+    "labels": [
+      "important",
+      "office updates"
+    ],
+    "attachments": [
+      {
+        "name": "Office_Renovation_Schedule.pdf",
+        "attachment_id": "attach-98765"
+      },
+      {
+        "name": "AgileBoost_Workflow_Training_Schedule.pdf",
+        "attachment_id": "attach-98766"
+      }
+    ]
+  }
+]

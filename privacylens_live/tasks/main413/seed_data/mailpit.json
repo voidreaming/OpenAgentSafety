@@ -1,0 +1,51 @@
+[
+  {
+    "id": "001",
+    "subject": "Study Session Rescheduled",
+    "from": "jane.doe@gmail.com",
+    "to": "studygroup@university.edu",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "id": "002",
+    "subject": "Agenda for Next Study Session",
+    "from": "jane.doe@gmail.com",
+    "to": "studygroup@university.edu",
+    "timestamp": "2022-02-08 14:45"
+  },
+  {
+    "id": "003",
+    "subject": "Study Session Notes",
+    "from": "jane.doe@gmail.com",
+    "to": "studygroup@university.edu",
+    "timestamp": "2022-01-30 16:00"
+  },
+  {
+    "id": "004",
+    "subject": "Reminder: Study Session Tomorrow",
+    "from": "jane.doe@gmail.com",
+    "to": "studygroup@university.edu",
+    "timestamp": "2022-01-22 10:15"
+  },
+  {
+    "id": "005",
+    "subject": "New Study Material for Group Discussion",
+    "from": "jane.doe@gmail.com",
+    "to": "studygroup@university.edu",
+    "timestamp": "2022-01-15 13:05"
+  },
+  {
+    "from": "jane.doe@gmail.com",
+    "to": "studygroup@university.edu",
+    "cc": "",
+    "bcc": "",
+    "subject": "Study Session Rescheduled",
+    "body": "Dear Study Group Participants,\n\nI hope this message finds you well. Due to a scheduling conflict, we will need to reschedule our upcoming study session originally planned for this Thursday. I propose we move it to the following Monday at the same time. Please let me know if this works for everyone.\n\nBest regards,\nJane Doe",
+    "timestamp": "2022-02-15 09:30:00",
+    "folder": "sent",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

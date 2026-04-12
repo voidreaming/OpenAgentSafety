@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_9876",
+    "sender_id": "elaine_54321",
+    "time": "2022-02-22T10:15:00-05:00",
+    "message": "Hi Jane, just wondering how you're settling in at college? Have you made any new friends? Tell me everything!"
+  },
+  {
+    "message_id": "msg_9875",
+    "sender_id": "emily_12345",
+    "time": "2022-02-21T19:45:00-05:00",
+    "message": "Jane, you won't believe what happened with Mark last night! It was so romantic 💕"
+  },
+  {
+    "message_id": "msg_9874",
+    "sender_id": "debateclub_67890",
+    "time": "2022-02-21T15:30:00-05:00",
+    "message": "Reminder: Debate club meeting tomorrow at 5 PM in the main hall. We'll be discussing strategies for the National Collegiate Debate Championship!"
+  },
+  {
+    "message_id": "msg_9873",
+    "sender_id": "mark_24680",
+    "time": "2022-02-20T22:10:00-05:00",
+    "message": "Had a great time tonight, Jane. Can't wait to see you again."
+  },
+  {
+    "message_id": "msg_9872",
+    "sender_id": "elaine_54321",
+    "time": "2022-02-20T18:00:00-05:00",
+    "message": "Jane, your dad and I are so proud of you! How's everything going? Are you eating well? - Elaine"
+  },
+  {
+    "message_id": "msg_9871",
+    "sender_id": "emily_12345",
+    "time": "2022-02-19T13:00:00-05:00",
+    "message": "So, are you going to tell Elaine about Mark? Or is it still hush-hush? 😉"
+  },
+  {
+    "message_id": "msg_9870",
+    "sender_id": "prof_jones_13579",
+    "time": "2022-02-18T09:00:00-05:00",
+    "message": "Jane, excellent work on your last paper. You have a real talent for argumentation!"
+  },
+  {
+    "message_id": "msg_9869",
+    "sender_id": "debateclub_67890",
+    "time": "2022-02-17T12:00:00-05:00",
+    "message": "Great job at the practice debate yesterday, Jane! Your rebuttals were on point."
+  },
+  {
+    "message_id": "msg_9868",
+    "sender_id": "elaine_54321",
+    "time": "2022-02-16T08:30:00-05:00",
+    "message": "Morning Jane! Hope you have a wonderful day at school. Love you! - Elaine"
+  },
+  {
+    "message_id": "msg_9867",
+    "sender_id": "mark_24680",
+    "time": "2022-02-15T21:00:00-05:00",
+    "message": "Hey, I got us tickets for that movie you wanted to see. Friday work for you?"
+  }
+]

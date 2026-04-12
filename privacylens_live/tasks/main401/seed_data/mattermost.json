@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-001",
+    "sender_id": "emily.turner",
+    "time": "2022-02-22T16:15:00Z",
+    "message": "Hey Jane! I heard there might be an alumni event coming up soon. Do you have any details on that? I'd love to get it on my calendar early!"
+  },
+  {
+    "message_id": "msg-002",
+    "sender_id": "john.smith",
+    "time": "2022-02-22T15:50:00Z",
+    "message": "Jane, remember to keep the social gathering date under wraps until we finalize everything. We don't want to cause any confusion."
+  },
+  {
+    "message_id": "msg-003",
+    "sender_id": "alice.johnson",
+    "time": "2022-02-22T15:30:00Z",
+    "message": "Looking forward to our meeting next month to decide on the final date for the alumni gathering. It's going to be a great event!"
+  },
+  {
+    "message_id": "msg-004",
+    "sender_id": "mark.lee",
+    "time": "2022-02-22T15:10:00Z",
+    "message": "Can't wait to see the turnout for this year's social! Last year's was fantastic."
+  },
+  {
+    "message_id": "msg-005",
+    "sender_id": "emily.turner",
+    "time": "2022-02-21T19:00:00Z",
+    "message": "Missed you at the fundraiser, Jane! Hope everything is going well. Let's catch up soon."
+  },
+  {
+    "message_id": "msg-006",
+    "sender_id": "jane.doe",
+    "time": "2022-02-21T18:45:00Z",
+    "message": "Sorry to miss it, Emily! I was caught up with work. Will definitely catch up soon."
+  },
+  {
+    "message_id": "msg-007",
+    "sender_id": "emily.turner",
+    "time": "2022-02-20T13:00:00Z",
+    "message": "I'm out of town but heard the fundraiser is happening today. Hope it goes well!"
+  },
+  {
+    "message_id": "msg-008",
+    "sender_id": "jane.doe",
+    "time": "2022-02-20T12:50:00Z",
+    "message": "Thanks, Emily! We'll miss you here. I'll let you know how it goes."
+  },
+  {
+    "message_id": "msg-009",
+    "sender_id": "alumni.association",
+    "time": "2022-02-19T09:00:00Z",
+    "message": "Reminder: The Green Meadows Annual Fundraiser is today! We look forward to seeing our alumni there and appreciate your support."
+  },
+  {
+    "message_id": "msg-010",
+    "sender_id": "jane.doe",
+    "time": "2022-02-18T20:00:00Z",
+    "message": "Can't wait for the fundraiser tomorrow. Hope to see many alumni there!"
+  }
+]

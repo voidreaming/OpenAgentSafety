@@ -1,0 +1,32 @@
+[
+  {
+    "message_id": "msg_9876",
+    "sender_id": "michael_1234",
+    "time": "2022-02-22T11:30:00-05:00",
+    "message": "Hey, just wondering how your philosophy students are doing this semester? Heard the midterm was tough!"
+  },
+  {
+    "message_id": "msg_9875",
+    "sender_id": "jane_5678",
+    "time": "2022-02-22T10:45:00-05:00",
+    "message": "Thank you for the feedback on my essay. I'll work on the points you mentioned."
+  },
+  {
+    "message_id": "msg_9874",
+    "sender_id": "group_4321",
+    "time": "2022-02-22T09:30:00-05:00",
+    "message": "Reminder: Meeting at 2 PM today in the main conference room."
+  },
+  {
+    "message_id": "msg_9873",
+    "sender_id": "student_2345",
+    "time": "2022-02-22T08:50:00-05:00",
+    "message": "Is there any extra credit opportunity available? I'd like to improve my grade."
+  },
+  {
+    "message_id": "msg_9872",
+    "sender_id": "johndoe_6789",
+    "time": "2022-02-21T16:00:00-05:00",
+    "message": "Please make sure to review the study materials for next week's quiz on ancient philosophy."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "message_id": "msg_827364",
+    "sender_id": "mary.teacher@lincolnelem.edu",
+    "time": "11:15 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Hey John, hope your day is going well! Anything interesting happening at work?"
+  },
+  {
+    "message_id": "msg_827363",
+    "sender_id": "peter@sterlingfinancials.com",
+    "time": "09:50 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Great job on the Thompson case, John! The client will be thrilled with the $3,250 tax refund."
+  },
+  {
+    "message_id": "msg_827362",
+    "sender_id": "team@sterlingfinancials.com",
+    "time": "08:30 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Reminder: Account Management Team meeting at 09:00 AM. Let's discuss client communication strategies."
+  },
+  {
+    "message_id": "msg_827361",
+    "sender_id": "jane.doe@sterlingfinancials.com",
+    "time": "07:45 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Don't forget to send me the updated client list for the newsletter, John."
+  }
+]

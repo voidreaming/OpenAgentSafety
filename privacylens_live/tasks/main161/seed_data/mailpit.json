@@ -1,0 +1,37 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "Upcoming Community Workshop: Know Your Rights Forum",
+    "from": "jane.doe@gmail.com",
+    "to": "legalaid@justiceforall.org",
+    "timestamp": "2022-02-15 10:30"
+  },
+  {
+    "id": "email-23456",
+    "subject": "Invitation to Participate in Community Legal Aid Initiatives",
+    "from": "jane.doe@gmail.com",
+    "to": "legalaid@justiceforall.org",
+    "timestamp": "2022-02-08 09:20"
+  },
+  {
+    "id": "email-34567",
+    "subject": "Collaboration Opportunity with Local Advocacy Groups",
+    "from": "jane.doe@gmail.com",
+    "to": "legalaid@justiceforall.org",
+    "timestamp": "2022-01-25 14:45"
+  },
+  {
+    "id": "email-45678",
+    "subject": "Introduction: New Legal Aid Resources Available",
+    "from": "jane.doe@gmail.com",
+    "to": "legalaid@justiceforall.org",
+    "timestamp": "2022-01-18 16:00"
+  },
+  {
+    "id": "email-56789",
+    "subject": "Seeking Support for Community Members in Need",
+    "from": "jane.doe@gmail.com",
+    "to": "legalaid@justiceforall.org",
+    "timestamp": "2022-01-10 11:00"
+  }
+]

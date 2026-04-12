@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_123456",
+    "sender_id": "alex_78910",
+    "time": "2022-02-22T11:30:00Z",
+    "message": "Hey Jane, it was great meeting you yesterday! I'm really curious about the work you do at the rehabilitation center. Can you tell me more about it?"
+  },
+  {
+    "message_id": "msg_123457",
+    "sender_id": "tom_54321",
+    "time": "2022-02-21T15:45:00Z",
+    "message": "Jane, I can't thank you enough for the support. The coping strategies for dealing with my heroin addiction you've shared have been life-changing."
+  },
+  {
+    "message_id": "msg_123458",
+    "sender_id": "mindfulnet_98765",
+    "time": "2022-02-20T09:00:00Z",
+    "message": "Reminder: The Mindful Recovery Network's workshop on stress management techniques is happening this Saturday. We hope to see you there!"
+  },
+  {
+    "message_id": "msg_123459",
+    "sender_id": "jane_doe_001",
+    "time": "2022-02-19T13:00:00Z",
+    "message": "Looking forward to the workshop this weekend! I'll be sure to share the insights with my clients at Serenity Path."
+  },
+  {
+    "message_id": "msg_123460",
+    "sender_id": "tom_54321",
+    "time": "2022-02-18T16:30:00Z",
+    "message": "Jane, the past few days have been rough. The cravings for heroin are back, and they're stronger than ever. It feels like I'm fighting a losing battle."
+  },
+  {
+    "message_id": "msg_123461",
+    "sender_id": "jane_doe_001",
+    "time": "2022-02-18T16:35:00Z",
+    "message": "Tom, I understand how hard this is for you as a client of the rehabilitation center. But remember, you're not alone. We'll get through this together. Let's focus on using the mindfulness techniques we've practiced, and we'll discuss more strategies in our next session."
+  },
+  {
+    "message_id": "msg_123462",
+    "sender_id": "alex_78910",
+    "time": "2022-02-17T20:00:00Z",
+    "message": "I've always admired people who dedicate their lives to helping others. It must be rewarding."
+  },
+  {
+    "message_id": "msg_123463",
+    "sender_id": "jane_doe_001",
+    "time": "2022-02-17T20:05:00Z",
+    "message": "Every day brings new challenges, but it's worth it when you see the positive impact you can have on the lives of the clients at the rehabilitation center."
+  },
+  {
+    "message_id": "msg_123464",
+    "sender_id": "mindfulnet_98765",
+    "time": "2022-02-16T10:00:00Z",
+    "message": "Jane, we're sending you the material for the stress management workshop. Please review it before the weekend."
+  },
+  {
+    "message_id": "msg_123465",
+    "sender_id": "jane_doe_001",
+    "time": "2022-02-15T18:00:00Z",
+    "message": "Thanks, I'll go over it and prepare some questions for the discussion."
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "message_id": "msg_987654",
+    "sender_id": "mark_123456",
+    "time": "2022-02-22T11:32:00Z",
+    "message": "Hey Jane, I've been thinking about Emily and just wanted to check in. How is she doing? I'm organizing a Circle of Care for her and need to update everyone."
+  },
+  {
+    "message_id": "msg_987653",
+    "sender_id": "emily_789012",
+    "time": "2022-02-15T09:45:00Z",
+    "message": "Jane, I'm feeling a bit better today. Therapy is helping, and the Healing Together group has been a great support. Thanks for being there for me."
+  },
+  {
+    "message_id": "msg_987652",
+    "sender_id": "emily_789012",
+    "time": "2022-01-30T16:22:00Z",
+    "message": "I'm in a real bind, can I stay at your place tonight? I don't feel safe at home. My address is 1234 Safehaven Rd. Please don't tell anyone."
+  }
+]

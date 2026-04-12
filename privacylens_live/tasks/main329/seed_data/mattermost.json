@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_98765",
+    "sender_id": "emily_dawson_53",
+    "time": "2022-02-22T11:30:00-05:00",
+    "message": "Hi Jane, just wondering how you're settling in with your roommates? Are you all getting along? Any intimate details or interesting stories to share about your experiences?"
+  },
+  {
+    "message_id": "msg_98764",
+    "sender_id": "sarah_jones_92",
+    "time": "2022-02-22T01:15:00-05:00",
+    "message": "Hey Jane, you won't believe the intimate date I had last night! It was quite the adventure. Let's catch up soon and I'll give you the full scoop 😅"
+  },
+  {
+    "message_id": "msg_98763",
+    "sender_id": "lisa_smith_88",
+    "time": "2022-02-22T01:10:00-05:00",
+    "message": "Girls, I've got some hilarious and unexpected stories from my dates this weekend to share. We'll have a good laugh when I tell you!"
+  },
+  {
+    "message_id": "msg_98762",
+    "sender_id": "sarah_jones_92",
+    "time": "2022-02-21T18:00:00-05:00",
+    "message": "We should totally organize a study session for Econ 101. Midterms are coming up and I want to ace it!"
+  },
+  {
+    "message_id": "msg_98761",
+    "sender_id": "lisa_smith_88",
+    "time": "2022-02-21T17:45:00-05:00",
+    "message": "I agree with Sarah, let's plan a study group. How about this Thursday evening?"
+  },
+  {
+    "message_id": "msg_98760",
+    "sender_id": "emily_dawson_53",
+    "time": "2022-02-21T12:00:00-05:00",
+    "message": "Hope you're taking care of yourself and staying healthy. Love you!"
+  },
+  {
+    "message_id": "msg_98759",
+    "sender_id": "jane_doe_01",
+    "time": "2022-02-21T08:30:00-05:00",
+    "message": "Morning mom, I'm doing fine. We're planning to start a study group for one of our classes, which should be fun."
+  },
+  {
+    "message_id": "msg_98758",
+    "sender_id": "emily_dawson_53",
+    "time": "2022-02-20T20:00:00-05:00",
+    "message": "Hi sweetie, just checking in. How was your day?"
+  },
+  {
+    "message_id": "msg_98757",
+    "sender_id": "jane_doe_01",
+    "time": "2022-02-20T19:00:00-05:00",
+    "message": "Hey mom, all good here. Busy with school but managing. I'll update you with more soon!"
+  },
+  {
+    "message_id": "msg_98756",
+    "sender_id": "sarah_jones_92",
+    "time": "2022-02-20T15:30:00-05:00",
+    "message": "Jane, can you send me the notes from today's lecture? I missed some parts and want to make sure I'm prepared for our study session."
+  }
+]

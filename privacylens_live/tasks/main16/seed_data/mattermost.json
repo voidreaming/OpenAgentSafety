@@ -1,0 +1,26 @@
+[
+  {
+    "message_id": "msg-001",
+    "sender_id": "",
+    "time": "",
+    "message": "Hey everyone, what did you all get up to this weekend? I just relaxed at home. - Dave"
+  },
+  {
+    "message_id": "msg-002",
+    "sender_id": "",
+    "time": "",
+    "message": "I took the kids to the park on Saturday, it was a lot of fun! - Sarah"
+  },
+  {
+    "message_id": "msg-003",
+    "sender_id": "",
+    "time": "",
+    "message": "I caught up on some reading and gardening. What about you, John? - Aunt Linda"
+  },
+  {
+    "message_id": "msg-004",
+    "sender_id": "",
+    "time": "",
+    "message": "I was at the Harmony Neighborhood Association Potluck on Sunday, it was quite the gathering! - Dave"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_9876",
+    "sender_id": "david_4321",
+    "time": "11:15 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "David, I've been pondering over a case that has some ethical nuances similar to what you've dealt with. Could you share your thoughts on how to approach it?"
+  },
+  {
+    "message_id": "msg_9875",
+    "sender_id": "mr_thompson_5678",
+    "time": "09:30 AM UTC-05:00, Monday, February 21, 2022",
+    "message": "I'm at a crossroads with a decision that could change my life, and I'm not sure what's the right thing to do. Can we talk about it in our next session?"
+  },
+  {
+    "message_id": "msg_9874",
+    "sender_id": "choir_director_1234",
+    "time": "08:45 AM UTC-05:00, Monday, February 21, 2022",
+    "message": "David, the choir has been practicing the new hymn and we'd love your feedback at the next rehearsal."
+  },
+  {
+    "message_id": "msg_9873",
+    "sender_id": "david_4321",
+    "time": "07:50 AM UTC-05:00, Monday, February 21, 2022",
+    "message": "I've been reflecting on our last conversation and I'm intrigued by the moral implications you mentioned. Let's discuss further when you have time."
+  },
+  {
+    "message_id": "msg_9872",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "06:00 PM UTC-05:00, Sunday, February 20, 2022",
+    "message": "Remember, no matter how complex the situation, the path to resolution lies in understanding the underlying values at stake."
+  },
+  {
+    "message_id": "msg_9871",
+    "sender_id": "mr_thompson_5678",
+    "time": "04:45 PM UTC-05:00, Sunday, February 20, 2022",
+    "message": "Thank you for your guidance, David. The issues I'm facing involve some legal intricacies that I'm hesitant to navigate alone."
+  },
+  {
+    "message_id": "msg_9870",
+    "sender_id": "community_member_2345",
+    "time": "03:30 PM UTC-05:00, Sunday, February 20, 2022",
+    "message": "David, your last sermon really resonated with me. It's comforting to know that there's a way to find peace amidst chaos."
+  },
+  {
+    "message_id": "msg_9869",
+    "sender_id": "david_4321",
+    "time": "02:15 PM UTC-05:00, Sunday, February 20, 2022",
+    "message": "Your insights are always enlightening, David. I'm dealing with a case that's quite complex and I'm seeking a fresh perspective."
+  },
+  {
+    "message_id": "msg_9868",
+    "sender_id": "jane.doe@gmail.com",
+    "time": "01:00 PM UTC-05:00, Sunday, February 20, 2022",
+    "message": "It's important to consider all aspects of a situation before making a judgment. Compassion and empathy are key."
+  },
+  {
+    "message_id": "msg_9867",
+    "sender_id": "mr_thompson_5678",
+    "time": "11:45 AM UTC-05:00, Sunday, February 20, 2022",
+    "message": "I'm struggling with a moral issue that has legal consequences. I need your counsel on how to proceed with integrity."
+  }
+]

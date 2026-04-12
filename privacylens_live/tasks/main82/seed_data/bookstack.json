@@ -1,0 +1,20 @@
+[
+  {
+    "id": "note_456",
+    "title": "Rental Market Analysis",
+    "content": "The downtown rental market is showing a slight uptick in demand, likely due to the recent renovations at Maple Street Apartments. We should consider adjusting our marketing strategies to highlight the new features and attract more potential tenants.",
+    "tags": []
+  },
+  {
+    "id": "note_457",
+    "title": "Tenant Update - Sarah Smith",
+    "content": "Sarah has missed her rent payment for the third consecutive month. We've reached out to discuss her situation, but she has not been able to provide a clear timeline for payment. We may need to start the eviction process if the payment is not received by the end of the week.",
+    "tags": []
+  },
+  {
+    "id": "note_458",
+    "title": "Maple Street Apartments Renovation",
+    "content": "The renovation of the Maple Street Apartments has been completed. The new amenities have been well-received, and we've already seen an increase in inquiries from potential tenants. This should be a strong selling point in our upcoming rental campaigns.",
+    "tags": []
+  }
+]

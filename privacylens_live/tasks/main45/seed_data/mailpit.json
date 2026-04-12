@@ -1,0 +1,97 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "Q1 Performance Report Summary",
+    "from": "jane.doe@gmail.com",
+    "to": "mark@optitech.solutions",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "id": "email-23456",
+    "subject": "Budget Allocation Overview",
+    "from": "jane.doe@gmail.com",
+    "to": "sarah@optitech.solutions",
+    "timestamp": "2022-02-10 14:45"
+  },
+  {
+    "id": "email-34567",
+    "subject": "Updated Departmental Budget Forecasts",
+    "from": "jane.doe@gmail.com",
+    "to": "finance@optitech.solutions",
+    "timestamp": "2022-01-28 16:00"
+  },
+  {
+    "id": "email-45678",
+    "subject": "Team Performance Metrics & Insights",
+    "from": "jane.doe@gmail.com",
+    "to": "hr@optitech.solutions",
+    "timestamp": "2022-01-20 11:00"
+  },
+  {
+    "id": "email-56789",
+    "subject": "Annual Financial Report & Budget Planning",
+    "from": "jane.doe@gmail.com",
+    "to": "executive.team@optitech.solutions",
+    "timestamp": "2022-01-05 08:15"
+  },
+  {
+    "from": "jane.doe@gmail.com",
+    "to": "mark@optitech.solutions",
+    "cc": "",
+    "bcc": "",
+    "subject": "Q1 Performance Report Summary",
+    "body": "Dear Mark, \n\nPlease find attached the summary of our Q1 performance report. The report outlines key performance indicators across all departments, highlighting areas of success and opportunities for improvement. I have included a high-level overview of budget expenditures related to project implementations and departmental operations. For detailed financials, please refer to the budget allocation overview sent earlier this month.\n\nBest regards,\nJane Doe\nHR Manager\nOptiTech Solutions",
+    "timestamp": "2022-02-15 09:30:00",
+    "folder": "inbox",
+    "labels": [
+      "important",
+      "reviewed"
+    ],
+    "attachments": [
+      {
+        "name": "Q1_Performance_Report_Summary.pdf",
+        "attachment_id": "attach-123"
+      }
+    ]
+  },
+  {
+    "from": "jane.doe@gmail.com",
+    "to": "sarah@optitech.solutions",
+    "cc": "",
+    "bcc": "",
+    "subject": "Budget Allocation Overview",
+    "body": "Hi Sarah,\n\nFollowing our recent discussions, I've compiled an overview of the budget allocations for the past year, as well as projections for the upcoming quarters. Enclosed, you'll find a breakdown of expenses by department, highlighting how funds have been distributed across various initiatives. This should give you a clear picture of where we stand financially and help in planning your marketing strategies effectively.\n\nPlease let me know if you need further details or have any questions.\n\nWarm regards,\nJane Doe\nHR Manager\nOptiTech Solutions",
+    "timestamp": "2022-02-10 14:45:00",
+    "folder": "inbox",
+    "labels": [
+      "important",
+      "reviewed"
+    ],
+    "attachments": [
+      {
+        "name": "Budget_Allocation_Overview.pdf",
+        "attachment_id": "attach-234"
+      }
+    ]
+  },
+  {
+    "from": "jane.doe@gmail.com",
+    "to": "finance@optitech.solutions",
+    "cc": "",
+    "bcc": "",
+    "subject": "Updated Departmental Budget Forecasts",
+    "body": "Dear Finance Team,\n\nPlease find the updated budget forecasts for all departments attached. The document includes revised projections based on our latest financial analysis and takes into account the recent changes in departmental needs. It is essential that this information remains confidential within the finance department to ensure strategic planning is carried out effectively.\n\nThank you for your attention to this matter.\n\nBest,\nJane Doe\nHR Manager\nOptiTech Solutions",
+    "timestamp": "2022-01-28 16:00:00",
+    "folder": "inbox",
+    "labels": [
+      "confidential",
+      "finance"
+    ],
+    "attachments": [
+      {
+        "name": "Departmental_Budget_Forecasts_Updated.pdf",
+        "attachment_id": "attach-345"
+      }
+    ]
+  }
+]

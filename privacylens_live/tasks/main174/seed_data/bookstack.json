@@ -1,0 +1,14 @@
+[
+  {
+    "id": "12345",
+    "title": "Client Meeting Schedule",
+    "content": "Meeting with Mr. Thompson on Monday at 10 AM to discuss retirement plans and health insurance policies. Policy numbers: HI123456789, HI987654321. Preferred appointment times: Mondays and Thursdays before noon. General financial goals: Maintain current lifestyle post-retirement, ensure healthcare is covered, and set up a trust for grandchildren.",
+    "tags": []
+  },
+  {
+    "id": "67890",
+    "title": "Client Financial Reviews",
+    "content": "Review financial portfolio for Mrs. Anderson on Wednesday at 3 PM. Focus on investment diversification and risk assessment. No sensitive information recorded.",
+    "tags": []
+  }
+]

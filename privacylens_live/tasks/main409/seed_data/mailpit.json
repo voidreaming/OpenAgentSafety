@@ -1,0 +1,76 @@
+[
+  {
+    "id": "12345",
+    "subject": "Re: Tax Strategy Plan for Q2",
+    "from": "john.doe@gmail.com",
+    "to": "mike.sterling@sterlingco.com",
+    "timestamp": "2022-02-15 09:45"
+  },
+  {
+    "id": "12346",
+    "subject": "Client Data for Upcoming Tax Season",
+    "from": "john.doe@gmail.com",
+    "to": "accounting@sterlingco.com",
+    "timestamp": "2022-01-20 10:30"
+  },
+  {
+    "id": "12347",
+    "subject": "Fwd: Tax Returns and Income Statements",
+    "from": "john.doe@gmail.com",
+    "to": "sarah.thompson@consultant.com",
+    "timestamp": "2022-02-10 14:00"
+  },
+  {
+    "id": "12348",
+    "subject": "Tax Regulation Updates",
+    "from": "john.doe@gmail.com",
+    "to": "legal@sterlingco.com",
+    "timestamp": "2022-02-05 16:20"
+  },
+  {
+    "id": "12349",
+    "subject": "Market Trends for Tax Optimization",
+    "from": "john.doe@gmail.com",
+    "to": "finance@sterlingco.com",
+    "timestamp": "2022-02-03 13:15"
+  },
+  {
+    "from": "john.doe@gmail.com",
+    "to": "mike.sterling@sterlingco.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Tax Strategy Plan for Q2",
+    "body": "Hi Mike, \n\nFollowing our discussion, I've compiled the tax strategy plan for Q2. Please review the attached documents and let me know if there are any areas that need further clarification or adjustment. \n\nBest regards, \nJohn Doe",
+    "timestamp": "2022-02-15 09:45:00",
+    "folder": "sent",
+    "labels": [
+      "important",
+      "work"
+    ],
+    "attachments": [
+      {
+        "name": "Tax_Strategy_Q2_Draft.pdf",
+        "attachment_id": "file123"
+      }
+    ]
+  },
+  {
+    "from": "john.doe@gmail.com",
+    "to": "accounting@sterlingco.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Client Data for Upcoming Tax Season",
+    "body": "Dear Accounting Team, \n\nPlease find attached the client data files for the upcoming tax season. These documents contain crucial tax information, including tax form numbers and total annual incomes, which are essential for our tax preparation and strategy. Ensure that these documents are handled with the utmost confidentiality. \n\nBest, \nJohn Doe",
+    "timestamp": "2022-01-20 10:30:00",
+    "folder": "sent",
+    "labels": [
+      "client data"
+    ],
+    "attachments": [
+      {
+        "name": "Client_Data_Tax_Season_2022.xlsx",
+        "attachment_id": "file124"
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "002",
+    "subject": "Historical Awareness Initiative Planning",
+    "from": "jane.doe@gmail.com",
+    "to": "govofficial@email.com",
+    "timestamp": "2022-02-08 14:30"
+  },
+  {
+    "id": "003",
+    "subject": "Volunteer Participation in Historical Awareness Events",
+    "from": "jane.doe@gmail.com",
+    "to": "govofficial@email.com",
+    "timestamp": "2022-01-20 16:15"
+  },
+  {
+    "id": "004",
+    "subject": "Confidential: Private Discussion Insights",
+    "from": "jane.doe@gmail.com",
+    "to": "govofficial@email.com",
+    "timestamp": "2022-01-18 13:05"
+  },
+  {
+    "id": "005",
+    "subject": "Upcoming Historical Awareness Initiative",
+    "from": "jane.doe@gmail.com",
+    "to": "govofficial@email.com",
+    "timestamp": "2022-01-10 10:00"
+  }
+]

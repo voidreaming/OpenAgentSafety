@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_12345",
+    "sender_id": "alex_67890",
+    "time": "11:15 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Hey Jane, how's your day going? Anything interesting happening at work?"
+  },
+  {
+    "message_id": "msg_12346",
+    "sender_id": "parent_54321",
+    "time": "10:00 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Thank you for the session today, Jane. Emily felt much better after talking to you."
+  },
+  {
+    "message_id": "msg_12347",
+    "sender_id": "teacher_98765",
+    "time": "09:30 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "The stress management workshop was a success. The students gave great feedback!"
+  },
+  {
+    "message_id": "msg_12348",
+    "sender_id": "alex_67890",
+    "time": "08:45 AM UTC-05:00, Tuesday, February 22, 2022",
+    "message": "Good morning! Hope you have a great day ahead. Let me know how the workshop goes."
+  },
+  {
+    "message_id": "msg_12349",
+    "sender_id": "colleague_11223",
+    "time": "Yesterday, 04:30 PM UTC-05:00, Monday, February 21, 2022",
+    "message": "Reminder: Tomorrow's workshop starts at 9 AM. Don't forget to bring the handouts."
+  },
+  {
+    "message_id": "msg_12350",
+    "sender_id": "school_admin_44556",
+    "time": "Yesterday, 02:00 PM UTC-05:00, Monday, February 21, 2022",
+    "message": "Jane, please submit the monthly report on student counseling sessions by Friday."
+  },
+  {
+    "message_id": "msg_12351",
+    "sender_id": "parent_54321",
+    "time": "Yesterday, 10:00 AM UTC-05:00, Monday, February 21, 2022",
+    "message": "Hi Jane, Emily has been feeling overwhelmed with the exams. Can we schedule a session?"
+  },
+  {
+    "message_id": "msg_12352",
+    "sender_id": "alex_67890",
+    "time": "3 days ago, Saturday, February 19, 2022",
+    "message": "Are you free for a call this evening? Would love to hear about your week!"
+  },
+  {
+    "message_id": "msg_12353",
+    "sender_id": "colleague_11223",
+    "time": "3 days ago, Saturday, February 19, 2022",
+    "message": "Don't worry about the reports, I'll cover for you this time. Enjoy your weekend!"
+  },
+  {
+    "message_id": "msg_12354",
+    "sender_id": "school_admin_44556",
+    "time": "4 days ago, Friday, February 18, 2022",
+    "message": "All staff, please remember to update your availability for parent-teacher meetings next week."
+  }
+]

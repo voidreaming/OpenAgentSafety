@@ -1,0 +1,23 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "@john",
+    "time": "2022-02-15T10:00:00Z",
+    "message": "Just met with Michael Thompson, he's started a new tech venture and is looking to engage with Harvard on a partnership. During his time at Harvard, he was known for his groundbreaking research in machine learning which won the national science fair.",
+    "channel": ""
+  },
+  {
+    "message_id": "",
+    "sender_id": "@john",
+    "time": "2022-02-10T09:30:00Z",
+    "message": "Sarah Clark mentioned she's grateful for the scholarship she received and is considering a significant donation. At Harvard, she overcame financial hardships and was an advocate for affordable education, leading several student-led initiatives for financial aid reform.",
+    "channel": ""
+  },
+  {
+    "message_id": "",
+    "sender_id": "@john",
+    "time": "2022-02-05T13:45:00Z",
+    "message": "Had a great catch-up with alumni at the recent reunion event. Many expressed interest in giving back to the university. Notably, James Peterson, a prominent lawyer, shared his intention to fund a new legal clinic in honor of his mentor, Professor Simmons, who guided him through a difficult wrongful accusation case during his studies.",
+    "channel": ""
+  }
+]

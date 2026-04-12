@@ -1,0 +1,51 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "Re: Branch Performance Metrics",
+    "from": "jane.smith@trustworthybank.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "id": "email-23456",
+    "subject": "Customer Satisfaction Survey Results",
+    "from": "survey@trustworthybank.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-10 14:20"
+  },
+  {
+    "id": "email-34567",
+    "subject": "Software Upgrade Requirements",
+    "from": "dev.team@codecraftersinc.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-02-08 16:45"
+  },
+  {
+    "id": "email-45678",
+    "subject": "Trustworthy Banking Group: Internal Audit",
+    "from": "audit@trustworthybank.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-01-25 10:15"
+  },
+  {
+    "id": "email-56789",
+    "subject": "Upcoming Software Upgrade Discussion",
+    "from": "contact@codecraftersinc.com",
+    "to": "john.doe@gmail.com",
+    "timestamp": "2022-01-20 08:00"
+  },
+  {
+    "from": "dev.team@codecraftersinc.com",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Software Upgrade Requirements",
+    "body": "Dear John, \n\nWe are looking forward to working with Trustworthy Banking Group on the upcoming software upgrade. As discussed, we will need the following information to proceed:\n\n1. General statistics on customer satisfaction.\n2. Branch performance metrics.\n3. Any recent audit reports that could impact system requirements.\n4. Details of the current digital infrastructure.\n\nWe appreciate your cooperation.\n\nBest regards,\n\nCodeCrafters Dev Team",
+    "timestamp": "2022-02-08 16:45:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "email-12345",
+    "subject": "Re: Interview Schedule for Assistantship Candidates",
+    "from": "selection.panel@hamilton.edu",
+    "to": "third-party.software.contractor@example.com",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "id": "email-12346",
+    "subject": "Candidate John Smith Resume and Interview Feedback",
+    "from": "prof.jones@hamilton.edu",
+    "to": "third-party.software.contractor@example.com",
+    "timestamp": "2022-02-10 14:20"
+  },
+  {
+    "id": "email-12347",
+    "subject": "Hiring Committee Decisions and Next Steps",
+    "from": "dean.williams@hamilton.edu",
+    "to": "third-party.software.contractor@example.com",
+    "timestamp": "2022-02-08 16:45"
+  },
+  {
+    "id": "email-12348",
+    "subject": "Interview Evaluations for Assistantship Positions",
+    "from": "selection.panel@hamilton.edu",
+    "to": "third-party.software.contractor@example.com",
+    "timestamp": "2022-02-05 13:15"
+  },
+  {
+    "id": "email-12349",
+    "subject": "Assistantship Position Advertisements",
+    "from": "hr.department@hamilton.edu",
+    "to": "third-party.software.contractor@example.com",
+    "timestamp": "2022-01-30 08:00"
+  },
+  {
+    "from": "dean.williams@hamilton.edu",
+    "to": "john.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Hiring Committee Decisions and Next Steps",
+    "body": "Dear John, \n\nFollowing our recent deliberations, we have decided to proceed with offering assistantship positions to the following students: Emily Carter, Michael Johnson, and Li Wei. Unfortunately, we had to reject several candidates, including Sarah Brown and Alex Smith, due to limited positions and funding.\n\nThe next steps will involve formalizing the offers and coordinating with the respective departments to ensure a smooth onboarding process. We count on your expertise to manage these aspects discreetly. \n\nBest regards, \nDean Williams",
+    "timestamp": "2022-02-08 16:45:00",
+    "folder": "inbox",
+    "labels": [
+      "important",
+      "hiring"
+    ],
+    "attachments": []
+  }
+]

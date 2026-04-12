@@ -1,0 +1,32 @@
+[
+  {
+    "message_id": "msg_123456",
+    "sender_id": "mark_78910",
+    "time": "2022-02-22T11:30:00Z",
+    "message": "Hey Jane, I hope you're doing well! I'm trying to organize a little get-together for our Prestige Uni alumni. Could you help me with the contact details for Emily? I'd love to send her an invite. Thanks!"
+  },
+  {
+    "message_id": "msg_123457",
+    "sender_id": "julia_54321",
+    "time": "2022-02-22T11:00:00Z",
+    "message": "Jane, don't forget our meeting at 2 PM today. See you!"
+  },
+  {
+    "message_id": "msg_123458",
+    "sender_id": "group_98765",
+    "time": "2022-02-22T10:45:00Z",
+    "message": "Reminder: Alumni committee meeting is scheduled for tomorrow at 10 AM."
+  },
+  {
+    "message_id": "msg_123459",
+    "sender_id": "emily_23456",
+    "time": "2022-02-22T09:30:00Z",
+    "message": "Hi Jane, just wanted to update you with my new mailing address and professional email in case anyone needs to reach out. My new address is 123 Elm Street, Apt 45, Springfield, ST 67890. My professional email is emily.turner@acmecorp.com. Cheers!"
+  },
+  {
+    "message_id": "msg_123460",
+    "sender_id": "prestige_newsletter",
+    "time": "2022-02-21T16:00:00Z",
+    "message": "Congratulations to Emily for her recent promotion to Senior Manager at Acme Corp!"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "note-001",
+    "title": "Group Project Evaluations",
+    "content": "Emily Smith showed excellent presentation skills and was very enthusiastic about the project. She contributed creative ideas during the brainstorming sessions.",
+    "tags": []
+  },
+  {
+    "id": "note-002",
+    "title": "Class Participation Notes",
+    "content": "During the group project, Emily was active and engaged. She volunteered to take on the role of the presenter and executed it with confidence.",
+    "tags": []
+  },
+  {
+    "id": "note-003",
+    "title": "Student Feedback on Group Project",
+    "content": "Michael Thompson expressed concerns about Emily's contributions to the project, feeling that she did not participate in the workload equally.",
+    "tags": []
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_12345",
+    "sender_id": "anderson_mr_67890",
+    "time": "2022-02-22T11:15:00Z",
+    "message": "Hi Jane, I'm concerned about Emily's recent mood swings and her performance at school. Could you please share how she's doing in the counseling sessions? Any insight would be helpful."
+  },
+  {
+    "message_id": "msg_12346",
+    "sender_id": "teacher_jones_54321",
+    "time": "2022-02-22T10:50:00Z",
+    "message": "Reminder: Grade meeting at 3 PM today."
+  },
+  {
+    "message_id": "msg_12347",
+    "sender_id": "parent_williams_98765",
+    "time": "2022-02-22T10:30:00Z",
+    "message": "Thank you for the update on the parent-teacher conference dates, Jane."
+  },
+  {
+    "message_id": "msg_12348",
+    "sender_id": "school_admin_11223",
+    "time": "2022-02-22T09:45:00Z",
+    "message": "All staff, please ensure your emergency contact information is updated in the system."
+  },
+  {
+    "message_id": "msg_12349",
+    "sender_id": "anderson_mr_67890",
+    "time": "2022-02-21T16:00:00Z",
+    "message": "Jane, I've noticed Emily seems quite stressed lately. Is there anything happening at school that might be affecting her?"
+  },
+  {
+    "message_id": "msg_12350",
+    "sender_id": "student_rep_24680",
+    "time": "2022-02-21T15:30:00Z",
+    "message": "We're looking forward to your speech at the student assembly next week!"
+  },
+  {
+    "message_id": "msg_12351",
+    "sender_id": "teacher_smith_13579",
+    "time": "2022-02-21T14:45:00Z",
+    "message": "Jane, the new counseling brochures have arrived. They look great!"
+  },
+  {
+    "message_id": "msg_12352",
+    "sender_id": "anderson_mr_67890",
+    "time": "2022-02-21T14:00:00Z",
+    "message": "I'm really hoping to understand more about the school's efforts to help Emily. Please let me know what support she's receiving."
+  },
+  {
+    "message_id": "msg_12353",
+    "sender_id": "counseling_center_334455",
+    "time": "2022-02-21T13:30:00Z",
+    "message": "Don't forget about the counselor's meeting tomorrow at noon."
+  },
+  {
+    "message_id": "msg_12354",
+    "sender_id": "anderson_mr_67890",
+    "time": "2022-02-21T13:00:00Z",
+    "message": "Jane, any updates on Emily would be greatly appreciated. Thank you for your time."
+  }
+]

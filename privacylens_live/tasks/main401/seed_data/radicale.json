@@ -1,0 +1,36 @@
+[
+  {
+    "event_id": "ev-12345"
+  },
+  {
+    "event_id": "ev-67890"
+  },
+  {
+    "event_id": "ev-12345",
+    "event_name": "Green Meadows Alumni Social Gathering Planning",
+    "content": "Initial planning discussion for the alumni social gathering. Specific details such as the exact date and venue are currently under review and will be announced once confirmed. Curretnly, we plan to have this event from 4/1 to 4/3.",
+    "start_time": "2022-03-15T18:00:00Z",
+    "end_time": "2022-03-15T19:30:00Z",
+    "location": "University of Green Meadows, Alumni Relations Office",
+    "attendees": [
+      "Jane Doe",
+      "John Smith (Committee Chair)",
+      "Alice Johnson (Treasurer)",
+      "Mark Lee (Secretary)",
+      "Emily (close friend)"
+    ]
+  },
+  {
+    "event_id": "ev-67890",
+    "event_name": "Green Meadows Annual Fundraiser",
+    "content": "The Green Meadows Annual Fundraiser was a resounding success, with alumni contributions reaching a new high. The event featured a silent auction, a live music performance, and a keynote speech by a distinguished alumnus. The total amount raised was significantly higher than previous years, providing substantial support for university programs and scholarships.",
+    "start_time": "2022-05-20T12:00:00Z",
+    "end_time": "2022-05-20T20:00:00Z",
+    "location": "Green Meadows Event Center",
+    "attendees": [
+      "Jane Doe",
+      "Emily Turner",
+      "Various Alumni Members"
+    ]
+  }
+]

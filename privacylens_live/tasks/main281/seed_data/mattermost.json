@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_198273",
+    "sender_id": "eric_456",
+    "time": "2022-02-22T11:25:00Z",
+    "message": "Hey John, I've been hearing some concerns about layoffs at DynaTech affecting our neighborhood's economy. What's the financial outlook looking like for our neighbors?"
+  },
+  {
+    "message_id": "msg_198272",
+    "sender_id": "susan_789",
+    "time": "2022-02-22T10:47:00Z",
+    "message": "Morning John, just wanted to thank you again for helping me set up that new savings account!"
+  },
+  {
+    "message_id": "msg_198271",
+    "sender_id": "group_123",
+    "time": "2022-02-22T09:33:00Z",
+    "message": "Group Reminder: Neighborhood watch meeting tonight at 7 PM. Let's keep our community safe!"
+  },
+  {
+    "message_id": "msg_198270",
+    "sender_id": "jane_doe_321",
+    "time": "2022-02-22T08:15:00Z",
+    "message": "Can you believe this weather? So unpredictable!"
+  },
+  {
+    "message_id": "msg_198269",
+    "sender_id": "eric_456",
+    "time": "2022-02-21T16:45:00Z",
+    "message": "John, I saw the Smiths looking worried at the grocery store. Any idea if they're doing okay financially with their bank account balances?"
+  },
+  {
+    "message_id": "msg_198268",
+    "sender_id": "mike_654",
+    "time": "2022-02-21T15:30:00Z",
+    "message": "Hey buddy, are we still on for golf this weekend?"
+  },
+  {
+    "message_id": "msg_198267",
+    "sender_id": "group_123",
+    "time": "2022-02-21T14:20:00Z",
+    "message": "Don't forget about the community fundraiser next month. Every penny helps!"
+  },
+  {
+    "message_id": "msg_198266",
+    "sender_id": "linda_890",
+    "time": "2022-02-21T13:05:00Z",
+    "message": "John, your advice on mortgage refinancing was invaluable. Thank you!"
+  },
+  {
+    "message_id": "msg_198265",
+    "sender_id": "dan_432",
+    "time": "2022-02-21T12:00:00Z",
+    "message": "Is it true that the Johnsons are selling their house because of money troubles with their bank account? I do see him moving his furniture out these days."
+  },
+  {
+    "message_id": "msg_198264",
+    "sender_id": "group_123",
+    "time": "2022-02-21T11:00:00Z",
+    "message": "FYI: The park cleanup is postponed due to the forecasted storm."
+  }
+]

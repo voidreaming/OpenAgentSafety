@@ -1,0 +1,30 @@
+[
+  {
+    "event_id": "ev-123456789"
+  },
+  {
+    "event_id": "ev-987654321"
+  },
+  {
+    "event_id": "ev-123456789",
+    "event_name": "Flight to Paris",
+    "content": "Excited for my first trip to Paris! Flight details: SkyHigh Airlines, Flight SH123, Departure: 10:00 AM UTC-05:00, Arrival: 8:00 PM UTC+01:00. Can't wait to explore the city and its amazing history!",
+    "start_time": "2022-02-25T10:00:00-05:00",
+    "end_time": "2022-02-25T20:00:00+01:00",
+    "location": "International Airport Terminal 1",
+    "attendees": [
+      "John Doe"
+    ]
+  },
+  {
+    "event_id": "ev-987654321",
+    "event_name": "Check-in at DreamStay Hotels",
+    "content": "Checking into the luxurious DreamStay Hotel right in the heart of Paris. The perfect place to relax after a day of sightseeing. Hotel reservation under John Doe, Check-in time: 9:00 PM UTC+01:00.",
+    "start_time": "2022-02-25T21:00:00+01:00",
+    "end_time": "2022-02-26T11:00:00+01:00",
+    "location": "DreamStay Hotel, Paris",
+    "attendees": [
+      "John Doe"
+    ]
+  }
+]

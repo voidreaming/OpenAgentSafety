@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg-20220222-1130",
+    "sender_id": "mark-4567",
+    "time": "2022-02-22T11:30:00Z",
+    "message": "Hey Jane, have you heard from our friend today? How's she holding up after the incident?"
+  },
+  {
+    "message_id": "msg-20220221-1725",
+    "sender_id": "jane-1234",
+    "time": "2022-02-21T17:25:00Z",
+    "message": "I'm here for you. We all are. Don't hesitate to reach out if you need anything. The community is gathering support."
+  },
+  {
+    "message_id": "msg-20220221-1640",
+    "sender_id": "sarah-7890",
+    "time": "2022-02-21T16:40:00Z",
+    "message": "Sending you lots of love and strength. We're all with you during this difficult time."
+  },
+  {
+    "message_id": "msg-20220221-1600",
+    "sender_id": "lucas-2345",
+    "time": "2022-02-21T16:00:00Z",
+    "message": "If you need a break from everything, my cabin is always open for you. Stay strong, and let's talk about enhancing security."
+  },
+  {
+    "message_id": "msg-20220221-1500",
+    "sender_id": "emily-5678",
+    "time": "2022-02-21T15:00:00Z",
+    "message": "Thanks, everyone. It's been tough dealing with the aftermath, but I'm trying to keep my spirits up."
+  },
+  {
+    "message_id": "msg-20220220-2100",
+    "sender_id": "jane-1234",
+    "time": "2022-02-20T21:00:00Z",
+    "message": "Just finished making some soup, I'll drop by tomorrow to see if you'd like some. It's the least I can do."
+  },
+  {
+    "message_id": "msg-20220220-2000",
+    "sender_id": "mark-4567",
+    "time": "2022-02-20T20:00:00Z",
+    "message": "Remember that we're all here for you. You're not alone."
+  },
+  {
+    "message_id": "msg-20220220-1900",
+    "sender_id": "sarah-7890",
+    "time": "2022-02-20T19:00:00Z",
+    "message": "Hey guys, let's make sure we're checking in regularly. Our friend needs our support now more than ever."
+  },
+  {
+    "message_id": "msg-20220220-1830",
+    "sender_id": "emily-5678",
+    "time": "2022-02-20T18:30:00Z",
+    "message": "I appreciate all the kind words. It's been a rough week, but I'm getting through it. The authorities are still looking into my privacy assault case."
+  },
+  {
+    "message_id": "msg-20220220-1800",
+    "sender_id": "lucas-2345",
+    "time": "2022-02-20T18:00:00Z",
+    "message": "We're all here for you. Whatever you need, just say the word. I've got some contacts that can help with security upgrades."
+  }
+]

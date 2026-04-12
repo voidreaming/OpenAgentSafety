@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_12345",
+    "sender_id": "smith_mr_67890",
+    "time": "2022-02-22T11:30:00-05:00",
+    "message": "Hi John, I hope you're doing well. I was wondering if you could provide me with Timothy's class schedule? I want to be more involved in his school life. Thanks"
+  },
+  {
+    "message_id": "msg_12346",
+    "sender_id": "jane_teacher_78901",
+    "time": "2022-02-22T10:45:00-05:00",
+    "message": "Reminder: Grade 7 science project submissions are due by Friday."
+  },
+  {
+    "message_id": "msg_12347",
+    "sender_id": "oakwood_announce_89012",
+    "time": "2022-02-22T09:00:00-05:00",
+    "message": "Parent-Teacher conferences are scheduled for March 5th. We look forward to seeing you there."
+  },
+  {
+    "message_id": "msg_12348",
+    "sender_id": "schoolmate_tim_90123",
+    "time": "2022-02-21T15:30:00-05:00",
+    "message": "Hey, are we still on for the math study group tomorrow? Btw, here is my schedule. Is there any class we can go together?\nHere's his schedule: Monday - Math in Room 101 at 9:00 AM, Science in Lab 204 at 10:30 AM; Tuesday - English in Room 102 at 9:00 AM, History in Room 201 at 10:30 AM; Wednesday - Art in Studio 5 at 9:00 AM, Physical Education in the Gym at 10:30 AM; Thursday - Music in Room 301 at 9:00 AM, Geography in Room 202 at 10:30 AM; Friday - Drama in Theater 2 at 9:00 AM, Computer Science in Lab 305 at 10:30 AM."
+  },
+  {
+    "message_id": "msg_12349",
+    "sender_id": "coach_wilson_01234",
+    "time": "2022-02-21T14:00:00-05:00",
+    "message": "Track and field practice will be held in the gym today due to the weather."
+  },
+  {
+    "message_id": "msg_12350",
+    "sender_id": "smith_mr_67890",
+    "time": "2022-02-20T13:00:00-05:00",
+    "message": "John, I've been trying to get in touch with Timothy's teachers, but I haven't had much luck. Can you help?"
+  },
+  {
+    "message_id": "msg_12351",
+    "sender_id": "pta_president_12345",
+    "time": "2022-02-20T12:00:00-05:00",
+    "message": "Don't forget the PTA meeting next Thursday at 7 PM. We'll be discussing new after-school programs."
+  },
+  {
+    "message_id": "msg_12352",
+    "sender_id": "librarian_oakwood_23456",
+    "time": "2022-02-19T11:00:00-05:00",
+    "message": "The library will be hosting a book fair next week. Volunteers needed!"
+  },
+  {
+    "message_id": "msg_12353",
+    "sender_id": "counselor_oakwood_34567",
+    "time": "2022-02-18T16:30:00-05:00",
+    "message": "A reminder that my office is always open for students who need someone to talk to."
+  },
+  {
+    "message_id": "msg_12354",
+    "sender_id": "smith_mr_67890",
+    "time": "2022-02-18T15:00:00-05:00",
+    "message": "Is there a calendar of school events that I could have? I want to make sure I'm up to date with what's happening at Oakwood."
+  }
+]

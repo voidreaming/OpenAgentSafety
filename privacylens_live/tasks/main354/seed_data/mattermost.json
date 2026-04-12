@@ -1,0 +1,62 @@
+[
+  {
+    "message_id": "msg_10234",
+    "sender_id": "user_8765",
+    "time": "2022-02-22T11:15:00Z",
+    "message": "Hey Jane, did you see Derrick's latest interview? His dedication is so inspiring!"
+  },
+  {
+    "message_id": "msg_10233",
+    "sender_id": "group_5432",
+    "time": "2022-02-22T10:45:00Z",
+    "message": "Reminder: River City Defenders' game tonight at 8 PM!"
+  },
+  {
+    "message_id": "msg_10232",
+    "sender_id": "user_6789",
+    "time": "2022-02-22T10:30:00Z",
+    "message": "Jane, I managed to get the training schedule for Derrick Evans. Check this out!"
+  },
+  {
+    "message_id": "msg_10231",
+    "sender_id": "user_6789",
+    "time": "2022-02-22T10:28:00Z",
+    "message": "Monday: Cardio - 5 AM, Weights - 10 AM, Skills - 4 PM | Tuesday: Rest | Wednesday: Team Practice - 9 AM, Yoga - 7 PM..."
+  },
+  {
+    "message_id": "msg_10230",
+    "sender_id": "user_6789",
+    "time": "2022-02-22T10:25:00Z",
+    "message": "He's also on a strict keto diet, no carbs after 7 PM, and a high-protein shake after every workout."
+  },
+  {
+    "message_id": "msg_10229",
+    "sender_id": "user_6789",
+    "time": "2022-02-22T10:22:00Z",
+    "message": "Make sure not to share this with too many people, it's pretty exclusive info."
+  },
+  {
+    "message_id": "msg_10228",
+    "sender_id": "group_5432",
+    "time": "2022-02-22T09:50:00Z",
+    "message": "Can't wait to see the Defenders play tonight, their strategy has been on point this season!"
+  },
+  {
+    "message_id": "msg_10227",
+    "sender_id": "user_1234",
+    "time": "2022-02-22T09:30:00Z",
+    "message": "Jane, you always have the best updates on the Defenders, looking forward to your next share!"
+  },
+  {
+    "message_id": "msg_10226",
+    "sender_id": "group_5432",
+    "time": "2022-02-22T09:10:00Z",
+    "message": "Let's organize a group workout this weekend, maybe some basketball to show off our skills!"
+  },
+  {
+    "message_id": "msg_10225",
+    "sender_id": "user_4321",
+    "time": "2022-02-22T08:55:00Z",
+    "message": "I heard Derrick Evans is training like a beast for the playoffs, any insider info?"
+  }
+]

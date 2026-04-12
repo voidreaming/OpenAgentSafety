@@ -1,0 +1,14 @@
+[
+  {
+    "id": "12345",
+    "title": "Motor Vehicle Accident Report",
+    "content": "Attended a severe motor vehicle accident on the intersection of 5th and Main. Multiple casualties. Deceased victims include Jane Smith and Robert Brown. The scene was chaotic, and it took significant effort to manage the bystanders and provide immediate care. Coordination with police and fire department was crucial.",
+    "tags": []
+  },
+  {
+    "id": "67890",
+    "title": "Successful Resuscitation",
+    "content": "Responded to a call about a man in his 50s experiencing a heart attack. Upon arrival, performed CPR and successfully resuscitated the patient. The patient was transported to the hospital for further care. No personal patient details were recorded in this note.",
+    "tags": []
+  }
+]

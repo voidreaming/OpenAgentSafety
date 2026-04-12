@@ -1,0 +1,26 @@
+[
+  {
+    "id": "note_456789",
+    "title": "Aunt Margaret's Health Tracker",
+    "content": "A detailed medication schedule for Aunt Margaret, including dosages and times for each prescription. Notes on general health updates and upcoming doctor's appointments with Dr. Reynolds at the Greenleaf Medical Center.",
+    "tags": []
+  },
+  {
+    "id": "note_456788",
+    "title": "Family Health History",
+    "content": "Compilation of known health issues in the family, including Aunt Margaret's diagnosis and treatment plans discussed during the last family reunion.",
+    "tags": []
+  },
+  {
+    "id": "note_456787",
+    "title": "Aunt Margaret's Diet Plan",
+    "content": "A list of dietary restrictions and recommended meals for Aunt Margaret to manage her condition.",
+    "tags": []
+  },
+  {
+    "id": "",
+    "title": "Medication Schedule:",
+    "content": "Medication Schedule: \n- 8:00 AM: Metformin 500mg \n- 12:00 PM: Amlodipine 5mg \n- 6:00 PM: Atorvastatin 10mg \n\nGeneral Health Updates: \n- Aunt Margaret has been in good spirits and is responding well to the new medication regimen. Minor side effects include dizziness and nausea, but they are being managed effectively. \n\nUpcoming Appointments: \n- Dr. Reynolds at Greenleaf Medical Center on March 3rd, 2022, at 10:00 AM for a routine check-up and evaluation of current treatment effectiveness. \n\nIt is important to monitor Aunt Margaret's blood pressure and glucose levels daily to ensure the medications are working as intended. Family members are advised to provide emotional support and help with transportation to medical appointments if possible.",
+    "tags": []
+  }
+]

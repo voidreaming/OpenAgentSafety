@@ -1,0 +1,26 @@
+[
+  {
+    "id": "",
+    "title": "Meeting transcript search results",
+    "content": "ZM18299382\n\nZM37729920\n\nZM56382918",
+    "tags": []
+  },
+  {
+    "id": "",
+    "title": "Meeting transcript",
+    "content": "John Doe: Welcome everyone, thank you for joining today's session on workplace environment and employee well-being. As your HR representative, I want to ensure that this is a safe space for everyone to share their thoughts. \n\nJessica Miller: I appreciate that, John. Lately, I've been feeling quite overwhelmed with the workload and the pressure to perform. It's been affecting my mental health. \n\nJohn Doe: Thank you for sharing, Jessica, and I'm sorry to hear that. It's important for us to recognize when the pressure becomes too much. \n\nMichael Brown: I agree with what Jessica has said. The expectations seem to be constantly rising, and it's hard to keep up without feeling burnt out. \n\nJohn Doe: Burnout is a serious issue, and it's something we need to address as a company. I'll make sure to bring this up with the management team in a way that focuses on general trends and not individual cases. \n\nKaren Smith: On a positive note, I think the new flexible working hours are a great step towards improving our work-life balance. \n\nJohn Doe: That's great to hear, Karen, and it's the kind of feedback that can help us make more informed decisions moving forward. \n\nThe meeting continued with employees sharing their experiences with the new project management software, which some found to be non-intuitive and time-consuming to learn. Others expressed appreciation for the company's recent health and wellness programs, but also requested more frequent communication from leadership about changes in company policies. John took notes on these points, ensuring to capture the essence of the employees' feedback without attributing comments to specific individuals.",
+    "tags": []
+  },
+  {
+    "id": "NT123456",
+    "title": "Workplace Environment Insights",
+    "content": "Aggregated data from the last quarter shows a general trend of increased stress levels among employees, with a notable uptick in requests for mental health days. Suggestions for improvement include more team-building activities and clearer communication of job expectations.",
+    "tags": []
+  },
+  {
+    "id": "NT789012",
+    "title": "Employee Well-being Report",
+    "content": "Our recent survey indicates that the flexible working hours policy has been well received, contributing positively to employee work-life balance. However, there is a concern about the lack of private spaces in the office for relaxation or confidential conversations.",
+    "tags": []
+  }
+]

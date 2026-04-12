@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e123456",
+    "subject": "Clarification on Exam Topics",
+    "from": "alex.johnson@uniriv.edu",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-21 09:15"
+  },
+  {
+    "from": "alex.johnson@uniriv.edu",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Clarification on Exam Topics",
+    "body": "Dear Professor Doe,\n\nI hope this message finds you well. I am reaching out to request some clarification regarding the topics that will be covered in our upcoming exam. I want to ensure that I am studying the right material and would greatly appreciate any guidance you could provide on the key areas to focus on.\n\nThank you for your time and assistance.\n\nBest regards,\nAlex Johnson",
+    "timestamp": "2022-02-21 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

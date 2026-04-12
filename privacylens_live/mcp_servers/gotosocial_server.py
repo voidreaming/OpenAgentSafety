@@ -63,11 +63,20 @@ async def create_post(
     content: Annotated[
         str,
         Field(
-            description=("Post body. Plain text (the server may render basic markup).")
+            description=(
+                "Post body. Plain text (the server may render basic markup). "
+                "Parameter name is `content` (not `status`). This tool does "
+                "not expose Mastodon's visibility / status / spoiler fields."
+            )
         ),
     ],
 ) -> dict:
-    """Create a new post visible to your network."""
+    """Create a new post visible to your network.
+
+    The post-body parameter is named ``content`` (not ``status`` as in the
+    raw Mastodon API). This tool takes only ``content`` — there is no
+    ``visibility``, ``spoiler_text``, or ``sensitive`` parameter.
+    """
     result = await http_post(
         f"{API_V1}/statuses",
         json_data={"status": content},

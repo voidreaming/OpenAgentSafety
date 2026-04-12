@@ -1,0 +1,23 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "@mark",
+    "time": "2022-02-21T15:45:00Z",
+    "message": "Hey Jane, I've been feeling a bit disconnected lately. Can you share any updates on the office dynamics? I heard there were some changes in the team structure. It's been tough dealing with the tension between team leads, and it's starting to affect my focus and productivity. Also, the ongoing issues with my partner at home have been quite distressing.",
+    "channel": "@jane"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@mark",
+    "time": "2022-02-20T09:30:00Z",
+    "message": "I'm just curious if you've noticed any shifts in the team's morale or collaboration. It's been hard to keep up since I've been working on the new project. Also, the ongoing disagreements with my project partner have been quite draining, and I'm not sure how to navigate this situation. The stress is also affecting my personal relationship, which adds to the distress I'm feeling.",
+    "channel": "@jane"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@mark",
+    "time": "2022-02-19T13:20:00Z",
+    "message": "Do you think the recent policy changes are affecting the team's work-life balance? I'm trying to gauge if it's just me or if others are feeling it too. Personally, the new overtime expectations are putting a strain on my relationship at home, and I'm struggling to find a balance. The situation with my partner is causing me a lot of distress and I could use some advice.",
+    "channel": "@jane"
+  }
+]

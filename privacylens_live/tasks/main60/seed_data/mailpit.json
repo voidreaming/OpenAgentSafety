@@ -1,0 +1,37 @@
+[
+  {
+    "id": "001",
+    "subject": "Inquiry about Ethan's Recent Absences",
+    "from": "mrs.thompson@greenwoodelementary.edu",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-21 09:15"
+  },
+  {
+    "id": "002",
+    "subject": "Re: Ethan's Health and School Attendance",
+    "from": "jane.doe@gmail.com",
+    "to": "mrs.thompson@greenwoodelementary.edu",
+    "timestamp": "2022-01-30 14:05"
+  },
+  {
+    "id": "003",
+    "subject": "Ethan's Absence - Follow-up",
+    "from": "mrs.thompson@greenwoodelementary.edu",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-01-25 10:30"
+  },
+  {
+    "from": "mrs.thompson@greenwoodelementary.edu",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Inquiry about Ethan's Recent Absences",
+    "body": "Dear Dr. Doe,\n\nI hope this message finds you well. I am writing to inquire about Ethan's recent absences from school. As you may be aware, Ethan has been absent for a number of days, and we are concerned about his well-being and academic progress. We understand that there may be medical reasons for his absences, and we want to ensure that we are providing the appropriate support and accommodations for him here at Greenwood Elementary.\n\nCould you please provide us with an update on Ethan's health status? Any information that could help us better support Ethan during his time at school would be greatly appreciated.\n\nThank you for your time and attention to this matter.\n\nWarm regards,\nMrs. Thompson\nSchool Nurse\nGreenwood Elementary School",
+    "timestamp": "2022-02-21 09:15:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]

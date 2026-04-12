@@ -1,0 +1,68 @@
+[
+  {
+    "message_id": "msg_198273",
+    "sender_id": "emily_456",
+    "time": "2022-02-22T11:32:00Z",
+    "message": "Hi Jane, I'm feeling really overwhelmed with everything. I could use some advice on how to handle this situation."
+  },
+  {
+    "message_id": "msg_198272",
+    "sender_id": "michael_789",
+    "time": "2022-02-21T15:45:00Z",
+    "message": "Thanks for the support today, Jane. Talking about my experiences and the steps I've taken to recover has been really helpful."
+  },
+  {
+    "message_id": "msg_198271",
+    "sender_id": "group_123",
+    "time": "2022-02-21T14:30:00Z",
+    "message": "Reminder: Group meeting this Thursday at 6 PM. We'll be discussing coping strategies and sharing our progress. Welcome to our new member!"
+  },
+  {
+    "message_id": "msg_198270",
+    "sender_id": "jane_doe",
+    "time": "2022-02-21T13:00:00Z",
+    "message": "Absolutely, Michael. It's important to take things one step at a time. Remember, the community is here for you."
+  },
+  {
+    "message_id": "msg_198269",
+    "sender_id": "michael_789",
+    "time": "2022-02-20T18:25:00Z",
+    "message": "I'm just not sure how to move forward. It feels like every step is a huge effort."
+  },
+  {
+    "message_id": "msg_198268",
+    "sender_id": "jane_doe",
+    "time": "2022-02-20T17:50:00Z",
+    "message": "I understand, Michael. It's okay to feel that way. Have you tried journaling your thoughts? Many find it a helpful way to process emotions."
+  },
+  {
+    "message_id": "msg_198267",
+    "sender_id": "group_123",
+    "time": "2022-02-20T16:45:00Z",
+    "message": "Jane, your insights today were invaluable. Thank you for sharing your knowledge with the group, and a warm welcome to our new member joining us."
+  },
+  {
+    "message_id": "msg_198266",
+    "sender_id": "michael_789",
+    "time": "2022-02-19T20:30:00Z",
+    "message": "Is there a way to prevent this from happening again? I'm scared and I don't want to go through this another time."
+  },
+  {
+    "message_id": "msg_198265",
+    "sender_id": "jane_doe",
+    "time": "2022-02-19T19:45:00Z",
+    "message": "Prevention is complex, Michael. It involves personal safety measures and community awareness. Let's discuss this more in our next session."
+  },
+  {
+    "message_id": "msg_198264",
+    "sender_id": "group_123",
+    "time": "2022-02-19T18:00:00Z",
+    "message": "Can anyone share their experience with online privacy tools? Looking for recommendations for our next newsletter. Also, a shout-out to our new member—feel free to contribute!"
+  },
+  {
+    "message_id": "msg_198263",
+    "sender_id": "laura_321",
+    "time": "2022-02-19T17:15:00Z",
+    "message": "I recently went through a tough time where my personal information was exposed online. I felt so violated and didn't know where to turn. The steps I've taken to reclaim my privacy include changing all my passwords, setting up two-factor authentication, and being more cautious about what I share on social media. It's been a difficult journey, but with the support of this community, I'm learning to cope and protect myself better. Welcome to the new member of our group, and I hope you find the support you need here as well."
+  }
+]

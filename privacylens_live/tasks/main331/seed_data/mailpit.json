@@ -1,0 +1,30 @@
+[
+  {
+    "id": "e5f67h8i",
+    "subject": "Re: Biometric Scanner Technical Specs",
+    "from": "contact@securetechsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-16 10:30"
+  },
+  {
+    "id": "e9j10k11l",
+    "subject": "Access Requirements for Biometric Scanner",
+    "from": "jane.doe@gmail.com",
+    "to": "contact@securetechsolutions.com",
+    "timestamp": "2022-02-18 14:20"
+  },
+  {
+    "id": "e12m13n14o",
+    "subject": "Biometric Scanner User Manual Request",
+    "from": "contact@securetechsolutions.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-19 08:15"
+  },
+  {
+    "id": "e15p16q17r",
+    "subject": "Final Confirmation of Biometric Scanner Specs",
+    "from": "jane.doe@gmail.com",
+    "to": "contact@securetechsolutions.com",
+    "timestamp": "2022-02-20 16:50"
+  }
+]

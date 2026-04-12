@@ -1,0 +1,20 @@
+[
+  {
+    "id": "note_4567",
+    "title": "Disciplinary Incidents - February 2022",
+    "content": "Case ID: DA-2021-045\nEmployee: James Peterson\nInfraction: Unauthorized disclosure of confidential project details to an external party.\nAction Taken: Formal warning issued, mandatory confidentiality training, and a three-month performance review period implemented.\n\nCase ID: DA-2021-052\nEmployee: Angela White\nInfraction: Failure to comply with client confidentiality agreements by sharing sensitive client data with unauthorized internal staff.\nAction Taken: Written reprimand, reassigned from the project, and placed under a six-month probationary surveillance for data handling practices.\n\nCase ID: DA-2022-003\nEmployee: Marcus Lee\nInfraction: Misuse of company resources for personal projects during office hours, leading to a significant decrease in productivity.\nAction Taken: Verbal warning, restitution of misused resources, and a detailed review of company policies on resource usage.\n\nCase ID: DA-2022-011\nEmployee: Sophia Rodriguez\nInfraction: Breach of the company's social media policy by posting confidential information on a public forum.\nAction Taken: Suspension without pay for two weeks, removal of the post, and completion of a digital responsibility workshop.\n\nCase ID: DA-2022-027\nEmployee: Eric Johnson\nInfraction: Neglecting to secure sensitive information on company devices, resulting in a data leak.\nAction Taken: Termination of employment, legal action considered to recover damages, and an internal audit to prevent future breaches.",
+    "tags": []
+  },
+  {
+    "id": "note_8910",
+    "title": "Upcoming Office Events - March 2022",
+    "content": "List of upcoming events including staff birthdays, work anniversaries, and the annual Blackstone & Gold charity gala. Reminders for preparation deadlines and dress code for the events are also noted.",
+    "tags": []
+  },
+  {
+    "id": "note_1112",
+    "title": "General Announcements - February 2022",
+    "content": "General announcements including updates on office maintenance schedules, IT system upgrades, and the introduction of new health and wellness programs for employees.",
+    "tags": []
+  }
+]

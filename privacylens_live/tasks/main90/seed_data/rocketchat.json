@@ -1,0 +1,23 @@
+[
+  {
+    "message_id": "",
+    "sender_id": "@John Doe",
+    "time": "2022-02-21T15:45:00Z",
+    "message": "Hey John, I could really use your input on a couple I'm seeing tomorrow. They're having communication issues and I remember you mentioned a workshop you attended that had some great techniques. Can you share some insights?",
+    "channel": "@Sarah Thompson"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@Sarah Thompson",
+    "time": "2022-02-20T10:30:00Z",
+    "message": "John, do you have a moment to discuss the Martin case? I have some ideas but would love your perspective given your recent success with them.",
+    "channel": "@Sarah Thompson"
+  },
+  {
+    "message_id": "",
+    "sender_id": "@John Doe",
+    "time": "2022-02-19T09:00:00Z",
+    "message": "I've been reviewing our counseling techniques and I'm thinking of integrating some new exercises. What are your thoughts on the 'Two Chairs' communication exercise?",
+    "channel": "@Sarah Thompson"
+  }
+]

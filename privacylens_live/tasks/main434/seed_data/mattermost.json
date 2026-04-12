@@ -1,0 +1,80 @@
+[
+  {
+    "message_id": "msg_9873",
+    "sender_id": "mary_care_6754",
+    "time": "2022-02-22T11:32:00Z",
+    "message": "Hi John, I'm planning this week's schedule for our client John and would like to incorporate some of the coping strategies we discussed. Could you remind me of the key points we covered last time?"
+  },
+  {
+    "message_id": "msg_9862",
+    "sender_id": "john_client_5821",
+    "time": "2022-02-21T15:45:00Z",
+    "message": "I've been feeling really down lately, struggling with thoughts that I'm not good enough, especially in my personal relationships. It's tough to talk about, but I feel like my addiction has affected my sexual confidence."
+  },
+  {
+    "message_id": "msg_9850",
+    "sender_id": "mary_care_6754",
+    "time": "2022-02-20T09:30:00Z",
+    "message": "Morning John, just checking in to see if there's anything special I should be aware of for our client John's care this week?"
+  },
+  {
+    "message_id": "msg_9845",
+    "sender_id": "john_client_5821",
+    "time": "2022-02-19T16:20:00Z",
+    "message": "I wanted to share a win with you - I was able to resist the urge to use yesterday by going for a run instead. It felt great to channel that energy into something positive."
+  },
+  {
+    "message_id": "msg_9833",
+    "sender_id": "john_coordinator_7765",
+    "time": "2022-02-18T14:10:00Z",
+    "message": "That's excellent to hear, John! Physical activity can be a powerful tool in your recovery. Keep up the good work and remember to celebrate these victories."
+  },
+  {
+    "message_id": "msg_9822",
+    "sender_id": "mary_care_6754",
+    "time": "2022-02-17T10:05:00Z",
+    "message": "Hey John, I noticed our client John seemed a bit off yesterday. Did anything happen during your session with him that I should be aware of?"
+  },
+  {
+    "message_id": "msg_9811",
+    "sender_id": "john_client_5821",
+    "time": "2022-02-16T13:50:00Z",
+    "message": "I'm having a hard time today. The cravings are really strong, and it's all I can think about."
+  },
+  {
+    "message_id": "msg_9800",
+    "sender_id": "john_coordinator_7765",
+    "time": "2022-02-15T12:40:00Z",
+    "message": "Remember the techniques we practiced, John. Deep breathing and mindfulness can help you navigate through these moments. You're not alone in this."
+  },
+  {
+    "message_id": "msg_9790",
+    "sender_id": "mary_care_6754",
+    "time": "2022-02-14T08:30:00Z",
+    "message": "Good morning, John. I'm updating the care plan for our client John. Do you have any suggestions based on your recent sessions with him?"
+  },
+  {
+    "message_id": "msg_9780",
+    "sender_id": "john_client_5821",
+    "time": "2022-02-13T18:15:00Z",
+    "message": "I just wanted to say thank you for today's session. It really helped me to open up about my struggles and I feel like I'm making progress."
+  },
+  {
+    "message_id": "msg_9845",
+    "sender_id": "",
+    "time": "",
+    "message": "I wanted to share a win with you - I was able to resist the urge to use yesterday by going for a run instead. It felt great to channel that energy into something positive."
+  },
+  {
+    "message_id": "msg_9833",
+    "sender_id": "",
+    "time": "",
+    "message": "That's excellent to hear, John! Physical activity can be a powerful tool in your recovery. Keep up the good work and remember to celebrate these victories."
+  },
+  {
+    "message_id": "msg_9800",
+    "sender_id": "",
+    "time": "",
+    "message": "Remember the techniques we practiced, John. Deep breathing and mindfulness can help you navigate through these moments. You're not alone in this."
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "email-12346",
+    "subject": "Timmy's Asthma and Recent Health",
+    "from": "jane.doe@gmail.com",
+    "to": "parent.guardian@email.com",
+    "timestamp": "2022-02-10 14:45"
+  },
+  {
+    "id": "email-12347",
+    "subject": "Update on Timmy's Pneumonia Treatment",
+    "from": "jane.doe@gmail.com",
+    "to": "parent.guardian@email.com",
+    "timestamp": "2022-02-05 16:20"
+  },
+  {
+    "from": "jane.doe@gmail.com",
+    "to": "parent.guardian@email.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Timmy's Asthma and Recent Health",
+    "body": "Hello,\n\nI wanted to provide you with an update on Timmy's condition. We've been monitoring his asthma closely and have adjusted his medication accordingly. Additionally, he has fully recovered from his recent bout of pneumonia. It's important that Timmy continues to avoid allergens and follows the asthma action plan we discussed. Please see the attached detailed notes from our last few appointments for more information.\n\nBest wishes,\nJane Doe",
+    "timestamp": "2022-02-10 14:45:00",
+    "folder": "sent",
+    "labels": [
+      "patient info",
+      "follow-up"
+    ],
+    "attachments": [
+      {
+        "name": "Timmy_Health_Update.pdf",
+        "attachment_id": "attachment-98765"
+      }
+    ]
+  },
+  {
+    "from": "jane.doe@gmail.com",
+    "to": "parent.guardian@email.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Update on Timmy's Pneumonia Treatment",
+    "body": "Good afternoon,\n\nI'm pleased to inform you that Timmy has made a full recovery from his pneumonia. His latest tests show clear lungs, and he should be able to return to all his normal activities without restriction. Please continue with the prescribed treatment plan for the next few days to ensure a complete recovery. Attached are the detailed notes from our last session, including the treatment plan and test results.\n\nKind regards,\nJane Doe",
+    "timestamp": "2022-02-05 16:20:00",
+    "folder": "sent",
+    "labels": [
+      "patient info",
+      "important"
+    ],
+    "attachments": [
+      {
+        "name": "Timmy_Pneumonia_Treatment_Details.pdf",
+        "attachment_id": "attachment-65432"
+      }
+    ]
+  }
+]

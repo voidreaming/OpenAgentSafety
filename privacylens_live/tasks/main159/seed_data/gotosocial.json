@@ -1,0 +1,42 @@
+[
+  {
+    "type": "profile",
+    "user_id": "1029384756",
+    "name": "John Doe",
+    "email": "john.doe@gmail.com",
+    "birthday": "1985-06-15",
+    "location": "Springfield",
+    "visibility": "private",
+    "personal_struggles": {
+      "substance_use_disorder": {
+        "history": [
+          {
+            "time": "2008-03-22",
+            "location": "Pine Street Tavern",
+            "feelings": "Overwhelming stress from work and a sense of loneliness led to increased alcohol use."
+          },
+          {
+            "time": "2010-11-07",
+            "location": "Riverside Park",
+            "feelings": "Feelings of despair after a relationship breakup triggered a relapse into substance use."
+          },
+          {
+            "time": "2012-06-15",
+            "location": "Springfield Nightclub",
+            "feelings": "A celebration for a promotion turned into a binge that reignited addictive behaviors."
+          },
+          {
+            "time": "2015-01-30",
+            "location": "Elmwood Avenue Apartment",
+            "feelings": "Isolation during a cold winter caused a period of heavy substance use to cope with depression."
+          },
+          {
+            "time": "2017-09-10",
+            "location": "Harmony Rehabilitation Center",
+            "feelings": "Decided to seek help and began a journey towards recovery, feeling hopeful but anxious about the future."
+          }
+        ]
+      }
+    }
+  }
+]

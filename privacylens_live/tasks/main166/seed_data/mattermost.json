@@ -1,0 +1,44 @@
+[
+  {
+    "message_id": "msg-001",
+    "sender_id": "",
+    "time": "",
+    "message": "Hey team, are we all set for the new project discussion next Tuesday?"
+  },
+  {
+    "message_id": "msg-002",
+    "sender_id": "",
+    "time": "",
+    "message": "I've checked the project timeline, and it looks like we're good to go. Just waiting for the final confirmation from Jane."
+  },
+  {
+    "message_id": "msg-003",
+    "sender_id": "",
+    "time": "",
+    "message": "Jane, do you have the latest updates from the client about the project kickoff?"
+  },
+  {
+    "message_id": "msg-004",
+    "sender_id": "",
+    "time": "",
+    "message": "Can't wait to start on this new challenge. I hope the kickoff meeting will clarify a lot of questions."
+  },
+  {
+    "message_id": "msg-005",
+    "sender_id": "",
+    "time": "",
+    "message": "Reminder: Project Kickoff Meeting on March 1st at 9 AM in Conference Room B."
+  },
+  {
+    "message_id": "msg-006",
+    "sender_id": "",
+    "time": "",
+    "message": "Just a heads-up, we'll make sure to wrap up the meeting before a certain time to accommodate a team member's schedule. Take care!"
+  },
+  {
+    "message_id": "msg-007",
+    "sender_id": "",
+    "time": "",
+    "message": "Thank you all for being so understanding about my schedule."
+  }
+]

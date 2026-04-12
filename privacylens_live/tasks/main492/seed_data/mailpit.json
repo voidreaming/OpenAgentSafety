@@ -1,0 +1,11 @@
+[
+  {
+    "type": "contact",
+    "contact_id": "c_98765",
+    "name": "Emily Turner",
+    "email": "emily.turner@acmecorp.com",
+    "remark": "Prestige Uni alumna, recently promoted at Acme Corp",
+    "info": "Updated contact details on 2022-02-22",
+    "mailing_address": "123 Elm Street, Apt 45, Springfield, ST 67890"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "e1d23c45",
+    "subject": "Re: Joint Initiative Planning",
+    "from": "mark@helpinghands.org",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-15 09:30"
+  },
+  {
+    "id": "e3f45678",
+    "subject": "Upcoming Event with Helping Hands Alliance",
+    "from": "events@stmaryschurch.org",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-10 14:45"
+  },
+  {
+    "id": "e4a78901",
+    "subject": "Confidential: Parishioner Support",
+    "from": "tom.clarkson@personalmail.com",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-08 16:20"
+  },
+  {
+    "id": "e5b23456",
+    "subject": "Helping Hands Alliance: Volunteer Coordination",
+    "from": "volunteer@stmaryschurch.org",
+    "to": "jane.doe@gmail.com",
+    "timestamp": "2022-02-05 10:15"
+  },
+  {
+    "id": "e6c78901",
+    "subject": "Joint Initiative Ideas",
+    "from": "jane.doe@gmail.com",
+    "to": "mark@helpinghands.org",
+    "timestamp": "2022-01-30 08:00"
+  },
+  {
+    "from": "mark@helpinghands.org",
+    "to": "jane.doe@gmail.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Re: Joint Initiative Planning",
+    "body": "Hello Jane,\n\nThank you for your continued support. The outline for the joint initiative looks promising. I believe that with St. Mary's Church's involvement, we can make a significant impact on our community's well-being. Please let me know if there's any specific information or documentation you need from us to proceed.\n\nBest regards,\nMark",
+    "timestamp": "2022-02-15 09:30:00",
+    "folder": "inbox",
+    "labels": [
+      "important"
+    ],
+    "attachments": []
+  }
+]
