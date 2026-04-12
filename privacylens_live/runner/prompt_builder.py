@@ -40,12 +40,17 @@ from __future__ import annotations
 from pathlib import Path
 
 
-PROMPT_VERSION = "v1"
+PROMPT_VERSION = "v2"
 
 PROMPT_DIR = Path(__file__).parent / "prompts"
 PRIVACYLENS_SYSTEM_PROMPT_PATH = (PROMPT_DIR / "privacylens_system_prompt.j2").resolve()
 
-VALID_PROMPT_VARIANTS = ("baseline", "assistant", "assistant_privacy")
+VALID_PROMPT_VARIANTS = (
+    "baseline",
+    "assistant",
+    "assistant_privacy",
+    "assistant_privacy_ctx",
+)
 
 # PrivacyChecker reasoning block. Generic phrasing — no "contextual
 # integrity", no regulation names, no "privacy norms" buzzwords — so it

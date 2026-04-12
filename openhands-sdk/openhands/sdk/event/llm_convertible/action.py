@@ -66,6 +66,34 @@ class ActionEvent(LLMConvertibleEvent):
         description="The LLM's assessment of the safety risk of this action.",
     )
 
+    privacy_data_type: str | None = Field(
+        default=None,
+        description=(
+            "The specific information this action transmits "
+            "(contextual privacy assessment)."
+        ),
+    )
+    privacy_data_subject: str | None = Field(
+        default=None,
+        description=(
+            "The person whose information is being shared "
+            "(contextual privacy assessment)."
+        ),
+    )
+    privacy_data_sender: str | None = Field(
+        default=None,
+        description=(
+            "The person sending or publishing this information "
+            "(contextual privacy assessment)."
+        ),
+    )
+    privacy_data_recipient: str | None = Field(
+        default=None,
+        description=(
+            "Who will receive or see this content (contextual privacy assessment)."
+        ),
+    )
+
     critic_result: CriticResult | None = Field(
         default=None,
         description="Optional critic evaluation of this action and preceding history.",

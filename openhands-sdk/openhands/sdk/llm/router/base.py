@@ -53,6 +53,7 @@ class RouterLLM(LLM):
         tools: Sequence[ToolDefinition] | None = None,
         return_metrics: bool = False,
         add_security_risk_prediction: bool = False,
+        add_privacy_context: bool = False,
         on_token: TokenCallbackType | None = None,
         **kwargs,
     ) -> LLMResponse:
@@ -65,6 +66,7 @@ class RouterLLM(LLM):
             tools: Optional list of tools available to the model
             return_metrics: Whether to return usage metrics
             add_security_risk_prediction: Add security_risk field to tool schemas
+            add_privacy_context: Add CI privacy fields to write tool schemas
             on_token: Optional callback for streaming tokens
             **kwargs: Additional arguments passed to the LLM API
 
@@ -84,6 +86,7 @@ class RouterLLM(LLM):
             tools=tools,
             _return_metrics=return_metrics,
             add_security_risk_prediction=add_security_risk_prediction,
+            add_privacy_context=add_privacy_context,
             on_token=on_token,
             **kwargs,
         )

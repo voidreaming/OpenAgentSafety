@@ -505,6 +505,7 @@ class Agent(CriticMixin, AgentBase):
                 _messages,
                 tools=list(self.tools_map.values()),
                 on_token=on_token,
+                add_privacy_context=self.privacy_analyzer is not None,
             )
         except FunctionCallValidationError as e:
             logger.warning(f"LLM generated malformed function call: {e}")
@@ -751,6 +752,26 @@ class Agent(CriticMixin, AgentBase):
         security_risk = risk.SecurityRisk(raw)
         return security_risk
 
+    def _extract_privacy_context(
+        self,
+        arguments: dict,
+        read_only_tool: bool,
+    ) -> dict[str, str | None]:
+        """Extract and remove CI privacy context fields from tool arguments.
+
+        Returns a dict with keys from PRIVACY_CONTEXT_FIELDS.
+        All values are None when the fields are absent (read-only tool or
+        privacy_analyzer was not configured).
+        """
+        from openhands.sdk.tool.tool import PRIVACY_CONTEXT_FIELDS
+
+        result: dict[str, str | None] = {}
+        for field_name in PRIVACY_CONTEXT_FIELDS:
+            result[field_name] = arguments.pop(field_name, None)
+        if read_only_tool:
+            return {k: None for k in PRIVACY_CONTEXT_FIELDS}
+        return result
+
     def _extract_summary(
         self,
         tool_name: str,
@@ -872,6 +893,17 @@ class Agent(CriticMixin, AgentBase):
                 "Unexpected 'security_risk' key found in tool arguments"
             )
 
+            privacy_ctx = self._extract_privacy_context(
+                arguments,
+                tool.annotations.readOnlyHint if tool.annotations else False,
+            )
+            from openhands.sdk.tool.tool import PRIVACY_CONTEXT_FIELDS
+
+            for _pf in PRIVACY_CONTEXT_FIELDS:
+                assert _pf not in arguments, (
+                    f"Unexpected '{_pf}' key found in tool arguments"
+                )
+
             summary = self._extract_summary(tool.name, arguments, tool=tool)
 
             action: Action = tool.action_from_arguments(arguments)
@@ -918,6 +950,10 @@ class Agent(CriticMixin, AgentBase):
             tool_call=tool_call,
             llm_response_id=llm_response_id,
             security_risk=security_risk,
+            privacy_data_type=privacy_ctx.get("data_type"),
+            privacy_data_subject=privacy_ctx.get("data_subject"),
+            privacy_data_sender=privacy_ctx.get("data_sender"),
+            privacy_data_recipient=privacy_ctx.get("data_recipient"),
             summary=summary,
         )
 
@@ -984,11 +1020,30 @@ class Agent(CriticMixin, AgentBase):
             )
             return [error_event]
 
+        # Post-execution information flow extraction for read-only tools
+        information_flows = None
+        if (
+            self.privacy_analyzer is not None
+            and tool.annotations is not None
+            and tool.annotations.readOnlyHint
+        ):
+            try:
+                information_flows = self.privacy_analyzer.extract_flows(
+                    observation, tool.name
+                )
+            except Exception as exc:
+                logger.warning(
+                    "Privacy flow extraction failed for %s: %s",
+                    tool.name,
+                    exc,
+                )
+
         obs_event = ObservationEvent(
             observation=observation,
             action_id=action_event.id,
             tool_name=tool.name,
             tool_call_id=action_event.tool_call.id,
+            information_flows=information_flows,
         )
         return [obs_event]
 

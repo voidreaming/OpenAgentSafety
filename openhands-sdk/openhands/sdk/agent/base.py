@@ -23,6 +23,7 @@ from openhands.sdk.llm import LLM
 from openhands.sdk.llm.utils.model_prompt_spec import get_model_prompt_spec
 from openhands.sdk.logger import get_logger
 from openhands.sdk.mcp import create_mcp_tools
+from openhands.sdk.privacy.analyzer import PrivacyAnalyzerBase
 from openhands.sdk.tool import (
     BUILT_IN_TOOL_CLASSES,
     BUILT_IN_TOOLS,
@@ -184,6 +185,14 @@ class AgentBase(DiscriminatedUnionMixin, ABC):
             "May impact performance, especially in 'all_actions' mode."
         ),
         examples=[{"kind": "AgentFinishedCritic"}],
+    )
+
+    privacy_analyzer: PrivacyAnalyzerBase | None = Field(
+        default=None,
+        description=(
+            "Optional privacy analyzer to extract information flows "
+            "from read/discovery tool observations post-execution."
+        ),
     )
 
     tool_concurrency_limit: int = Field(

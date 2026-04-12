@@ -44,6 +44,7 @@ ActionT = TypeVar("ActionT", bound=Action)
 ObservationT = TypeVar("ObservationT", bound=Observation)
 _action_types_with_risk: dict[type, type] = {}
 _action_types_with_summary: dict[type, type] = {}
+_action_types_with_privacy_context: dict[type, type] = {}
 _action_type_lock = threading.Lock()
 
 
@@ -408,6 +409,7 @@ class ToolDefinition[ActionT, ObservationT](DiscriminatedUnionMixin, ABC):
     def _get_tool_schema(
         self,
         add_security_risk_prediction: bool = False,
+        add_privacy_context: bool = False,
         action_type: type[Schema] | None = None,
     ) -> dict[str, Any]:
         action_type = action_type or self.action_type
@@ -419,6 +421,13 @@ class ToolDefinition[ActionT, ObservationT](DiscriminatedUnionMixin, ABC):
         if add_security_risk_prediction:
             action_type = create_action_type_with_risk(action_type)
 
+        # Apply contextual privacy assessment if enabled (same filter)
+        add_privacy_context = add_privacy_context and (
+            self.annotations is None or (not self.annotations.readOnlyHint)
+        )
+        if add_privacy_context:
+            action_type = create_action_type_with_privacy_context(action_type)
+
         # Always add summary field for transparency and explainability
         action_type = _create_action_type_with_summary(action_type)
 
@@ -427,6 +436,7 @@ class ToolDefinition[ActionT, ObservationT](DiscriminatedUnionMixin, ABC):
     def to_openai_tool(
         self,
         add_security_risk_prediction: bool = False,
+        add_privacy_context: bool = False,
         action_type: type[Schema] | None = None,
     ) -> ChatCompletionToolParam:
         """Convert a Tool to an OpenAI tool.
@@ -436,6 +446,8 @@ class ToolDefinition[ActionT, ObservationT](DiscriminatedUnionMixin, ABC):
                 to the action schema for LLM to predict. This is useful for
                 tools that may have safety risks, so the LLM can reason about
                 the risk level before calling the tool.
+            add_privacy_context: Whether to add CI privacy context fields
+                to the action schema for non-readOnly tools.
             action_type: Optionally override the action_type to use for the schema.
                 This is useful for MCPTool to use a dynamically created action type
                 based on the tool's input schema.
@@ -451,6 +463,7 @@ class ToolDefinition[ActionT, ObservationT](DiscriminatedUnionMixin, ABC):
                 description=self.description,
                 parameters=self._get_tool_schema(
                     add_security_risk_prediction,
+                    add_privacy_context,
                     action_type,
                 ),
             ),
@@ -459,6 +472,7 @@ class ToolDefinition[ActionT, ObservationT](DiscriminatedUnionMixin, ABC):
     def to_responses_tool(
         self,
         add_security_risk_prediction: bool = False,
+        add_privacy_context: bool = False,
         action_type: type[Schema] | None = None,
     ) -> FunctionToolParam:
         """Convert a Tool to a Responses API function tool (LiteLLM typed).
@@ -468,6 +482,7 @@ class ToolDefinition[ActionT, ObservationT](DiscriminatedUnionMixin, ABC):
 
         Args:
             add_security_risk_prediction: Whether to add a `security_risk` field
+            add_privacy_context: Whether to add CI privacy context fields
             action_type: Optional override for the action type
 
         Note:
@@ -481,6 +496,7 @@ class ToolDefinition[ActionT, ObservationT](DiscriminatedUnionMixin, ABC):
             "description": self.description,
             "parameters": self._get_tool_schema(
                 add_security_risk_prediction,
+                add_privacy_context,
                 action_type,
             ),
             "strict": False,
@@ -550,6 +566,74 @@ def create_action_type_with_risk(action_type: type[Schema]) -> type[Schema]:
         )
         _action_types_with_risk[action_type] = action_type_with_risk
         return action_type_with_risk
+
+
+# The four CI-inspired privacy context fields that must be popped
+# before action validation. Kept as a module-level constant so
+# _extract_privacy_context and the assertion in _get_action_event
+# use the same source of truth.
+PRIVACY_CONTEXT_FIELDS = (
+    "data_type",
+    "data_subject",
+    "data_sender",
+    "data_recipient",
+)
+
+
+def create_action_type_with_privacy_context(
+    action_type: type[Schema],
+) -> type[Schema]:
+    """Create a new action type with contextual privacy assessment fields.
+
+    Adds four fields that force the LLM to decompose the information flow
+    (CI tuple) before executing a write/send action:
+    - data_type: the specific information being transmitted
+    - data_subject: whose data is being shared
+    - data_sender: who is sending/publishing
+    - data_recipient: who will see it and channel visibility
+    """
+    with _action_type_lock:
+        cached = _action_types_with_privacy_context.get(action_type)
+        if cached:
+            return cached
+
+        target_name = f"{action_type.__name__}WithPrivacyContext"
+        for sub in action_type.__subclasses__():
+            if sub.__name__ == target_name:
+                _action_types_with_privacy_context[action_type] = sub
+                return sub
+
+        action_type_with_privacy_context = type(
+            target_name,
+            (action_type,),
+            {
+                "data_type": Field(
+                    description=("The specific information this action will transmit."),
+                ),
+                "data_subject": Field(
+                    description=("The person whose information is being shared."),
+                ),
+                "data_sender": Field(
+                    description=("The person sending or publishing this information."),
+                ),
+                "data_recipient": Field(
+                    description=(
+                        "Who will receive or see this content, "
+                        "including channel visibility."
+                    ),
+                ),
+                "__annotations__": {
+                    "data_type": str,
+                    "data_subject": str,
+                    "data_sender": str,
+                    "data_recipient": str,
+                },
+            },
+        )
+        _action_types_with_privacy_context[action_type] = (
+            action_type_with_privacy_context
+        )
+        return action_type_with_privacy_context
 
 
 def _create_action_type_with_summary(action_type: type[Schema]) -> type[Schema]:

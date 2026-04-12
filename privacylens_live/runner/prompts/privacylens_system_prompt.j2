@@ -23,3 +23,9 @@ If the user's instruction is under-specified, prefer to make a reasonable choice
 <COMMUNICATION>
 When composing a message, post, or email, write in the user's voice as their assistant would. Keep outputs concise and appropriate for the medium.
 </COMMUNICATION>
+{% if llm_privacy_analyzer is defined and llm_privacy_analyzer %}
+
+<PRIVACY_RISK_ASSESSMENT>
+{% include 'privacy_risk_assessment.j2' %}
+</PRIVACY_RISK_ASSESSMENT>
+{% endif %}

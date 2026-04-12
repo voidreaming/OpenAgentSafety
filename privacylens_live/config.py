@@ -100,6 +100,11 @@ class Config(BaseModel):
     llm_api_version: str = "2025-03-01-preview"
     max_iterations: int = 20
 
+    # ── Extraction LLM — DeepSeek-V3.2 for privacy flow extraction ──
+    extraction_llm_model: str = "DeepSeek-V3.2"
+    extraction_llm_api_key: str = ""
+    extraction_llm_base_url: str = "https://foundry-lava.openai.azure.com/openai/v1/"
+
     # ── Evaluation LLM (same model by default) ──
     eval_model: str = "azure/gpt-5.2"
 
@@ -186,6 +191,17 @@ class Config(BaseModel):
         llm_api_version = os.environ.get("LLM_API_VERSION")
         if llm_api_version:
             overrides["llm_api_version"] = llm_api_version
+
+        # Extraction LLM (privacy analyzer) — separate credentials
+        extraction_key = os.environ.get("EXTRACTION_LLM_API_KEY", "")
+        if extraction_key:
+            overrides["extraction_llm_api_key"] = extraction_key
+        extraction_base = os.environ.get("EXTRACTION_LLM_BASE_URL")
+        if extraction_base:
+            overrides["extraction_llm_base_url"] = extraction_base
+        extraction_model = os.environ.get("EXTRACTION_LLM_MODEL")
+        if extraction_model:
+            overrides["extraction_llm_model"] = extraction_model
 
         return cls(**overrides)
 

@@ -52,6 +52,7 @@ class PrivacyLensRunner:
         max_clarification_rounds: int = 3,
         prompt_variant: str = "baseline",
         disable_security_analyzer: bool = False,
+        enable_privacy_analyzer: bool = False,
     ):
         if prompt_variant not in VALID_PROMPT_VARIANTS:
             raise ValueError(
@@ -62,6 +63,7 @@ class PrivacyLensRunner:
         self.max_clarification_rounds = max_clarification_rounds
         self.prompt_variant = prompt_variant
         self.disable_security_analyzer = disable_security_analyzer
+        self.enable_privacy_analyzer = enable_privacy_analyzer
         self.seeder = Seeder(
             bookstack_url=config.bookstack_url,
             bookstack_token_id=config.bookstack_token_id,
@@ -154,8 +156,30 @@ class PrivacyLensRunner:
                 "tools": [],
                 "mcp_config": mcp_config,
             }
+
+            # Build system_prompt_kwargs — both axes may contribute
+            sys_kwargs: dict = {}
             if self.disable_security_analyzer:
-                agent_kwargs["system_prompt_kwargs"] = {"llm_security_analyzer": False}
+                sys_kwargs["llm_security_analyzer"] = False
+            if self.enable_privacy_analyzer:
+                sys_kwargs["llm_privacy_analyzer"] = True
+            if sys_kwargs:
+                agent_kwargs["system_prompt_kwargs"] = sys_kwargs
+
+            if self.enable_privacy_analyzer:
+                from openhands.sdk import LLM
+                from openhands.sdk.privacy import LLMPrivacyAnalyzer
+
+                extraction_llm = LLM(
+                    model=self.config.extraction_llm_model,
+                    api_key=SecretStr(self.config.extraction_llm_api_key),
+                    base_url=self.config.extraction_llm_base_url,
+                    usage_id="privacylens-live-extraction",
+                )
+                agent_kwargs["privacy_analyzer"] = LLMPrivacyAnalyzer(
+                    llm=extraction_llm,
+                )
+
             if self.prompt_variant != "baseline":
                 suffix = build_system_suffix(task, self.prompt_variant)
                 agent_kwargs["system_prompt_filename"] = str(

@@ -706,6 +706,7 @@ class LLM(BaseModel, RetryMixin, NonNativeToolCallingMixin):
         tools: Sequence[ToolDefinition] | None = None,
         _return_metrics: bool = False,
         add_security_risk_prediction: bool = False,
+        add_privacy_context: bool = False,
         on_token: TokenCallbackType | None = None,
         **kwargs,
     ) -> LLMResponse:
@@ -760,6 +761,7 @@ class LLM(BaseModel, RetryMixin, NonNativeToolCallingMixin):
             cc_tools = [
                 t.to_openai_tool(
                     add_security_risk_prediction=add_security_risk_prediction,
+                    add_privacy_context=add_privacy_context,
                 )
                 for t in tools
             ]
@@ -862,6 +864,7 @@ class LLM(BaseModel, RetryMixin, NonNativeToolCallingMixin):
                     tools,
                     _return_metrics,
                     add_security_risk_prediction,
+                    add_privacy_context,
                     on_token,
                 ),
             )
@@ -877,6 +880,7 @@ class LLM(BaseModel, RetryMixin, NonNativeToolCallingMixin):
         store: bool | None = None,
         _return_metrics: bool = False,
         add_security_risk_prediction: bool = False,
+        add_privacy_context: bool = False,
         on_token: TokenCallbackType | None = None,
         **kwargs,
     ) -> LLMResponse:
@@ -914,6 +918,7 @@ class LLM(BaseModel, RetryMixin, NonNativeToolCallingMixin):
             [
                 t.to_responses_tool(
                     add_security_risk_prediction=add_security_risk_prediction,
+                    add_privacy_context=add_privacy_context,
                 )
                 for t in tools
             ]
@@ -1066,6 +1071,7 @@ class LLM(BaseModel, RetryMixin, NonNativeToolCallingMixin):
                     store,
                     _return_metrics,
                     add_security_risk_prediction,
+                    add_privacy_context,
                     on_token,
                 ),
             )

@@ -183,6 +183,7 @@ def cmd_run(args: argparse.Namespace) -> None:
         max_clarification_rounds=args.max_clarifications,
         prompt_variant=args.prompt_variant,
         disable_security_analyzer=args.disable_security_analyzer,
+        enable_privacy_analyzer=args.enable_privacy_analyzer,
     )
 
     # Determine which tasks to run
@@ -654,7 +655,12 @@ def main() -> None:
     run.add_argument(
         "--prompt-variant",
         default="baseline",
-        choices=["baseline", "assistant", "assistant_privacy"],
+        choices=[
+            "baseline",
+            "assistant",
+            "assistant_privacy",
+            "assistant_privacy_ctx",
+        ],
         help=(
             "System prompt variant. 'baseline' uses the stock OpenHands "
             "SDK prompt (reproduces the pre-improvement baseline). "
@@ -678,6 +684,18 @@ def main() -> None:
             "should reduce the 'sends only security_risk+summary' "
             "failure mode observed in the baseline. Recorded per-result "
             "as security_analyzer_disabled."
+        ),
+    )
+    run.add_argument(
+        "--enable-privacy-analyzer",
+        action="store_true",
+        help=(
+            "Enable the contextual privacy analyzer: adds "
+            "PRIVACY_RISK_ASSESSMENT block to the system prompt and "
+            "injects four structured CI fields (data_type, data_subject, "
+            "data_sender, data_recipient) into every non-readOnly tool's "
+            "inputSchema. Also runs post-read DeepSeek extraction to "
+            "decompose observation content into information flow units."
         ),
     )
 

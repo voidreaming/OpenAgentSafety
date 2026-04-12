@@ -6,6 +6,7 @@ from rich.text import Text
 from openhands.sdk.event.base import N_CHAR_PREVIEW, LLMConvertibleEvent
 from openhands.sdk.event.types import EventID, SourceType, ToolCallID
 from openhands.sdk.llm import Message, TextContent, content_to_str
+from openhands.sdk.privacy.flow import InformationFlow
 from openhands.sdk.tool.schema import Observation
 
 
@@ -34,6 +35,12 @@ class ObservationEvent(ObservationBaseEvent):
     )
     action_id: EventID = Field(
         ..., description="The action id that this observation is responding to"
+    )
+    information_flows: list[InformationFlow] | None = Field(
+        default=None,
+        description=(
+            "CI tuples extracted from this observation by the privacy analyzer."
+        ),
     )
 
     @property
