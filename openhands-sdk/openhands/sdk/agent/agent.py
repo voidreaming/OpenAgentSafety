@@ -772,6 +772,19 @@ class Agent(CriticMixin, AgentBase):
             return {k: None for k in PRIVACY_CONTEXT_FIELDS}
         return result
 
+    def _gather_accumulated_flows(
+        self,
+        conversation: LocalConversation,
+    ) -> list:
+        """Collect all information flows from prior ObservationEvents."""
+        from openhands.sdk.privacy.flow import InformationFlow
+
+        flows: list[InformationFlow] = []
+        for event in conversation._state.events:
+            if isinstance(event, ObservationEvent) and event.information_flows:
+                flows.extend(event.information_flows)
+        return flows
+
     def _extract_summary(
         self,
         tool_name: str,
@@ -1022,11 +1035,8 @@ class Agent(CriticMixin, AgentBase):
 
         # Post-execution information flow extraction for read-only tools
         information_flows = None
-        if (
-            self.privacy_analyzer is not None
-            and tool.annotations is not None
-            and tool.annotations.readOnlyHint
-        ):
+        is_read_only = tool.annotations is not None and tool.annotations.readOnlyHint
+        if self.privacy_analyzer is not None and is_read_only:
             try:
                 information_flows = self.privacy_analyzer.extract_flows(
                     observation, tool.name
@@ -1037,6 +1047,24 @@ class Agent(CriticMixin, AgentBase):
                     tool.name,
                     exc,
                 )
+
+        # Write-time CI check: gather accumulated flows from prior reads
+        # and check against what the agent is about to send
+        if self.privacy_analyzer is not None and not is_read_only:
+            accumulated = self._gather_accumulated_flows(conversation)
+            if accumulated:
+                write_content = observation.text or ""
+                try:
+                    check_result = self.privacy_analyzer.check_write_action(
+                        write_content, accumulated
+                    )
+                    action_event.privacy_check_result = check_result
+                except Exception as exc:
+                    logger.warning(
+                        "Privacy write check failed for %s: %s",
+                        tool.name,
+                        exc,
+                    )
 
         obs_event = ObservationEvent(
             observation=observation,

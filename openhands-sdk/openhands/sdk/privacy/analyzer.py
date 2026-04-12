@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from abc import ABC, abstractmethod
 
-from openhands.sdk.privacy.flow import InformationFlow
+from openhands.sdk.privacy.flow import InformationFlow, PrivacyCheckResult
 from openhands.sdk.tool.schema import Observation
 from openhands.sdk.utils.models import DiscriminatedUnionMixin
 
@@ -26,5 +26,20 @@ class PrivacyAnalyzerBase(DiscriminatedUnionMixin, ABC):
         Called after each read/discovery tool returns content.
         Returns a list of InformationFlow objects -- one per distinct
         unit of information found in the observation.
+        """
+        ...
+
+    @abstractmethod
+    def check_write_action(
+        self,
+        write_content: str,
+        accumulated_flows: list[InformationFlow],
+    ) -> PrivacyCheckResult:
+        """Check a write action against accumulated information flows.
+
+        Called before write tool execution. Given the message content
+        the agent is about to send and the inventory of information
+        collected from prior read observations, identify which
+        information flows are being transmitted.
         """
         ...

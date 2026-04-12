@@ -14,6 +14,7 @@ from openhands.sdk.llm import (
     TextContent,
     ThinkingBlock,
 )
+from openhands.sdk.privacy.flow import PrivacyCheckResult
 from openhands.sdk.security import risk
 from openhands.sdk.tool.schema import Action
 
@@ -91,6 +92,14 @@ class ActionEvent(LLMConvertibleEvent):
         default=None,
         description=(
             "Who will receive or see this content (contextual privacy assessment)."
+        ),
+    )
+
+    privacy_check_result: PrivacyCheckResult | None = Field(
+        default=None,
+        description=(
+            "Result of checking this write action against accumulated "
+            "information flows from prior reads."
         ),
     )
 
