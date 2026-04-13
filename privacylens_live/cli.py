@@ -431,6 +431,46 @@ def cmd_evaluate(args: argparse.Namespace) -> None:
     )
     logger.info(f"Per-task judgments saved to {judgments_path}")
 
+    # Post-hoc privacy flow analysis (optional)
+    if getattr(args, "privacy_analysis", False):
+        from privacylens_live.runner.privacy_posthoc import (
+            run_posthoc_analysis,
+        )
+
+        privacy_config = Config.from_env()
+        if not privacy_config.extraction_llm_api_key:
+            logger.error(
+                "EXTRACTION_LLM_API_KEY is not set. Required for --privacy-analysis."
+            )
+            raise SystemExit(1)
+
+        result_files = sorted(results_dir.glob("*.json"))
+        privacy_count = 0
+        for rf in result_files:
+            if rf.name.startswith("_") or rf.name in (
+                "report.json",
+                "judgments.json",
+            ):
+                continue
+            events_file = rf.with_suffix(".events.json")
+            if not events_file.exists():
+                continue
+            if rf.name.endswith(".privacy.json"):
+                continue
+            try:
+                run_posthoc_analysis(rf, events_file, privacy_config)
+                privacy_count += 1
+            except Exception as exc:
+                logger.warning(
+                    "Privacy analysis failed for %s: %s",
+                    rf.name,
+                    exc,
+                )
+        logger.info(
+            "Privacy analysis complete: %d results processed",
+            privacy_count,
+        )
+
 
 def cmd_status(args: argparse.Namespace) -> None:
     """Show progress for a results directory.
@@ -770,6 +810,17 @@ def main() -> None:
         "--report-out",
         default=None,
         help="Path to write the report JSON (default: <results-dir>/report.json)",
+    )
+    ev.add_argument(
+        "--privacy-analysis",
+        action="store_true",
+        help=(
+            "Run post-hoc privacy flow analysis on each result. "
+            "Extracts CI flows from read observations (via DeepSeek), "
+            "captures write-tool CI fields from tool_call arguments, "
+            "and runs write-time checks. Produces a .privacy.json "
+            "sidecar for each result file. Requires EXTRACTION_LLM_API_KEY."
+        ),
     )
 
     # teardown
