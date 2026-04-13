@@ -101,7 +101,7 @@ class Config(BaseModel):
     max_iterations: int = 20
 
     # ── Extraction LLM — DeepSeek-V3.2 for privacy flow extraction ──
-    extraction_llm_model: str = "DeepSeek-V3.2"
+    extraction_llm_model: str = "openai/DeepSeek-V3.2"
     extraction_llm_api_key: str = ""
     extraction_llm_base_url: str = "https://foundry-lava.openai.azure.com/openai/v1/"
 

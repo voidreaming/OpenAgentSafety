@@ -16,6 +16,18 @@ from openhands.sdk.tool.schema import Observation
 
 logger = get_logger(__name__)
 
+
+def _strip_markdown_fences(text: str) -> str:
+    """Strip ```json ... ``` markdown fences from LLM output."""
+    import re
+
+    text = text.strip()
+    m = re.match(r"^```(?:json)?\s*\n?(.*?)```\s*$", text, re.DOTALL)
+    if m:
+        return m.group(1).strip()
+    return text
+
+
 EXTRACTION_SYSTEM_PROMPT = (
     "You are an information flow analyzer. Given tool output from a "
     "communication service (chat, email, social media, calendar), "
@@ -91,6 +103,7 @@ class LLMPrivacyAnalyzer(PrivacyAnalyzerBase):
             if isinstance(block, TextContent):
                 raw_text += block.text
 
+        raw_text = _strip_markdown_fences(raw_text)
         try:
             raw = json.loads(raw_text)
         except json.JSONDecodeError:
@@ -149,6 +162,7 @@ class LLMPrivacyAnalyzer(PrivacyAnalyzerBase):
             if isinstance(block, TextContent):
                 raw_text += block.text
 
+        raw_text = _strip_markdown_fences(raw_text)
         try:
             raw = json.loads(raw_text)
         except json.JSONDecodeError:
