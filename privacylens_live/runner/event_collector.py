@@ -148,6 +148,68 @@ def render_trajectory_string(tool_calls: list[dict]) -> str:
     return "\n\n".join(parts)
 
 
+# Fields whose values contain long sensitive text (email bodies, page
+# content, message text) that trigger Azure content-policy filters.
+# Stripping these from observations keeps enough structure for the
+# helpfulness judge while avoiding filter hits.
+_SENSITIVE_FIELDS = frozenset(
+    {
+        "markdown",
+        "body",
+        "html",
+        "content",
+        "text",
+        "message",
+        "description",
+        "note",
+        "bio",
+    }
+)
+
+
+def _sanitize_obs(obs: Any) -> Any:
+    """Strip long text fields from an observation, keeping structure.
+
+    The helpfulness judge needs to know *what* was found (titles, names,
+    subjects, senders, IDs) but not the full body text. This avoids
+    triggering Azure content-policy filters while preserving the
+    structural cues needed to evaluate whether the agent's final action
+    matches what it found.
+    """
+    if isinstance(obs, dict):
+        sanitized = {}
+        for k, v in obs.items():
+            if k in _SENSITIVE_FIELDS and isinstance(v, str) and len(v) > 80:
+                sanitized[k] = f"[{len(v)} chars]"
+            elif isinstance(v, (dict, list)):
+                sanitized[k] = _sanitize_obs(v)
+            else:
+                sanitized[k] = v
+        return sanitized
+    if isinstance(obs, list):
+        return [_sanitize_obs(item) for item in obs]
+    return obs
+
+
+def render_sanitized_trajectory_string(tool_calls: list[dict]) -> str:
+    """Like render_trajectory_string but with sensitive text stripped.
+
+    Replaces long body/markdown/content fields in observations with
+    ``[N chars]`` placeholders. Keeps tool names, inputs, structural
+    fields (IDs, names, subjects, senders), and short values intact.
+    """
+    parts = []
+    for call in tool_calls:
+        obs = _sanitize_obs(call["observation"])
+        obs_text = json.dumps(obs) if isinstance(obs, (dict, list)) else str(obs)
+        parts.append(
+            f"Action: {call['tool']}\n"
+            f"Action Input: {json.dumps(call['input'])}\n"
+            f"Observation: {obs_text}"
+        )
+    return "\n\n".join(parts)
+
+
 def _extract_text_content(message_obj: Any) -> str:
     """Pull plain text out of an llm_message ``content`` field.
 

@@ -21,10 +21,10 @@ from privacylens_live.runner.event_collector import (
 )
 from privacylens_live.runner.mcp_config_builder import build_mcp_config
 from privacylens_live.runner.prompt_builder import (
-    PRIVACYLENS_SYSTEM_PROMPT_PATH,
     PROMPT_VERSION,
     VALID_PROMPT_VARIANTS,
     build_system_suffix,
+    get_system_prompt_path,
 )
 
 
@@ -134,23 +134,19 @@ class PrivacyLensRunner:
                 base_url=self.config.llm_base_url,
                 api_version=self.config.llm_api_version,
             )
-            # Prompt variant selects between the stock OpenHands SWE
-            # prompt (``baseline``) and the privacylens-specific prompt
-            # template + persona suffix (``assistant``,
-            # ``assistant_privacy``). See ``prompt_builder.py``.
+            # Three-level privacy mitigation — see prompt_builder.py.
             #
-            # ``disable_security_analyzer`` is an ORTHOGONAL axis: it
-            # removes the 32-line SECURITY_RISK_ASSESSMENT block (which
-            # teaches the model to classify sudo / pipe-to-shell / etc.,
-            # none of which apply to our MCP tools) from the rendered
-            # system prompt. It wins over the SDK's ``setdefault`` default
-            # via the explicit ``system_prompt_kwargs`` override. Note
-            # that the SDK still hard-codes ``add_security_risk_prediction``
-            # in ``make_llm_completion``, so the ``security_risk`` and
-            # ``summary`` fields remain in the tool schemas — but the
-            # model is no longer taught what to do with them, which
-            # should make the "sends only security_risk+summary" failure
-            # mode less frequent.
+            # baseline  → stock SWE prompt, no privacy
+            # privacy_enhanced (L1) → privacy-conscious system prompt
+            # ci_reasoning     (L2) → L1 + CI 5-tuple reasoning suffix
+            # ci_audit         (L3) → L1 + PRIVACY_RISK_ASSESSMENT block
+            #                         + CI schema fields + DeepSeek
+            #
+            # ``disable_security_analyzer`` is ORTHOGONAL: removes the
+            # SECURITY_RISK_ASSESSMENT block from the rendered system
+            # prompt. The ``security_risk`` / ``summary`` schema fields
+            # still appear (SDK hard-codes them) but the model is no
+            # longer taught what to put in them.
             agent_kwargs: dict = {
                 "llm": llm,
                 "tools": [],
@@ -179,12 +175,15 @@ class PrivacyLensRunner:
                 agent_kwargs["privacy_analyzer"] = LLMPrivacyAnalyzer(
                     llm=extraction_llm,
                 )
+                # Parallelize read-tool extraction calls within batches.
+                # Extraction is I/O-bound (HTTP to DeepSeek), so higher
+                # concurrency avoids sequential 40-60s waits per read.
+                agent_kwargs["tool_concurrency_limit"] = 4
 
             if self.prompt_variant != "baseline":
                 suffix = build_system_suffix(task, self.prompt_variant)
-                agent_kwargs["system_prompt_filename"] = str(
-                    PRIVACYLENS_SYSTEM_PROMPT_PATH
-                )
+                prompt_path = get_system_prompt_path(self.prompt_variant)
+                agent_kwargs["system_prompt_filename"] = str(prompt_path)
                 agent_kwargs["agent_context"] = AgentContext(
                     system_message_suffix=suffix
                 )
@@ -201,14 +200,14 @@ class PrivacyLensRunner:
             # inside the agent server process (which runs in the container),
             # so the host path must also exist inside the container for
             # Jinja to load it. Mounting read-only to the identical path
-            # keeps ``str(PRIVACYLENS_SYSTEM_PROMPT_PATH)`` valid in both
-            # worlds with no translation.
+            # keeps the path valid in both worlds with no translation.
             workspace_kwargs: dict = {
                 "server_image": self.config.agent_server_image,
                 "network": self.config.docker_network,
             }
             if self.prompt_variant != "baseline":
-                host_prompt_dir = str(PRIVACYLENS_SYSTEM_PROMPT_PATH.parent)
+                prompt_path = get_system_prompt_path(self.prompt_variant)
+                host_prompt_dir = str(prompt_path.parent)
                 workspace_kwargs["volumes"] = [
                     f"{host_prompt_dir}:{host_prompt_dir}:ro"
                 ]

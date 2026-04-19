@@ -6,7 +6,7 @@ from rich.text import Text
 from openhands.sdk.event.base import N_CHAR_PREVIEW, LLMConvertibleEvent
 from openhands.sdk.event.types import EventID, SourceType, ToolCallID
 from openhands.sdk.llm import Message, TextContent, content_to_str
-from openhands.sdk.privacy.flow import InformationFlow
+from openhands.sdk.privacy.flow import InformationFlow, PrivacyCheckResult
 from openhands.sdk.tool.schema import Observation
 
 
@@ -42,6 +42,14 @@ class ObservationEvent(ObservationBaseEvent):
             "CI tuples extracted from this observation by the privacy analyzer."
         ),
     )
+    privacy_check_result: PrivacyCheckResult | None = Field(
+        default=None,
+        description=(
+            "Result of checking a write action against accumulated "
+            "information flows from prior reads. Present only on "
+            "write-tool observations when a privacy analyzer is active."
+        ),
+    )
 
     @property
     def visualize(self) -> Text:
@@ -56,9 +64,21 @@ class ObservationEvent(ObservationBaseEvent):
         return content
 
     def to_llm_message(self) -> Message:
+        content = list(self.observation.to_llm_content)
+        if self.information_flows:
+            lines = [
+                f"- {f.data_type} (subject: {f.data_subject})"
+                for f in self.information_flows
+            ]
+            annotation = (
+                "\n\n[INFORMATION INVENTORY]\n"
+                "The following information was found in this result:\n"
+                + "\n".join(lines)
+            )
+            content.append(TextContent(text=annotation))
         return Message(
             role="tool",
-            content=self.observation.to_llm_content,
+            content=content,
             name=self.tool_name,
             tool_call_id=self.tool_call_id,
         )

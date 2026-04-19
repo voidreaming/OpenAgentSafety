@@ -89,7 +89,7 @@ async def create_post(
     }
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def get_profile(
     user_id: Annotated[
         str,
@@ -128,7 +128,7 @@ async def get_profile(
     }
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def list_user_posts(
     user_id: Annotated[
         str,
@@ -172,7 +172,7 @@ async def list_user_posts(
     return {"posts": posts}
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def search_users(
     query: Annotated[
         str,
@@ -205,7 +205,7 @@ async def search_users(
     return {"users": users}
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def search_posts(
     query: Annotated[
         str,

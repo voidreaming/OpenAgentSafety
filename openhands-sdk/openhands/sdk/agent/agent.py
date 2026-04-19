@@ -427,13 +427,71 @@ class Agent(CriticMixin, AgentBase):
         action_events: list[ActionEvent],
         on_event: ConversationCallbackType,
     ) -> None:
-        """Prepare a batch, emit results, and handle finish."""
+        """Prepare a batch, emit results, and handle finish.
+
+        When a privacy analyzer is active AND the batch contains both
+        read and write tools, reads execute first (with CI flow
+        extraction and annotation), then writes are **deferred** via
+        ``UserRejectObservation`` carrying the accumulated information
+        inventory.  This forces the agent to re-compose the write on
+        the next turn with the full CI inventory visible in its
+        conversation history.
+        """
         state = conversation.state
+
+        def tool_runner(ae: ActionEvent) -> list[Event]:
+            return self._execute_action_event(conversation, ae)
+
+        # When privacy analyzer is active, split batch: reads first,
+        # then DEFER writes so the agent re-composes with CI awareness.
+        if self.privacy_analyzer is not None and len(action_events) > 1:
+            reads = []
+            writes = []
+            for ae in action_events:
+                tool = self.tools_map.get(ae.tool_name)
+                is_ro = (
+                    tool is not None
+                    and tool.annotations is not None
+                    and tool.annotations.readOnlyHint
+                )
+                if is_ro:
+                    reads.append(ae)
+                else:
+                    writes.append(ae)
+
+            if reads and writes:
+                # Phase 1: execute + emit reads (with flow annotations)
+                read_batch = _ActionBatch.prepare(
+                    reads,
+                    state=state,
+                    executor=self._parallel_executor,
+                    tool_runner=tool_runner,
+                    tools=self.tools_map,
+                )
+                read_batch.emit(on_event)
+
+                # Phase 2: DEFER writes — emit UserRejectObservation
+                # with the accumulated CI inventory so the agent
+                # re-composes the write with privacy awareness.
+                accumulated = self._gather_accumulated_flows(conversation)
+                inventory_text = self._format_ci_inventory(accumulated)
+                for ae in writes:
+                    reject = UserRejectObservation(
+                        tool_name=ae.tool_name,
+                        tool_call_id=ae.tool_call.id,
+                        action_id=ae.id,
+                        rejection_reason=inventory_text,
+                        rejection_source="hook",
+                    )
+                    on_event(reject)
+                return
+
+        # Default path: single batch (no privacy or single tool)
         batch = _ActionBatch.prepare(
             action_events,
             state=state,
             executor=self._parallel_executor,
-            tool_runner=lambda ae: self._execute_action_event(conversation, ae),
+            tool_runner=tool_runner,
             tools=self.tools_map,
         )
         batch.emit(on_event)
@@ -500,12 +558,14 @@ class Agent(CriticMixin, AgentBase):
         )
 
         try:
+            completion_kwargs: dict = {}
             llm_response = make_llm_completion(
                 self.llm,
                 _messages,
                 tools=list(self.tools_map.values()),
                 on_token=on_token,
                 add_privacy_context=self.privacy_analyzer is not None,
+                **completion_kwargs,
             )
         except FunctionCallValidationError as e:
             logger.warning(f"LLM generated malformed function call: {e}")
@@ -776,14 +836,67 @@ class Agent(CriticMixin, AgentBase):
         self,
         conversation: LocalConversation,
     ) -> list:
-        """Collect all information flows from prior ObservationEvents."""
+        """Collect deduplicated information flows from prior ObservationEvents."""
         from openhands.sdk.privacy.flow import InformationFlow
 
+        seen: set[tuple[str, str]] = set()
         flows: list[InformationFlow] = []
         for event in conversation._state.events:
             if isinstance(event, ObservationEvent) and event.information_flows:
-                flows.extend(event.information_flows)
+                for flow in event.information_flows:
+                    key = (flow.data_type, flow.data_subject)
+                    if key not in seen:
+                        seen.add(key)
+                        flows.append(flow)
         return flows
+
+    def _format_ci_inventory(self, flows: list) -> str:
+        """Format accumulated CI flows as a write-deferral rejection reason.
+
+        When the LLM batches reads and writes in the same turn, the
+        write is deferred so the agent can re-compose with the CI
+        inventory visible.  This method formats the inventory for
+        the ``UserRejectObservation.rejection_reason``.
+        """
+        if not flows:
+            return (
+                "Write deferred: no information inventory accumulated. "
+                "Re-issue the write action."
+            )
+        lines = [f"- {f.data_type} (subject: {f.data_subject})" for f in flows]
+        return (
+            "This write was deferred so you can review the information "
+            "inventory from your reads before composing the message.\n\n"
+            "[ACCUMULATED INFORMATION INVENTORY]\n"
+            + "\n".join(lines)
+            + "\n\nRe-compose and re-issue the write action. For each "
+            "item, decide: (A) include if the user's own data or "
+            "appropriate to share, (B) generalize if sensitive "
+            "third-party data, (C) omit if highly sensitive."
+        )
+
+    _WRITE_CONTENT_FIELDS = ("message", "body", "content", "markdown")
+
+    def _extract_write_content(self, action_event: ActionEvent) -> str:
+        """Extract outgoing message content from action arguments.
+
+        MCP tools store args in ``action.data`` dict.  The write-content
+        field varies by tool (``message``, ``body``, ``content``,
+        ``markdown``).  Try each in priority order; fall back to
+        serializing all args.
+        """
+        action = action_event.action
+        if action is None:
+            return ""
+        data = getattr(action, "data", None)
+        if isinstance(data, dict):
+            for field in self._WRITE_CONTENT_FIELDS:
+                if field in data and isinstance(data[field], str):
+                    return data[field]
+            # Fallback: serialize all action data
+            return json.dumps(data, ensure_ascii=False)
+        # Non-MCP tool: serialize model_dump
+        return json.dumps(action.model_dump(), ensure_ascii=False)
 
     def _extract_summary(
         self,
@@ -1037,28 +1150,41 @@ class Agent(CriticMixin, AgentBase):
         information_flows = None
         is_read_only = tool.annotations is not None and tool.annotations.readOnlyHint
         if self.privacy_analyzer is not None and is_read_only:
-            try:
-                information_flows = self.privacy_analyzer.extract_flows(
-                    observation, tool.name
-                )
-            except Exception as exc:
-                logger.warning(
-                    "Privacy flow extraction failed for %s: %s",
-                    tool.name,
-                    exc,
-                )
+            # Skip extraction for directory/listing tools that only return
+            # metadata (IDs, titles, usernames). These never produce useful
+            # flows and the DeepSeek call adds ~40-60s of latency each.
+            _LISTING_TOOL_SUFFIXES = (
+                "list_pages",
+                "list_users",
+                "list_channels",
+                "list_events",
+            )
+            is_listing = tool.name.endswith(_LISTING_TOOL_SUFFIXES)
+            if is_listing:
+                information_flows = []
+            else:
+                try:
+                    information_flows = self.privacy_analyzer.extract_flows(
+                        observation, tool.name
+                    )
+                except Exception as exc:
+                    logger.warning(
+                        "Privacy flow extraction failed for %s: %s",
+                        tool.name,
+                        exc,
+                    )
 
         # Write-time CI check: gather accumulated flows from prior reads
         # and check against what the agent is about to send
+        privacy_check = None
         if self.privacy_analyzer is not None and not is_read_only:
             accumulated = self._gather_accumulated_flows(conversation)
             if accumulated:
-                write_content = observation.text or ""
+                write_content = self._extract_write_content(action_event)
                 try:
-                    check_result = self.privacy_analyzer.check_write_action(
+                    privacy_check = self.privacy_analyzer.check_write_action(
                         write_content, accumulated
                     )
-                    action_event.privacy_check_result = check_result
                 except Exception as exc:
                     logger.warning(
                         "Privacy write check failed for %s: %s",
@@ -1072,6 +1198,7 @@ class Agent(CriticMixin, AgentBase):
             tool_name=tool.name,
             tool_call_id=action_event.tool_call.id,
             information_flows=information_flows,
+            privacy_check_result=privacy_check,
         )
         return [obs_event]
 

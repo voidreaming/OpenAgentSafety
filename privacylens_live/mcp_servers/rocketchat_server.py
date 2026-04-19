@@ -208,7 +208,7 @@ async def send_channel_message(
     }
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def search_messages(
     query: Annotated[
         str,
@@ -276,7 +276,7 @@ async def search_messages(
     return {"messages": messages}
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def list_channels() -> dict:
     """List all available channels.
 
@@ -301,7 +301,7 @@ async def list_channels() -> dict:
     return {"channels": channels}
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def get_channel_history(
     channel: Annotated[
         str,
@@ -368,7 +368,7 @@ async def get_channel_history(
     return {"messages": messages}
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def get_user_info(
     username: Annotated[
         str,

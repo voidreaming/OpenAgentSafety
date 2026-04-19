@@ -213,7 +213,7 @@ async def send_message(
     }
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def list_messages(
     max_count: Annotated[
         int,
@@ -270,7 +270,7 @@ async def list_messages(
     return {"messages": messages[:max_count]}
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def search_messages(
     query: Annotated[
         str,
@@ -330,7 +330,7 @@ async def search_messages(
     return {"messages": messages}
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def list_users() -> dict:
     """List all users on the server.
 

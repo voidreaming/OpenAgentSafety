@@ -12,7 +12,7 @@ services:
             - DB_PASSWORD=bookstack
             - DB_DATABASE=bookstack
         ports:
-            - 3000:80
+            - ${BOOKSTACK_HOST_PORT:-3000}:80
         networks:
             - privacylens-net
         depends_on:
@@ -54,7 +54,7 @@ services:
             MM_SERVICESETTINGS_SITEURL: http://mattermost:8065
             MM_TEAMSETTINGS_ENABLEOPENSERVER: 'true'
         ports:
-            - 8065:8065
+            - ${MATTERMOST_HOST_PORT:-8065}:8065
         networks:
             - privacylens-net
         depends_on:
@@ -98,7 +98,7 @@ services:
             ADMIN_PASS: admin
             ADMIN_EMAIL: admin@privacylens.local
         ports:
-            - 3100:3000
+            - ${ROCKETCHAT_HOST_PORT:-3100}:3000
         networks:
             - privacylens-net
         depends_on:
@@ -137,8 +137,8 @@ services:
             MP_SMTP_AUTH_ACCEPT_ANY: 1
             MP_SMTP_AUTH_ALLOW_INSECURE: 1
         ports:
-            - 8025:8025
-            - 1025:1025
+            - ${MAILPIT_HTTP_HOST_PORT:-8025}:8025
+            - ${MAILPIT_SMTP_HOST_PORT:-1025}:1025
         networks:
             - privacylens-net
         restart: unless-stopped
@@ -160,7 +160,7 @@ services:
         volumes:
             - gotosocial-data:/gotosocial/storage
         ports:
-            - 4000:8080
+            - ${GOTOSOCIAL_HOST_PORT:-4000}:8080
         networks:
             - privacylens-net
         restart: unless-stopped
@@ -177,7 +177,7 @@ services:
         volumes:
             - radicale-data:/data
         ports:
-            - 5232:5232
+            - ${RADICALE_HOST_PORT:-5232}:5232
         networks:
             - privacylens-net
         restart: unless-stopped
@@ -202,7 +202,7 @@ services:
             BOOKSTACK_TOKEN_ID: ${BOOKSTACK_TOKEN_ID}
             BOOKSTACK_TOKEN_SECRET: ${BOOKSTACK_TOKEN_SECRET}
         ports:
-            - 9001:8080
+            - ${BOOKSTACK_MCP_HOST_PORT:-9001}:8080
         networks:
             - privacylens-net
         depends_on:
@@ -220,7 +220,7 @@ services:
             MATTERMOST_USER: ${MATTERMOST_USER}
             MATTERMOST_PASSWORD: ${MATTERMOST_PASSWORD}
         ports:
-            - 9002:8080
+            - ${MATTERMOST_MCP_HOST_PORT:-9002}:8080
         networks:
             - privacylens-net
         depends_on:
@@ -238,7 +238,7 @@ services:
             ROCKETCHAT_USER: ${ROCKETCHAT_USER}
             ROCKETCHAT_PASSWORD: ${ROCKETCHAT_PASSWORD}
         ports:
-            - 9003:8080
+            - ${ROCKETCHAT_MCP_HOST_PORT:-9003}:8080
         networks:
             - privacylens-net
         depends_on:
@@ -256,7 +256,7 @@ services:
             MAILPIT_SMTP_HOST: mailpit
             MAILPIT_SMTP_PORT: '1025'
         ports:
-            - 9004:8080
+            - ${MAILPIT_MCP_HOST_PORT:-9004}:8080
         networks:
             - privacylens-net
         depends_on:
@@ -273,7 +273,7 @@ services:
             GOTOSOCIAL_URL: http://gotosocial:8080
             GOTOSOCIAL_TOKEN: ${GOTOSOCIAL_TOKEN}
         ports:
-            - 9005:8080
+            - ${GOTOSOCIAL_MCP_HOST_PORT:-9005}:8080
         networks:
             - privacylens-net
         depends_on:
@@ -291,7 +291,7 @@ services:
             RADICALE_USER: ${RADICALE_USER}
             RADICALE_PASSWORD: ${RADICALE_PASSWORD}
         ports:
-            - 9006:8080
+            - ${RADICALE_MCP_HOST_PORT:-9006}:8080
         networks:
             - privacylens-net
         depends_on:

@@ -76,7 +76,7 @@ async def _ensure_book() -> int:
 # ── Tools ──
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def search_pages(
     query: Annotated[
         str,
@@ -112,7 +112,7 @@ async def search_pages(
     return {"results": results}
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def get_page(
     page_id: Annotated[
         int,
@@ -222,7 +222,7 @@ async def update_page(
     return {"success": True, "page_id": page_id}
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def list_pages() -> dict:
     """List all pages in the workspace.
 

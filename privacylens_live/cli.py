@@ -358,23 +358,30 @@ def cmd_evaluate(args: argparse.Namespace) -> None:
     if not args.rule_only:
         config = Config.from_env()
         judge_model = args.judge_model or config.eval_model
-        if not config.llm_api_key:
+        judge_base_url = args.judge_base_url or config.llm_base_url
+        judge_api_version = args.judge_api_version or config.llm_api_version
+        # Prefer explicit --judge-api-key, then fall back to the
+        # extraction LLM key (handy for DeepSeek), then the main key.
+        judge_api_key = (
+            args.judge_api_key or config.extraction_llm_api_key or config.llm_api_key
+        )
+        if not judge_api_key:
             logger.error(
-                "LLM_API_KEY is not set. Either export it, or pass "
-                "--rule-only to run the cheap keyword-only pass."
+                "No API key found for the judge. Set LLM_API_KEY, "
+                "EXTRACTION_LLM_API_KEY, or pass --judge-api-key."
             )
             raise SystemExit(1)
         logger.info(
             "Using LLM judge: model=%s base_url=%s api_version=%s",
             judge_model,
-            config.llm_base_url,
-            config.llm_api_version,
+            judge_base_url,
+            judge_api_version,
         )
         judge = LLMJudgeEvaluator(
             model=judge_model,
-            api_key=config.llm_api_key,
-            base_url=config.llm_base_url,
-            api_version=config.llm_api_version,
+            api_key=judge_api_key,
+            base_url=judge_base_url,
+            api_version=judge_api_version,
         )
     else:
         logger.info("Rule-only mode — skipping LLM judge.")
@@ -390,6 +397,7 @@ def cmd_evaluate(args: argparse.Namespace) -> None:
             judge=judge,
             max_concurrency=args.max_concurrency,
             use_cache=not args.no_cache,
+            sanitize_trajectory=args.sanitize_trajectory,
             progress_callback=_progress,
         )
     )
@@ -697,18 +705,21 @@ def main() -> None:
         default="baseline",
         choices=[
             "baseline",
-            "assistant",
-            "assistant_privacy",
-            "assistant_privacy_ctx",
+            "privacy_enhanced",
+            "ci_reasoning",
+            "ci_audit",
         ],
         help=(
-            "System prompt variant. 'baseline' uses the stock OpenHands "
-            "SDK prompt (reproduces the pre-improvement baseline). "
-            "'assistant' replaces it with the privacylens personal-"
-            "assistant prompt and a one-line persona suffix. "
-            "'assistant_privacy' additionally appends a PrivacyChecker "
-            "reasoning block. The variant is recorded in every result "
-            "file and in _summary.json so runs cannot be silently mixed."
+            "Privacy mitigation level. "
+            "'baseline' (L0): stock OpenHands SWE prompt, no privacy. "
+            "'privacy_enhanced' (L1): privacy-conscious system prompt + "
+            "persona suffix. "
+            "'ci_reasoning' (L2): L1 + structured CI 5-tuple "
+            "information-flow analysis and per-flow judgment in suffix. "
+            "'ci_audit' (L3): L1 + PRIVACY_RISK_ASSESSMENT block + "
+            "CI schema fields on write tools + DeepSeek extraction "
+            "(requires --enable-privacy-analyzer). "
+            "Recorded per-result as prompt_variant."
         ),
     )
     run.add_argument(
@@ -790,6 +801,21 @@ def main() -> None:
         ),
     )
     ev.add_argument(
+        "--judge-base-url",
+        default=None,
+        help="Override the judge LLM base URL (e.g. for DeepSeek).",
+    )
+    ev.add_argument(
+        "--judge-api-key",
+        default=None,
+        help="Override the judge LLM API key.",
+    )
+    ev.add_argument(
+        "--judge-api-version",
+        default=None,
+        help="Override the judge LLM API version (empty string to clear).",
+    )
+    ev.add_argument(
         "--max-concurrency",
         type=int,
         default=16,
@@ -804,6 +830,15 @@ def main() -> None:
         help=(
             "Ignore .eval_cache.json and re-call the LLM for every "
             "prompt. Useful after changing the prompts."
+        ),
+    )
+    ev.add_argument(
+        "--sanitize-trajectory",
+        action="store_true",
+        help=(
+            "Strip long text fields (body, markdown, content) from "
+            "trajectory observations before sending to the helpfulness "
+            "judge. Avoids Azure content-policy filter blocks."
         ),
     )
     ev.add_argument(

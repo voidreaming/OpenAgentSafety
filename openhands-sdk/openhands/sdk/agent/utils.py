@@ -248,6 +248,7 @@ def make_llm_completion(
     tools: list[ToolDefinition] | None = None,
     on_token: ConversationTokenCallbackType | None = None,
     add_privacy_context: bool = False,
+    **kwargs: Any,
 ) -> LLMResponse:
     """Make an LLM completion call with the provided messages and tools.
 
@@ -283,6 +284,7 @@ def make_llm_completion(
             add_security_risk_prediction=True,
             add_privacy_context=add_privacy_context,
             on_token=on_token,
+            **kwargs,
         )
     else:
         return llm.completion(
@@ -291,4 +293,5 @@ def make_llm_completion(
             add_security_risk_prediction=True,
             add_privacy_context=add_privacy_context,
             on_token=on_token,
+            **kwargs,
         )

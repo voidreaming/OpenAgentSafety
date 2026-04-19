@@ -115,7 +115,7 @@ class Config(BaseModel):
 
     # ── Docker ──
     docker_network: str = "privacylens_live_privacylens-net"
-    agent_server_image: str = "ghcr.io/openhands/agent-server:latest-python"
+    agent_server_image: str = "privacylens-agent-server:local"
 
     @classmethod
     def from_env(cls, env_file: Path | None = None) -> Config:
@@ -174,6 +174,7 @@ class Config(BaseModel):
         _str("radicale_url", "RADICALE_URL")
         _str("radicale_user", "RADICALE_USER")
         _str("radicale_password", "RADICALE_PASSWORD")
+        _str("docker_network", "DOCKER_NETWORK")
 
         # LLM secret + endpoint always come from the process environment.
         overrides["llm_api_key"] = os.environ.get("LLM_API_KEY", "")

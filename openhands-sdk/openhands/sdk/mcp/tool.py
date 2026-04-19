@@ -270,6 +270,7 @@ class MCPToolDefinition(ToolDefinition[MCPToolAction, MCPToolObservation]):
     def to_openai_tool(
         self,
         add_security_risk_prediction: bool = False,
+        add_privacy_context: bool = False,
         action_type: type[Schema] | None = None,
     ) -> ChatCompletionToolParam:
         """Convert a Tool to an OpenAI tool.
@@ -284,6 +285,8 @@ class MCPToolDefinition(ToolDefinition[MCPToolAction, MCPToolObservation]):
                 to the action schema for LLM to predict. This is useful for
                 tools that may have safety risks, so the LLM can reason about
                 the risk level before calling the tool.
+            add_privacy_context: Whether to add CI privacy context fields
+                to non-readOnly tool schemas.
         """
         if action_type is not None:
             raise ValueError(
@@ -294,5 +297,6 @@ class MCPToolDefinition(ToolDefinition[MCPToolAction, MCPToolObservation]):
         mcp_action_type = _create_mcp_action_type(self.mcp_tool)
         return super().to_openai_tool(
             add_security_risk_prediction=add_security_risk_prediction,
+            add_privacy_context=add_privacy_context,
             action_type=mcp_action_type,
         )

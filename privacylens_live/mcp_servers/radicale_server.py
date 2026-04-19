@@ -144,7 +144,7 @@ def _summary_only(event: Any) -> dict[str, Any]:
 # ── Tools ──
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def search_events(
     query: Annotated[
         str,
@@ -193,7 +193,7 @@ async def search_events(
     return {"events": [_summary_only(e) for e in events]}
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def get_event(
     event_id: Annotated[
         str,
@@ -227,7 +227,7 @@ async def get_event(
     return _parse_event(event.vobject_instance.vevent)
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def list_events() -> dict:
     """List all calendar events.
 

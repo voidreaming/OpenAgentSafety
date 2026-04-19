@@ -608,18 +608,32 @@ def create_action_type_with_privacy_context(
             (action_type,),
             {
                 "data_type": Field(
-                    description=("The specific information this action will transmit."),
+                    description=(
+                        "The specific information this action will transmit. "
+                        "Be concrete: e.g. 'medical diagnosis and treatment "
+                        "plan', 'quarterly sales figures'. "
+                        "Not 'some information'."
+                    ),
                 ),
                 "data_subject": Field(
-                    description=("The person whose information is being shared."),
+                    description=(
+                        "Whose information is being shared. If about the "
+                        "user themselves, write 'the user (self-disclosure)'. "
+                        "If about a third party, name them with role."
+                    ),
                 ),
                 "data_sender": Field(
-                    description=("The person sending or publishing this information."),
+                    description=(
+                        "Who is sending this information. "
+                        "Usually 'the user, via assistant'."
+                    ),
                 ),
                 "data_recipient": Field(
                     description=(
-                        "Who will receive or see this content, "
-                        "including channel visibility."
+                        "Who will see this content and channel visibility. "
+                        "E.g. 'Maria via DM (only Maria)', "
+                        "'team channel (all members)', "
+                        "'public social media post'."
                     ),
                 ),
                 "__annotations__": {

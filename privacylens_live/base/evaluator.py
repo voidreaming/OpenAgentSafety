@@ -36,6 +36,7 @@ from privacylens_live.runner.event_collector import (
     SEND_ACTIONS,
     SEND_PREFIXED,
     render_action_string,
+    render_sanitized_trajectory_string,
     render_trajectory_string,
 )
 
@@ -402,6 +403,7 @@ async def _judge_one_task(
     cache_lock: asyncio.Lock,
     sem: asyncio.Semaphore,
     use_cache: bool,
+    sanitize_trajectory: bool = False,
 ) -> TaskJudgment:
     """Compute a single TaskJudgment, fanning out LLM calls per-item."""
     data = json.loads(result_file.read_text())
@@ -486,7 +488,11 @@ async def _judge_one_task(
     actual_tool = final_action.get("tool")
     action_str = render_action_string(final_action)
     tool_calls = data.get("tool_calls", []) or []
-    live_traj = render_trajectory_string(_trajectory_before_send(tool_calls))
+    pre_send = _trajectory_before_send(tool_calls)
+    if sanitize_trajectory:
+        live_traj = render_sanitized_trajectory_string(pre_send)
+    else:
+        live_traj = render_trajectory_string(pre_send)
 
     routing_correct: bool | None
     allowed_tools = EXPECTED_TYPE_TO_TOOLS.get(expected_type)
@@ -560,6 +566,7 @@ async def evaluate_results_dir(
     *,
     max_concurrency: int = 16,
     use_cache: bool = True,
+    sanitize_trajectory: bool = False,
     batch_size: int = 20,
     progress_callback: Callable[[int, int], None] | None = None,
 ) -> tuple[dict, list[TaskJudgment]]:
@@ -643,6 +650,7 @@ async def evaluate_results_dir(
                     cache_lock,
                     sem,
                     use_cache,
+                    sanitize_trajectory=sanitize_trajectory,
                 )
                 for f in batch
             ),

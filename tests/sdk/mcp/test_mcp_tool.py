@@ -321,6 +321,59 @@ class TestMCPTool:
         assert tool.name == "no_desc_tool"
         assert tool.description == "No description provided"
 
+    def test_readonlyhint_propagates_from_mcp_annotations(self):
+        """Test that readOnlyHint=True propagates through MCPToolDefinition.create.
+
+        This is critical for the privacy analyzer: the agent loop gates
+        information flow extraction on ``tool.annotations.readOnlyHint``.
+        If MCP tools don't propagate this hint, extraction never fires.
+        """
+        # Read-only tool (e.g. search_pages, get_page)
+        mock_read_tool = MagicMock(spec=mcp.types.Tool)
+        mock_read_tool.name = "search_pages"
+        mock_read_tool.description = "Search pages"
+        mock_read_tool.inputSchema = {
+            "type": "object",
+            "properties": {"query": {"type": "string"}},
+        }
+        mock_read_tool.annotations = ToolAnnotations(readOnlyHint=True)
+        mock_read_tool.meta = None
+
+        tools = MCPToolDefinition.create(
+            mcp_tool=mock_read_tool, mcp_client=self.mock_client
+        )
+        read_tool = tools[0]
+
+        assert read_tool.annotations is not None
+        assert read_tool.annotations.readOnlyHint is True
+        # Verify the exact check used in agent.py:1038
+        is_read_only = (
+            read_tool.annotations is not None and read_tool.annotations.readOnlyHint
+        )
+        assert is_read_only is True
+
+        # Write tool (e.g. send_message) — no annotations
+        mock_write_tool = MagicMock(spec=mcp.types.Tool)
+        mock_write_tool.name = "send_message"
+        mock_write_tool.description = "Send a message"
+        mock_write_tool.inputSchema = {
+            "type": "object",
+            "properties": {"message": {"type": "string"}},
+        }
+        mock_write_tool.annotations = None
+        mock_write_tool.meta = None
+
+        tools = MCPToolDefinition.create(
+            mcp_tool=mock_write_tool, mcp_client=self.mock_client
+        )
+        write_tool = tools[0]
+
+        assert write_tool.annotations is None
+        is_read_only = (
+            write_tool.annotations is not None and write_tool.annotations.readOnlyHint
+        )
+        assert is_read_only is False
+
     def test_executor_assignment(self):
         """Test that the tool has the correct executor."""
         assert isinstance(self.tool.executor, MCPToolExecutor)

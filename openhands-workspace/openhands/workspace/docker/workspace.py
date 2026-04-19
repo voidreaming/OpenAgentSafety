@@ -369,6 +369,7 @@ class DockerWorkspace(RemoteWorkspace):
             # Stop and remove the container
             logger.info(f"Stopping container: {self._container_id}")
             execute_command(["docker", "stop", self._container_id])
+            execute_command(["docker", "rm", self._container_id])
             self._container_id = None
 
         # Optionally delete the Docker image

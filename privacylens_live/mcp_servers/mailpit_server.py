@@ -151,7 +151,7 @@ async def send_email(
     return {"success": True, "to": to, "subject": subject}
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def search_emails(
     query: Annotated[
         str,
@@ -189,7 +189,7 @@ async def search_emails(
     return {"emails": emails}
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def read_email(
     email_id: Annotated[
         str,
@@ -230,7 +230,7 @@ async def read_email(
     }
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True})
 async def list_contacts(
     name: Annotated[
         str,
